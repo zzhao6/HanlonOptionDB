@@ -5,9 +5,9 @@ Steps of configureation:
 
 
 1. Dependencies
-    -pandas
-    -pandas_datareader: https://github.com/pydata/pandas-datareader
-    -beautifulsoap4     required by pandas
-    -cron
+    *pandas
+    *pandas_datareader: https://github.com/pydata/pandas-datareader
+    *beautifulsoap4     required by pandas
+    *cron
 
 
