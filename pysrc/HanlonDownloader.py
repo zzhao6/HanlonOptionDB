@@ -5,9 +5,10 @@ from pandas_datareader.data import Options
 
 class HanlonDownloader:
     """downloader class"""
-    def initialize(self, filedir):
+    def __init__(self, filedir):
         self.isconnected = False
         self._readSymbols(filedir)
+
     def HanlonConn(self, hanlon_host, hanlon_user, hanlon_passwd, hanlon_dbname):
         try:
             self.conn = pymysql.connect(host = hanlon_host, user = hanlon_user, passwd = hanlon_passwd, db = hanlon_dbname) 
@@ -18,8 +19,12 @@ class HanlonDownloader:
         except pymysql.err.OperationalError as err:
             print(err)
             return
-        except:
-            print("Unknown Error!")
+        except pymysql.err.InternalError as err:
+            print(err)
+            return
+        except Exception as e:
+            print("Unhandled Exception!")
+            print(e)
             return
         
         print("Connected to database: {}".format(self.dbname))
