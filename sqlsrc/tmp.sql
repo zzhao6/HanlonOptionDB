@@ -1,4 +1,9 @@
-CREATE TABLE `testoption1` (
+-- CREATE DATABASE testoption;
+
+USE testoption;
+
+
+CREATE TABLE `AAPL` (
   `underlying_symbol` varchar(10) NOT NULL,
   `option_symbol` varchar(50) NOT NULL,
   `strike` float NOT NULL,
@@ -10,6 +15,6 @@ CREATE TABLE `testoption1` (
   `ask` float NOT NULL,
   `vol` int(11) NOT NULL,
   `open_int` int(11) NOT NULL,
-  `IV` varchar(50) NOT NULL,
+  `IV` float NOT NULL,
   `underlying_price` float NOT NULL
 );

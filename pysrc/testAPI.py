@@ -27,3 +27,4 @@ from HanlonDownloader import *
 
 ins = HanlonDownloader("../symbols/DJIA.csv")
 ins.HanlonConn(hanlon_host = "127.0.0.1", hanlon_user = "root", hanlon_passwd = "root", hanlon_dbname = "testoption")
+#mydata = ins._processOne('AAPL')
