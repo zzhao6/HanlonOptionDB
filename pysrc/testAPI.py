@@ -25,6 +25,8 @@ aapl = Options('aapl', 'yahoo')
 
 from HanlonDownloader import *
 
-ins = HanlonDownloader("../symbols/DJIA.csv")
+ins = HanlonDownloader("../symbols/DJIA.csv", updateExp=False)
 ins.HanlonConn(hanlon_host = "127.0.0.1", hanlon_user = "root", hanlon_passwd = "root", hanlon_dbname = "testoption")
-#mydata = ins._processOne('AAPL')
+ins._processOne('AAPL', ins.symExpiryDict['AAPL'][9])
+#ins.processAll()
+ins.closeConn()
