@@ -6,7 +6,8 @@ from pandas_datareader.data import Options
 import logging
 import pickle       # save expiry dicitonary to file
 
-    
+import sys          # display percentage counter
+
 class HanlonDownloader:
     """downloader class"""
     def __init__(self, symfiledir, **kwargs):
@@ -21,6 +22,7 @@ class HanlonDownloader:
         # decide whether update the expiry dates or not
         # for all equity symbols
         self._expDateFileDir = '../pysrc/expDates.txt'
+        self._expir_cnt = 0.0
         self.updateExp = kwargs.get('updateExp')
         self._readExpiry(self.updateExp)
 
@@ -76,16 +78,6 @@ class HanlonDownloader:
     def _readExpiry(self, updateExpiryFlag):
         # load expiry dates from a file
         # the file will be overwrote when update the expiries
-        try:
-            tmpfile = open(self._expDateFileDir, 'rb')
-            self.symExpiryDict = pickle.load(tmpfile)
-        except Exception as err:
-            self._printException(err)
-        logging.info("Loaded all expiry dates")
-        print("Loaded all expiry dates")
-
-        for key, value in self.symExpiryDict.items():
-            print("{} \t length {}".format(key, len(value)))
 
         if updateExpiryFlag:
             print("Updating expiry dates for all equities.")
@@ -105,6 +97,21 @@ class HanlonDownloader:
         else:
             print("User chooses not to update the expiry dates.")
             logging.info("User chooses not to update the expiry dates.")
+
+       
+        # load the dict file again
+        try:
+            tmpfile = open(self._expDateFileDir, 'rb')
+            self.symExpiryDict = pickle.load(tmpfile)
+        except Exception as err:
+            self._printException(err)
+        logging.info("Loaded all expiry dates")
+        print("Loaded all expiry dates")
+
+        for key, value in self.symExpiryDict.items():
+            print("{} \t length {}".format(key, len(value)))
+            self._expir_cnt += len(value)       # for display percentage count
+
 
     def _printException(self, err):
         '''
@@ -170,8 +177,12 @@ class HanlonDownloader:
         '''
         print('---------------------')
         # TODO: put logging here
+        
+        tmpPercentCount = 0.0
         for sym in self.symExpiryDict.keys():
             for exp in self.symExpiryDict[sym]:
                 self._processOne(sym, exp)
-
-
+                tmpPercentCount += 1
+                tmpPercent = tmpPercentCount / self._expir_cnt * 100
+                sys.stdout.write("\r%f%%\n" % tmpPercent)
+                sys.stdout.flush()

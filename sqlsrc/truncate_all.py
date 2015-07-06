@@ -3,7 +3,7 @@
 from pandas import read_csv
 import pymysql
 # TODO: config file
-conn = pymysql.connect(host = "127.0.0.1", user = "root", passwd = "root", db = "testoption")
+conn = pymysql.connect(host = "127.0.0.1", user = "root", passwd = "FErules2014!", db = "testoption")
 cur = conn.cursor()
 symbols = read_csv('../symbols/DJIA.csv') 
 symlist = list(symbols.Symbol)
@@ -12,6 +12,7 @@ for i in range(len(symlist)):
     tmpSym = symlist.pop()
     # truncate table
     tmpstr = "Truncate table {};".format(tmpSym)
+    print("{}".format(tmpstr))
     tmpRowCnt = cur.execute(tmpstr)
     print("{} row affected in table {}".format(tmpRowCnt, tmpSym))
     # confirm the tables are blank
@@ -21,3 +22,5 @@ for i in range(len(symlist)):
     print("{} row left in table{}", tmptuple[0], tmpSym)
     
     conn.commit()
+    
+conn.close()
