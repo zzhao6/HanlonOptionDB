@@ -14,14 +14,18 @@ class MyEmail():
     def setMsg(self, summary):
         self.msg = MIMEText(summary)
         self.msg['Subject'] = "Sent from python by Zhe - {}".format(self.today_date)
-        self.msg['From'] = "zzhao6@stevens.edu"
-        self.msg['To'] = "zzhao6@stevens.edu"
+        self.msg['From'] = "hanlonoptiondb@gmail.com"
+        self.msg['To'] = "hanlonoptiondb@gmail.com"
 
     def testSend(self):
 
         self.s = smtplib.SMTP('smtp.gmail.com', port = 587)
+         
+        self.s.ehlo()
+        self.s.starttls()
+        self.s.ehlo
         try:
-            tmpstr = self.s.login(user = 'zhaozhe123', password = "Lyra0122")
+            tmpstr = self.s.login(user = 'hanlonoptiondb', password = "FErules2015!")
             print(tmpstr)
         except Exception as err:
             print(err)
@@ -29,3 +33,14 @@ class MyEmail():
 
         self.s.send_message(self.msg)
         self.s.quit()
+
+
+    def regSend(self):
+        pass
+
+    def wrnSend(self):
+        pass
+
+    def errSend(self):
+        pass
+
