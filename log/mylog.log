@@ -1209,3 +1209,760 @@ Traceback (most recent call last):
 07/05/2015 11:40:38 Finished request, insert to table...
 07/05/2015 11:40:38 Inserted to table HD, 41 rows affected.
 07/05/2015 11:40:38 Requesting HD, 2015-07-17.
+07/19/2015 01:27:58 30 symbols loaded, ready to request data.
+07/19/2015 01:27:58 User chooses not to update the expiry dates.
+07/19/2015 01:27:58 Loaded all expiry dates
+07/19/2015 01:28:31 30 symbols loaded, ready to request data.
+07/19/2015 01:28:31 User chooses not to update the expiry dates.
+07/19/2015 01:28:31 Loaded all expiry dates
+07/19/2015 01:28:31 Connected to database: testoption
+07/19/2015 01:28:31 Requesting AAPL, 2016-01-15.
+07/19/2015 01:28:35 Finished request, insert to table...
+07/19/2015 01:28:35 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
+07/19/2015 01:29:45 30 symbols loaded, ready to request data.
+07/19/2015 01:29:45 User chooses not to update the expiry dates.
+07/19/2015 01:29:45 Loaded all expiry dates
+07/19/2015 01:30:34 Requesting AAPL, 2016-01-15.
+07/19/2015 01:30:38 Finished request, insert to table...
+07/19/2015 01:30:38 Unhandled exception. 'HanlonDownloader' object has no attribute 'cur'
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+AttributeError: 'HanlonDownloader' object has no attribute 'cur'
+07/19/2015 01:31:07 Connected to database: testoption
+07/19/2015 01:31:11 Requesting AAPL, 2016-01-15.
+07/19/2015 01:31:15 Finished request, insert to table...
+07/19/2015 01:31:15 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
+07/19/2015 01:32:45 30 symbols loaded, ready to request data.
+07/19/2015 01:32:45 User chooses not to update the expiry dates.
+07/19/2015 01:32:45 Loaded all expiry dates
+07/19/2015 01:32:45 Connected to database: testoption
+07/19/2015 01:32:45 Requesting AAPL, 2016-01-15.
+07/19/2015 01:32:49 Finished request, insert to table...
+07/19/2015 01:32:49 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 167, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
+07/19/2015 01:35:26 30 symbols loaded, ready to request data.
+07/19/2015 01:35:26 User chooses not to update the expiry dates.
+07/19/2015 01:35:26 Loaded all expiry dates
+07/19/2015 01:35:26 Connected to database: testoption
+07/19/2015 01:35:26 Requesting AAPL, 2016-01-15.
+07/19/2015 01:35:30 Finished request, insert to table...
+07/19/2015 01:35:31 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+07/19/2015 01:38:04 30 symbols loaded, ready to request data.
+07/19/2015 01:38:04 User chooses not to update the expiry dates.
+07/19/2015 01:38:04 Loaded all expiry dates
+07/19/2015 01:38:04 Connected to database: testoption
+07/19/2015 01:38:04 Requesting AAPL, 2016-01-15.
+07/19/2015 01:38:08 Finished request, insert to table...
+07/19/2015 01:38:08 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 164, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
+07/19/2015 01:39:10 30 symbols loaded, ready to request data.
+07/19/2015 01:39:10 User chooses not to update the expiry dates.
+07/19/2015 01:39:10 Loaded all expiry dates
+07/19/2015 01:39:10 Connected to database: testoption
+07/19/2015 01:39:10 Requesting AAPL, 2015-07-31.
+07/19/2015 01:39:14 Finished request, insert to table...
+07/19/2015 01:39:14 Inserted to table AAPL, 71 rows affected.
+07/19/2015 01:44:04 30 symbols loaded, ready to request data.
+07/19/2015 01:44:04 User chooses not to update the expiry dates.
+07/19/2015 01:44:04 Loaded all expiry dates
+07/19/2015 01:44:04 Connected to database: testoption
+07/19/2015 01:44:04 Requesting AAPL, 2015-07-31.
+07/19/2015 01:44:06 Finished request, insert to table...
+07/19/2015 01:44:06 Inserted to table AAPL, 71 rows affected.
+07/19/2015 01:44:06 Connection closed, here is the summary
+07/19/2015 01:45:16 30 symbols loaded, ready to request data.
+07/19/2015 01:45:16 User chooses not to update the expiry dates.
+07/19/2015 01:45:16 Loaded all expiry dates
+07/19/2015 01:45:16 Connected to database: testoption
+07/19/2015 01:45:16 Requesting AAPL, 2015-07-31.
+07/19/2015 01:45:18 Finished request, insert to table...
+07/19/2015 01:45:18 Inserted to table AAPL, 71 rows affected.
+07/19/2015 01:45:18 Connection closed, here is the summary
+07/19/2015 01:46:29 30 symbols loaded, ready to request data.
+07/19/2015 01:46:29 User chooses not to update the expiry dates.
+07/19/2015 01:46:29 Loaded all expiry dates
+07/19/2015 01:46:29 Connected to database: testoption
+07/19/2015 01:46:29 Requesting AAPL, 2016-01-15.
+07/19/2015 01:46:34 Finished request, insert to table...
+07/19/2015 01:46:34 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 165, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
+07/19/2015 01:47:12 30 symbols loaded, ready to request data.
+07/19/2015 01:47:12 User chooses not to update the expiry dates.
+07/19/2015 01:47:12 Loaded all expiry dates
+07/19/2015 01:48:34 30 symbols loaded, ready to request data.
+07/19/2015 01:48:34 User chooses not to update the expiry dates.
+07/19/2015 01:48:34 Loaded all expiry dates
+07/19/2015 01:48:34 Connected to database: testoption
+07/19/2015 01:48:34 Requesting AAPL, 2015-07-31.
+07/19/2015 01:48:36 Finished request, insert to table...
+07/19/2015 01:48:36 Inserted to table AAPL, 71 rows affected.
+07/19/2015 01:48:36 Connection closed, here is the summary
+07/19/2015 01:48:50 30 symbols loaded, ready to request data.
+07/19/2015 01:48:50 User chooses not to update the expiry dates.
+07/19/2015 01:48:50 Loaded all expiry dates
+07/19/2015 01:48:50 Connected to database: testoption
+07/19/2015 01:48:50 Requesting AAPL, 2016-01-15.
+07/19/2015 01:48:54 Finished request, insert to table...
+07/19/2015 01:48:54 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
+07/19/2015 01:49:01 Connection closed, here is the summary
+07/19/2015 02:00:41 30 symbols loaded, ready to request data.
+07/19/2015 02:00:41 User chooses not to update the expiry dates.
+07/19/2015 02:00:41 Loaded all expiry dates
+07/19/2015 02:00:41 Connected to database: testoption
+07/19/2015 02:00:41 Requesting AAPL, 2016-01-15.
+07/19/2015 02:00:45 Finished request, insert to table...
+07/19/2015 02:00:45 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
+07/19/2015 02:00:45 Connection closed, here is the summary
+07/19/2015 02:01:44 30 symbols loaded, ready to request data.
+07/19/2015 02:01:44 User chooses not to update the expiry dates.
+07/19/2015 02:01:44 Loaded all expiry dates
+07/19/2015 02:01:44 Connected to database: testoption
+07/19/2015 02:01:44 Requesting AAPL, 2016-01-15.
+07/19/2015 02:01:48 Finished request, insert to table...
+07/19/2015 02:01:48 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
+07/19/2015 02:01:48 Connection closed, here is the summary
+07/19/2015 02:03:07 30 symbols loaded, ready to request data.
+07/19/2015 02:03:07 User chooses not to update the expiry dates.
+07/19/2015 02:03:07 Loaded all expiry dates
+07/19/2015 02:03:07 Connected to database: testoption
+07/19/2015 02:03:07 Requesting AAPL, 2016-01-15.
+07/19/2015 02:04:47 Finished request, insert to table...
+07/19/2015 02:04:47 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+07/19/2015 02:04:47 Connection closed, here is the summary
+07/19/2015 02:06:07 30 symbols loaded, ready to request data.
+07/19/2015 02:06:07 User chooses not to update the expiry dates.
+07/19/2015 02:06:07 Loaded all expiry dates
+07/19/2015 02:06:07 Connected to database: testoption
+07/19/2015 02:06:07 Requesting AAPL, 2016-01-15.
+07/19/2015 02:06:10 Finished request, insert to table...
+07/19/2015 02:06:44 30 symbols loaded, ready to request data.
+07/19/2015 02:06:44 User chooses not to update the expiry dates.
+07/19/2015 02:06:44 Loaded all expiry dates
+07/19/2015 02:06:44 Connected to database: testoption
+07/19/2015 02:06:44 Requesting AAPL, 2016-01-15.
+07/19/2015 02:06:48 Finished request, insert to table...
+07/19/2015 02:07:51 30 symbols loaded, ready to request data.
+07/19/2015 02:07:51 User chooses not to update the expiry dates.
+07/19/2015 02:07:51 Loaded all expiry dates
+07/19/2015 02:07:51 Connected to database: testoption
+07/19/2015 02:07:51 Requesting AAPL, 2016-01-15.
+07/19/2015 02:07:55 Finished request, insert to table...
+07/19/2015 02:08:03 30 symbols loaded, ready to request data.
+07/19/2015 02:08:03 User chooses not to update the expiry dates.
+07/19/2015 02:08:03 Loaded all expiry dates
+07/19/2015 02:08:03 Connected to database: testoption
+07/19/2015 02:08:03 Requesting AAPL, 2016-01-15.
+07/19/2015 02:08:07 Finished request, insert to table...
+07/19/2015 02:08:07 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015007019 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015007019 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+07/19/2015 02:08:07 Connection closed, here is the summary
+07/19/2015 02:09:02 30 symbols loaded, ready to request data.
+07/19/2015 02:09:02 User chooses not to update the expiry dates.
+07/19/2015 02:09:02 Loaded all expiry dates
+07/19/2015 02:09:02 Connected to database: testoption
+07/19/2015 02:09:02 Requesting AAPL, 2016-01-15.
+07/19/2015 02:09:06 Finished request, insert to table...
+07/19/2015 02:09:07 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+07/19/2015 02:09:07 Connection closed, here is the summary
+07/19/2015 02:10:45 30 symbols loaded, ready to request data.
+07/19/2015 02:10:45 User chooses not to update the expiry dates.
+07/19/2015 02:10:45 Loaded all expiry dates
+07/19/2015 02:10:45 Connected to database: testoption
+07/19/2015 02:10:45 Requesting AAPL, 2016-01-15.
+07/19/2015 02:10:49 Finished request, insert to table...
+07/19/2015 02:10:49 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+07/19/2015 02:10:49 Connection closed, here is the summary
+07/19/2015 02:11:56 30 symbols loaded, ready to request data.
+07/19/2015 02:11:56 User chooses not to update the expiry dates.
+07/19/2015 02:11:56 Loaded all expiry dates
+07/19/2015 02:11:56 Connected to database: testoption
+07/19/2015 02:11:56 Requesting AAPL, 2016-01-15.
+07/19/2015 02:12:00 Finished request, insert to table...
+07/19/2015 02:12:00 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+07/19/2015 02:12:00 Connection closed, here is the summary
+07/19/2015 02:12:58 30 symbols loaded, ready to request data.
+07/19/2015 02:12:58 User chooses not to update the expiry dates.
+07/19/2015 02:12:58 Loaded all expiry dates
+07/19/2015 02:12:58 Connected to database: testoption
+07/19/2015 02:12:58 Requesting AAPL, 2016-01-15.
+07/19/2015 02:13:02 Finished request, insert to table...
+07/19/2015 02:13:02 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
+07/19/2015 02:13:02 Connection closed, here is the summary
+07/19/2015 02:13:14 30 symbols loaded, ready to request data.
+07/19/2015 02:13:14 User chooses not to update the expiry dates.
+07/19/2015 02:13:14 Loaded all expiry dates
+07/19/2015 02:13:14 Connected to database: testoption
+07/19/2015 02:13:14 Requesting AAPL, 2016-01-15.
+07/19/2015 02:13:18 Finished request, insert to table...
+07/19/2015 02:13:18 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+07/19/2015 02:13:18 Connection closed, here is the summary
+07/19/2015 02:14:16 30 symbols loaded, ready to request data.
+07/19/2015 02:14:16 User chooses not to update the expiry dates.
+07/19/2015 02:14:16 Loaded all expiry dates
+07/19/2015 02:14:16 Connected to database: testoption
+07/19/2015 02:14:16 Requesting AAPL, 2016-01-15.
+07/19/2015 02:14:20 Finished request, insert to table...
+07/19/2015 02:14:20 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+07/19/2015 02:14:20 Connection closed, here is the summary
+07/19/2015 02:14:59 30 symbols loaded, ready to request data.
+07/19/2015 02:14:59 User chooses not to update the expiry dates.
+07/19/2015 02:14:59 Loaded all expiry dates
+07/19/2015 02:14:59 Connected to database: testoption
+07/19/2015 02:14:59 Requesting AAPL, 2016-01-15.
+07/19/2015 02:15:02 Finished request, insert to table...
+07/19/2015 02:15:03 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+07/19/2015 02:15:03 Connection closed, here is the summary
+07/19/2015 02:15:50 30 symbols loaded, ready to request data.
+07/19/2015 02:15:50 User chooses not to update the expiry dates.
+07/19/2015 02:15:50 Loaded all expiry dates
+07/19/2015 02:15:50 Connected to database: testoption
+07/19/2015 02:15:50 Requesting AAPL, 2016-01-15.
+07/19/2015 02:15:54 Finished request, insert to table...
+07/19/2015 02:15:54 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
+07/19/2015 02:15:54 Connection closed, here is the summary
+07/19/2015 02:16:45 30 symbols loaded, ready to request data.
+07/19/2015 02:16:45 User chooses not to update the expiry dates.
+07/19/2015 02:16:45 Loaded all expiry dates
+07/19/2015 02:16:45 Connected to database: testoption
+07/19/2015 02:16:45 Requesting AAPL, 2016-01-15.
+07/19/2015 02:16:49 Finished request, insert to table...
+07/19/2015 02:16:49 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
+07/19/2015 02:16:49 Connection closed, here is the summary
+07/19/2015 02:17:58 30 symbols loaded, ready to request data.
+07/19/2015 02:17:58 User chooses not to update the expiry dates.
+07/19/2015 02:17:58 Loaded all expiry dates
+07/19/2015 02:17:58 Connected to database: testoption
+07/19/2015 02:17:58 Requesting AAPL, 2015-07-31.
+07/19/2015 02:18:00 Finished request, insert to table...
+07/19/2015 02:18:55 30 symbols loaded, ready to request data.
+07/19/2015 02:18:55 User chooses not to update the expiry dates.
+07/19/2015 02:18:55 Loaded all expiry dates
+07/19/2015 02:18:55 Connected to database: testoption
+07/19/2015 02:18:55 Requesting AAPL, 2015-07-31.
+07/19/2015 02:18:57 Finished request, insert to table...
+07/19/2015 02:19:55 30 symbols loaded, ready to request data.
+07/19/2015 02:19:55 User chooses not to update the expiry dates.
+07/19/2015 02:19:55 Loaded all expiry dates
+07/19/2015 02:19:55 Connected to database: testoption
+07/19/2015 02:19:55 Requesting AAPL, 2015-07-31.
+07/19/2015 02:19:58 Finished request, insert to table...
+07/19/2015 02:19:58 Inserted to table AAPL, 71 rows affected.
+07/19/2015 02:19:58 Connection closed, here is the summary
+07/19/2015 02:20:09 30 symbols loaded, ready to request data.
+07/19/2015 02:20:09 User chooses not to update the expiry dates.
+07/19/2015 02:20:09 Loaded all expiry dates
+07/19/2015 02:20:09 Connected to database: testoption
+07/19/2015 02:20:09 Requesting AAPL, 2016-01-15.
+07/19/2015 02:20:12 Finished request, insert to table...
+07/19/2015 02:25:57 30 symbols loaded, ready to request data.
+07/19/2015 02:25:57 User chooses not to update the expiry dates.
+07/19/2015 02:25:57 Loaded all expiry dates
+07/19/2015 02:25:57 Connected to database: testoption
+07/19/2015 02:25:57 Requesting AAPL, 2016-01-15.
+07/19/2015 02:26:01 Finished request, insert to table...
+07/19/2015 02:26:01 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 1970-01-01 00:00:00, 25, 499, 1.0029000000000001, 129.62)' at line 4")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 175, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 1970-01-01 00:00:00, 25, 499, 1.0029000000000001, 129.62)' at line 4")
+07/19/2015 02:26:01 Connection closed, here is the summary
+07/19/2015 02:26:44 30 symbols loaded, ready to request data.
+07/19/2015 02:26:44 User chooses not to update the expiry dates.
+07/19/2015 02:26:44 Loaded all expiry dates
+07/19/2015 02:26:44 Connected to database: testoption
+07/19/2015 02:26:44 Requesting AAPL, 2016-01-15.
+07/19/2015 02:26:48 Finished request, insert to table...
+07/19/2015 02:26:48 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 1970-01-01 00:00:00, 25, 499, 1.0029000000000001, 129.62)' at line 4")
+Traceback (most recent call last):
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 175, in _processOne
+    self.rowcnt += self.cur.execute(insert_str)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 1970-01-01 00:00:00, 25, 499, 1.0029000000000001, 129.62)' at line 4")
+07/19/2015 02:26:48 Connection closed, here is the summary
+07/19/2015 02:33:57 30 symbols loaded, ready to request data.
+07/19/2015 02:33:57 User chooses not to update the expiry dates.
+07/19/2015 02:33:57 Loaded all expiry dates
+07/19/2015 02:33:57 Connected to database: testoption
+07/19/2015 02:33:57 Requesting AAPL, 2016-01-15.
+07/19/2015 02:34:00 Finished request, insert to table...
+07/19/2015 02:34:01 Inserted to table AAPL, 339 rows affected.
+07/19/2015 02:34:01 Connection closed, here is the summary
+07/19/2015 02:34:50 30 symbols loaded, ready to request data.
+07/19/2015 02:34:50 User chooses not to update the expiry dates.
+07/19/2015 02:34:50 Loaded all expiry dates
+07/19/2015 02:34:50 Connected to database: testoption
+07/19/2015 02:34:50 Requesting AAPL, 2016-01-15.
+07/19/2015 02:34:54 Finished request, insert to table...
+07/19/2015 02:34:54 Inserted to table AAPL, 339 rows affected.
+07/19/2015 02:34:54 Connection closed, here is the summary

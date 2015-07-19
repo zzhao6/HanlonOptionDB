@@ -2,22 +2,41 @@ import time
 import smtplib
 from email.mime.text import MIMEText
 
-class MyEmail():
+class HanlonEmail():
     """
     send email through stevens server
     this class object is a member of HanlonDownloader
+    two steps to use this class:
+    1. setMsg()
+    2. sendMsg()
+   
+    or just
+    1. sendInvidErr()
     """
 
     def __init__(self):
         self.today_date = time.strftime("%m/%d/%Y")
+        self.template_dir = "../SummaryTemplate.txt"
 
-    def setMsg(self, summary):
-        self.msg = MIMEText(summary)
-        self.msg['Subject'] = "Sent from python by Zhe - {}".format(self.today_date)
+    def sendIndivErr(self):
+        pass
+
+    
+    def setRegMsg(self, startTime, endTime, totalSym, compSym, errSym):
+
+        try:
+            templatefile = open(self.template_dir, 'r')
+        except err as Exception:
+            raise
+
+        self.summary = summaryTemplate.format(self.today_date, startTime, endTime, "", 
+                                              totalSym, compSym, errSym)
+        self.msg = MIMEText(self.summary)
+        self.msg['Subject'] = "Option Data Download Summary - {}".format(self.today_date)
         self.msg['From'] = "hanlonoptiondb@gmail.com"
         self.msg['To'] = "hanlonoptiondb@gmail.com"
 
-    def testSend(self):
+    def sendMsg(self):
 
         self.s = smtplib.SMTP('smtp.gmail.com', port = 587)
          
@@ -42,5 +61,8 @@ class MyEmail():
         pass
 
     def errSend(self):
+        pass
+
+    def saveToLog():
         pass
 

@@ -7,6 +7,9 @@ import logging
 import pickle       # save expiry dicitonary to file
 
 import sys          # display percentage counter
+import numpy        # for data type checking
+from HanlonEmail import *
+
 
 class HanlonDownloader:
     """downloader class"""
@@ -119,6 +122,7 @@ class HanlonDownloader:
         '''
         print("Unhandled exception. {}".format(err))
         logging.exception("Unhandled exception. {}".format(err))
+        self.closeConn()
         input("Press any key to raise the exception.")
         raise
 
@@ -143,6 +147,15 @@ class HanlonDownloader:
 
         for i in range(len(mydata.index)):
             onerow = mydata.iloc[[i]]
+            
+            # clean data, sometime bid and ask contains strange values
+            tmpBid = onerow.Bid[i]
+            tmpAsk = onerow.Ask[i]
+            if type(onerow.Bid[i]) is not numpy.float64:
+                tmpBid = 0.0
+            if type(onerow.Ask[i]) is not numpy.float64:
+                tmpAsk = 0.0
+            
             # gen sql insert statement
             insert_str = """INSERT INTO {} (underlying_symbol, option_symbol,
             strike, expiry, option_type, quote_date, last, bid, ask, vol,
@@ -150,18 +163,20 @@ class HanlonDownloader:
             ('{}', '{}', {}, '{}', '{}', '{}', {}, {}, {}, {}, {}, {}, {});""".format(sym,\
                     onerow.Root[i], onerow.Symbol[i], onerow.Strike[i], \
                     str(onerow.Expiry[i].date()), onerow.Type[i], str(onerow.Quote_Time[i].date()),\
-                    onerow.Last[i], onerow.Bid[i], onerow.Ask[i],\
+                    onerow.Last[i], tmpBid, tmpAsk,\
                     onerow.Vol[i], onerow.Open_Int[i], float(onerow.IV[i].strip('%'))/100,\
                     onerow.Underlying_Price[i])
             # push into db
             # TODO: this execute will return row count
              
             # replace missing value '-' with '0'
-            insert_str = insert_str.replace(" -,", " 0,")
+            # insert_str = insert_str.replace('NaT', '0')
+            # insert_str = insert_str.replace(' -,', ' 0,')
 
             try:
                 self.rowcnt += self.cur.execute(insert_str) 
             except Exception as err:
+                print(type(onerow.Bid[i]))
                 self._printException(err)
 
             self.conn.commit()
