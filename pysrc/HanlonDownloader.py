@@ -51,14 +51,14 @@ class HanlonDownloader:
         self.cur = self.conn.cursor()
         self.isconnected = True
         print("Connected to database:{}".format(self.dbname))
-        logging.info("Connected to database: {}".format(self.dbname))
+        logging.info("Top level: Connected to database: {}".format(self.dbname))
         
     def closeConn(self):
         """some thing todo before finish all day work"""
         self.cur.close()
         self.conn.close()
         print("Connection closed")
-        logging.info("Connection closed, here is the summary")
+        logging.info("Top level: Connection closed, here is the summary...")
 
     def _readSymbols(self, filedir):
         '''
@@ -68,14 +68,14 @@ class HanlonDownloader:
         try:
             tmpfile = pd.read_csv(filedir)
         except OSError as err:
-            logging.error("Error: {}".format(err))
+            logging.error("Top level Error: {}".format(err))
             print("Unknown Error occured.")
             input("Press any key to raise the exception.")
             raise
 
         self.symbols = tmpfile.Symbol
         print("{} symbols loaded".format(len(self.symbols)))
-        logging.info("{} symbols loaded, ready to request data.".format(len(self.symbols))) 
+        logging.info("Top level: {} symbols loaded, ready to request data.".format(len(self.symbols))) 
 
 
     def _readExpiry(self, updateExpiryFlag):
@@ -84,22 +84,23 @@ class HanlonDownloader:
 
         if updateExpiryFlag:
             print("Updating expiry dates for all equities.")
+            
             for sym in self.symbols:
                 symOption = Options(sym, 'yahoo')
                 try:
-                    tmpSymExpiry = symOption.expiry_dates
-                    print("Updated {} \t number of dates: {}".format(sym, len(symExpiry)))
+                    symExpiry = symOption.expiry_dates
+                    print("{} Updated \t number of dates: {}".format(sym, len(symExpiry)))
                 except Exception as err:
                     self._printException(err)
 
-                self.symOptionDict[sym] = symOption
+                #self.symOptionDict[sym] = symOption
                 self.symExpiryDict[sym] = symExpiry
             # update the file of expiry dates
             expDateFile = open(self._expDateFileDir, 'ab+')
             pickle.dump(self.symExpiryDict, expDateFile)
         else:
             print("User chooses not to update the expiry dates.")
-            logging.info("User chooses not to update the expiry dates.")
+            logging.info("Top level: User chooses not to update the expiry dates.")
 
        
         # load the dict file again
@@ -108,7 +109,7 @@ class HanlonDownloader:
             self.symExpiryDict = pickle.load(tmpfile)
         except Exception as err:
             self._printException(err)
-        logging.info("Loaded all expiry dates")
+        logging.info("Top level: Loaded all expiry dates")
         print("Loaded all expiry dates")
 
         for key, value in self.symExpiryDict.items():
@@ -116,33 +117,33 @@ class HanlonDownloader:
             self._expir_cnt += len(value)       # for display percentage count
 
 
-    def _printException(self, err):
+    def _printException(self, err, sym = "", expir = ""):
         '''
         print and logging some messages about unhandled exception
         '''
-        print("Unhandled exception. {}".format(err))
-        logging.exception("Unhandled exception. {}".format(err))
+        print("{} - {}: Unhandled exception. {}".format(sym, expir, err))
+        logging.exception("{} - {}: Unhandled exception. {}".format(sym, expir, err))
         self.closeConn()
         input("Press any key to raise the exception.")
         raise
 
-    def _processOne(self, sym, exp):
+    def _processOne(self, sym, expir):
         '''
         process one result of API: one symbol, one expiry
         decomposite the dataframe and push to database
         '''
-        print("Requesting {}, {}.".format(sym, exp))
-        logging.info("Requesting {}, {}.".format(sym, exp))
+        print("{} - {}: Requesting".format(sym, expir))
+        logging.info("{} - {}: Requesting".format(sym, expir))
         tmpOption = Options(sym, 'yahoo')
         try:
             # TODO: handle RemoteDataError exception. Sometime the yahoo server doesn't response
-            mydata = tmpOption.get_options_data(expiry = exp)
+            mydata = tmpOption.get_options_data(expiry = expir)
         except Exception as err:
             self._printException(err)
         # start processing
         # first reset the multiindex in pandas dataframe
-        print("Finished request, insert to table...")
-        logging.info("Finished request, insert to table...")
+        print("{} - {}: Finished request, insert to table...".format(sym, expir))
+        logging.info("{} - {}: Finished request, insert to table...".format(sym, expir))
         mydata = mydata.reset_index()
 
         for i in range(len(mydata.index)):
@@ -182,8 +183,8 @@ class HanlonDownloader:
             self.conn.commit()
             # end of for loop
 
-        print("Inserted to table {}, {} rows affected.".format(sym, self.rowcnt))
-        logging.info("Inserted to table {}, {} rows affected.".format(sym, self.rowcnt))
+        print("{} - {}: Inserted to table, {} rows affected.".format(sym, expir, self.rowcnt))
+        logging.info("{} - {}: Inserted to table, {} rows affected.".format(sym, expir, self.rowcnt))
         self.rowcnt = 0
 
     def processAll(self):
@@ -195,8 +196,8 @@ class HanlonDownloader:
         
         tmpPercentCount = 0.0
         for sym in self.symExpiryDict.keys():
-            for exp in self.symExpiryDict[sym]:
-                self._processOne(sym, exp)
+            for expir in self.symExpiryDict[sym]:
+                self._processOne(sym, expir)
                 tmpPercentCount += 1
                 tmpPercent = tmpPercentCount / self._expir_cnt * 100
                 sys.stdout.write("\r%f%%\n" % tmpPercent)

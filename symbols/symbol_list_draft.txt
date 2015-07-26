@@ -1,0 +1,4 @@
+Dow 30
+S&P 500
+VIX options
+Major ETF: 

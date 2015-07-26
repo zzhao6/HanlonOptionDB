@@ -1,1968 +1,1026 @@
-07/05/2015 08:25:01 30 symbols loaded, ready to request data.
-07/05/2015 08:25:01 Loaded all expiry dates
-07/05/2015 08:25:01 User chooses not to update the expiry dates.
-07/05/2015 08:26:01 30 symbols loaded, ready to request data.
-07/05/2015 08:26:01 Loaded all expiry dates
-07/05/2015 08:26:01 User chooses not to update the expiry dates.
-07/05/2015 08:26:01 Connected to database: testoption
-07/05/2015 08:26:01 Requesting AAPL, 2016-01-15.
-07/05/2015 08:26:02 Unhandled exception. BeautifulSoup4 (bs4) not found, please install it
+07/19/2015 09:17:59 Top level: 30 symbols loaded, ready to request data.
+07/19/2015 09:18:00  - : Unhandled exception. name 'symExpiry' is not defined
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/pandas_datareader/data.py", line 1131, in _get_data_in_date_range
-    frame = getattr(self, nam)
-AttributeError: 'Options' object has no attribute 'puts160115'
-
-During handling of the above exception, another exception occurred:
-
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 91, in _readExpiry
+    print("{} Updated \t number of dates: {}".format(sym, len(symExpiry)))
+NameError: name 'symExpiry' is not defined
+07/19/2015 09:19:34 Top level: 30 symbols loaded, ready to request data.
+07/19/2015 09:19:35  - : Unhandled exception. name 'symExpiry' is not defined
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/pandas_datareader/data.py", line 750, in _get_option_data
-    frames = getattr(self, frame_name)
-AttributeError: 'Options' object has no attribute '_frames160115'
-
-During handling of the above exception, another exception occurred:
-
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 91, in _readExpiry
+    print("{} Updated \t number of dates: {}".format(sym, len(symExpiry)))
+NameError: name 'symExpiry' is not defined
+07/19/2015 09:37:39 Top level: 30 symbols loaded, ready to request data.
+07/19/2015 09:38:34 Top level: 30 symbols loaded, ready to request data.
+07/19/2015 09:38:48 Top level: Loaded all expiry dates
+07/19/2015 09:38:48 Top level: Connected to database: testoption
+07/19/2015 09:38:48 VZ - 2015-06-26: Requesting
+07/19/2015 09:38:49 VZ - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:38:50 VZ - 2015-06-26: Inserted to table, 38 rows affected.
+07/19/2015 09:38:50 VZ - 2015-07-02: Requesting
+07/19/2015 09:38:52 VZ - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:38:52 VZ - 2015-07-02: Inserted to table, 38 rows affected.
+07/19/2015 09:38:52 VZ - 2015-07-10: Requesting
+07/19/2015 09:38:54 VZ - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:38:54 VZ - 2015-07-10: Inserted to table, 38 rows affected.
+07/19/2015 09:38:54 VZ - 2015-07-17: Requesting
+07/19/2015 09:38:56 VZ - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:38:56 VZ - 2015-07-17: Inserted to table, 38 rows affected.
+07/19/2015 09:38:56 VZ - 2015-07-24: Requesting
+07/19/2015 09:38:59 VZ - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:38:59 VZ - 2015-07-24: Inserted to table, 38 rows affected.
+07/19/2015 09:38:59 VZ - 2015-07-31: Requesting
+07/19/2015 09:39:01 VZ - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:39:01 VZ - 2015-07-31: Inserted to table, 32 rows affected.
+07/19/2015 09:39:01 VZ - 2015-08-21: Requesting
+07/19/2015 09:39:03 VZ - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:39:04 VZ - 2015-08-21: Inserted to table, 36 rows affected.
+07/19/2015 09:39:04 VZ - 2015-10-16: Requesting
+07/19/2015 09:39:06 VZ - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:39:06 VZ - 2015-10-16: Inserted to table, 47 rows affected.
+07/19/2015 09:39:06 VZ - 2016-01-15: Requesting
+07/19/2015 09:39:09 VZ - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:39:09 VZ - 2016-01-15: Inserted to table, 53 rows affected.
+07/19/2015 09:39:09 VZ - 2016-04-15: Requesting
+07/19/2015 09:39:11 VZ - 2016-04-15: Finished request, insert to table...
+07/19/2015 09:39:11 VZ - 2016-04-15: Inserted to table, 15 rows affected.
+07/19/2015 09:39:11 VZ - 2017-01-20: Requesting
+07/19/2015 09:39:13 VZ - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:39:13 VZ - 2017-01-20: Inserted to table, 35 rows affected.
+07/19/2015 09:39:13 CVX - 2015-06-26: Requesting
+07/19/2015 09:39:15 CVX - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:39:15 CVX - 2015-06-26: Inserted to table, 65 rows affected.
+07/19/2015 09:39:15 CVX - 2015-07-02: Requesting
+07/19/2015 09:39:18 CVX - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:39:18 CVX - 2015-07-02: Inserted to table, 65 rows affected.
+07/19/2015 09:39:18 CVX - 2015-07-10: Requesting
+07/19/2015 09:39:21 CVX - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:39:21 CVX - 2015-07-10: Inserted to table, 65 rows affected.
+07/19/2015 09:39:21 CVX - 2015-07-17: Requesting
+07/19/2015 09:39:23 CVX - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:39:23 CVX - 2015-07-17: Inserted to table, 65 rows affected.
+07/19/2015 09:39:23 CVX - 2015-07-24: Requesting
+07/19/2015 09:39:26 CVX - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:39:26 CVX - 2015-07-24: Inserted to table, 65 rows affected.
+07/19/2015 09:39:26 CVX - 2015-07-31: Requesting
+07/19/2015 09:39:28 CVX - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:39:28 CVX - 2015-07-31: Inserted to table, 64 rows affected.
+07/19/2015 09:39:28 CVX - 2015-08-21: Requesting
+07/19/2015 09:39:31 CVX - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:39:31 CVX - 2015-08-21: Inserted to table, 20 rows affected.
+07/19/2015 09:39:31 CVX - 2015-09-18: Requesting
+07/19/2015 09:39:33 CVX - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:39:33 CVX - 2015-09-18: Inserted to table, 38 rows affected.
+07/19/2015 09:39:33 CVX - 2015-12-18: Requesting
+07/19/2015 09:39:36 CVX - 2015-12-18: Finished request, insert to table...
+07/19/2015 09:39:36 CVX - 2015-12-18: Inserted to table, 35 rows affected.
+07/19/2015 09:39:36 CVX - 2016-01-15: Requesting
+07/19/2015 09:39:38 CVX - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:39:39 CVX - 2016-01-15: Inserted to table, 55 rows affected.
+07/19/2015 09:39:39 CVX - 2017-01-20: Requesting
+07/19/2015 09:39:42 CVX - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:39:42 CVX - 2017-01-20: Inserted to table, 45 rows affected.
+07/19/2015 09:39:42 MCD - 2015-06-26: Requesting
+07/19/2015 09:39:44 MCD - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:39:44 MCD - 2015-06-26: Inserted to table, 65 rows affected.
+07/19/2015 09:39:44 MCD - 2015-07-02: Requesting
+07/19/2015 09:39:47 MCD - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:39:47 MCD - 2015-07-02: Inserted to table, 65 rows affected.
+07/19/2015 09:39:47 MCD - 2015-07-10: Requesting
+07/19/2015 09:39:49 MCD - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:39:49 MCD - 2015-07-10: Inserted to table, 65 rows affected.
+07/19/2015 09:39:49 MCD - 2015-07-17: Requesting
+07/19/2015 09:39:52 MCD - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:39:52 MCD - 2015-07-17: Inserted to table, 65 rows affected.
+07/19/2015 09:39:52 MCD - 2015-07-24: Requesting
+07/19/2015 09:39:55 MCD - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:39:55 MCD - 2015-07-24: Inserted to table, 65 rows affected.
+07/19/2015 09:39:55 MCD - 2015-07-31: Requesting
+07/19/2015 09:40:00 MCD - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:40:00 MCD - 2015-07-31: Inserted to table, 49 rows affected.
+07/19/2015 09:40:00 MCD - 2015-08-21: Requesting
+07/19/2015 09:40:06 MCD - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:40:06 MCD - 2015-08-21: Inserted to table, 24 rows affected.
+07/19/2015 09:40:06 MCD - 2015-09-18: Requesting
+07/19/2015 09:40:09 MCD - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:40:09 MCD - 2015-09-18: Inserted to table, 32 rows affected.
+07/19/2015 09:40:09 MCD - 2015-12-18: Requesting
+07/19/2015 09:40:11 MCD - 2015-12-18: Finished request, insert to table...
+07/19/2015 09:40:11 MCD - 2015-12-18: Inserted to table, 31 rows affected.
+07/19/2015 09:40:11 MCD - 2016-01-15: Requesting
+07/19/2015 09:40:18 MCD - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:40:18 MCD - 2016-01-15: Inserted to table, 49 rows affected.
+07/19/2015 09:40:18 MCD - 2016-03-18: Requesting
+07/19/2015 09:40:21 MCD - 2016-03-18: Finished request, insert to table...
+07/19/2015 09:40:21 MCD - 2016-03-18: Inserted to table, 31 rows affected.
+07/19/2015 09:40:21 MCD - 2017-01-20: Requesting
+07/19/2015 09:40:23 MCD - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:40:23 MCD - 2017-01-20: Inserted to table, 47 rows affected.
+07/19/2015 09:40:23 JPM - 2015-06-26: Requesting
+07/19/2015 09:40:26 JPM - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:40:26 JPM - 2015-06-26: Inserted to table, 58 rows affected.
+07/19/2015 09:40:26 JPM - 2015-07-02: Requesting
+07/19/2015 09:40:29 JPM - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:40:29 JPM - 2015-07-02: Inserted to table, 58 rows affected.
+07/19/2015 09:40:29 JPM - 2015-07-10: Requesting
+07/19/2015 09:40:31 JPM - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:40:31 JPM - 2015-07-10: Inserted to table, 58 rows affected.
+07/19/2015 09:40:31 JPM - 2015-07-17: Requesting
+07/19/2015 09:40:35 JPM - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:40:35 JPM - 2015-07-17: Inserted to table, 58 rows affected.
+07/19/2015 09:40:35 JPM - 2015-07-24: Requesting
+07/19/2015 09:40:38 JPM - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:40:38 JPM - 2015-07-24: Inserted to table, 58 rows affected.
+07/19/2015 09:40:38 JPM - 2015-07-31: Requesting
+07/19/2015 09:40:40 JPM - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:40:40 JPM - 2015-07-31: Inserted to table, 59 rows affected.
+07/19/2015 09:40:40 JPM - 2015-08-21: Requesting
+07/19/2015 09:40:42 JPM - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:40:42 JPM - 2015-08-21: Inserted to table, 23 rows affected.
+07/19/2015 09:40:42 JPM - 2015-09-18: Requesting
+07/19/2015 09:40:57 JPM - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:40:57 JPM - 2015-09-18: Inserted to table, 38 rows affected.
+07/19/2015 09:40:57 JPM - 2015-10-16: Requesting
+07/19/2015 09:40:59 JPM - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:40:59 JPM - 2015-10-16: Inserted to table, 19 rows affected.
+07/19/2015 09:40:59 JPM - 2015-12-18: Requesting
+07/19/2015 09:41:02 JPM - 2015-12-18: Finished request, insert to table...
+07/19/2015 09:41:02 JPM - 2015-12-18: Inserted to table, 41 rows affected.
+07/19/2015 09:41:02 JPM - 2016-01-15: Requesting
+07/19/2015 09:41:04 JPM - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:41:04 JPM - 2016-01-15: Inserted to table, 46 rows affected.
+07/19/2015 09:41:04 JPM - 2017-01-20: Requesting
+07/19/2015 09:41:07 JPM - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:41:07 JPM - 2017-01-20: Inserted to table, 50 rows affected.
+07/19/2015 09:41:07 NKE - 2015-06-26: Requesting
+07/19/2015 09:41:09 NKE - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:41:09 NKE - 2015-06-26: Inserted to table, 60 rows affected.
+07/19/2015 09:41:09 NKE - 2015-07-02: Requesting
+07/19/2015 09:41:11 NKE - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:41:11 NKE - 2015-07-02: Inserted to table, 60 rows affected.
+07/19/2015 09:41:11 NKE - 2015-07-10: Requesting
+07/19/2015 09:41:14 NKE - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:41:14 NKE - 2015-07-10: Inserted to table, 60 rows affected.
+07/19/2015 09:41:14 NKE - 2015-07-17: Requesting
+07/19/2015 09:41:17 NKE - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:41:17 NKE - 2015-07-17: Inserted to table, 60 rows affected.
+07/19/2015 09:41:17 NKE - 2015-07-24: Requesting
+07/19/2015 09:41:20 NKE - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:41:20 NKE - 2015-07-24: Inserted to table, 60 rows affected.
+07/19/2015 09:41:20 NKE - 2015-07-31: Requesting
+07/19/2015 09:41:23 NKE - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:41:23 NKE - 2015-07-31: Inserted to table, 55 rows affected.
+07/19/2015 09:41:23 NKE - 2015-08-21: Requesting
+07/19/2015 09:41:25 NKE - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:41:25 NKE - 2015-08-21: Inserted to table, 22 rows affected.
+07/19/2015 09:41:25 NKE - 2015-10-16: Requesting
+07/19/2015 09:41:27 NKE - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:41:27 NKE - 2015-10-16: Inserted to table, 31 rows affected.
+07/19/2015 09:41:27 NKE - 2016-01-15: Requesting
+07/19/2015 09:41:30 NKE - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:41:30 NKE - 2016-01-15: Inserted to table, 61 rows affected.
+07/19/2015 09:41:30 NKE - 2017-01-20: Requesting
+07/19/2015 09:41:33 NKE - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:41:33 NKE - 2017-01-20: Inserted to table, 60 rows affected.
+07/19/2015 09:41:33 CSCO - 2015-06-26: Requesting
+07/19/2015 09:41:35 CSCO - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:41:35 CSCO - 2015-06-26: Inserted to table, 26 rows affected.
+07/19/2015 09:41:35 CSCO - 2015-07-02: Requesting
+07/19/2015 09:41:37 CSCO - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:41:37 CSCO - 2015-07-02: Inserted to table, 26 rows affected.
+07/19/2015 09:41:37 CSCO - 2015-07-10: Requesting
+07/19/2015 09:41:39 CSCO - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:41:39 CSCO - 2015-07-10: Inserted to table, 26 rows affected.
+07/19/2015 09:41:39 CSCO - 2015-07-17: Requesting
+07/19/2015 09:41:41 CSCO - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:41:41 CSCO - 2015-07-17: Inserted to table, 26 rows affected.
+07/19/2015 09:41:41 CSCO - 2015-07-24: Requesting
+07/19/2015 09:41:43 CSCO - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:41:43 CSCO - 2015-07-24: Inserted to table, 26 rows affected.
+07/19/2015 09:41:43 CSCO - 2015-07-31: Requesting
+07/19/2015 09:41:45 CSCO - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:41:46 CSCO - 2015-07-31: Inserted to table, 26 rows affected.
+07/19/2015 09:41:46 CSCO - 2015-08-21: Requesting
+07/19/2015 09:41:47 CSCO - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:41:48 CSCO - 2015-08-21: Inserted to table, 32 rows affected.
+07/19/2015 09:41:48 CSCO - 2015-10-16: Requesting
+07/19/2015 09:41:50 CSCO - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:41:50 CSCO - 2015-10-16: Inserted to table, 43 rows affected.
+07/19/2015 09:41:50 CSCO - 2016-01-15: Requesting
+07/19/2015 09:41:52 CSCO - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:41:52 CSCO - 2016-01-15: Inserted to table, 48 rows affected.
+07/19/2015 09:41:52 CSCO - 2016-04-15: Requesting
+07/19/2015 09:41:54 CSCO - 2016-04-15: Finished request, insert to table...
+07/19/2015 09:41:54 CSCO - 2016-04-15: Inserted to table, 15 rows affected.
+07/19/2015 09:41:54 CSCO - 2017-01-20: Requesting
+07/19/2015 09:41:56 CSCO - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:41:56 CSCO - 2017-01-20: Inserted to table, 24 rows affected.
+07/19/2015 09:41:56 XOM - 2015-06-26: Requesting
+07/19/2015 09:41:58 XOM - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:41:58 XOM - 2015-06-26: Inserted to table, 58 rows affected.
+07/19/2015 09:41:58 XOM - 2015-07-02: Requesting
+07/19/2015 09:42:01 XOM - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:42:01 XOM - 2015-07-02: Inserted to table, 58 rows affected.
+07/19/2015 09:42:01 XOM - 2015-07-10: Requesting
+07/19/2015 09:42:06 XOM - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:42:06 XOM - 2015-07-10: Inserted to table, 58 rows affected.
+07/19/2015 09:42:06 XOM - 2015-07-17: Requesting
+07/19/2015 09:42:08 XOM - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:42:08 XOM - 2015-07-17: Inserted to table, 58 rows affected.
+07/19/2015 09:42:08 XOM - 2015-07-24: Requesting
+07/19/2015 09:42:11 XOM - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:42:11 XOM - 2015-07-24: Inserted to table, 58 rows affected.
+07/19/2015 09:42:11 XOM - 2015-07-31: Requesting
+07/19/2015 09:42:14 XOM - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:42:14 XOM - 2015-07-31: Inserted to table, 53 rows affected.
+07/19/2015 09:42:14 XOM - 2015-08-21: Requesting
+07/19/2015 09:42:16 XOM - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:42:16 XOM - 2015-08-21: Inserted to table, 26 rows affected.
+07/19/2015 09:42:16 XOM - 2015-09-18: Requesting
+07/19/2015 09:42:18 XOM - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:42:18 XOM - 2015-09-18: Inserted to table, 22 rows affected.
+07/19/2015 09:42:18 XOM - 2015-10-16: Requesting
+07/19/2015 09:42:25 XOM - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:42:25 XOM - 2015-10-16: Inserted to table, 37 rows affected.
+07/19/2015 09:42:25 XOM - 2016-01-15: Requesting
+07/19/2015 09:42:28 XOM - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:42:28 XOM - 2016-01-15: Inserted to table, 52 rows affected.
+07/19/2015 09:42:28 XOM - 2017-01-20: Requesting
+07/19/2015 09:42:30 XOM - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:42:30 XOM - 2017-01-20: Inserted to table, 52 rows affected.
+07/19/2015 09:42:30 IBM - 2015-06-26: Requesting
+07/19/2015 09:42:32 IBM - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:42:32 IBM - 2015-06-26: Inserted to table, 35 rows affected.
+07/19/2015 09:42:32 IBM - 2015-07-02: Requesting
+07/19/2015 09:42:35 IBM - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:42:35 IBM - 2015-07-02: Inserted to table, 35 rows affected.
+07/19/2015 09:42:35 IBM - 2015-07-10: Requesting
+07/19/2015 09:42:37 IBM - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:42:37 IBM - 2015-07-10: Inserted to table, 35 rows affected.
+07/19/2015 09:42:37 IBM - 2015-07-17: Requesting
+07/19/2015 09:42:39 IBM - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:42:39 IBM - 2015-07-17: Inserted to table, 35 rows affected.
+07/19/2015 09:42:39 IBM - 2015-07-24: Requesting
+07/19/2015 09:42:42 IBM - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:42:42 IBM - 2015-07-24: Inserted to table, 35 rows affected.
+07/19/2015 09:42:42 IBM - 2015-07-31: Requesting
+07/19/2015 09:42:46 IBM - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:42:46 IBM - 2015-07-31: Inserted to table, 34 rows affected.
+07/19/2015 09:42:46 IBM - 2015-08-21: Requesting
+07/19/2015 09:42:49 IBM - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:42:49 IBM - 2015-08-21: Inserted to table, 27 rows affected.
+07/19/2015 09:42:49 IBM - 2015-09-18: Requesting
+07/19/2015 09:42:51 IBM - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:42:51 IBM - 2015-09-18: Inserted to table, 22 rows affected.
+07/19/2015 09:42:51 IBM - 2015-10-16: Requesting
+07/19/2015 09:42:54 IBM - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:42:54 IBM - 2015-10-16: Inserted to table, 48 rows affected.
+07/19/2015 09:42:54 IBM - 2016-01-15: Requesting
+07/19/2015 09:42:59 IBM - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:42:59 IBM - 2016-01-15: Inserted to table, 72 rows affected.
+07/19/2015 09:42:59 IBM - 2017-01-20: Requesting
+07/19/2015 09:43:07 IBM - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:43:07 IBM - 2017-01-20: Inserted to table, 64 rows affected.
+07/19/2015 09:43:07 GE - 2015-06-26: Requesting
+07/19/2015 09:43:10 GE - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:43:10 GE - 2015-06-26: Inserted to table, 24 rows affected.
+07/19/2015 09:43:10 GE - 2015-07-02: Requesting
+07/19/2015 09:43:15 GE - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:43:15 GE - 2015-07-02: Inserted to table, 24 rows affected.
+07/19/2015 09:43:15 GE - 2015-07-10: Requesting
+07/19/2015 09:43:21 GE - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:43:21 GE - 2015-07-10: Inserted to table, 24 rows affected.
+07/19/2015 09:43:21 GE - 2015-07-17: Requesting
+07/19/2015 09:43:23 GE - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:43:23 GE - 2015-07-17: Inserted to table, 24 rows affected.
+07/19/2015 09:43:23 GE - 2015-07-24: Requesting
+07/19/2015 09:43:26 GE - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:43:26 GE - 2015-07-24: Inserted to table, 24 rows affected.
+07/19/2015 09:43:26 GE - 2015-07-31: Requesting
+07/19/2015 09:43:28 GE - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:43:28 GE - 2015-07-31: Inserted to table, 23 rows affected.
+07/19/2015 09:43:28 GE - 2015-08-21: Requesting
+07/19/2015 09:43:30 GE - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:43:30 GE - 2015-08-21: Inserted to table, 29 rows affected.
+07/19/2015 09:43:30 GE - 2015-09-18: Requesting
+07/19/2015 09:43:33 GE - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:43:33 GE - 2015-09-18: Inserted to table, 44 rows affected.
+07/19/2015 09:43:33 GE - 2015-10-16: Requesting
+07/19/2015 09:43:35 GE - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:43:35 GE - 2015-10-16: Inserted to table, 26 rows affected.
+07/19/2015 09:43:35 GE - 2015-12-18: Requesting
+07/19/2015 09:43:37 GE - 2015-12-18: Finished request, insert to table...
+07/19/2015 09:43:37 GE - 2015-12-18: Inserted to table, 45 rows affected.
+07/19/2015 09:43:37 GE - 2016-01-15: Requesting
+07/19/2015 09:43:43 GE - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:43:44 GE - 2016-01-15: Inserted to table, 48 rows affected.
+07/19/2015 09:43:44 GE - 2017-01-20: Requesting
+07/19/2015 09:43:45 GE - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:43:45 GE - 2017-01-20: Inserted to table, 25 rows affected.
+07/19/2015 09:43:45 PG - 2015-06-26: Requesting
+07/19/2015 09:43:48 PG - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:43:48 PG - 2015-06-26: Inserted to table, 58 rows affected.
+07/19/2015 09:43:48 PG - 2015-07-02: Requesting
+07/19/2015 09:43:50 PG - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:43:51 PG - 2015-07-02: Inserted to table, 58 rows affected.
+07/19/2015 09:43:51 PG - 2015-07-10: Requesting
+07/19/2015 09:43:53 PG - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:43:53 PG - 2015-07-10: Inserted to table, 58 rows affected.
+07/19/2015 09:43:53 PG - 2015-07-17: Requesting
+07/19/2015 09:43:56 PG - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:43:56 PG - 2015-07-17: Inserted to table, 58 rows affected.
+07/19/2015 09:43:56 PG - 2015-07-24: Requesting
+07/19/2015 09:43:58 PG - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:43:58 PG - 2015-07-24: Inserted to table, 58 rows affected.
+07/19/2015 09:43:58 PG - 2015-07-31: Requesting
+07/19/2015 09:44:01 PG - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:44:01 PG - 2015-07-31: Inserted to table, 61 rows affected.
+07/19/2015 09:44:01 PG - 2015-08-21: Requesting
+07/19/2015 09:44:03 PG - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:44:03 PG - 2015-08-21: Inserted to table, 24 rows affected.
+07/19/2015 09:44:03 PG - 2015-09-18: Requesting
+07/19/2015 09:44:05 PG - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:44:05 PG - 2015-09-18: Inserted to table, 19 rows affected.
+07/19/2015 09:44:05 PG - 2015-10-16: Requesting
+07/19/2015 09:44:07 PG - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:44:07 PG - 2015-10-16: Inserted to table, 31 rows affected.
+07/19/2015 09:44:07 PG - 2016-01-15: Requesting
+07/19/2015 09:44:10 PG - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:44:11 PG - 2016-01-15: Inserted to table, 48 rows affected.
+07/19/2015 09:44:11 PG - 2017-01-20: Requesting
+07/19/2015 09:44:13 PG - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:44:13 PG - 2017-01-20: Inserted to table, 46 rows affected.
+07/19/2015 09:44:13 DIS - 2015-06-26: Requesting
+07/19/2015 09:44:15 DIS - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:44:15 DIS - 2015-06-26: Inserted to table, 52 rows affected.
+07/19/2015 09:44:15 DIS - 2015-07-02: Requesting
+07/19/2015 09:44:18 DIS - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:44:18 DIS - 2015-07-02: Inserted to table, 52 rows affected.
+07/19/2015 09:44:18 DIS - 2015-07-10: Requesting
+07/19/2015 09:44:20 DIS - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:44:20 DIS - 2015-07-10: Inserted to table, 52 rows affected.
+07/19/2015 09:44:20 DIS - 2015-07-17: Requesting
+07/19/2015 09:44:22 DIS - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:44:23 DIS - 2015-07-17: Inserted to table, 52 rows affected.
+07/19/2015 09:44:23 DIS - 2015-07-24: Requesting
+07/19/2015 09:44:25 DIS - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:44:25 DIS - 2015-07-24: Inserted to table, 52 rows affected.
+07/19/2015 09:44:25 DIS - 2015-07-31: Requesting
+07/19/2015 09:44:28 DIS - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:44:28 DIS - 2015-07-31: Inserted to table, 52 rows affected.
+07/19/2015 09:44:28 DIS - 2015-08-21: Requesting
+07/19/2015 09:44:30 DIS - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:44:30 DIS - 2015-08-21: Inserted to table, 31 rows affected.
+07/19/2015 09:44:30 DIS - 2015-09-18: Requesting
+07/19/2015 09:44:32 DIS - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:44:32 DIS - 2015-09-18: Inserted to table, 21 rows affected.
+07/19/2015 09:44:32 DIS - 2015-10-16: Requesting
+07/19/2015 09:44:35 DIS - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:44:35 DIS - 2015-10-16: Inserted to table, 32 rows affected.
+07/19/2015 09:44:35 DIS - 2016-01-15: Requesting
+07/19/2015 09:44:38 DIS - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:44:38 DIS - 2016-01-15: Inserted to table, 74 rows affected.
+07/19/2015 09:44:38 DIS - 2017-01-20: Requesting
+07/19/2015 09:44:40 DIS - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:44:40 DIS - 2017-01-20: Inserted to table, 66 rows affected.
+07/19/2015 09:44:40 TRV - 2015-07-17: Requesting
+07/19/2015 09:44:43 TRV - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:44:43 TRV - 2015-07-17: Inserted to table, 16 rows affected.
+07/19/2015 09:44:43 TRV - 2015-08-21: Requesting
+07/19/2015 09:44:45 TRV - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:44:45 TRV - 2015-08-21: Inserted to table, 16 rows affected.
+07/19/2015 09:44:45 TRV - 2015-10-16: Requesting
+07/19/2015 09:44:47 TRV - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:44:47 TRV - 2015-10-16: Inserted to table, 25 rows affected.
+07/19/2015 09:44:47 TRV - 2016-01-15: Requesting
+07/19/2015 09:44:49 TRV - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:44:49 TRV - 2016-01-15: Inserted to table, 49 rows affected.
+07/19/2015 09:44:49 TRV - 2017-01-20: Requesting
+07/19/2015 09:44:51 TRV - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:44:51 TRV - 2017-01-20: Inserted to table, 38 rows affected.
+07/19/2015 09:44:51 KO - 2015-06-26: Requesting
+07/19/2015 09:44:53 KO - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:44:53 KO - 2015-06-26: Inserted to table, 42 rows affected.
+07/19/2015 09:44:53 KO - 2015-07-02: Requesting
+07/19/2015 09:44:55 KO - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:44:56 KO - 2015-07-02: Inserted to table, 42 rows affected.
+07/19/2015 09:44:56 KO - 2015-07-10: Requesting
+07/19/2015 09:44:58 KO - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:44:58 KO - 2015-07-10: Inserted to table, 42 rows affected.
+07/19/2015 09:44:58 KO - 2015-07-17: Requesting
+07/19/2015 09:45:00 KO - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:45:00 KO - 2015-07-17: Inserted to table, 42 rows affected.
+07/19/2015 09:45:00 KO - 2015-07-24: Requesting
+07/19/2015 09:45:03 KO - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:45:03 KO - 2015-07-24: Inserted to table, 42 rows affected.
+07/19/2015 09:45:03 KO - 2015-07-31: Requesting
+07/19/2015 09:45:05 KO - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:45:05 KO - 2015-07-31: Inserted to table, 36 rows affected.
+07/19/2015 09:45:05 KO - 2015-08-21: Requesting
+07/19/2015 09:45:08 KO - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:45:08 KO - 2015-08-21: Inserted to table, 46 rows affected.
+07/19/2015 09:45:08 KO - 2015-09-18: Requesting
+07/19/2015 09:45:11 KO - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:45:11 KO - 2015-09-18: Inserted to table, 28 rows affected.
+07/19/2015 09:45:11 KO - 2015-11-20: Requesting
+07/19/2015 09:45:14 KO - 2015-11-20: Finished request, insert to table...
+07/19/2015 09:45:14 KO - 2015-11-20: Inserted to table, 43 rows affected.
+07/19/2015 09:45:14 KO - 2016-01-15: Requesting
+07/19/2015 09:45:16 KO - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:45:16 KO - 2016-01-15: Inserted to table, 52 rows affected.
+07/19/2015 09:45:16 KO - 2016-02-19: Requesting
+07/19/2015 09:45:19 KO - 2016-02-19: Finished request, insert to table...
+07/19/2015 09:45:19 KO - 2016-02-19: Inserted to table, 32 rows affected.
+07/19/2015 09:45:19 KO - 2017-01-20: Requesting
+07/19/2015 09:45:21 KO - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:45:21 KO - 2017-01-20: Inserted to table, 30 rows affected.
+07/19/2015 09:45:21 CAT - 2015-06-26: Requesting
+07/19/2015 09:45:24 CAT - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:45:24 CAT - 2015-06-26: Inserted to table, 71 rows affected.
+07/19/2015 09:45:24 CAT - 2015-07-02: Requesting
+07/19/2015 09:45:26 CAT - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:45:26 CAT - 2015-07-02: Inserted to table, 71 rows affected.
+07/19/2015 09:45:26 CAT - 2015-07-10: Requesting
+07/19/2015 09:45:30 CAT - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:45:30 CAT - 2015-07-10: Inserted to table, 71 rows affected.
+07/19/2015 09:45:30 CAT - 2015-07-17: Requesting
+07/19/2015 09:45:33 CAT - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:45:33 CAT - 2015-07-17: Inserted to table, 71 rows affected.
+07/19/2015 09:45:33 CAT - 2015-07-24: Requesting
+07/19/2015 09:45:35 CAT - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:45:35 CAT - 2015-07-24: Inserted to table, 71 rows affected.
+07/19/2015 09:45:35 CAT - 2015-07-31: Requesting
+07/19/2015 09:45:38 CAT - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:45:38 CAT - 2015-07-31: Inserted to table, 71 rows affected.
+07/19/2015 09:45:38 CAT - 2015-08-21: Requesting
+07/19/2015 09:45:41 CAT - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:45:41 CAT - 2015-08-21: Inserted to table, 41 rows affected.
+07/19/2015 09:45:41 CAT - 2015-09-18: Requesting
+07/19/2015 09:45:44 CAT - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:45:44 CAT - 2015-09-18: Inserted to table, 21 rows affected.
+07/19/2015 09:45:44 CAT - 2015-11-20: Requesting
+07/19/2015 09:45:46 CAT - 2015-11-20: Finished request, insert to table...
+07/19/2015 09:45:46 CAT - 2015-11-20: Inserted to table, 44 rows affected.
+07/19/2015 09:45:46 CAT - 2016-01-15: Requesting
+07/19/2015 09:45:49 CAT - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:45:49 CAT - 2016-01-15: Inserted to table, 62 rows affected.
+07/19/2015 09:45:49 CAT - 2016-02-19: Requesting
+07/19/2015 09:45:51 CAT - 2016-02-19: Finished request, insert to table...
+07/19/2015 09:45:51 CAT - 2016-02-19: Inserted to table, 28 rows affected.
+07/19/2015 09:45:51 CAT - 2017-01-20: Requesting
+07/19/2015 09:45:54 CAT - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:45:54 CAT - 2017-01-20: Inserted to table, 63 rows affected.
+07/19/2015 09:45:54 MSFT - 2015-06-26: Requesting
+07/19/2015 09:45:56 MSFT - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:45:56 MSFT - 2015-06-26: Inserted to table, 58 rows affected.
+07/19/2015 09:45:56 MSFT - 2015-07-02: Requesting
+07/19/2015 09:45:59 MSFT - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:45:59 MSFT - 2015-07-02: Inserted to table, 58 rows affected.
+07/19/2015 09:45:59 MSFT - 2015-07-10: Requesting
+07/19/2015 09:46:02 MSFT - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:46:02 MSFT - 2015-07-10: Inserted to table, 58 rows affected.
+07/19/2015 09:46:02 MSFT - 2015-07-17: Requesting
+07/19/2015 09:46:04 MSFT - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:46:04 MSFT - 2015-07-17: Inserted to table, 58 rows affected.
+07/19/2015 09:46:04 MSFT - 2015-07-24: Requesting
+07/19/2015 09:46:07 MSFT - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:46:07 MSFT - 2015-07-24: Inserted to table, 58 rows affected.
+07/19/2015 09:46:07 MSFT - 2015-07-31: Requesting
+07/19/2015 09:46:09 MSFT - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:46:09 MSFT - 2015-07-31: Inserted to table, 55 rows affected.
+07/19/2015 09:46:09 MSFT - 2015-08-21: Requesting
+07/19/2015 09:46:12 MSFT - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:46:12 MSFT - 2015-08-21: Inserted to table, 47 rows affected.
+07/19/2015 09:46:12 MSFT - 2015-09-18: Requesting
+07/19/2015 09:46:14 MSFT - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:46:14 MSFT - 2015-09-18: Inserted to table, 37 rows affected.
+07/19/2015 09:46:14 MSFT - 2015-10-16: Requesting
+07/19/2015 09:46:17 MSFT - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:46:17 MSFT - 2015-10-16: Inserted to table, 57 rows affected.
+07/19/2015 09:46:17 MSFT - 2016-01-15: Requesting
+07/19/2015 09:46:20 MSFT - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:46:20 MSFT - 2016-01-15: Inserted to table, 69 rows affected.
+07/19/2015 09:46:20 MSFT - 2016-04-15: Requesting
+07/19/2015 09:46:22 MSFT - 2016-04-15: Finished request, insert to table...
+07/19/2015 09:46:22 MSFT - 2016-04-15: Inserted to table, 16 rows affected.
+07/19/2015 09:46:22 MSFT - 2016-06-17: Requesting
+07/19/2015 09:46:24 MSFT - 2016-06-17: Finished request, insert to table...
+07/19/2015 09:46:24 MSFT - 2016-06-17: Inserted to table, 26 rows affected.
+07/19/2015 09:46:24 MSFT - 2017-01-20: Requesting
+07/19/2015 09:46:26 MSFT - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:46:26 MSFT - 2017-01-20: Inserted to table, 34 rows affected.
+07/19/2015 09:46:26 UNH - 2015-06-26: Requesting
+07/19/2015 09:46:28 UNH - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:46:28 UNH - 2015-06-26: Inserted to table, 52 rows affected.
+07/19/2015 09:46:28 UNH - 2015-07-02: Requesting
+07/19/2015 09:46:31 UNH - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:46:31 UNH - 2015-07-02: Inserted to table, 52 rows affected.
+07/19/2015 09:46:31 UNH - 2015-07-10: Requesting
+07/19/2015 09:46:33 UNH - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:46:33 UNH - 2015-07-10: Inserted to table, 52 rows affected.
+07/19/2015 09:46:33 UNH - 2015-07-17: Requesting
+07/19/2015 09:46:36 UNH - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:46:36 UNH - 2015-07-17: Inserted to table, 52 rows affected.
+07/19/2015 09:46:36 UNH - 2015-07-24: Requesting
+07/19/2015 09:46:39 UNH - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:46:39 UNH - 2015-07-24: Inserted to table, 52 rows affected.
+07/19/2015 09:46:39 UNH - 2015-07-31: Requesting
+07/19/2015 09:46:41 UNH - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:46:41 UNH - 2015-07-31: Inserted to table, 49 rows affected.
+07/19/2015 09:46:41 UNH - 2015-08-21: Requesting
+07/19/2015 09:46:44 UNH - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:46:44 UNH - 2015-08-21: Inserted to table, 18 rows affected.
+07/19/2015 09:46:44 UNH - 2015-09-18: Requesting
+07/19/2015 09:46:46 UNH - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:46:46 UNH - 2015-09-18: Inserted to table, 38 rows affected.
+07/19/2015 09:46:46 UNH - 2015-12-18: Requesting
+07/19/2015 09:46:48 UNH - 2015-12-18: Finished request, insert to table...
+07/19/2015 09:46:48 UNH - 2015-12-18: Inserted to table, 34 rows affected.
+07/19/2015 09:46:48 UNH - 2016-01-15: Requesting
+07/19/2015 09:46:51 UNH - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:46:51 UNH - 2016-01-15: Inserted to table, 69 rows affected.
+07/19/2015 09:46:51 UNH - 2017-01-20: Requesting
+07/19/2015 09:46:53 UNH - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:46:53 UNH - 2017-01-20: Inserted to table, 55 rows affected.
+07/19/2015 09:46:53 AXP - 2015-06-26: Requesting
+07/19/2015 09:46:56 AXP - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:46:56 AXP - 2015-06-26: Inserted to table, 46 rows affected.
+07/19/2015 09:46:56 AXP - 2015-07-02: Requesting
+07/19/2015 09:46:58 AXP - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:46:58 AXP - 2015-07-02: Inserted to table, 46 rows affected.
+07/19/2015 09:46:58 AXP - 2015-07-10: Requesting
+07/19/2015 09:47:00 AXP - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:47:00 AXP - 2015-07-10: Inserted to table, 46 rows affected.
+07/19/2015 09:47:00 AXP - 2015-07-17: Requesting
+07/19/2015 09:47:03 AXP - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:47:03 AXP - 2015-07-17: Inserted to table, 46 rows affected.
+07/19/2015 09:47:03 AXP - 2015-07-24: Requesting
+07/19/2015 09:47:06 AXP - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:47:06 AXP - 2015-07-24: Inserted to table, 46 rows affected.
+07/19/2015 09:47:06 AXP - 2015-07-31: Requesting
+07/19/2015 09:47:08 AXP - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:47:08 AXP - 2015-07-31: Inserted to table, 53 rows affected.
+07/19/2015 09:47:08 AXP - 2015-08-21: Requesting
+07/19/2015 09:47:10 AXP - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:47:10 AXP - 2015-08-21: Inserted to table, 23 rows affected.
+07/19/2015 09:47:10 AXP - 2015-10-16: Requesting
+07/19/2015 09:47:13 AXP - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:47:13 AXP - 2015-10-16: Inserted to table, 29 rows affected.
+07/19/2015 09:47:13 AXP - 2016-01-15: Requesting
+07/19/2015 09:47:16 AXP - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:47:16 AXP - 2016-01-15: Inserted to table, 58 rows affected.
+07/19/2015 09:47:16 AXP - 2017-01-20: Requesting
+07/19/2015 09:47:18 AXP - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:47:18 AXP - 2017-01-20: Inserted to table, 56 rows affected.
+07/19/2015 09:47:18 DD - 2015-06-26: Requesting
+07/19/2015 09:47:21 DD - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:47:21 DD - 2015-06-26: Inserted to table, 75 rows affected.
+07/19/2015 09:47:21 DD - 2015-07-02: Requesting
+07/19/2015 09:47:24 DD - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:47:24 DD - 2015-07-02: Inserted to table, 75 rows affected.
+07/19/2015 09:47:24 DD - 2015-07-10: Requesting
+07/19/2015 09:47:26 DD - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:47:27 DD - 2015-07-10: Inserted to table, 75 rows affected.
+07/19/2015 09:47:27 DD - 2015-07-17: Requesting
+07/19/2015 09:47:29 DD - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:47:29 DD - 2015-07-17: Inserted to table, 75 rows affected.
+07/19/2015 09:47:29 DD - 2015-07-24: Requesting
+07/19/2015 09:47:32 DD - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:47:32 DD - 2015-07-24: Inserted to table, 75 rows affected.
+07/19/2015 09:47:32 DD - 2015-07-31: Requesting
+07/19/2015 09:47:35 DD - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:47:36 DD - 2015-07-31: Inserted to table, 77 rows affected.
+07/19/2015 09:47:36 DD - 2015-08-21: Requesting
+07/19/2015 09:47:38 DD - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:47:38 DD - 2015-08-21: Inserted to table, 23 rows affected.
+07/19/2015 09:47:38 DD - 2015-10-16: Requesting
+07/19/2015 09:47:40 DD - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:47:40 DD - 2015-10-16: Inserted to table, 38 rows affected.
+07/19/2015 09:47:40 DD - 2016-01-15: Requesting
+07/19/2015 09:47:42 DD - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:47:42 DD - 2016-01-15: Inserted to table, 50 rows affected.
+07/19/2015 09:47:42 DD - 2017-01-20: Requesting
+07/19/2015 09:47:45 DD - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:47:45 DD - 2017-01-20: Inserted to table, 49 rows affected.
+07/19/2015 09:47:45 MMM - 2015-06-26: Requesting
+07/19/2015 09:47:47 MMM - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:47:47 MMM - 2015-06-26: Inserted to table, 31 rows affected.
+07/19/2015 09:47:47 MMM - 2015-07-02: Requesting
+07/19/2015 09:47:49 MMM - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:47:49 MMM - 2015-07-02: Inserted to table, 31 rows affected.
+07/19/2015 09:47:49 MMM - 2015-07-10: Requesting
+07/19/2015 09:47:52 MMM - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:47:52 MMM - 2015-07-10: Inserted to table, 31 rows affected.
+07/19/2015 09:47:52 MMM - 2015-07-17: Requesting
+07/19/2015 09:47:54 MMM - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:47:54 MMM - 2015-07-17: Inserted to table, 31 rows affected.
+07/19/2015 09:47:54 MMM - 2015-07-24: Requesting
+07/19/2015 09:47:56 MMM - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:47:56 MMM - 2015-07-24: Inserted to table, 31 rows affected.
+07/19/2015 09:47:56 MMM - 2015-07-31: Requesting
+07/19/2015 09:47:59 MMM - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:47:59 MMM - 2015-07-31: Inserted to table, 31 rows affected.
+07/19/2015 09:47:59 MMM - 2015-08-21: Requesting
+07/19/2015 09:48:01 MMM - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:48:01 MMM - 2015-08-21: Inserted to table, 24 rows affected.
+07/19/2015 09:48:01 MMM - 2015-10-16: Requesting
+07/19/2015 09:48:03 MMM - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:48:03 MMM - 2015-10-16: Inserted to table, 40 rows affected.
+07/19/2015 09:48:03 MMM - 2016-01-15: Requesting
+07/19/2015 09:48:05 MMM - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:48:05 MMM - 2016-01-15: Inserted to table, 58 rows affected.
+07/19/2015 09:48:05 MMM - 2017-01-20: Requesting
+07/19/2015 09:48:08 MMM - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:48:08 MMM - 2017-01-20: Inserted to table, 56 rows affected.
+07/19/2015 09:48:08 GS - 2015-06-26: Requesting
+07/19/2015 09:48:10 GS - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:48:10 GS - 2015-06-26: Inserted to table, 36 rows affected.
+07/19/2015 09:48:10 GS - 2015-07-02: Requesting
+07/19/2015 09:48:12 GS - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:48:12 GS - 2015-07-02: Inserted to table, 36 rows affected.
+07/19/2015 09:48:12 GS - 2015-07-10: Requesting
+07/19/2015 09:48:14 GS - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:48:14 GS - 2015-07-10: Inserted to table, 36 rows affected.
+07/19/2015 09:48:14 GS - 2015-07-17: Requesting
+07/19/2015 09:48:16 GS - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:48:16 GS - 2015-07-17: Inserted to table, 36 rows affected.
+07/19/2015 09:48:16 GS - 2015-07-24: Requesting
+07/19/2015 09:48:18 GS - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:48:18 GS - 2015-07-24: Inserted to table, 36 rows affected.
+07/19/2015 09:48:18 GS - 2015-07-31: Requesting
+07/19/2015 09:48:20 GS - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:48:20 GS - 2015-07-31: Inserted to table, 35 rows affected.
+07/19/2015 09:48:20 GS - 2015-08-21: Requesting
+07/19/2015 09:48:23 GS - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:48:23 GS - 2015-08-21: Inserted to table, 40 rows affected.
+07/19/2015 09:48:23 GS - 2015-10-16: Requesting
+07/19/2015 09:48:25 GS - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:48:25 GS - 2015-10-16: Inserted to table, 57 rows affected.
+07/19/2015 09:48:25 GS - 2016-01-15: Requesting
+07/19/2015 09:48:28 GS - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:48:28 GS - 2016-01-15: Inserted to table, 78 rows affected.
+07/19/2015 09:48:28 GS - 2017-01-20: Requesting
+07/19/2015 09:48:31 GS - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:48:31 GS - 2017-01-20: Inserted to table, 60 rows affected.
+07/19/2015 09:48:31 INTC - 2015-06-26: Requesting
+07/19/2015 09:48:33 INTC - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:48:33 INTC - 2015-06-26: Inserted to table, 44 rows affected.
+07/19/2015 09:48:33 INTC - 2015-07-02: Requesting
+07/19/2015 09:48:36 INTC - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:48:36 INTC - 2015-07-02: Inserted to table, 44 rows affected.
+07/19/2015 09:48:36 INTC - 2015-07-10: Requesting
+07/19/2015 09:48:38 INTC - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:48:38 INTC - 2015-07-10: Inserted to table, 44 rows affected.
+07/19/2015 09:48:38 INTC - 2015-07-17: Requesting
+07/19/2015 09:48:40 INTC - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:48:41 INTC - 2015-07-17: Inserted to table, 44 rows affected.
+07/19/2015 09:48:41 INTC - 2015-07-24: Requesting
+07/19/2015 09:48:43 INTC - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:48:43 INTC - 2015-07-24: Inserted to table, 44 rows affected.
+07/19/2015 09:48:43 INTC - 2015-07-31: Requesting
+07/19/2015 09:48:45 INTC - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:48:45 INTC - 2015-07-31: Inserted to table, 37 rows affected.
+07/19/2015 09:48:45 INTC - 2015-08-21: Requesting
+07/19/2015 09:48:47 INTC - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:48:47 INTC - 2015-08-21: Inserted to table, 38 rows affected.
+07/19/2015 09:48:47 INTC - 2015-10-16: Requesting
+07/19/2015 09:48:50 INTC - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:48:50 INTC - 2015-10-16: Inserted to table, 55 rows affected.
+07/19/2015 09:48:50 INTC - 2016-01-15: Requesting
+07/19/2015 09:48:53 INTC - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:48:53 INTC - 2016-01-15: Inserted to table, 57 rows affected.
+07/19/2015 09:48:53 INTC - 2016-04-15: Requesting
+07/19/2015 09:48:55 INTC - 2016-04-15: Finished request, insert to table...
+07/19/2015 09:48:55 INTC - 2016-04-15: Inserted to table, 20 rows affected.
+07/19/2015 09:48:55 INTC - 2017-01-20: Requesting
+07/19/2015 09:48:57 INTC - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:48:57 INTC - 2017-01-20: Inserted to table, 31 rows affected.
+07/19/2015 09:48:57 V - 2015-06-26: Requesting
+07/19/2015 09:48:59 V - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:48:59 V - 2015-06-26: Inserted to table, 44 rows affected.
+07/19/2015 09:48:59 V - 2015-07-02: Requesting
+07/19/2015 09:49:02 V - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:49:02 V - 2015-07-02: Inserted to table, 44 rows affected.
+07/19/2015 09:49:02 V - 2015-07-10: Requesting
+07/19/2015 09:49:04 V - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:49:04 V - 2015-07-10: Inserted to table, 44 rows affected.
+07/19/2015 09:49:04 V - 2015-07-17: Requesting
+07/19/2015 09:49:06 V - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:49:06 V - 2015-07-17: Inserted to table, 44 rows affected.
+07/19/2015 09:49:06 V - 2015-07-24: Requesting
+07/19/2015 09:49:08 V - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:49:08 V - 2015-07-24: Inserted to table, 44 rows affected.
+07/19/2015 09:49:08 V - 2015-07-31: Requesting
+07/19/2015 09:49:10 V - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:49:11 V - 2015-07-31: Inserted to table, 48 rows affected.
+07/19/2015 09:49:11 V - 2015-08-21: Requesting
+07/19/2015 09:49:13 V - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:49:13 V - 2015-08-21: Inserted to table, 19 rows affected.
+07/19/2015 09:49:13 V - 2015-09-18: Requesting
+07/19/2015 09:49:17 V - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:49:18 V - 2015-09-18: Inserted to table, 143 rows affected.
+07/19/2015 09:49:18 V - 2015-12-18: Requesting
+07/19/2015 09:49:20 V - 2015-12-18: Finished request, insert to table...
+07/19/2015 09:49:20 V - 2015-12-18: Inserted to table, 27 rows affected.
+07/19/2015 09:49:20 V - 2016-01-15: Requesting
+07/19/2015 09:49:24 V - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:49:24 V - 2016-01-15: Inserted to table, 209 rows affected.
+07/19/2015 09:49:24 V - 2017-01-20: Requesting
+07/19/2015 09:49:27 V - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:49:27 V - 2017-01-20: Inserted to table, 128 rows affected.
+07/19/2015 09:49:27 WMT - 2015-06-26: Requesting
+07/19/2015 09:49:30 WMT - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:49:30 WMT - 2015-06-26: Inserted to table, 72 rows affected.
+07/19/2015 09:49:30 WMT - 2015-07-02: Requesting
+07/19/2015 09:49:32 WMT - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:49:33 WMT - 2015-07-02: Inserted to table, 72 rows affected.
+07/19/2015 09:49:33 WMT - 2015-07-10: Requesting
+07/19/2015 09:49:35 WMT - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:49:35 WMT - 2015-07-10: Inserted to table, 72 rows affected.
+07/19/2015 09:49:35 WMT - 2015-07-17: Requesting
+07/19/2015 09:49:39 WMT - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:49:39 WMT - 2015-07-17: Inserted to table, 72 rows affected.
+07/19/2015 09:49:39 WMT - 2015-07-24: Requesting
+07/19/2015 09:49:41 WMT - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:49:42 WMT - 2015-07-24: Inserted to table, 72 rows affected.
+07/19/2015 09:49:42 WMT - 2015-07-31: Requesting
+07/19/2015 09:49:44 WMT - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:49:44 WMT - 2015-07-31: Inserted to table, 61 rows affected.
+07/19/2015 09:49:44 WMT - 2015-08-21: Requesting
+07/19/2015 09:49:46 WMT - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:49:46 WMT - 2015-08-21: Inserted to table, 32 rows affected.
+07/19/2015 09:49:46 WMT - 2015-09-18: Requesting
+07/19/2015 09:49:48 WMT - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:49:49 WMT - 2015-09-18: Inserted to table, 49 rows affected.
+07/19/2015 09:49:49 WMT - 2015-12-18: Requesting
+07/19/2015 09:49:51 WMT - 2015-12-18: Finished request, insert to table...
+07/19/2015 09:49:51 WMT - 2015-12-18: Inserted to table, 37 rows affected.
+07/19/2015 09:49:51 WMT - 2016-01-15: Requesting
+07/19/2015 09:49:56 WMT - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:49:56 WMT - 2016-01-15: Inserted to table, 51 rows affected.
+07/19/2015 09:49:56 WMT - 2017-01-20: Requesting
+07/19/2015 09:49:58 WMT - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:49:58 WMT - 2017-01-20: Inserted to table, 52 rows affected.
+07/19/2015 09:49:58 PFE - 2015-06-26: Requesting
+07/19/2015 09:50:00 PFE - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:50:00 PFE - 2015-06-26: Inserted to table, 28 rows affected.
+07/19/2015 09:50:00 PFE - 2015-07-02: Requesting
+07/19/2015 09:50:03 PFE - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:50:03 PFE - 2015-07-02: Inserted to table, 28 rows affected.
+07/19/2015 09:50:03 PFE - 2015-07-10: Requesting
+07/19/2015 09:50:05 PFE - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:50:05 PFE - 2015-07-10: Inserted to table, 28 rows affected.
+07/19/2015 09:50:05 PFE - 2015-07-17: Requesting
+07/19/2015 09:50:12 PFE - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:50:12 PFE - 2015-07-17: Inserted to table, 28 rows affected.
+07/19/2015 09:50:12 PFE - 2015-07-24: Requesting
+07/19/2015 09:50:14 PFE - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:50:14 PFE - 2015-07-24: Inserted to table, 28 rows affected.
+07/19/2015 09:50:14 PFE - 2015-07-31: Requesting
+07/19/2015 09:50:16 PFE - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:50:16 PFE - 2015-07-31: Inserted to table, 24 rows affected.
+07/19/2015 09:50:16 PFE - 2015-08-21: Requesting
+07/19/2015 09:50:18 PFE - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:50:18 PFE - 2015-08-21: Inserted to table, 32 rows affected.
+07/19/2015 09:50:18 PFE - 2015-09-18: Requesting
+07/19/2015 09:50:21 PFE - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:50:21 PFE - 2015-09-18: Inserted to table, 41 rows affected.
+07/19/2015 09:50:21 PFE - 2015-10-16: Requesting
+07/19/2015 09:50:23 PFE - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:50:23 PFE - 2015-10-16: Inserted to table, 22 rows affected.
+07/19/2015 09:50:23 PFE - 2015-12-18: Requesting
+07/19/2015 09:50:25 PFE - 2015-12-18: Finished request, insert to table...
+07/19/2015 09:50:25 PFE - 2015-12-18: Inserted to table, 38 rows affected.
+07/19/2015 09:50:25 PFE - 2016-01-15: Requesting
+07/19/2015 09:50:27 PFE - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:50:27 PFE - 2016-01-15: Inserted to table, 53 rows affected.
+07/19/2015 09:50:27 PFE - 2017-01-20: Requesting
+07/19/2015 09:50:29 PFE - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:50:30 PFE - 2017-01-20: Inserted to table, 26 rows affected.
+07/19/2015 09:50:30 UTX - 2015-06-26: Requesting
+07/19/2015 09:50:31 UTX - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:50:32 UTX - 2015-06-26: Inserted to table, 38 rows affected.
+07/19/2015 09:50:32 UTX - 2015-07-02: Requesting
+07/19/2015 09:50:34 UTX - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:50:34 UTX - 2015-07-02: Inserted to table, 38 rows affected.
+07/19/2015 09:50:34 UTX - 2015-07-10: Requesting
+07/19/2015 09:50:36 UTX - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:50:36 UTX - 2015-07-10: Inserted to table, 38 rows affected.
+07/19/2015 09:50:36 UTX - 2015-07-17: Requesting
+07/19/2015 09:50:38 UTX - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:50:38 UTX - 2015-07-17: Inserted to table, 38 rows affected.
+07/19/2015 09:50:38 UTX - 2015-07-24: Requesting
+07/19/2015 09:50:40 UTX - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:50:40 UTX - 2015-07-24: Inserted to table, 38 rows affected.
+07/19/2015 09:50:40 UTX - 2015-07-31: Requesting
+07/19/2015 09:50:42 UTX - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:50:42 UTX - 2015-07-31: Inserted to table, 31 rows affected.
+07/19/2015 09:50:42 UTX - 2015-08-21: Requesting
+07/19/2015 09:50:44 UTX - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:50:44 UTX - 2015-08-21: Inserted to table, 35 rows affected.
+07/19/2015 09:50:44 UTX - 2015-11-20: Requesting
+07/19/2015 09:50:46 UTX - 2015-11-20: Finished request, insert to table...
+07/19/2015 09:50:46 UTX - 2015-11-20: Inserted to table, 28 rows affected.
+07/19/2015 09:50:46 UTX - 2016-01-15: Requesting
+07/19/2015 09:50:48 UTX - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:50:48 UTX - 2016-01-15: Inserted to table, 50 rows affected.
+07/19/2015 09:50:48 UTX - 2016-02-19: Requesting
+07/19/2015 09:50:50 UTX - 2016-02-19: Finished request, insert to table...
+07/19/2015 09:50:50 UTX - 2016-02-19: Inserted to table, 20 rows affected.
+07/19/2015 09:50:50 UTX - 2017-01-20: Requesting
+07/19/2015 09:50:53 UTX - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:50:53 UTX - 2017-01-20: Inserted to table, 41 rows affected.
+07/19/2015 09:50:53 MRK - 2015-06-26: Requesting
+07/19/2015 09:50:57 MRK - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:50:57 MRK - 2015-06-26: Inserted to table, 42 rows affected.
+07/19/2015 09:50:57 MRK - 2015-07-02: Requesting
+07/19/2015 09:50:59 MRK - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:50:59 MRK - 2015-07-02: Inserted to table, 42 rows affected.
+07/19/2015 09:50:59 MRK - 2015-07-10: Requesting
+07/19/2015 09:51:01 MRK - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:51:01 MRK - 2015-07-10: Inserted to table, 42 rows affected.
+07/19/2015 09:51:01 MRK - 2015-07-17: Requesting
+07/19/2015 09:51:03 MRK - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:51:03 MRK - 2015-07-17: Inserted to table, 42 rows affected.
+07/19/2015 09:51:03 MRK - 2015-07-24: Requesting
+07/19/2015 09:51:05 MRK - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:51:06 MRK - 2015-07-24: Inserted to table, 42 rows affected.
+07/19/2015 09:51:06 MRK - 2015-07-31: Requesting
+07/19/2015 09:51:08 MRK - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:51:08 MRK - 2015-07-31: Inserted to table, 49 rows affected.
+07/19/2015 09:51:08 MRK - 2015-08-21: Requesting
+07/19/2015 09:51:10 MRK - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:51:10 MRK - 2015-08-21: Inserted to table, 24 rows affected.
+07/19/2015 09:51:10 MRK - 2015-09-18: Requesting
+07/19/2015 09:51:12 MRK - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:51:12 MRK - 2015-09-18: Inserted to table, 13 rows affected.
+07/19/2015 09:51:12 MRK - 2015-10-16: Requesting
+07/19/2015 09:51:15 MRK - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:51:15 MRK - 2015-10-16: Inserted to table, 29 rows affected.
+07/19/2015 09:51:15 MRK - 2016-01-15: Requesting
+07/19/2015 09:51:17 MRK - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:51:17 MRK - 2016-01-15: Inserted to table, 43 rows affected.
+07/19/2015 09:51:17 MRK - 2017-01-20: Requesting
+07/19/2015 09:51:19 MRK - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:51:20 MRK - 2017-01-20: Inserted to table, 42 rows affected.
+07/19/2015 09:51:20 BA - 2015-06-26: Requesting
+07/19/2015 09:51:22 BA - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:51:22 BA - 2015-06-26: Inserted to table, 50 rows affected.
+07/19/2015 09:51:22 BA - 2015-07-02: Requesting
+07/19/2015 09:51:25 BA - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:51:25 BA - 2015-07-02: Inserted to table, 50 rows affected.
+07/19/2015 09:51:25 BA - 2015-07-10: Requesting
+07/19/2015 09:51:27 BA - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:51:27 BA - 2015-07-10: Inserted to table, 50 rows affected.
+07/19/2015 09:51:27 BA - 2015-07-17: Requesting
+07/19/2015 09:51:30 BA - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:51:30 BA - 2015-07-17: Inserted to table, 50 rows affected.
+07/19/2015 09:51:30 BA - 2015-07-24: Requesting
+07/19/2015 09:51:32 BA - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:51:32 BA - 2015-07-24: Inserted to table, 50 rows affected.
+07/19/2015 09:51:32 BA - 2015-07-31: Requesting
+07/19/2015 09:51:35 BA - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:51:35 BA - 2015-07-31: Inserted to table, 43 rows affected.
+07/19/2015 09:51:35 BA - 2015-08-21: Requesting
+07/19/2015 09:51:38 BA - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:51:38 BA - 2015-08-21: Inserted to table, 52 rows affected.
+07/19/2015 09:51:38 BA - 2015-09-18: Requesting
+07/19/2015 09:51:40 BA - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:51:40 BA - 2015-09-18: Inserted to table, 31 rows affected.
+07/19/2015 09:51:40 BA - 2015-11-20: Requesting
+07/19/2015 09:51:43 BA - 2015-11-20: Finished request, insert to table...
+07/19/2015 09:51:43 BA - 2015-11-20: Inserted to table, 42 rows affected.
+07/19/2015 09:51:43 BA - 2016-01-15: Requesting
+07/19/2015 09:51:46 BA - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:51:46 BA - 2016-01-15: Inserted to table, 59 rows affected.
+07/19/2015 09:51:46 BA - 2016-02-19: Requesting
+07/19/2015 09:51:48 BA - 2016-02-19: Finished request, insert to table...
+07/19/2015 09:51:48 BA - 2016-02-19: Inserted to table, 28 rows affected.
+07/19/2015 09:51:48 BA - 2017-01-20: Requesting
+07/19/2015 09:51:51 BA - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:51:51 BA - 2017-01-20: Inserted to table, 62 rows affected.
+07/19/2015 09:51:51 JNJ - 2015-06-26: Requesting
+07/19/2015 09:51:53 JNJ - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:51:53 JNJ - 2015-06-26: Inserted to table, 46 rows affected.
+07/19/2015 09:51:53 JNJ - 2015-07-02: Requesting
+07/19/2015 09:51:55 JNJ - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:51:56 JNJ - 2015-07-02: Inserted to table, 46 rows affected.
+07/19/2015 09:51:56 JNJ - 2015-07-10: Requesting
+07/19/2015 09:51:58 JNJ - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:51:58 JNJ - 2015-07-10: Inserted to table, 46 rows affected.
+07/19/2015 09:51:58 JNJ - 2015-07-17: Requesting
+07/19/2015 09:52:00 JNJ - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:52:00 JNJ - 2015-07-17: Inserted to table, 46 rows affected.
+07/19/2015 09:52:00 JNJ - 2015-07-24: Requesting
+07/19/2015 09:52:02 JNJ - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:52:03 JNJ - 2015-07-24: Inserted to table, 46 rows affected.
+07/19/2015 09:52:03 JNJ - 2015-07-31: Requesting
+07/19/2015 09:52:05 JNJ - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:52:05 JNJ - 2015-07-31: Inserted to table, 46 rows affected.
+07/19/2015 09:52:05 JNJ - 2015-08-21: Requesting
+07/19/2015 09:52:08 JNJ - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:52:08 JNJ - 2015-08-21: Inserted to table, 29 rows affected.
+07/19/2015 09:52:08 JNJ - 2015-09-18: Requesting
+07/19/2015 09:52:10 JNJ - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:52:10 JNJ - 2015-09-18: Inserted to table, 16 rows affected.
+07/19/2015 09:52:10 JNJ - 2015-10-16: Requesting
+07/19/2015 09:52:12 JNJ - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:52:12 JNJ - 2015-10-16: Inserted to table, 29 rows affected.
+07/19/2015 09:52:12 JNJ - 2016-01-15: Requesting
+07/19/2015 09:52:14 JNJ - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:52:14 JNJ - 2016-01-15: Inserted to table, 52 rows affected.
+07/19/2015 09:52:14 JNJ - 2017-01-20: Requesting
+07/19/2015 09:52:16 JNJ - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:52:17 JNJ - 2017-01-20: Inserted to table, 48 rows affected.
+07/19/2015 09:52:17 AAPL - 2015-06-26: Requesting
+07/19/2015 09:52:19 AAPL - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:52:19 AAPL - 2015-06-26: Inserted to table, 78 rows affected.
+07/19/2015 09:52:19 AAPL - 2015-07-02: Requesting
+07/19/2015 09:52:22 AAPL - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:52:22 AAPL - 2015-07-02: Inserted to table, 78 rows affected.
+07/19/2015 09:52:22 AAPL - 2015-07-10: Requesting
+07/19/2015 09:52:25 AAPL - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:52:25 AAPL - 2015-07-10: Inserted to table, 78 rows affected.
+07/19/2015 09:52:25 AAPL - 2015-07-17: Requesting
+07/19/2015 09:52:27 AAPL - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:52:27 AAPL - 2015-07-17: Inserted to table, 78 rows affected.
+07/19/2015 09:52:27 AAPL - 2015-07-24: Requesting
+07/19/2015 09:52:30 AAPL - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:52:30 AAPL - 2015-07-24: Inserted to table, 78 rows affected.
+07/19/2015 09:52:30 AAPL - 2015-07-31: Requesting
+07/19/2015 09:52:32 AAPL - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:52:32 AAPL - 2015-07-31: Inserted to table, 71 rows affected.
+07/19/2015 09:52:32 AAPL - 2015-08-21: Requesting
+07/19/2015 09:52:35 AAPL - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:52:35 AAPL - 2015-08-21: Inserted to table, 46 rows affected.
+07/19/2015 09:52:35 AAPL - 2015-10-16: Requesting
+07/19/2015 09:52:38 AAPL - 2015-10-16: Finished request, insert to table...
+07/19/2015 09:52:38 AAPL - 2015-10-16: Inserted to table, 54 rows affected.
+07/19/2015 09:52:38 AAPL - 2015-12-18: Requesting
+07/19/2015 09:52:40 AAPL - 2015-12-18: Finished request, insert to table...
+07/19/2015 09:52:40 AAPL - 2015-12-18: Inserted to table, 44 rows affected.
+07/19/2015 09:52:40 AAPL - 2016-01-15: Requesting
+07/19/2015 09:52:45 AAPL - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:52:45 AAPL - 2016-01-15: Inserted to table, 339 rows affected.
+07/19/2015 09:52:45 AAPL - 2016-04-15: Requesting
+07/19/2015 09:52:49 AAPL - 2016-04-15: Finished request, insert to table...
+07/19/2015 09:52:49 AAPL - 2016-04-15: Inserted to table, 39 rows affected.
+07/19/2015 09:52:49 AAPL - 2016-06-17: Requesting
+07/19/2015 09:52:51 AAPL - 2016-06-17: Finished request, insert to table...
+07/19/2015 09:52:52 AAPL - 2016-06-17: Inserted to table, 46 rows affected.
+07/19/2015 09:52:52 AAPL - 2017-01-20: Requesting
+07/19/2015 09:52:54 AAPL - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:52:54 AAPL - 2017-01-20: Inserted to table, 66 rows affected.
+07/19/2015 09:52:54 HD - 2015-06-26: Requesting
+07/19/2015 09:52:56 HD - 2015-06-26: Finished request, insert to table...
+07/19/2015 09:52:56 HD - 2015-06-26: Inserted to table, 41 rows affected.
+07/19/2015 09:52:56 HD - 2015-07-02: Requesting
+07/19/2015 09:52:59 HD - 2015-07-02: Finished request, insert to table...
+07/19/2015 09:52:59 HD - 2015-07-02: Inserted to table, 41 rows affected.
+07/19/2015 09:52:59 HD - 2015-07-10: Requesting
+07/19/2015 09:53:01 HD - 2015-07-10: Finished request, insert to table...
+07/19/2015 09:53:01 HD - 2015-07-10: Inserted to table, 41 rows affected.
+07/19/2015 09:53:01 HD - 2015-07-17: Requesting
+07/19/2015 09:53:04 HD - 2015-07-17: Finished request, insert to table...
+07/19/2015 09:53:04 HD - 2015-07-17: Inserted to table, 41 rows affected.
+07/19/2015 09:53:04 HD - 2015-07-24: Requesting
+07/19/2015 09:53:06 HD - 2015-07-24: Finished request, insert to table...
+07/19/2015 09:53:06 HD - 2015-07-24: Inserted to table, 41 rows affected.
+07/19/2015 09:53:06 HD - 2015-07-31: Requesting
+07/19/2015 09:53:08 HD - 2015-07-31: Finished request, insert to table...
+07/19/2015 09:53:08 HD - 2015-07-31: Inserted to table, 40 rows affected.
+07/19/2015 09:53:08 HD - 2015-08-21: Requesting
+07/19/2015 09:53:10 HD - 2015-08-21: Finished request, insert to table...
+07/19/2015 09:53:11 HD - 2015-08-21: Inserted to table, 39 rows affected.
+07/19/2015 09:53:11 HD - 2015-09-18: Requesting
+07/19/2015 09:53:13 HD - 2015-09-18: Finished request, insert to table...
+07/19/2015 09:53:13 HD - 2015-09-18: Inserted to table, 16 rows affected.
+07/19/2015 09:53:13 HD - 2015-11-20: Requesting
+07/19/2015 09:53:15 HD - 2015-11-20: Finished request, insert to table...
+07/19/2015 09:53:15 HD - 2015-11-20: Inserted to table, 32 rows affected.
+07/19/2015 09:53:15 HD - 2016-01-15: Requesting
+07/19/2015 09:53:18 HD - 2016-01-15: Finished request, insert to table...
+07/19/2015 09:53:18 HD - 2016-01-15: Inserted to table, 64 rows affected.
+07/19/2015 09:53:18 HD - 2016-02-19: Requesting
+07/19/2015 09:53:20 HD - 2016-02-19: Finished request, insert to table...
+07/19/2015 09:53:20 HD - 2016-02-19: Inserted to table, 19 rows affected.
+07/19/2015 09:53:20 HD - 2017-01-20: Requesting
+07/19/2015 09:53:22 HD - 2017-01-20: Finished request, insert to table...
+07/19/2015 09:53:23 HD - 2017-01-20: Inserted to table, 59 rows affected.
+07/19/2015 09:53:23 HD - 2026-03-20: Requesting
+07/19/2015 09:53:24  - : Unhandled exception. can only sort by level with a hierarchical index
 Traceback (most recent call last):
-  File "/home/zhe/GitRepos/HanlonOptionDB/pysrc/HanlonDownloader.py", line 128, in _processOne
-    mydata = tmpOption.get_options_data(expiry = exp)
+  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 140, in _processOne
+    mydata = tmpOption.get_options_data(expiry = expir)
   File "/usr/local/lib/python3.4/dist-packages/pandas_datareader/data.py", line 668, in get_options_data
     self.get_call_data)]).sortlevel()
   File "/usr/local/lib/python3.4/dist-packages/pandas_datareader/data.py", line 667, in <listcomp>
     for f in (self.get_put_data,
   File "/usr/local/lib/python3.4/dist-packages/pandas_datareader/data.py", line 883, in get_put_data
-07/05/2015 10:29:42 30 symbols loaded, ready to request data.
-07/05/2015 10:29:42 Loaded all expiry dates
-07/05/2015 10:29:42 User chooses not to update the expiry dates.
-07/05/2015 10:29:42 Connected to database: testoption
-07/05/2015 10:29:42 Requesting CSCO, 2015-06-26.
-07/05/2015 10:29:44 Finished request, insert to table...
-07/05/2015 10:29:44 Inserted to table CSCO, 27 rows affected.
-07/05/2015 10:29:44 Requesting CSCO, 2015-07-02.
-07/05/2015 10:29:45 Finished request, insert to table...
-07/05/2015 10:29:45 Inserted to table CSCO, 27 rows affected.
-07/05/2015 10:29:45 Requesting CSCO, 2015-07-10.
-07/05/2015 10:29:47 Finished request, insert to table...
-07/05/2015 10:29:47 Inserted to table CSCO, 27 rows affected.
-07/05/2015 10:29:47 Requesting CSCO, 2015-07-17.
-07/05/2015 10:29:49 Finished request, insert to table...
-07/05/2015 10:29:49 Inserted to table CSCO, 55 rows affected.
-07/05/2015 10:29:49 Requesting CSCO, 2015-07-24.
-07/05/2015 10:29:50 Finished request, insert to table...
-07/05/2015 10:29:50 Inserted to table CSCO, 23 rows affected.
-07/05/2015 10:29:50 Requesting CSCO, 2015-07-31.
-07/05/2015 10:29:52 Finished request, insert to table...
-07/05/2015 10:29:52 Inserted to table CSCO, 23 rows affected.
-07/05/2015 10:29:52 Requesting CSCO, 2015-08-21.
-07/05/2015 10:29:53 Finished request, insert to table...
-07/05/2015 10:29:53 Inserted to table CSCO, 30 rows affected.
-07/05/2015 10:29:53 Requesting CSCO, 2015-10-16.
-07/05/2015 10:29:55 Finished request, insert to table...
-07/05/2015 10:29:55 Inserted to table CSCO, 43 rows affected.
-07/05/2015 10:29:55 Requesting CSCO, 2016-01-15.
-07/05/2015 10:29:59 Finished request, insert to table...
-07/05/2015 10:29:59 Inserted to table CSCO, 47 rows affected.
-07/05/2015 10:29:59 Requesting CSCO, 2016-04-15.
-07/05/2015 10:30:00 Finished request, insert to table...
-07/05/2015 10:30:00 Inserted to table CSCO, 13 rows affected.
-07/05/2015 10:30:00 Requesting CSCO, 2017-01-20.
-07/05/2015 10:30:02 Finished request, insert to table...
-07/05/2015 10:30:02 Inserted to table CSCO, 24 rows affected.
-07/05/2015 10:30:02 Requesting NKE, 2015-06-26.
-07/05/2015 10:30:03 Finished request, insert to table...
-07/05/2015 10:30:03 Inserted to table NKE, 50 rows affected.
-07/05/2015 10:30:03 Requesting NKE, 2015-07-02.
-07/05/2015 10:30:16 Finished request, insert to table...
-07/05/2015 10:30:16 Inserted to table NKE, 50 rows affected.
-07/05/2015 10:30:16 Requesting NKE, 2015-07-10.
-07/05/2015 10:30:19 Finished request, insert to table...
-07/05/2015 10:30:19 Inserted to table NKE, 50 rows affected.
-07/05/2015 10:30:19 Requesting NKE, 2015-07-17.
-07/05/2015 10:30:21 Finished request, insert to table...
-07/05/2015 10:30:21 Inserted to table NKE, 76 rows affected.
-07/05/2015 10:30:21 Requesting NKE, 2015-07-24.
-07/05/2015 10:30:23 Finished request, insert to table...
-07/05/2015 10:30:23 Inserted to table NKE, 52 rows affected.
-07/05/2015 10:30:23 Requesting NKE, 2015-07-31.
-07/05/2015 10:30:25 Finished request, insert to table...
-07/05/2015 10:30:25 Inserted to table NKE, 50 rows affected.
-07/05/2015 10:30:25 Requesting NKE, 2015-08-21.
-07/05/2015 10:30:28 Finished request, insert to table...
-07/05/2015 10:30:28 Inserted to table NKE, 20 rows affected.
-07/05/2015 10:30:28 Requesting NKE, 2015-10-16.
-07/05/2015 10:30:31 Finished request, insert to table...
-07/05/2015 10:30:31 Inserted to table NKE, 30 rows affected.
-07/05/2015 10:30:31 Requesting NKE, 2016-01-15.
-07/05/2015 10:30:32 Finished request, insert to table...
-07/05/2015 10:30:33 Inserted to table NKE, 60 rows affected.
-07/05/2015 10:30:33 Requesting NKE, 2017-01-20.
-07/05/2015 10:30:34 Finished request, insert to table...
-07/05/2015 10:30:34 Inserted to table NKE, 58 rows affected.
-07/05/2015 10:30:34 Requesting UTX, 2015-06-26.
-07/05/2015 10:30:36 Finished request, insert to table...
-07/05/2015 10:30:36 Inserted to table UTX, 28 rows affected.
-07/05/2015 10:30:36 Requesting UTX, 2015-07-02.
-07/05/2015 10:30:37 Finished request, insert to table...
-07/05/2015 10:30:37 Inserted to table UTX, 28 rows affected.
-07/05/2015 10:30:37 Requesting UTX, 2015-07-10.
-07/05/2015 10:30:40 Finished request, insert to table...
-07/05/2015 10:30:40 Inserted to table UTX, 28 rows affected.
-07/05/2015 10:30:40 Requesting UTX, 2015-07-17.
-07/05/2015 10:30:42 Finished request, insert to table...
-07/05/2015 10:30:42 Inserted to table UTX, 38 rows affected.
-07/05/2015 10:30:42 Requesting UTX, 2015-07-24.
-07/05/2015 10:30:43 Finished request, insert to table...
-07/05/2015 10:30:43 Inserted to table UTX, 30 rows affected.
-07/05/2015 10:30:43 Requesting UTX, 2015-07-31.
-07/05/2015 10:30:47 Finished request, insert to table...
-07/05/2015 10:30:47 Inserted to table UTX, 23 rows affected.
-07/05/2015 10:30:47 Requesting UTX, 2015-08-21.
-07/05/2015 10:30:48 Finished request, insert to table...
-07/05/2015 10:30:48 Inserted to table UTX, 35 rows affected.
-07/05/2015 10:30:48 Requesting UTX, 2015-11-20.
-07/05/2015 10:30:50 Finished request, insert to table...
-07/05/2015 10:30:50 Inserted to table UTX, 28 rows affected.
-07/05/2015 10:30:50 Requesting UTX, 2016-01-15.
-07/05/2015 10:30:51 Finished request, insert to table...
-07/05/2015 10:30:52 Inserted to table UTX, 50 rows affected.
-07/05/2015 10:30:52 Requesting UTX, 2016-02-19.
-07/05/2015 10:30:53 Finished request, insert to table...
-07/05/2015 10:30:53 Inserted to table UTX, 15 rows affected.
-07/05/2015 10:30:53 Requesting UTX, 2017-01-20.
-07/05/2015 10:30:54 Finished request, insert to table...
-07/05/2015 10:30:55 Inserted to table UTX, 41 rows affected.
-07/05/2015 10:30:55 Requesting PG, 2015-06-26.
-07/05/2015 10:30:56 Finished request, insert to table...
-07/05/2015 10:30:56 Inserted to table PG, 45 rows affected.
-07/05/2015 10:30:56 Requesting PG, 2015-07-02.
-07/05/2015 10:30:58 Finished request, insert to table...
-07/05/2015 10:30:58 Inserted to table PG, 45 rows affected.
-07/05/2015 10:30:58 Requesting PG, 2015-07-10.
-07/05/2015 10:31:00 Finished request, insert to table...
-07/05/2015 10:31:00 Inserted to table PG, 45 rows affected.
-07/05/2015 10:31:00 Requesting PG, 2015-07-17.
-07/05/2015 10:31:02 Finished request, insert to table...
-07/05/2015 10:31:02 Inserted to table PG, 67 rows affected.
-07/05/2015 10:31:02 Requesting PG, 2015-07-24.
-07/05/2015 10:31:08 Finished request, insert to table...
-07/05/2015 10:31:08 Inserted to table PG, 54 rows affected.
-07/05/2015 10:31:08 Requesting PG, 2015-07-31.
-07/05/2015 10:31:10 Finished request, insert to table...
-07/05/2015 10:31:10 Inserted to table PG, 50 rows affected.
-07/05/2015 10:31:10 Requesting PG, 2015-08-21.
-07/05/2015 10:31:12 Finished request, insert to table...
-07/05/2015 10:31:12 Inserted to table PG, 22 rows affected.
-07/05/2015 10:31:12 Requesting PG, 2015-09-18.
-07/05/2015 10:31:13 Finished request, insert to table...
-07/05/2015 10:31:13 Inserted to table PG, 18 rows affected.
-07/05/2015 10:31:13 Requesting PG, 2015-10-16.
-07/05/2015 10:31:14 Finished request, insert to table...
-07/05/2015 10:31:14 Inserted to table PG, 31 rows affected.
-07/05/2015 10:31:14 Requesting PG, 2016-01-15.
-07/05/2015 10:31:16 Finished request, insert to table...
-07/05/2015 10:31:16 Inserted to table PG, 48 rows affected.
-07/05/2015 10:31:16 Requesting PG, 2017-01-20.
-07/05/2015 10:31:18 Finished request, insert to table...
-07/05/2015 10:31:18 Inserted to table PG, 46 rows affected.
-07/05/2015 10:31:18 Requesting CVX, 2015-06-26.
-07/05/2015 10:31:20 Finished request, insert to table...
-07/05/2015 10:31:20 Inserted to table CVX, 57 rows affected.
-07/05/2015 10:31:20 Requesting CVX, 2015-07-02.
-07/05/2015 10:31:22 Finished request, insert to table...
-07/05/2015 10:31:22 Inserted to table CVX, 57 rows affected.
-07/05/2015 10:31:22 Requesting CVX, 2015-07-10.
-07/05/2015 10:31:24 Finished request, insert to table...
-07/05/2015 10:31:24 Inserted to table CVX, 57 rows affected.
-07/05/2015 10:31:24 Requesting CVX, 2015-07-17.
-07/05/2015 10:31:26 Finished request, insert to table...
-07/05/2015 10:31:26 Inserted to table CVX, 72 rows affected.
-07/05/2015 10:31:26 Requesting CVX, 2015-07-24.
-07/05/2015 10:31:27 Finished request, insert to table...
-07/05/2015 10:31:27 Inserted to table CVX, 43 rows affected.
-07/05/2015 10:31:27 Requesting CVX, 2015-07-31.
-07/05/2015 10:31:29 Finished request, insert to table...
-07/05/2015 10:31:29 Inserted to table CVX, 45 rows affected.
-07/05/2015 10:31:29 Requesting CVX, 2015-08-21.
-07/05/2015 10:31:31 Finished request, insert to table...
-07/05/2015 10:31:31 Inserted to table CVX, 19 rows affected.
-07/05/2015 10:31:31 Requesting CVX, 2015-09-18.
-07/05/2015 10:31:32 Finished request, insert to table...
-07/05/2015 10:31:32 Inserted to table CVX, 33 rows affected.
-07/05/2015 10:31:32 Requesting CVX, 2015-12-18.
-07/05/2015 10:31:34 Finished request, insert to table...
-07/05/2015 10:31:34 Inserted to table CVX, 35 rows affected.
-07/05/2015 10:31:34 Requesting CVX, 2016-01-15.
-07/05/2015 10:31:35 Finished request, insert to table...
-07/05/2015 10:31:35 Inserted to table CVX, 55 rows affected.
-07/05/2015 10:31:35 Requesting CVX, 2017-01-20.
-07/05/2015 10:31:37 Finished request, insert to table...
-07/05/2015 10:31:37 Inserted to table CVX, 44 rows affected.
-07/05/2015 10:31:37 Requesting KO, 2015-06-26.
-07/05/2015 10:31:38 Finished request, insert to table...
-07/05/2015 10:31:39 Inserted to table KO, 24 rows affected.
-07/05/2015 10:31:39 Requesting KO, 2015-07-02.
-07/05/2015 10:31:40 Finished request, insert to table...
-07/05/2015 10:31:40 Inserted to table KO, 24 rows affected.
-07/05/2015 10:31:40 Requesting KO, 2015-07-10.
-07/05/2015 10:31:41 Finished request, insert to table...
-07/05/2015 10:31:41 Inserted to table KO, 24 rows affected.
-07/05/2015 10:31:41 Requesting KO, 2015-07-17.
-07/05/2015 10:31:43 Finished request, insert to table...
-07/05/2015 10:31:43 Inserted to table KO, 47 rows affected.
-07/05/2015 10:31:43 Requesting KO, 2015-07-24.
-07/05/2015 10:31:44 Finished request, insert to table...
-07/05/2015 10:31:45 Inserted to table KO, 34 rows affected.
-07/05/2015 10:31:45 Requesting KO, 2015-07-31.
-07/05/2015 10:31:46 Finished request, insert to table...
-07/05/2015 10:31:46 Inserted to table KO, 22 rows affected.
-07/05/2015 10:31:46 Requesting KO, 2015-08-21.
-07/05/2015 10:31:49 Finished request, insert to table...
-07/05/2015 10:31:49 Inserted to table KO, 46 rows affected.
-07/05/2015 10:31:49 Requesting KO, 2015-09-18.
-07/05/2015 10:31:51 Finished request, insert to table...
-07/05/2015 10:31:51 Inserted to table KO, 19 rows affected.
-07/05/2015 10:31:51 Requesting KO, 2015-11-20.
-07/05/2015 10:31:52 Finished request, insert to table...
-07/05/2015 10:31:52 Inserted to table KO, 40 rows affected.
-07/05/2015 10:31:52 Requesting KO, 2016-01-15.
-07/05/2015 10:31:54 Finished request, insert to table...
-07/05/2015 10:31:54 Inserted to table KO, 51 rows affected.
-07/05/2015 10:31:54 Requesting KO, 2016-02-19.
-07/05/2015 10:31:56 Finished request, insert to table...
-07/05/2015 10:31:56 Inserted to table KO, 22 rows affected.
-07/05/2015 10:31:56 Requesting KO, 2017-01-20.
-07/05/2015 10:31:57 Finished request, insert to table...
-07/05/2015 10:31:57 Inserted to table KO, 30 rows affected.
-07/05/2015 10:31:57 Requesting VZ, 2015-06-26.
-07/05/2015 10:31:59 Finished request, insert to table...
-07/05/2015 10:31:59 Inserted to table VZ, 41 rows affected.
-07/05/2015 10:31:59 Requesting VZ, 2015-07-02.
-07/05/2015 10:32:01 Finished request, insert to table...
-07/05/2015 10:32:01 Inserted to table VZ, 41 rows affected.
-07/05/2015 10:32:01 Requesting VZ, 2015-07-10.
-07/05/2015 10:32:03 Finished request, insert to table...
-07/05/2015 10:32:03 Inserted to table VZ, 41 rows affected.
-07/05/2015 10:32:03 Requesting VZ, 2015-07-17.
-07/05/2015 10:32:05 Finished request, insert to table...
-07/05/2015 10:32:05 Inserted to table VZ, 57 rows affected.
-07/05/2015 10:32:05 Requesting VZ, 2015-07-24.
-07/05/2015 10:32:07 Finished request, insert to table...
-07/05/2015 10:32:07 Inserted to table VZ, 37 rows affected.
-07/05/2015 10:32:07 Requesting VZ, 2015-07-31.
-07/05/2015 10:32:09 Finished request, insert to table...
-07/05/2015 10:32:09 Inserted to table VZ, 32 rows affected.
-07/05/2015 10:32:09 Requesting VZ, 2015-08-21.
-07/05/2015 10:32:10 Finished request, insert to table...
-07/05/2015 10:32:11 Inserted to table VZ, 36 rows affected.
-07/05/2015 10:32:11 Requesting VZ, 2015-10-16.
-07/05/2015 10:32:12 Finished request, insert to table...
-07/05/2015 10:32:12 Inserted to table VZ, 46 rows affected.
-07/05/2015 10:32:12 Requesting VZ, 2016-01-15.
-07/05/2015 10:32:14 Finished request, insert to table...
-07/05/2015 10:32:14 Inserted to table VZ, 52 rows affected.
-07/05/2015 10:32:14 Requesting VZ, 2016-04-15.
-07/05/2015 10:32:15 Finished request, insert to table...
-07/05/2015 10:32:15 Inserted to table VZ, 10 rows affected.
-07/05/2015 10:32:15 Requesting VZ, 2017-01-20.
-07/05/2015 10:32:17 Finished request, insert to table...
-07/05/2015 10:32:17 Inserted to table VZ, 35 rows affected.
-07/05/2015 10:32:17 Requesting DIS, 2015-06-26.
-07/05/2015 10:32:19 Finished request, insert to table...
-07/05/2015 10:32:19 Inserted to table DIS, 48 rows affected.
-07/05/2015 10:32:19 Requesting DIS, 2015-07-02.
-07/05/2015 10:32:23 Finished request, insert to table...
-07/05/2015 10:32:24 Inserted to table DIS, 48 rows affected.
-07/05/2015 10:32:24 Requesting DIS, 2015-07-10.
-07/05/2015 10:32:25 Finished request, insert to table...
-07/05/2015 10:32:26 Inserted to table DIS, 48 rows affected.
-07/05/2015 10:32:26 Requesting DIS, 2015-07-17.
-07/05/2015 10:32:28 Finished request, insert to table...
-07/05/2015 10:32:29 Inserted to table DIS, 69 rows affected.
-07/05/2015 10:32:29 Requesting DIS, 2015-07-24.
-07/05/2015 10:32:33 Finished request, insert to table...
-07/05/2015 10:32:33 Inserted to table DIS, 44 rows affected.
-07/05/2015 10:32:33 Requesting DIS, 2015-07-31.
-07/05/2015 10:32:34 Finished request, insert to table...
-07/05/2015 10:32:35 Inserted to table DIS, 39 rows affected.
-07/05/2015 10:32:35 Requesting DIS, 2015-08-21.
-07/05/2015 10:32:36 Finished request, insert to table...
-07/05/2015 10:32:36 Inserted to table DIS, 22 rows affected.
-07/05/2015 10:32:36 Requesting DIS, 2015-09-18.
-07/05/2015 10:32:38 Finished request, insert to table...
-07/05/2015 10:32:38 Inserted to table DIS, 15 rows affected.
-07/05/2015 10:32:38 Requesting DIS, 2015-10-16.
-07/05/2015 10:32:41 Finished request, insert to table...
-07/05/2015 10:32:41 Inserted to table DIS, 32 rows affected.
-07/05/2015 10:32:41 Requesting DIS, 2016-01-15.
-07/05/2015 10:32:43 Finished request, insert to table...
-07/05/2015 10:32:43 Inserted to table DIS, 73 rows affected.
-07/05/2015 10:32:43 Requesting DIS, 2017-01-20.
-07/05/2015 10:32:45 Finished request, insert to table...
-07/05/2015 10:32:45 Inserted to table DIS, 65 rows affected.
-07/05/2015 10:32:45 Requesting MCD, 2015-06-26.
-07/05/2015 10:32:47 Finished request, insert to table...
-07/05/2015 10:32:47 Inserted to table MCD, 58 rows affected.
-07/05/2015 10:32:47 Requesting MCD, 2015-07-02.
-07/05/2015 10:32:49 Finished request, insert to table...
-07/05/2015 10:32:49 Inserted to table MCD, 58 rows affected.
-07/05/2015 10:32:49 Requesting MCD, 2015-07-10.
-07/05/2015 10:32:51 Finished request, insert to table...
-07/05/2015 10:32:51 Inserted to table MCD, 58 rows affected.
-07/05/2015 10:32:51 Requesting MCD, 2015-07-17.
-07/05/2015 10:32:53 Finished request, insert to table...
-07/05/2015 10:32:53 Inserted to table MCD, 64 rows affected.
-07/05/2015 10:32:53 Requesting MCD, 2015-07-24.
-07/05/2015 10:32:55 Finished request, insert to table...
-07/05/2015 10:32:55 Inserted to table MCD, 57 rows affected.
-07/05/2015 10:32:55 Requesting MCD, 2015-07-31.
-07/05/2015 10:32:57 Finished request, insert to table...
-07/05/2015 10:32:57 Inserted to table MCD, 42 rows affected.
-07/05/2015 10:32:57 Requesting MCD, 2015-08-21.
-07/05/2015 10:32:58 Finished request, insert to table...
-07/05/2015 10:32:58 Inserted to table MCD, 23 rows affected.
-07/05/2015 10:32:58 Requesting MCD, 2015-09-18.
-07/05/2015 10:33:00 Finished request, insert to table...
-07/05/2015 10:33:00 Inserted to table MCD, 32 rows affected.
-07/05/2015 10:33:00 Requesting MCD, 2015-12-18.
-07/05/2015 10:33:01 Finished request, insert to table...
-07/05/2015 10:33:01 Inserted to table MCD, 31 rows affected.
-07/05/2015 10:33:01 Requesting MCD, 2016-01-15.
-07/05/2015 10:33:03 Finished request, insert to table...
-07/05/2015 10:33:03 Inserted to table MCD, 49 rows affected.
-07/05/2015 10:33:03 Requesting MCD, 2016-03-18.
-07/05/2015 10:33:05 Finished request, insert to table...
-07/05/2015 10:33:05 Inserted to table MCD, 30 rows affected.
-07/05/2015 10:33:05 Requesting MCD, 2017-01-20.
-07/05/2015 10:33:07 Finished request, insert to table...
-07/05/2015 10:33:07 Inserted to table MCD, 47 rows affected.
-07/05/2015 10:33:07 Requesting GE, 2015-06-26.
-07/05/2015 10:33:08 Finished request, insert to table...
-07/05/2015 10:33:08 Inserted to table GE, 18 rows affected.
-07/05/2015 10:33:08 Requesting GE, 2015-07-02.
-07/05/2015 10:33:10 Finished request, insert to table...
-07/05/2015 10:33:10 Inserted to table GE, 18 rows affected.
-07/05/2015 10:33:10 Requesting GE, 2015-07-10.
-07/05/2015 10:33:11 Finished request, insert to table...
-07/05/2015 10:33:11 Inserted to table GE, 18 rows affected.
-07/05/2015 10:33:11 Requesting GE, 2015-07-17.
-07/05/2015 10:33:13 Finished request, insert to table...
-07/05/2015 10:33:13 Inserted to table GE, 46 rows affected.
-07/05/2015 10:33:13 Requesting GE, 2015-07-24.
-07/05/2015 10:33:14 Finished request, insert to table...
-07/05/2015 10:33:14 Inserted to table GE, 22 rows affected.
-07/05/2015 10:33:14 Requesting GE, 2015-07-31.
-07/05/2015 10:33:15 Finished request, insert to table...
-07/05/2015 10:33:16 Inserted to table GE, 19 rows affected.
-07/05/2015 10:33:16 Requesting GE, 2015-08-21.
-07/05/2015 10:33:17 Finished request, insert to table...
-07/05/2015 10:33:17 Inserted to table GE, 28 rows affected.
-07/05/2015 10:33:17 Requesting GE, 2015-09-18.
-07/05/2015 10:33:21 Finished request, insert to table...
-07/05/2015 10:33:21 Inserted to table GE, 41 rows affected.
-07/05/2015 10:33:21 Requesting GE, 2015-10-16.
-07/05/2015 10:33:23 Finished request, insert to table...
-07/05/2015 10:33:23 Inserted to table GE, 17 rows affected.
-07/05/2015 10:33:23 Requesting GE, 2015-12-18.
-07/05/2015 10:33:26 Finished request, insert to table...
-07/05/2015 10:33:26 Inserted to table GE, 45 rows affected.
-07/05/2015 10:33:26 Requesting GE, 2016-01-15.
-07/05/2015 10:33:27 Finished request, insert to table...
-07/05/2015 10:33:27 Inserted to table GE, 47 rows affected.
-07/05/2015 10:33:27 Requesting GE, 2017-01-20.
-07/05/2015 10:33:29 Finished request, insert to table...
-07/05/2015 10:33:29 Inserted to table GE, 25 rows affected.
-07/05/2015 10:33:29 Requesting UNH, 2015-06-26.
-07/05/2015 10:33:30 Finished request, insert to table...
-07/05/2015 10:33:30 Inserted to table UNH, 48 rows affected.
-07/05/2015 10:33:30 Requesting UNH, 2015-07-02.
-07/05/2015 10:33:32 Finished request, insert to table...
-07/05/2015 10:33:32 Inserted to table UNH, 48 rows affected.
-07/05/2015 10:33:32 Requesting UNH, 2015-07-10.
-07/05/2015 10:33:34 Finished request, insert to table...
-07/05/2015 10:33:34 Inserted to table UNH, 48 rows affected.
-07/05/2015 10:33:34 Requesting UNH, 2015-07-17.
-07/05/2015 10:33:36 Finished request, insert to table...
-07/05/2015 10:33:36 Inserted to table UNH, 55 rows affected.
-07/05/2015 10:33:36 Requesting UNH, 2015-07-24.
-07/05/2015 10:33:37 Finished request, insert to table...
-07/05/2015 10:33:37 Inserted to table UNH, 41 rows affected.
-07/05/2015 10:33:37 Requesting UNH, 2015-07-31.
-07/05/2015 10:33:39 Finished request, insert to table...
-07/05/2015 10:33:39 Inserted to table UNH, 44 rows affected.
-07/05/2015 10:33:39 Requesting UNH, 2015-08-21.
-07/05/2015 10:33:42 Finished request, insert to table...
-07/05/2015 10:33:42 Inserted to table UNH, 17 rows affected.
-07/05/2015 10:33:42 Requesting UNH, 2015-09-18.
-07/05/2015 10:33:44 Finished request, insert to table...
-07/05/2015 10:33:44 Inserted to table UNH, 38 rows affected.
-07/05/2015 10:33:44 Requesting UNH, 2015-12-18.
-07/05/2015 10:33:46 Finished request, insert to table...
-07/05/2015 10:33:46 Inserted to table UNH, 34 rows affected.
-07/05/2015 10:33:46 Requesting UNH, 2016-01-15.
-07/05/2015 10:33:48 Finished request, insert to table...
-07/05/2015 10:33:48 Inserted to table UNH, 69 rows affected.
-07/05/2015 10:33:48 Requesting UNH, 2017-01-20.
-07/05/2015 10:33:50 Finished request, insert to table...
-07/05/2015 10:33:50 Inserted to table UNH, 55 rows affected.
-07/05/2015 10:33:50 Requesting WMT, 2015-06-26.
-07/05/2015 10:33:51 Finished request, insert to table...
-07/05/2015 10:33:52 Inserted to table WMT, 60 rows affected.
-07/05/2015 10:33:52 Requesting WMT, 2015-07-02.
-07/05/2015 10:33:53 Finished request, insert to table...
-07/05/2015 10:33:54 Inserted to table WMT, 60 rows affected.
-07/05/2015 10:33:54 Requesting WMT, 2015-07-10.
-07/05/2015 10:33:56 Finished request, insert to table...
-07/05/2015 10:33:56 Inserted to table WMT, 60 rows affected.
-07/05/2015 10:33:56 Requesting WMT, 2015-07-17.
-07/05/2015 10:33:58 Finished request, insert to table...
-07/05/2015 10:33:58 Inserted to table WMT, 73 rows affected.
-07/05/2015 10:33:58 Requesting WMT, 2015-07-24.
-07/05/2015 10:34:00 Finished request, insert to table...
-07/05/2015 10:34:00 Inserted to table WMT, 62 rows affected.
-07/05/2015 10:34:00 Requesting WMT, 2015-07-31.
-07/05/2015 10:34:03 Finished request, insert to table...
-07/05/2015 10:34:04 Inserted to table WMT, 53 rows affected.
-07/05/2015 10:34:04 Requesting WMT, 2015-08-21.
-07/05/2015 10:34:05 Finished request, insert to table...
-07/05/2015 10:34:05 Inserted to table WMT, 30 rows affected.
-07/05/2015 10:34:05 Requesting WMT, 2015-09-18.
-07/05/2015 10:34:07 Finished request, insert to table...
-07/05/2015 10:34:07 Inserted to table WMT, 49 rows affected.
-07/05/2015 10:34:07 Requesting WMT, 2015-12-18.
-07/05/2015 10:34:08 Finished request, insert to table...
-07/05/2015 10:34:08 Inserted to table WMT, 37 rows affected.
-07/05/2015 10:34:08 Requesting WMT, 2016-01-15.
-07/05/2015 10:34:10 Finished request, insert to table...
-07/05/2015 10:34:10 Inserted to table WMT, 51 rows affected.
-07/05/2015 10:34:10 Requesting WMT, 2017-01-20.
-07/05/2015 10:34:12 Finished request, insert to table...
-07/05/2015 10:34:12 Inserted to table WMT, 52 rows affected.
-07/05/2015 10:34:12 Requesting TRV, 2015-07-17.
-07/05/2015 10:34:15 Finished request, insert to table...
-07/05/2015 10:34:15 Inserted to table TRV, 22 rows affected.
-07/05/2015 10:34:15 Requesting TRV, 2015-08-21.
-07/05/2015 10:34:17 Finished request, insert to table...
-07/05/2015 10:34:17 Inserted to table TRV, 10 rows affected.
-07/05/2015 10:34:17 Requesting TRV, 2015-10-16.
-07/05/2015 10:34:21 Finished request, insert to table...
-07/05/2015 10:34:21 Inserted to table TRV, 23 rows affected.
-07/05/2015 10:34:21 Requesting TRV, 2016-01-15.
-07/05/2015 10:34:23 Finished request, insert to table...
-07/05/2015 10:34:23 Inserted to table TRV, 49 rows affected.
-07/05/2015 10:34:23 Requesting TRV, 2017-01-20.
-07/05/2015 10:34:24 Finished request, insert to table...
-07/05/2015 10:34:24 Inserted to table TRV, 38 rows affected.
-07/05/2015 10:34:24 Requesting MRK, 2015-06-26.
-07/05/2015 10:34:26 Finished request, insert to table...
-07/05/2015 10:34:26 Inserted to table MRK, 44 rows affected.
-07/05/2015 10:34:26 Requesting MRK, 2015-07-02.
-07/05/2015 10:34:30 Finished request, insert to table...
-07/05/2015 10:34:30 Inserted to table MRK, 44 rows affected.
-07/05/2015 10:34:30 Requesting MRK, 2015-07-10.
-07/05/2015 10:34:31 Finished request, insert to table...
-07/05/2015 10:34:31 Inserted to table MRK, 44 rows affected.
-07/05/2015 10:34:31 Requesting MRK, 2015-07-17.
-07/05/2015 10:34:33 Finished request, insert to table...
-07/05/2015 10:34:33 Inserted to table MRK, 53 rows affected.
-07/05/2015 10:34:33 Requesting MRK, 2015-07-24.
-07/05/2015 10:34:35 Finished request, insert to table...
-07/05/2015 10:34:35 Inserted to table MRK, 38 rows affected.
-07/05/2015 10:34:35 Requesting MRK, 2015-07-31.
-07/05/2015 10:34:37 Finished request, insert to table...
-07/05/2015 10:34:37 Inserted to table MRK, 42 rows affected.
-07/05/2015 10:34:37 Requesting MRK, 2015-08-21.
-07/05/2015 10:34:38 Finished request, insert to table...
-07/05/2015 10:34:38 Inserted to table MRK, 18 rows affected.
-07/05/2015 10:34:38 Requesting MRK, 2015-09-18.
-07/05/2015 10:34:39 Finished request, insert to table...
-07/05/2015 10:34:39 Inserted to table MRK, 9 rows affected.
-07/05/2015 10:34:39 Requesting MRK, 2015-10-16.
-07/05/2015 10:34:41 Finished request, insert to table...
-07/05/2015 10:34:41 Inserted to table MRK, 29 rows affected.
-07/05/2015 10:34:41 Requesting MRK, 2016-01-15.
-07/05/2015 10:34:43 Finished request, insert to table...
-07/05/2015 10:34:43 Inserted to table MRK, 43 rows affected.
-07/05/2015 10:34:43 Requesting MRK, 2017-01-20.
-07/05/2015 10:34:44 Finished request, insert to table...
-07/05/2015 10:34:44 Inserted to table MRK, 42 rows affected.
-07/05/2015 10:34:44 Requesting HD, 2015-06-26.
-07/05/2015 10:34:46 Finished request, insert to table...
-07/05/2015 10:34:46 Inserted to table HD, 41 rows affected.
-07/05/2015 10:34:46 Requesting HD, 2015-07-02.
-07/05/2015 10:34:47 Finished request, insert to table...
-07/05/2015 10:34:47 Inserted to table HD, 41 rows affected.
-07/05/2015 10:34:47 Requesting HD, 2015-07-10.
-07/05/2015 10:34:49 Finished request, insert to table...
-07/05/2015 10:34:49 Inserted to table HD, 41 rows affected.
-07/05/2015 10:34:49 Requesting HD, 2015-07-17.
-07/05/2015 10:34:51 Finished request, insert to table...
-07/05/2015 10:34:51 Inserted to table HD, 46 rows affected.
-07/05/2015 10:34:51 Requesting HD, 2015-07-24.
-07/05/2015 10:34:52 Finished request, insert to table...
-07/05/2015 10:34:52 Inserted to table HD, 39 rows affected.
-07/05/2015 10:34:52 Requesting HD, 2015-07-31.
-07/05/2015 10:34:54 Finished request, insert to table...
-07/05/2015 10:34:54 Inserted to table HD, 39 rows affected.
-07/05/2015 10:34:54 Requesting HD, 2015-08-21.
-07/05/2015 10:34:56 Finished request, insert to table...
-07/05/2015 10:34:56 Inserted to table HD, 39 rows affected.
-07/05/2015 10:34:56 Requesting HD, 2015-09-18.
-07/05/2015 10:34:57 Finished request, insert to table...
-07/05/2015 10:34:57 Inserted to table HD, 13 rows affected.
-07/05/2015 10:34:57 Requesting HD, 2015-11-20.
-07/05/2015 10:34:59 Finished request, insert to table...
-07/05/2015 10:34:59 Inserted to table HD, 32 rows affected.
-07/05/2015 10:34:59 Requesting HD, 2016-01-15.
-07/05/2015 10:35:00 Finished request, insert to table...
-07/05/2015 10:35:00 Inserted to table HD, 64 rows affected.
-07/05/2015 10:35:00 Requesting HD, 2016-02-19.
-07/05/2015 10:35:02 Finished request, insert to table...
-07/05/2015 10:35:02 Inserted to table HD, 12 rows affected.
-07/05/2015 10:35:02 Requesting HD, 2017-01-20.
-07/05/2015 10:35:03 Finished request, insert to table...
-07/05/2015 10:35:04 Inserted to table HD, 59 rows affected.
-07/05/2015 10:35:04 Requesting HD, 2026-03-20.
-07/05/2015 10:35:05 Finished request, insert to table...
-07/05/2015 10:35:05 Inserted to table HD, 0 rows affected.
-07/05/2015 10:35:05 Requesting IBM, 2015-06-26.
-07/05/2015 10:35:06 Finished request, insert to table...
-07/05/2015 10:35:06 Inserted to table IBM, 24 rows affected.
-07/05/2015 10:35:06 Requesting IBM, 2015-07-02.
-07/05/2015 10:35:07 Finished request, insert to table...
-07/05/2015 10:35:07 Inserted to table IBM, 24 rows affected.
-07/05/2015 10:35:07 Requesting IBM, 2015-07-10.
-07/05/2015 10:35:09 Finished request, insert to table...
-07/05/2015 10:35:09 Inserted to table IBM, 24 rows affected.
-07/05/2015 10:35:09 Requesting IBM, 2015-07-17.
-07/05/2015 10:35:12 Finished request, insert to table...
-07/05/2015 10:35:12 Inserted to table IBM, 61 rows affected.
-07/05/2015 10:35:12 Requesting IBM, 2015-07-24.
-07/05/2015 10:35:13 Finished request, insert to table...
-07/05/2015 10:35:14 Inserted to table IBM, 34 rows affected.
-07/05/2015 10:35:14 Requesting IBM, 2015-07-31.
-07/05/2015 10:35:15 Finished request, insert to table...
-07/05/2015 10:35:15 Inserted to table IBM, 30 rows affected.
-07/05/2015 10:35:15 Requesting IBM, 2015-08-21.
-07/05/2015 10:35:17 Finished request, insert to table...
-07/05/2015 10:35:17 Inserted to table IBM, 25 rows affected.
-07/05/2015 10:35:17 Requesting IBM, 2015-09-18.
-07/05/2015 10:35:18 Finished request, insert to table...
-07/05/2015 10:35:18 Inserted to table IBM, 14 rows affected.
-07/05/2015 10:35:18 Requesting IBM, 2015-10-16.
-07/05/2015 10:35:20 Finished request, insert to table...
-07/05/2015 10:35:20 Inserted to table IBM, 48 rows affected.
-07/05/2015 10:35:20 Requesting IBM, 2016-01-15.
-07/05/2015 10:35:22 Finished request, insert to table...
-07/05/2015 10:35:22 Inserted to table IBM, 72 rows affected.
-07/05/2015 10:35:22 Requesting IBM, 2017-01-20.
-07/05/2015 10:35:25 Finished request, insert to table...
-07/05/2015 10:35:25 Inserted to table IBM, 64 rows affected.
-07/05/2015 10:35:25 Requesting MMM, 2015-06-26.
-07/05/2015 10:35:27 Finished request, insert to table...
-07/05/2015 10:35:27 Inserted to table MMM, 18 rows affected.
-07/05/2015 10:35:27 Requesting MMM, 2015-07-02.
-07/05/2015 10:35:28 Finished request, insert to table...
-07/05/2015 10:35:28 Inserted to table MMM, 18 rows affected.
-07/05/2015 10:35:28 Requesting MMM, 2015-07-10.
-07/05/2015 10:35:29 Finished request, insert to table...
-07/05/2015 10:35:29 Inserted to table MMM, 18 rows affected.
-07/05/2015 10:35:29 Requesting MMM, 2015-07-17.
-07/05/2015 10:35:31 Finished request, insert to table...
-07/05/2015 10:35:31 Inserted to table MMM, 60 rows affected.
-07/05/2015 10:35:31 Requesting MMM, 2015-07-24.
-07/05/2015 10:35:32 Finished request, insert to table...
-07/05/2015 10:35:32 Inserted to table MMM, 25 rows affected.
-07/05/2015 10:35:32 Requesting MMM, 2015-07-31.
-07/05/2015 10:35:34 Finished request, insert to table...
-07/05/2015 10:35:34 Inserted to table MMM, 26 rows affected.
-07/05/2015 10:35:34 Requesting MMM, 2015-08-21.
-07/05/2015 10:35:35 Finished request, insert to table...
-07/05/2015 10:35:35 Inserted to table MMM, 16 rows affected.
-07/05/2015 10:35:35 Requesting MMM, 2015-10-16.
-07/05/2015 10:35:37 Finished request, insert to table...
-07/05/2015 10:35:37 Inserted to table MMM, 40 rows affected.
-07/05/2015 10:35:37 Requesting MMM, 2016-01-15.
-07/05/2015 10:35:38 Finished request, insert to table...
-07/05/2015 10:35:38 Inserted to table MMM, 57 rows affected.
-07/05/2015 10:35:38 Requesting MMM, 2017-01-20.
-07/05/2015 10:35:40 Finished request, insert to table...
-07/05/2015 10:35:40 Inserted to table MMM, 56 rows affected.
-07/05/2015 10:35:40 Requesting JNJ, 2015-06-26.
-07/05/2015 10:35:41 Finished request, insert to table...
-07/05/2015 10:35:42 Inserted to table JNJ, 40 rows affected.
-07/05/2015 10:35:42 Requesting JNJ, 2015-07-02.
-07/05/2015 10:35:43 Finished request, insert to table...
-07/05/2015 10:35:43 Inserted to table JNJ, 40 rows affected.
-07/05/2015 10:35:43 Requesting JNJ, 2015-07-10.
-07/05/2015 10:35:45 Finished request, insert to table...
-07/05/2015 10:35:45 Inserted to table JNJ, 40 rows affected.
-07/05/2015 10:35:45 Requesting JNJ, 2015-07-17.
-07/05/2015 10:35:47 Finished request, insert to table...
-07/05/2015 10:35:47 Inserted to table JNJ, 57 rows affected.
-07/05/2015 10:35:47 Requesting JNJ, 2015-07-24.
-07/05/2015 10:35:49 Finished request, insert to table...
-07/05/2015 10:35:49 Inserted to table JNJ, 38 rows affected.
-07/05/2015 10:35:49 Requesting JNJ, 2015-07-31.
-07/05/2015 10:35:50 Finished request, insert to table...
-07/05/2015 10:35:50 Inserted to table JNJ, 32 rows affected.
-07/05/2015 10:35:50 Requesting JNJ, 2015-08-21.
-07/05/2015 10:35:52 Finished request, insert to table...
-07/05/2015 10:35:52 Inserted to table JNJ, 24 rows affected.
-07/05/2015 10:35:52 Requesting JNJ, 2015-09-18.
-07/05/2015 10:35:53 Finished request, insert to table...
-07/05/2015 10:35:53 Inserted to table JNJ, 9 rows affected.
-07/05/2015 10:35:53 Requesting JNJ, 2015-10-16.
-07/05/2015 10:35:54 Finished request, insert to table...
-07/05/2015 10:35:54 Inserted to table JNJ, 28 rows affected.
-07/05/2015 10:35:54 Requesting JNJ, 2016-01-15.
-07/05/2015 10:35:57 Finished request, insert to table...
-07/05/2015 10:35:57 Inserted to table JNJ, 52 rows affected.
-07/05/2015 10:35:57 Requesting JNJ, 2017-01-20.
-07/05/2015 10:35:58 Finished request, insert to table...
-07/05/2015 10:35:58 Inserted to table JNJ, 48 rows affected.
-07/05/2015 10:35:58 Requesting CAT, 2015-06-26.
-07/05/2015 10:36:00 Finished request, insert to table...
-07/05/2015 10:36:00 Inserted to table CAT, 46 rows affected.
-07/05/2015 10:36:00 Requesting CAT, 2015-07-02.
-07/05/2015 10:36:02 Finished request, insert to table...
-07/05/2015 10:36:02 Inserted to table CAT, 46 rows affected.
-07/05/2015 10:36:02 Requesting CAT, 2015-07-10.
-07/05/2015 10:36:03 Finished request, insert to table...
-07/05/2015 10:36:03 Inserted to table CAT, 46 rows affected.
-07/05/2015 10:36:03 Requesting CAT, 2015-07-17.
-07/05/2015 10:36:05 Finished request, insert to table...
-07/05/2015 10:36:05 Inserted to table CAT, 70 rows affected.
-07/05/2015 10:36:05 Requesting CAT, 2015-07-24.
-07/05/2015 10:36:07 Finished request, insert to table...
-07/05/2015 10:36:07 Inserted to table CAT, 59 rows affected.
-07/05/2015 10:36:07 Requesting CAT, 2015-07-31.
-07/05/2015 10:36:09 Finished request, insert to table...
-07/05/2015 10:36:09 Inserted to table CAT, 51 rows affected.
-07/05/2015 10:36:09 Requesting CAT, 2015-08-21.
-07/05/2015 10:36:11 Finished request, insert to table...
-07/05/2015 10:36:11 Inserted to table CAT, 41 rows affected.
-07/05/2015 10:36:11 Requesting CAT, 2015-09-18.
-07/05/2015 10:36:12 Finished request, insert to table...
-07/05/2015 10:36:12 Inserted to table CAT, 17 rows affected.
-07/05/2015 10:36:12 Requesting CAT, 2015-11-20.
-07/05/2015 10:36:15 Finished request, insert to table...
-07/05/2015 10:36:15 Inserted to table CAT, 43 rows affected.
-07/05/2015 10:36:15 Requesting CAT, 2016-01-15.
-07/05/2015 10:36:17 Finished request, insert to table...
-07/05/2015 10:36:17 Inserted to table CAT, 62 rows affected.
-07/05/2015 10:36:17 Requesting CAT, 2016-02-19.
-07/05/2015 10:36:18 Finished request, insert to table...
-07/05/2015 10:36:18 Inserted to table CAT, 21 rows affected.
-07/05/2015 10:36:18 Requesting CAT, 2017-01-20.
-07/05/2015 10:36:20 Finished request, insert to table...
-07/05/2015 10:36:20 Inserted to table CAT, 63 rows affected.
-07/05/2015 10:36:20 Requesting XOM, 2015-06-26.
-07/05/2015 10:36:22 Finished request, insert to table...
-07/05/2015 10:36:22 Inserted to table XOM, 46 rows affected.
-07/05/2015 10:36:22 Requesting XOM, 2015-07-02.
-07/05/2015 10:36:23 Finished request, insert to table...
-07/05/2015 10:36:23 Inserted to table XOM, 46 rows affected.
-07/05/2015 10:36:23 Requesting XOM, 2015-07-10.
-07/05/2015 10:36:25 Finished request, insert to table...
-07/05/2015 10:36:25 Inserted to table XOM, 46 rows affected.
-07/05/2015 10:36:25 Requesting XOM, 2015-07-17.
-07/05/2015 10:36:28 Finished request, insert to table...
-07/05/2015 10:36:28 Inserted to table XOM, 79 rows affected.
-07/05/2015 10:36:28 Requesting XOM, 2015-07-24.
-07/05/2015 10:36:29 Finished request, insert to table...
-07/05/2015 10:36:29 Inserted to table XOM, 48 rows affected.
-07/05/2015 10:36:29 Requesting XOM, 2015-07-31.
-07/05/2015 10:36:31 Finished request, insert to table...
-07/05/2015 10:36:31 Inserted to table XOM, 40 rows affected.
-07/05/2015 10:36:31 Requesting XOM, 2015-08-21.
-07/05/2015 10:36:32 Finished request, insert to table...
-07/05/2015 10:36:32 Inserted to table XOM, 24 rows affected.
-07/05/2015 10:36:32 Requesting XOM, 2015-09-18.
-07/05/2015 10:36:34 Finished request, insert to table...
-07/05/2015 10:36:34 Inserted to table XOM, 14 rows affected.
-07/05/2015 10:36:34 Requesting XOM, 2015-10-16.
-07/05/2015 10:36:35 Finished request, insert to table...
-07/05/2015 10:36:35 Inserted to table XOM, 37 rows affected.
-07/05/2015 10:36:35 Requesting XOM, 2016-01-15.
-07/05/2015 10:36:37 Finished request, insert to table...
-07/05/2015 10:36:37 Inserted to table XOM, 52 rows affected.
-07/05/2015 10:36:37 Requesting XOM, 2017-01-20.
-07/05/2015 10:36:39 Finished request, insert to table...
-07/05/2015 10:36:39 Inserted to table XOM, 52 rows affected.
-07/05/2015 10:36:39 Requesting DD, 2015-06-26.
-07/05/2015 10:36:43 Finished request, insert to table...
-07/05/2015 10:36:43 Inserted to table DD, 46 rows affected.
-07/05/2015 10:36:43 Requesting DD, 2015-07-02.
-07/05/2015 10:36:45 Finished request, insert to table...
-07/05/2015 10:36:45 Inserted to table DD, 46 rows affected.
-07/05/2015 10:36:45 Requesting DD, 2015-07-10.
-07/05/2015 10:36:47 Finished request, insert to table...
-07/05/2015 10:36:47 Inserted to table DD, 46 rows affected.
-07/05/2015 10:36:47 Requesting DD, 2015-07-17.
-07/05/2015 10:36:49 Finished request, insert to table...
-07/05/2015 10:36:49 Inserted to table DD, 67 rows affected.
-07/05/2015 10:36:49 Requesting DD, 2015-07-24.
-07/05/2015 10:36:51 Finished request, insert to table...
-07/05/2015 10:36:51 Inserted to table DD, 44 rows affected.
-07/05/2015 10:36:51 Requesting DD, 2015-07-31.
-07/05/2015 10:36:52 Finished request, insert to table...
-07/05/2015 10:36:52 Inserted to table DD, 43 rows affected.
-07/05/2015 10:36:52 Requesting DD, 2015-08-21.
-07/05/2015 10:36:54 Finished request, insert to table...
-07/05/2015 10:36:54 Inserted to table DD, 17 rows affected.
-07/05/2015 10:36:54 Requesting DD, 2015-10-16.
-07/05/2015 10:36:55 Finished request, insert to table...
-07/05/2015 10:36:55 Inserted to table DD, 32 rows affected.
-07/05/2015 10:36:55 Requesting DD, 2016-01-15.
-07/05/2015 10:36:57 Finished request, insert to table...
-07/05/2015 10:36:57 Inserted to table DD, 50 rows affected.
-07/05/2015 10:36:57 Requesting DD, 2017-01-20.
-07/05/2015 10:36:59 Finished request, insert to table...
-07/05/2015 10:36:59 Inserted to table DD, 48 rows affected.
-07/05/2015 10:36:59 Requesting INTC, 2015-06-26.
-07/05/2015 10:37:00 Finished request, insert to table...
-07/05/2015 10:37:00 Inserted to table INTC, 40 rows affected.
-07/05/2015 10:37:00 Requesting INTC, 2015-07-02.
-07/05/2015 10:37:02 Finished request, insert to table...
-07/05/2015 10:37:02 Inserted to table INTC, 40 rows affected.
-07/05/2015 10:37:02 Requesting INTC, 2015-07-10.
-07/05/2015 10:37:03 Finished request, insert to table...
-07/05/2015 10:37:04 Inserted to table INTC, 40 rows affected.
-07/05/2015 10:37:04 Requesting INTC, 2015-07-17.
-07/05/2015 10:37:05 Finished request, insert to table...
-07/05/2015 10:37:05 Inserted to table INTC, 77 rows affected.
-07/05/2015 10:37:05 Requesting INTC, 2015-07-24.
-07/05/2015 10:37:07 Finished request, insert to table...
-07/05/2015 10:37:07 Inserted to table INTC, 39 rows affected.
-07/05/2015 10:37:07 Requesting INTC, 2015-07-31.
-07/05/2015 10:37:08 Finished request, insert to table...
-07/05/2015 10:37:08 Inserted to table INTC, 29 rows affected.
-07/05/2015 10:37:08 Requesting INTC, 2015-08-21.
-07/05/2015 10:37:13 Finished request, insert to table...
-07/05/2015 10:37:13 Inserted to table INTC, 36 rows affected.
-07/05/2015 10:37:13 Requesting INTC, 2015-10-16.
-07/05/2015 10:37:16 Finished request, insert to table...
-07/05/2015 10:37:16 Inserted to table INTC, 55 rows affected.
-07/05/2015 10:37:16 Requesting INTC, 2016-01-15.
-07/05/2015 10:37:18 Finished request, insert to table...
-07/05/2015 10:37:18 Inserted to table INTC, 57 rows affected.
-07/05/2015 10:37:18 Requesting INTC, 2016-04-15.
-07/05/2015 10:37:19 Finished request, insert to table...
-07/05/2015 10:37:19 Inserted to table INTC, 13 rows affected.
-07/05/2015 10:37:19 Requesting INTC, 2017-01-20.
-07/05/2015 10:37:21 Finished request, insert to table...
-07/05/2015 10:37:21 Inserted to table INTC, 31 rows affected.
-07/05/2015 10:37:21 Requesting JPM, 2015-06-26.
-07/05/2015 10:37:22 Finished request, insert to table...
-07/05/2015 10:37:23 Inserted to table JPM, 52 rows affected.
-07/05/2015 10:37:23 Requesting JPM, 2015-07-02.
-07/05/2015 10:37:24 Finished request, insert to table...
-07/05/2015 10:37:24 Inserted to table JPM, 52 rows affected.
-07/05/2015 10:37:24 Requesting JPM, 2015-07-10.
-07/05/2015 10:37:26 Finished request, insert to table...
-07/05/2015 10:37:26 Inserted to table JPM, 52 rows affected.
-07/05/2015 10:37:26 Requesting JPM, 2015-07-17.
-07/05/2015 10:37:28 Finished request, insert to table...
-07/05/2015 10:37:28 Inserted to table JPM, 69 rows affected.
-07/05/2015 10:37:28 Requesting JPM, 2015-07-24.
-07/05/2015 10:37:30 Finished request, insert to table...
-07/05/2015 10:37:30 Inserted to table JPM, 52 rows affected.
-07/05/2015 10:37:30 Requesting JPM, 2015-07-31.
-07/05/2015 10:37:33 Finished request, insert to table...
-07/05/2015 10:37:33 Inserted to table JPM, 53 rows affected.
-07/05/2015 10:37:33 Requesting JPM, 2015-08-21.
-07/05/2015 10:37:34 Finished request, insert to table...
-07/05/2015 10:37:34 Inserted to table JPM, 23 rows affected.
-07/05/2015 10:37:34 Requesting JPM, 2015-09-18.
-07/05/2015 10:37:36 Finished request, insert to table...
-07/05/2015 10:37:36 Inserted to table JPM, 38 rows affected.
-07/05/2015 10:37:36 Requesting JPM, 2015-10-16.
-07/05/2015 10:37:37 Finished request, insert to table...
-07/05/2015 10:37:38 Inserted to table JPM, 10 rows affected.
-07/05/2015 10:37:38 Requesting JPM, 2015-12-18.
-07/05/2015 10:37:39 Finished request, insert to table...
-07/05/2015 10:37:39 Inserted to table JPM, 40 rows affected.
-07/05/2015 10:37:39 Requesting JPM, 2016-01-15.
-07/05/2015 10:37:41 Finished request, insert to table...
-07/05/2015 10:37:41 Inserted to table JPM, 45 rows affected.
-07/05/2015 10:37:41 Requesting JPM, 2017-01-20.
-07/05/2015 10:37:42 Finished request, insert to table...
-07/05/2015 10:37:42 Inserted to table JPM, 49 rows affected.
-07/05/2015 10:37:42 Requesting MSFT, 2015-06-26.
-07/05/2015 10:37:44 Finished request, insert to table...
-07/05/2015 10:37:44 Inserted to table MSFT, 41 rows affected.
-07/05/2015 10:37:44 Requesting MSFT, 2015-07-02.
-07/05/2015 10:37:46 Finished request, insert to table...
-07/05/2015 10:37:46 Inserted to table MSFT, 41 rows affected.
-07/05/2015 10:37:46 Requesting MSFT, 2015-07-10.
-07/05/2015 10:37:47 Finished request, insert to table...
-07/05/2015 10:37:47 Inserted to table MSFT, 41 rows affected.
-07/05/2015 10:37:47 Requesting MSFT, 2015-07-17.
-07/05/2015 10:37:50 Finished request, insert to table...
-07/05/2015 10:37:50 Inserted to table MSFT, 85 rows affected.
-07/05/2015 10:37:50 Requesting MSFT, 2015-07-24.
-07/05/2015 10:37:52 Finished request, insert to table...
-07/05/2015 10:37:52 Inserted to table MSFT, 55 rows affected.
-07/05/2015 10:37:52 Requesting MSFT, 2015-07-31.
-07/05/2015 10:37:54 Finished request, insert to table...
-07/05/2015 10:37:54 Inserted to table MSFT, 50 rows affected.
-07/05/2015 10:37:54 Requesting MSFT, 2015-08-21.
-07/05/2015 10:37:55 Finished request, insert to table...
-07/05/2015 10:37:55 Inserted to table MSFT, 46 rows affected.
-07/05/2015 10:37:55 Requesting MSFT, 2015-09-18.
-07/05/2015 10:37:58 Finished request, insert to table...
-07/05/2015 10:37:59 Inserted to table MSFT, 33 rows affected.
-07/05/2015 10:37:59 Requesting MSFT, 2015-10-16.
-07/05/2015 10:38:00 Finished request, insert to table...
-07/05/2015 10:38:00 Inserted to table MSFT, 57 rows affected.
-07/05/2015 10:38:00 Requesting MSFT, 2016-01-15.
-07/05/2015 10:38:02 Finished request, insert to table...
-07/05/2015 10:38:02 Inserted to table MSFT, 68 rows affected.
-07/05/2015 10:38:02 Requesting MSFT, 2016-04-15.
-07/05/2015 10:38:04 Finished request, insert to table...
-07/05/2015 10:38:04 Inserted to table MSFT, 12 rows affected.
-07/05/2015 10:38:04 Requesting MSFT, 2016-06-17.
-07/05/2015 10:38:05 Finished request, insert to table...
-07/05/2015 10:38:05 Inserted to table MSFT, 25 rows affected.
-07/05/2015 10:38:05 Requesting MSFT, 2017-01-20.
-07/05/2015 10:38:07 Finished request, insert to table...
-07/05/2015 10:38:07 Inserted to table MSFT, 34 rows affected.
-07/05/2015 10:38:07 Requesting V, 2015-06-26.
-07/05/2015 10:38:08 Finished request, insert to table...
-07/05/2015 10:38:09 Inserted to table V, 40 rows affected.
-07/05/2015 10:38:09 Requesting V, 2015-07-02.
-07/05/2015 10:38:10 Finished request, insert to table...
-07/05/2015 10:38:10 Inserted to table V, 40 rows affected.
-07/05/2015 10:38:10 Requesting V, 2015-07-10.
-07/05/2015 10:38:11 Finished request, insert to table...
-07/05/2015 10:38:12 Inserted to table V, 40 rows affected.
-07/05/2015 10:38:12 Requesting V, 2015-07-17.
-07/05/2015 10:38:13 Finished request, insert to table...
-07/05/2015 10:38:13 Inserted to table V, 52 rows affected.
-07/05/2015 10:38:13 Requesting V, 2015-07-24.
-07/05/2015 10:38:15 Finished request, insert to table...
-07/05/2015 10:38:15 Inserted to table V, 34 rows affected.
-07/05/2015 10:38:15 Requesting V, 2015-07-31.
-07/05/2015 10:38:16 Finished request, insert to table...
-07/05/2015 10:38:16 Inserted to table V, 41 rows affected.
-07/05/2015 10:38:16 Requesting V, 2015-08-21.
-07/05/2015 10:38:18 Finished request, insert to table...
-07/05/2015 10:38:18 Inserted to table V, 15 rows affected.
-07/05/2015 10:38:18 Requesting V, 2015-09-18.
-07/05/2015 10:38:20 Finished request, insert to table...
-07/05/2015 10:38:20 Inserted to table V, 144 rows affected.
-07/05/2015 10:38:20 Requesting V, 2015-12-18.
-07/05/2015 10:38:22 Finished request, insert to table...
-07/05/2015 10:38:22 Inserted to table V, 26 rows affected.
-07/05/2015 10:38:22 Requesting V, 2016-01-15.
-07/05/2015 10:38:25 Finished request, insert to table...
-07/05/2015 10:38:25 Inserted to table V, 209 rows affected.
-07/05/2015 10:38:25 Requesting V, 2017-01-20.
-07/05/2015 10:38:28 Finished request, insert to table...
-07/05/2015 10:38:28 Inserted to table V, 129 rows affected.
-07/05/2015 10:38:28 Requesting AAPL, 2015-06-26.
-07/05/2015 10:38:30 Finished request, insert to table...
-07/05/2015 10:38:30 Inserted to table AAPL, 69 rows affected.
-07/05/2015 10:38:30 Requesting AAPL, 2015-07-02.
-07/05/2015 10:38:32 Finished request, insert to table...
-07/05/2015 10:38:32 Inserted to table AAPL, 69 rows affected.
-07/05/2015 10:38:32 Requesting AAPL, 2015-07-10.
-07/05/2015 10:38:41 Finished request, insert to table...
-07/05/2015 10:38:41 Inserted to table AAPL, 69 rows affected.
-07/05/2015 10:38:41 Requesting AAPL, 2015-07-17.
-07/05/2015 10:38:43 Finished request, insert to table...
-07/05/2015 10:38:43 Inserted to table AAPL, 121 rows affected.
-07/05/2015 10:38:43 Requesting AAPL, 2015-07-24.
-07/05/2015 10:38:45 Finished request, insert to table...
-07/05/2015 10:38:45 Inserted to table AAPL, 64 rows affected.
-07/05/2015 10:38:45 Requesting AAPL, 2015-07-31.
-07/05/2015 10:38:49 Finished request, insert to table...
-07/05/2015 10:38:50 Inserted to table AAPL, 69 rows affected.
-07/05/2015 10:38:50 Requesting AAPL, 2015-08-21.
-07/05/2015 10:38:51 Finished request, insert to table...
-07/05/2015 10:38:51 Inserted to table AAPL, 43 rows affected.
-07/05/2015 10:38:51 Requesting AAPL, 2015-10-16.
-07/05/2015 10:38:53 Finished request, insert to table...
-07/05/2015 10:38:53 Inserted to table AAPL, 54 rows affected.
-07/05/2015 10:38:53 Requesting AAPL, 2015-12-18.
-07/05/2015 10:38:55 Finished request, insert to table...
-07/05/2015 10:38:55 Inserted to table AAPL, 44 rows affected.
-07/05/2015 10:38:55 Requesting AAPL, 2016-01-15.
-07/05/2015 10:38:59 Finished request, insert to table...
-07/05/2015 10:39:00 Inserted to table AAPL, 341 rows affected.
-07/05/2015 10:39:00 Requesting AAPL, 2016-04-15.
-07/05/2015 10:39:01 Finished request, insert to table...
-07/05/2015 10:39:01 Inserted to table AAPL, 32 rows affected.
-07/05/2015 10:39:01 Requesting AAPL, 2016-06-17.
-07/05/2015 10:39:03 Finished request, insert to table...
-07/05/2015 10:39:03 Inserted to table AAPL, 45 rows affected.
-07/05/2015 10:39:03 Requesting AAPL, 2017-01-20.
-07/05/2015 10:39:05 Finished request, insert to table...
-07/05/2015 10:39:05 Inserted to table AAPL, 66 rows affected.
-07/05/2015 10:39:05 Requesting PFE, 2015-06-26.
-07/05/2015 10:39:07 Finished request, insert to table...
-07/05/2015 10:39:07 Inserted to table PFE, 26 rows affected.
-07/05/2015 10:39:07 Requesting PFE, 2015-07-02.
-07/05/2015 10:39:09 Finished request, insert to table...
-07/05/2015 10:39:09 Inserted to table PFE, 26 rows affected.
-07/05/2015 10:39:09 Requesting PFE, 2015-07-10.
-07/05/2015 10:39:11 Finished request, insert to table...
-07/05/2015 10:39:11 Inserted to table PFE, 26 rows affected.
-07/05/2015 10:39:11 Requesting PFE, 2015-07-17.
-07/05/2015 10:39:12 Finished request, insert to table...
-07/05/2015 10:39:12 Inserted to table PFE, 38 rows affected.
-07/05/2015 10:39:12 Requesting PFE, 2015-07-24.
-07/05/2015 10:39:14 Finished request, insert to table...
-07/05/2015 10:39:14 Inserted to table PFE, 20 rows affected.
-07/05/2015 10:39:14 Requesting PFE, 2015-07-31.
-07/05/2015 10:39:16 Finished request, insert to table...
-07/05/2015 10:39:16 Inserted to table PFE, 14 rows affected.
-07/05/2015 10:39:16 Requesting PFE, 2015-08-21.
-07/05/2015 10:39:22 Finished request, insert to table...
-07/05/2015 10:39:22 Inserted to table PFE, 30 rows affected.
-07/05/2015 10:39:22 Requesting PFE, 2015-09-18.
-07/05/2015 10:39:24 Finished request, insert to table...
-07/05/2015 10:39:24 Inserted to table PFE, 41 rows affected.
-07/05/2015 10:39:24 Requesting PFE, 2015-10-16.
-07/05/2015 10:39:25 Finished request, insert to table...
-07/05/2015 10:39:25 Inserted to table PFE, 16 rows affected.
-07/05/2015 10:39:25 Requesting PFE, 2015-12-18.
-07/05/2015 10:39:27 Finished request, insert to table...
-07/05/2015 10:39:27 Inserted to table PFE, 38 rows affected.
-07/05/2015 10:39:27 Requesting PFE, 2016-01-15.
-07/05/2015 10:39:28 Finished request, insert to table...
-07/05/2015 10:39:28 Inserted to table PFE, 53 rows affected.
-07/05/2015 10:39:28 Requesting PFE, 2017-01-20.
-07/05/2015 10:39:30 Finished request, insert to table...
-07/05/2015 10:39:30 Inserted to table PFE, 26 rows affected.
-07/05/2015 10:39:30 Requesting BA, 2015-06-26.
-07/05/2015 10:39:31 Finished request, insert to table...
-07/05/2015 10:39:31 Inserted to table BA, 42 rows affected.
-07/05/2015 10:39:31 Requesting BA, 2015-07-02.
-07/05/2015 10:39:33 Finished request, insert to table...
-07/05/2015 10:39:33 Inserted to table BA, 42 rows affected.
-07/05/2015 10:39:33 Requesting BA, 2015-07-10.
-07/05/2015 10:39:34 Finished request, insert to table...
-07/05/2015 10:39:35 Inserted to table BA, 42 rows affected.
-07/05/2015 10:39:35 Requesting BA, 2015-07-17.
-07/05/2015 10:39:38 Finished request, insert to table...
-07/05/2015 10:39:38 Inserted to table BA, 62 rows affected.
-07/05/2015 10:39:38 Requesting BA, 2015-07-24.
-07/05/2015 10:39:42 Finished request, insert to table...
-07/05/2015 10:39:42 Inserted to table BA, 36 rows affected.
-07/05/2015 10:39:42 Requesting BA, 2015-07-31.
-07/05/2015 10:39:43 Finished request, insert to table...
-07/05/2015 10:39:44 Inserted to table BA, 38 rows affected.
-07/05/2015 10:39:44 Requesting BA, 2015-08-21.
-07/05/2015 10:39:45 Finished request, insert to table...
-07/05/2015 10:39:45 Inserted to table BA, 52 rows affected.
-07/05/2015 10:39:45 Requesting BA, 2015-09-18.
-07/05/2015 10:39:47 Finished request, insert to table...
-07/05/2015 10:39:47 Inserted to table BA, 31 rows affected.
-07/05/2015 10:39:47 Requesting BA, 2015-11-20.
-07/05/2015 10:39:49 Finished request, insert to table...
-07/05/2015 10:39:49 Inserted to table BA, 41 rows affected.
-07/05/2015 10:39:49 Requesting BA, 2016-01-15.
-07/05/2015 10:39:50 Finished request, insert to table...
-07/05/2015 10:39:51 Inserted to table BA, 59 rows affected.
-07/05/2015 10:39:51 Requesting BA, 2016-02-19.
-07/05/2015 10:39:52 Finished request, insert to table...
-07/05/2015 10:39:52 Inserted to table BA, 18 rows affected.
-07/05/2015 10:39:52 Requesting BA, 2017-01-20.
-07/05/2015 10:39:54 Finished request, insert to table...
-07/05/2015 10:39:54 Inserted to table BA, 62 rows affected.
-07/05/2015 10:39:54 Requesting AXP, 2015-06-26.
-07/05/2015 10:39:55 Finished request, insert to table...
-07/05/2015 10:39:55 Inserted to table AXP, 37 rows affected.
-07/05/2015 10:39:55 Requesting AXP, 2015-07-02.
-07/05/2015 10:39:57 Finished request, insert to table...
-07/05/2015 10:39:57 Inserted to table AXP, 37 rows affected.
-07/05/2015 10:39:57 Requesting AXP, 2015-07-10.
-07/05/2015 10:39:58 Finished request, insert to table...
-07/05/2015 10:39:59 Inserted to table AXP, 37 rows affected.
-07/05/2015 10:39:59 Requesting AXP, 2015-07-17.
-07/05/2015 10:40:00 Finished request, insert to table...
-07/05/2015 10:40:00 Inserted to table AXP, 69 rows affected.
-07/05/2015 10:40:00 Requesting AXP, 2015-07-24.
-07/05/2015 10:40:02 Finished request, insert to table...
-07/05/2015 10:40:02 Inserted to table AXP, 34 rows affected.
-07/05/2015 10:40:02 Requesting AXP, 2015-07-31.
-07/05/2015 10:40:13 Finished request, insert to table...
-07/05/2015 10:40:13 Inserted to table AXP, 40 rows affected.
-07/05/2015 10:40:13 Requesting AXP, 2015-08-21.
-07/05/2015 10:40:16 Finished request, insert to table...
-07/05/2015 10:40:16 Inserted to table AXP, 23 rows affected.
-07/05/2015 10:40:16 Requesting AXP, 2015-10-16.
-07/05/2015 10:40:17 Finished request, insert to table...
-07/05/2015 10:40:17 Inserted to table AXP, 27 rows affected.
-07/05/2015 10:40:17 Requesting AXP, 2016-01-15.
-07/05/2015 10:40:19 Finished request, insert to table...
-07/05/2015 10:40:19 Inserted to table AXP, 58 rows affected.
-07/05/2015 10:40:19 Requesting AXP, 2017-01-20.
-07/05/2015 10:40:21 Finished request, insert to table...
-07/05/2015 10:40:21 Inserted to table AXP, 56 rows affected.
-07/05/2015 10:40:21 Requesting GS, 2015-06-26.
-07/05/2015 10:40:22 Finished request, insert to table...
-07/05/2015 10:40:22 Inserted to table GS, 32 rows affected.
-07/05/2015 10:40:22 Requesting GS, 2015-07-02.
-07/05/2015 10:40:24 Finished request, insert to table...
-07/05/2015 10:40:24 Inserted to table GS, 32 rows affected.
-07/05/2015 10:40:24 Requesting GS, 2015-07-10.
-07/05/2015 10:40:25 Finished request, insert to table...
-07/05/2015 10:40:25 Inserted to table GS, 32 rows affected.
-07/05/2015 10:40:25 Requesting GS, 2015-07-17.
-07/05/2015 10:40:27 Finished request, insert to table...
-07/05/2015 10:40:27 Inserted to table GS, 75 rows affected.
-07/05/2015 10:40:27 Requesting GS, 2015-07-24.
-07/05/2015 10:40:29 Finished request, insert to table...
-07/05/2015 10:40:29 Inserted to table GS, 34 rows affected.
-07/05/2015 10:40:29 Requesting GS, 2015-07-31.
-07/05/2015 10:40:30 Finished request, insert to table...
-07/05/2015 10:40:30 Inserted to table GS, 31 rows affected.
-07/05/2015 10:40:30 Requesting GS, 2015-08-21.
-07/05/2015 10:40:32 Finished request, insert to table...
-07/05/2015 10:40:32 Inserted to table GS, 28 rows affected.
-07/05/2015 10:40:32 Requesting GS, 2015-10-16.
-07/05/2015 10:40:33 Finished request, insert to table...
-07/05/2015 10:40:34 Inserted to table GS, 55 rows affected.
-07/05/2015 10:40:34 Requesting GS, 2016-01-15.
-07/05/2015 10:40:35 Finished request, insert to table...
-07/05/2015 10:40:35 Inserted to table GS, 76 rows affected.
-07/05/2015 10:40:35 Requesting GS, 2017-01-20.
-07/05/2015 10:40:37 Finished request, insert to table...
-07/05/2015 10:40:37 Inserted to table GS, 60 rows affected.
-07/05/2015 10:40:37 Connection closed, here is the summary
-07/05/2015 10:44:51 30 symbols loaded, ready to request data.
-07/05/2015 10:44:51 Loaded all expiry dates
-07/05/2015 10:46:04 30 symbols loaded, ready to request data.
-07/05/2015 10:46:04 Loaded all expiry dates
-07/05/2015 10:47:07 30 symbols loaded, ready to request data.
-07/05/2015 10:47:07 Loaded all expiry dates
-07/05/2015 10:47:42 30 symbols loaded, ready to request data.
-07/05/2015 10:47:42 Loaded all expiry dates
-07/05/2015 10:48:32 30 symbols loaded, ready to request data.
-07/05/2015 10:48:32 Loaded all expiry dates
-07/05/2015 10:48:47 30 symbols loaded, ready to request data.
-07/05/2015 10:48:47 Loaded all expiry dates
-07/05/2015 10:48:47 User chooses not to update the expiry dates.
-07/05/2015 10:48:47 Connected to database: testoption
-07/05/2015 10:48:47 Connection closed, here is the summary
-07/05/2015 11:24:43 30 symbols loaded, ready to request data.
-07/05/2015 11:24:43 Loaded all expiry dates
-07/05/2015 11:24:43 User chooses not to update the expiry dates.
-07/05/2015 11:24:43 Connected to database: testoption
-07/05/2015 11:24:43 Connection closed, here is the summary
-07/05/2015 11:32:26 30 symbols loaded, ready to request data.
-07/05/2015 11:32:26 User chooses not to update the expiry dates.
-07/05/2015 11:32:26 Loaded all expiry dates
-07/05/2015 11:32:26 Connected to database: testoption
-07/05/2015 11:32:26 Requesting MMM, 2015-06-26.
-07/05/2015 11:32:27 Finished request, insert to table...
-07/05/2015 11:32:27 Inserted to table MMM, 18 rows affected.
-07/05/2015 11:33:59 30 symbols loaded, ready to request data.
-07/05/2015 11:33:59 User chooses not to update the expiry dates.
-07/05/2015 11:33:59 Loaded all expiry dates
-07/05/2015 11:33:59 Connected to database: testoption
-07/05/2015 11:33:59 Requesting WMT, 2015-06-26.
-07/05/2015 11:34:01 Finished request, insert to table...
-07/05/2015 11:34:01 Inserted to table WMT, 60 rows affected.
-07/05/2015 11:35:13 30 symbols loaded, ready to request data.
-07/05/2015 11:35:13 User chooses not to update the expiry dates.
-07/05/2015 11:35:13 Loaded all expiry dates
-07/05/2015 11:35:13 Connected to database: testoption
-07/05/2015 11:35:13 Requesting UTX, 2015-06-26.
-07/05/2015 11:35:15 Finished request, insert to table...
-07/05/2015 11:35:15 Inserted to table UTX, 28 rows affected.
-07/05/2015 11:36:09 30 symbols loaded, ready to request data.
-07/05/2015 11:36:09 User chooses not to update the expiry dates.
-07/05/2015 11:36:09 Loaded all expiry dates
-07/05/2015 11:36:09 Connected to database: testoption
-07/05/2015 11:36:09 Requesting CSCO, 2015-06-26.
-07/05/2015 11:36:10 Finished request, insert to table...
-07/05/2015 11:36:10 Inserted to table CSCO, 27 rows affected.
-07/05/2015 11:36:29 30 symbols loaded, ready to request data.
-07/05/2015 11:36:29 User chooses not to update the expiry dates.
-07/05/2015 11:36:29 Loaded all expiry dates
-07/05/2015 11:36:29 Connected to database: testoption
-07/05/2015 11:36:29 Requesting PFE, 2015-06-26.
-07/05/2015 11:36:31 Finished request, insert to table...
-07/05/2015 11:36:31 Inserted to table PFE, 26 rows affected.
-07/05/2015 11:36:31 Requesting PFE, 2015-07-02.
-07/05/2015 11:36:32 Finished request, insert to table...
-07/05/2015 11:36:32 Inserted to table PFE, 26 rows affected.
-07/05/2015 11:36:32 Requesting PFE, 2015-07-10.
-07/05/2015 11:36:34 Finished request, insert to table...
-07/05/2015 11:36:34 Inserted to table PFE, 26 rows affected.
-07/05/2015 11:36:34 Requesting PFE, 2015-07-17.
-07/05/2015 11:36:36 Finished request, insert to table...
-07/05/2015 11:36:36 Inserted to table PFE, 38 rows affected.
-07/05/2015 11:36:36 Requesting PFE, 2015-07-24.
-07/05/2015 11:36:37 Finished request, insert to table...
-07/05/2015 11:36:37 Inserted to table PFE, 20 rows affected.
-07/05/2015 11:36:37 Requesting PFE, 2015-07-31.
-07/05/2015 11:38:17 30 symbols loaded, ready to request data.
-07/05/2015 11:38:17 User chooses not to update the expiry dates.
-07/05/2015 11:38:17 Loaded all expiry dates
-07/05/2015 11:38:17 Connected to database: testoption
-07/05/2015 11:38:17 Connection closed, here is the summary
-07/05/2015 11:38:37 30 symbols loaded, ready to request data.
-07/05/2015 11:38:37 User chooses not to update the expiry dates.
-07/05/2015 11:38:37 Loaded all expiry dates
-07/05/2015 11:38:37 Connected to database: testoption
-07/05/2015 11:38:37 Connection closed, here is the summary
-07/05/2015 11:39:04 30 symbols loaded, ready to request data.
-07/05/2015 11:39:04 User chooses not to update the expiry dates.
-07/05/2015 11:39:04 Loaded all expiry dates
-07/05/2015 11:39:04 Connected to database: testoption
-07/05/2015 11:39:04 Requesting PG, 2015-06-26.
-07/05/2015 11:39:06 Finished request, insert to table...
-07/05/2015 11:39:06 Inserted to table PG, 45 rows affected.
-07/05/2015 11:39:06 Requesting PG, 2015-07-02.
-07/05/2015 11:39:08 Finished request, insert to table...
-07/05/2015 11:39:08 Inserted to table PG, 45 rows affected.
-07/05/2015 11:39:08 Requesting PG, 2015-07-10.
-07/05/2015 11:39:09 Finished request, insert to table...
-07/05/2015 11:39:09 Inserted to table PG, 45 rows affected.
-07/05/2015 11:39:09 Requesting PG, 2015-07-17.
-07/05/2015 11:39:12 Finished request, insert to table...
-07/05/2015 11:39:12 Inserted to table PG, 67 rows affected.
-07/05/2015 11:39:12 Requesting PG, 2015-07-24.
-07/05/2015 11:39:25 30 symbols loaded, ready to request data.
-07/05/2015 11:39:25 User chooses not to update the expiry dates.
-07/05/2015 11:39:25 Loaded all expiry dates
-07/05/2015 11:39:25 Connected to database: testoption
-07/05/2015 11:39:25 Requesting IBM, 2015-06-26.
-07/05/2015 11:39:26 Finished request, insert to table...
-07/05/2015 11:39:26 Inserted to table IBM, 24 rows affected.
-07/05/2015 11:39:26 Requesting IBM, 2015-07-02.
-07/05/2015 11:39:27 Finished request, insert to table...
-07/05/2015 11:39:28 Inserted to table IBM, 24 rows affected.
-07/05/2015 11:39:28 Requesting IBM, 2015-07-10.
-07/05/2015 11:39:29 Finished request, insert to table...
-07/05/2015 11:39:29 Inserted to table IBM, 24 rows affected.
-07/05/2015 11:39:29 Requesting IBM, 2015-07-17.
-07/05/2015 11:39:31 Finished request, insert to table...
-07/05/2015 11:39:31 Inserted to table IBM, 61 rows affected.
-07/05/2015 11:39:31 Requesting IBM, 2015-07-24.
-07/05/2015 11:39:32 Finished request, insert to table...
-07/05/2015 11:39:32 Inserted to table IBM, 34 rows affected.
-07/05/2015 11:39:32 Requesting IBM, 2015-07-31.
-07/05/2015 11:39:54 30 symbols loaded, ready to request data.
-07/05/2015 11:39:54 User chooses not to update the expiry dates.
-07/05/2015 11:39:54 Loaded all expiry dates
-07/05/2015 11:39:54 Connected to database: testoption
-07/05/2015 11:39:54 Requesting KO, 2015-06-26.
-07/05/2015 11:39:55 Finished request, insert to table...
-07/05/2015 11:39:55 Inserted to table KO, 24 rows affected.
-07/05/2015 11:39:55 Requesting KO, 2015-07-02.
-07/05/2015 11:39:57 Finished request, insert to table...
-07/05/2015 11:39:57 Inserted to table KO, 24 rows affected.
-07/05/2015 11:39:57 Requesting KO, 2015-07-10.
-07/05/2015 11:39:59 Finished request, insert to table...
-07/05/2015 11:39:59 Inserted to table KO, 24 rows affected.
-07/05/2015 11:39:59 Requesting KO, 2015-07-17.
-07/05/2015 11:40:01 Finished request, insert to table...
-07/05/2015 11:40:01 Inserted to table KO, 47 rows affected.
-07/05/2015 11:40:01 Requesting KO, 2015-07-24.
-07/05/2015 11:40:14 30 symbols loaded, ready to request data.
-07/05/2015 11:40:14 User chooses not to update the expiry dates.
-07/05/2015 11:40:14 Loaded all expiry dates
-07/05/2015 11:40:14 Connected to database: testoption
-07/05/2015 11:40:14 Requesting UNH, 2015-06-26.
-07/05/2015 11:40:16 Finished request, insert to table...
-07/05/2015 11:40:16 Inserted to table UNH, 48 rows affected.
-07/05/2015 11:40:16 Requesting UNH, 2015-07-02.
-07/05/2015 11:40:17 Finished request, insert to table...
-07/05/2015 11:40:18 Inserted to table UNH, 48 rows affected.
-07/05/2015 11:40:18 Requesting UNH, 2015-07-10.
-07/05/2015 11:40:19 Finished request, insert to table...
-07/05/2015 11:40:19 Inserted to table UNH, 48 rows affected.
-07/05/2015 11:40:19 Requesting UNH, 2015-07-17.
-07/05/2015 11:40:22 Finished request, insert to table...
-07/05/2015 11:40:22 Inserted to table UNH, 55 rows affected.
-07/05/2015 11:40:22 Requesting UNH, 2015-07-24.
-07/05/2015 11:40:24 Finished request, insert to table...
-07/05/2015 11:40:24 Inserted to table UNH, 41 rows affected.
-07/05/2015 11:40:24 Requesting UNH, 2015-07-31.
-07/05/2015 11:40:25 Finished request, insert to table...
-07/05/2015 11:40:25 Inserted to table UNH, 44 rows affected.
-07/05/2015 11:40:25 Requesting UNH, 2015-08-21.
-07/05/2015 11:40:27 Finished request, insert to table...
-07/05/2015 11:40:27 Inserted to table UNH, 17 rows affected.
-07/05/2015 11:40:27 Requesting UNH, 2015-09-18.
-07/05/2015 11:40:28 Finished request, insert to table...
-07/05/2015 11:40:29 Inserted to table UNH, 38 rows affected.
-07/05/2015 11:40:29 Requesting UNH, 2015-12-18.
-07/05/2015 11:40:30 Finished request, insert to table...
-07/05/2015 11:40:30 Inserted to table UNH, 34 rows affected.
-07/05/2015 11:40:30 Requesting UNH, 2016-01-15.
-07/05/2015 11:40:32 Finished request, insert to table...
-07/05/2015 11:40:32 Inserted to table UNH, 69 rows affected.
-07/05/2015 11:40:32 Requesting UNH, 2017-01-20.
-07/05/2015 11:40:34 Finished request, insert to table...
-07/05/2015 11:40:34 Inserted to table UNH, 55 rows affected.
-07/05/2015 11:40:34 Requesting HD, 2015-06-26.
-07/05/2015 11:40:35 Finished request, insert to table...
-07/05/2015 11:40:35 Inserted to table HD, 41 rows affected.
-07/05/2015 11:40:35 Requesting HD, 2015-07-02.
-07/05/2015 11:40:37 Finished request, insert to table...
-07/05/2015 11:40:37 Inserted to table HD, 41 rows affected.
-07/05/2015 11:40:37 Requesting HD, 2015-07-10.
-07/05/2015 11:40:38 Finished request, insert to table...
-07/05/2015 11:40:38 Inserted to table HD, 41 rows affected.
-07/05/2015 11:40:38 Requesting HD, 2015-07-17.
-07/19/2015 01:27:58 30 symbols loaded, ready to request data.
-07/19/2015 01:27:58 User chooses not to update the expiry dates.
-07/19/2015 01:27:58 Loaded all expiry dates
-07/19/2015 01:28:31 30 symbols loaded, ready to request data.
-07/19/2015 01:28:31 User chooses not to update the expiry dates.
-07/19/2015 01:28:31 Loaded all expiry dates
-07/19/2015 01:28:31 Connected to database: testoption
-07/19/2015 01:28:31 Requesting AAPL, 2016-01-15.
-07/19/2015 01:28:35 Finished request, insert to table...
-07/19/2015 01:28:35 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
-    raise InternalError(errno, errorvalue)
-pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
-07/19/2015 01:29:45 30 symbols loaded, ready to request data.
-07/19/2015 01:29:45 User chooses not to update the expiry dates.
-07/19/2015 01:29:45 Loaded all expiry dates
-07/19/2015 01:30:34 Requesting AAPL, 2016-01-15.
-07/19/2015 01:30:38 Finished request, insert to table...
-07/19/2015 01:30:38 Unhandled exception. 'HanlonDownloader' object has no attribute 'cur'
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-AttributeError: 'HanlonDownloader' object has no attribute 'cur'
-07/19/2015 01:31:07 Connected to database: testoption
-07/19/2015 01:31:11 Requesting AAPL, 2016-01-15.
-07/19/2015 01:31:15 Finished request, insert to table...
-07/19/2015 01:31:15 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
-    raise InternalError(errno, errorvalue)
-pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
-07/19/2015 01:32:45 30 symbols loaded, ready to request data.
-07/19/2015 01:32:45 User chooses not to update the expiry dates.
-07/19/2015 01:32:45 Loaded all expiry dates
-07/19/2015 01:32:45 Connected to database: testoption
-07/19/2015 01:32:45 Requesting AAPL, 2016-01-15.
-07/19/2015 01:32:49 Finished request, insert to table...
-07/19/2015 01:32:49 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 167, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
-    raise InternalError(errno, errorvalue)
-pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
-07/19/2015 01:35:26 30 symbols loaded, ready to request data.
-07/19/2015 01:35:26 User chooses not to update the expiry dates.
-07/19/2015 01:35:26 Loaded all expiry dates
-07/19/2015 01:35:26 Connected to database: testoption
-07/19/2015 01:35:26 Requesting AAPL, 2016-01-15.
-07/19/2015 01:35:30 Finished request, insert to table...
-07/19/2015 01:35:31 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
-    raise errorclass(errno, errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-07/19/2015 01:38:04 30 symbols loaded, ready to request data.
-07/19/2015 01:38:04 User chooses not to update the expiry dates.
-07/19/2015 01:38:04 Loaded all expiry dates
-07/19/2015 01:38:04 Connected to database: testoption
-07/19/2015 01:38:04 Requesting AAPL, 2016-01-15.
-07/19/2015 01:38:08 Finished request, insert to table...
-07/19/2015 01:38:08 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 164, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
-    raise InternalError(errno, errorvalue)
-pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
-07/19/2015 01:39:10 30 symbols loaded, ready to request data.
-07/19/2015 01:39:10 User chooses not to update the expiry dates.
-07/19/2015 01:39:10 Loaded all expiry dates
-07/19/2015 01:39:10 Connected to database: testoption
-07/19/2015 01:39:10 Requesting AAPL, 2015-07-31.
-07/19/2015 01:39:14 Finished request, insert to table...
-07/19/2015 01:39:14 Inserted to table AAPL, 71 rows affected.
-07/19/2015 01:44:04 30 symbols loaded, ready to request data.
-07/19/2015 01:44:04 User chooses not to update the expiry dates.
-07/19/2015 01:44:04 Loaded all expiry dates
-07/19/2015 01:44:04 Connected to database: testoption
-07/19/2015 01:44:04 Requesting AAPL, 2015-07-31.
-07/19/2015 01:44:06 Finished request, insert to table...
-07/19/2015 01:44:06 Inserted to table AAPL, 71 rows affected.
-07/19/2015 01:44:06 Connection closed, here is the summary
-07/19/2015 01:45:16 30 symbols loaded, ready to request data.
-07/19/2015 01:45:16 User chooses not to update the expiry dates.
-07/19/2015 01:45:16 Loaded all expiry dates
-07/19/2015 01:45:16 Connected to database: testoption
-07/19/2015 01:45:16 Requesting AAPL, 2015-07-31.
-07/19/2015 01:45:18 Finished request, insert to table...
-07/19/2015 01:45:18 Inserted to table AAPL, 71 rows affected.
-07/19/2015 01:45:18 Connection closed, here is the summary
-07/19/2015 01:46:29 30 symbols loaded, ready to request data.
-07/19/2015 01:46:29 User chooses not to update the expiry dates.
-07/19/2015 01:46:29 Loaded all expiry dates
-07/19/2015 01:46:29 Connected to database: testoption
-07/19/2015 01:46:29 Requesting AAPL, 2016-01-15.
-07/19/2015 01:46:34 Finished request, insert to table...
-07/19/2015 01:46:34 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 165, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
-    raise InternalError(errno, errorvalue)
-pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
-07/19/2015 01:47:12 30 symbols loaded, ready to request data.
-07/19/2015 01:47:12 User chooses not to update the expiry dates.
-07/19/2015 01:47:12 Loaded all expiry dates
-07/19/2015 01:48:34 30 symbols loaded, ready to request data.
-07/19/2015 01:48:34 User chooses not to update the expiry dates.
-07/19/2015 01:48:34 Loaded all expiry dates
-07/19/2015 01:48:34 Connected to database: testoption
-07/19/2015 01:48:34 Requesting AAPL, 2015-07-31.
-07/19/2015 01:48:36 Finished request, insert to table...
-07/19/2015 01:48:36 Inserted to table AAPL, 71 rows affected.
-07/19/2015 01:48:36 Connection closed, here is the summary
-07/19/2015 01:48:50 30 symbols loaded, ready to request data.
-07/19/2015 01:48:50 User chooses not to update the expiry dates.
-07/19/2015 01:48:50 Loaded all expiry dates
-07/19/2015 01:48:50 Connected to database: testoption
-07/19/2015 01:48:50 Requesting AAPL, 2016-01-15.
-07/19/2015 01:48:54 Finished request, insert to table...
-07/19/2015 01:48:54 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
-    raise InternalError(errno, errorvalue)
-pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
-07/19/2015 01:49:01 Connection closed, here is the summary
-07/19/2015 02:00:41 30 symbols loaded, ready to request data.
-07/19/2015 02:00:41 User chooses not to update the expiry dates.
-07/19/2015 02:00:41 Loaded all expiry dates
-07/19/2015 02:00:41 Connected to database: testoption
-07/19/2015 02:00:41 Requesting AAPL, 2016-01-15.
-07/19/2015 02:00:45 Finished request, insert to table...
-07/19/2015 02:00:45 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
-    raise InternalError(errno, errorvalue)
-pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
-07/19/2015 02:00:45 Connection closed, here is the summary
-07/19/2015 02:01:44 30 symbols loaded, ready to request data.
-07/19/2015 02:01:44 User chooses not to update the expiry dates.
-07/19/2015 02:01:44 Loaded all expiry dates
-07/19/2015 02:01:44 Connected to database: testoption
-07/19/2015 02:01:44 Requesting AAPL, 2016-01-15.
-07/19/2015 02:01:48 Finished request, insert to table...
-07/19/2015 02:01:48 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
-    raise InternalError(errno, errorvalue)
-pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
-07/19/2015 02:01:48 Connection closed, here is the summary
-07/19/2015 02:03:07 30 symbols loaded, ready to request data.
-07/19/2015 02:03:07 User chooses not to update the expiry dates.
-07/19/2015 02:03:07 Loaded all expiry dates
-07/19/2015 02:03:07 Connected to database: testoption
-07/19/2015 02:03:07 Requesting AAPL, 2016-01-15.
-07/19/2015 02:04:47 Finished request, insert to table...
-07/19/2015 02:04:47 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
-    raise errorclass(errno, errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-07/19/2015 02:04:47 Connection closed, here is the summary
-07/19/2015 02:06:07 30 symbols loaded, ready to request data.
-07/19/2015 02:06:07 User chooses not to update the expiry dates.
-07/19/2015 02:06:07 Loaded all expiry dates
-07/19/2015 02:06:07 Connected to database: testoption
-07/19/2015 02:06:07 Requesting AAPL, 2016-01-15.
-07/19/2015 02:06:10 Finished request, insert to table...
-07/19/2015 02:06:44 30 symbols loaded, ready to request data.
-07/19/2015 02:06:44 User chooses not to update the expiry dates.
-07/19/2015 02:06:44 Loaded all expiry dates
-07/19/2015 02:06:44 Connected to database: testoption
-07/19/2015 02:06:44 Requesting AAPL, 2016-01-15.
-07/19/2015 02:06:48 Finished request, insert to table...
-07/19/2015 02:07:51 30 symbols loaded, ready to request data.
-07/19/2015 02:07:51 User chooses not to update the expiry dates.
-07/19/2015 02:07:51 Loaded all expiry dates
-07/19/2015 02:07:51 Connected to database: testoption
-07/19/2015 02:07:51 Requesting AAPL, 2016-01-15.
-07/19/2015 02:07:55 Finished request, insert to table...
-07/19/2015 02:08:03 30 symbols loaded, ready to request data.
-07/19/2015 02:08:03 User chooses not to update the expiry dates.
-07/19/2015 02:08:03 Loaded all expiry dates
-07/19/2015 02:08:03 Connected to database: testoption
-07/19/2015 02:08:03 Requesting AAPL, 2016-01-15.
-07/19/2015 02:08:07 Finished request, insert to table...
-07/19/2015 02:08:07 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015007019 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
-    raise errorclass(errno, errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015007019 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-07/19/2015 02:08:07 Connection closed, here is the summary
-07/19/2015 02:09:02 30 symbols loaded, ready to request data.
-07/19/2015 02:09:02 User chooses not to update the expiry dates.
-07/19/2015 02:09:02 Loaded all expiry dates
-07/19/2015 02:09:02 Connected to database: testoption
-07/19/2015 02:09:02 Requesting AAPL, 2016-01-15.
-07/19/2015 02:09:06 Finished request, insert to table...
-07/19/2015 02:09:07 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
-    raise errorclass(errno, errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-07/19/2015 02:09:07 Connection closed, here is the summary
-07/19/2015 02:10:45 30 symbols loaded, ready to request data.
-07/19/2015 02:10:45 User chooses not to update the expiry dates.
-07/19/2015 02:10:45 Loaded all expiry dates
-07/19/2015 02:10:45 Connected to database: testoption
-07/19/2015 02:10:45 Requesting AAPL, 2016-01-15.
-07/19/2015 02:10:49 Finished request, insert to table...
-07/19/2015 02:10:49 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
-    raise errorclass(errno, errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-07/19/2015 02:10:49 Connection closed, here is the summary
-07/19/2015 02:11:56 30 symbols loaded, ready to request data.
-07/19/2015 02:11:56 User chooses not to update the expiry dates.
-07/19/2015 02:11:56 Loaded all expiry dates
-07/19/2015 02:11:56 Connected to database: testoption
-07/19/2015 02:11:56 Requesting AAPL, 2016-01-15.
-07/19/2015 02:12:00 Finished request, insert to table...
-07/19/2015 02:12:00 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
-    raise errorclass(errno, errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-07/19/2015 02:12:00 Connection closed, here is the summary
-07/19/2015 02:12:58 30 symbols loaded, ready to request data.
-07/19/2015 02:12:58 User chooses not to update the expiry dates.
-07/19/2015 02:12:58 Loaded all expiry dates
-07/19/2015 02:12:58 Connected to database: testoption
-07/19/2015 02:12:58 Requesting AAPL, 2016-01-15.
-07/19/2015 02:13:02 Finished request, insert to table...
-07/19/2015 02:13:02 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 166, in _processOne
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
-    raise InternalError(errno, errorvalue)
-pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
-07/19/2015 02:13:02 Connection closed, here is the summary
-07/19/2015 02:13:14 30 symbols loaded, ready to request data.
-07/19/2015 02:13:14 User chooses not to update the expiry dates.
-07/19/2015 02:13:14 Loaded all expiry dates
-07/19/2015 02:13:14 Connected to database: testoption
-07/19/2015 02:13:14 Requesting AAPL, 2016-01-15.
-07/19/2015 02:13:18 Finished request, insert to table...
-07/19/2015 02:13:18 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
-    raise errorclass(errno, errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-07/19/2015 02:13:18 Connection closed, here is the summary
-07/19/2015 02:14:16 30 symbols loaded, ready to request data.
-07/19/2015 02:14:16 User chooses not to update the expiry dates.
-07/19/2015 02:14:16 Loaded all expiry dates
-07/19/2015 02:14:16 Connected to database: testoption
-07/19/2015 02:14:16 Requesting AAPL, 2016-01-15.
-07/19/2015 02:14:20 Finished request, insert to table...
-07/19/2015 02:14:20 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
-    raise errorclass(errno, errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-07/19/2015 02:14:20 Connection closed, here is the summary
-07/19/2015 02:14:59 30 symbols loaded, ready to request data.
-07/19/2015 02:14:59 User chooses not to update the expiry dates.
-07/19/2015 02:14:59 Loaded all expiry dates
-07/19/2015 02:14:59 Connected to database: testoption
-07/19/2015 02:14:59 Requesting AAPL, 2016-01-15.
-07/19/2015 02:15:02 Finished request, insert to table...
-07/19/2015 02:15:03 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
-    raise errorclass(errno, errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-07/19/2015 02:15:03 Connection closed, here is the summary
-07/19/2015 02:15:50 30 symbols loaded, ready to request data.
-07/19/2015 02:15:50 User chooses not to update the expiry dates.
-07/19/2015 02:15:50 Loaded all expiry dates
-07/19/2015 02:15:50 Connected to database: testoption
-07/19/2015 02:15:50 Requesting AAPL, 2016-01-15.
-07/19/2015 02:15:54 Finished request, insert to table...
-07/19/2015 02:15:54 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
-    raise errorclass(errno, errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 2015-07-19 00:00:00, 7, 77, 0.0, 129.62)' at line 4")
-07/19/2015 02:15:54 Connection closed, here is the summary
-07/19/2015 02:16:45 30 symbols loaded, ready to request data.
-07/19/2015 02:16:45 User chooses not to update the expiry dates.
-07/19/2015 02:16:45 Loaded all expiry dates
-07/19/2015 02:16:45 Connected to database: testoption
-07/19/2015 02:16:45 Requesting AAPL, 2016-01-15.
-07/19/2015 02:16:49 Finished request, insert to table...
-07/19/2015 02:16:49 Unhandled exception. (1054, "Unknown column 'NaT' in 'field list'")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 168, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
-    raise InternalError(errno, errorvalue)
-pymysql.err.InternalError: (1054, "Unknown column 'NaT' in 'field list'")
-07/19/2015 02:16:49 Connection closed, here is the summary
-07/19/2015 02:17:58 30 symbols loaded, ready to request data.
-07/19/2015 02:17:58 User chooses not to update the expiry dates.
-07/19/2015 02:17:58 Loaded all expiry dates
-07/19/2015 02:17:58 Connected to database: testoption
-07/19/2015 02:17:58 Requesting AAPL, 2015-07-31.
-07/19/2015 02:18:00 Finished request, insert to table...
-07/19/2015 02:18:55 30 symbols loaded, ready to request data.
-07/19/2015 02:18:55 User chooses not to update the expiry dates.
-07/19/2015 02:18:55 Loaded all expiry dates
-07/19/2015 02:18:55 Connected to database: testoption
-07/19/2015 02:18:55 Requesting AAPL, 2015-07-31.
-07/19/2015 02:18:57 Finished request, insert to table...
-07/19/2015 02:19:55 30 symbols loaded, ready to request data.
-07/19/2015 02:19:55 User chooses not to update the expiry dates.
-07/19/2015 02:19:55 Loaded all expiry dates
-07/19/2015 02:19:55 Connected to database: testoption
-07/19/2015 02:19:55 Requesting AAPL, 2015-07-31.
-07/19/2015 02:19:58 Finished request, insert to table...
-07/19/2015 02:19:58 Inserted to table AAPL, 71 rows affected.
-07/19/2015 02:19:58 Connection closed, here is the summary
-07/19/2015 02:20:09 30 symbols loaded, ready to request data.
-07/19/2015 02:20:09 User chooses not to update the expiry dates.
-07/19/2015 02:20:09 Loaded all expiry dates
-07/19/2015 02:20:09 Connected to database: testoption
-07/19/2015 02:20:09 Requesting AAPL, 2016-01-15.
-07/19/2015 02:20:12 Finished request, insert to table...
-07/19/2015 02:25:57 30 symbols loaded, ready to request data.
-07/19/2015 02:25:57 User chooses not to update the expiry dates.
-07/19/2015 02:25:57 Loaded all expiry dates
-07/19/2015 02:25:57 Connected to database: testoption
-07/19/2015 02:25:57 Requesting AAPL, 2016-01-15.
-07/19/2015 02:26:01 Finished request, insert to table...
-07/19/2015 02:26:01 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 1970-01-01 00:00:00, 25, 499, 1.0029000000000001, 129.62)' at line 4")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 175, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
-    raise errorclass(errno, errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 1970-01-01 00:00:00, 25, 499, 1.0029000000000001, 129.62)' at line 4")
-07/19/2015 02:26:01 Connection closed, here is the summary
-07/19/2015 02:26:44 30 symbols loaded, ready to request data.
-07/19/2015 02:26:44 User chooses not to update the expiry dates.
-07/19/2015 02:26:44 Loaded all expiry dates
-07/19/2015 02:26:44 Connected to database: testoption
-07/19/2015 02:26:44 Requesting AAPL, 2016-01-15.
-07/19/2015 02:26:48 Finished request, insert to table...
-07/19/2015 02:26:48 Unhandled exception. (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 1970-01-01 00:00:00, 25, 499, 1.0029000000000001, 129.62)' at line 4")
-Traceback (most recent call last):
-  File "/home/zhe/Documents/GitRepo/HanlonOptionDB/pysrc/HanlonDownloader.py", line 175, in _processOne
-    self.rowcnt += self.cur.execute(insert_str)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 134, in execute
-    result = self._query(query)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 282, in _query
-    conn.query(q)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 768, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 929, in _read_query_result
-    result.read()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1125, in read
-    first_packet = self.connection._read_packet()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 893, in _read_packet
-    packet.check_error()
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 369, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 112, in _check_mysql_exception
-    raise errorclass(errno, errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, 1970-01-01 00:00:00, 25, 499, 1.0029000000000001, 129.62)' at line 4")
-07/19/2015 02:26:48 Connection closed, here is the summary
-07/19/2015 02:33:57 30 symbols loaded, ready to request data.
-07/19/2015 02:33:57 User chooses not to update the expiry dates.
-07/19/2015 02:33:57 Loaded all expiry dates
-07/19/2015 02:33:57 Connected to database: testoption
-07/19/2015 02:33:57 Requesting AAPL, 2016-01-15.
-07/19/2015 02:34:00 Finished request, insert to table...
-07/19/2015 02:34:01 Inserted to table AAPL, 339 rows affected.
-07/19/2015 02:34:01 Connection closed, here is the summary
-07/19/2015 02:34:50 30 symbols loaded, ready to request data.
-07/19/2015 02:34:50 User chooses not to update the expiry dates.
-07/19/2015 02:34:50 Loaded all expiry dates
-07/19/2015 02:34:50 Connected to database: testoption
-07/19/2015 02:34:50 Requesting AAPL, 2016-01-15.
-07/19/2015 02:34:54 Finished request, insert to table...
-07/19/2015 02:34:54 Inserted to table AAPL, 339 rows affected.
-07/19/2015 02:34:54 Connection closed, here is the summary
+    return self._get_data_in_date_range(expiry, put=True, call=False)
+  File "/usr/local/lib/python3.4/dist-packages/pandas_datareader/data.py", line 1136, in _get_data_in_date_range
+    return concat(data).sortlevel()
+  File "/usr/lib/python3/dist-packages/pandas/core/frame.py", line 2651, in sortlevel
+    raise TypeError('can only sort by level with a hierarchical index')
+TypeError: can only sort by level with a hierarchical index
+07/19/2015 09:53:24 Top level: Connection closed, here is the summary...
