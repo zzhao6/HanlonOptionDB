@@ -59,12 +59,14 @@ class HanlonDownloader:
         self.cur.close()
         self.conn.close()
         logging.info("Top level: Connection closed!")
+        print("Top level: Connection closed!")
 
     
-    def _SendSummaryEmail(self, start_time, end_time, spent_time):
-        self.emailer.setRegMsg(start_time, end_time, spent_time, "", "", "")
+    def _SendSummaryEmail(self, start_time, end_time, spent_time, numSymRequested, numSymCompleted):
+        self.emailer.setRegMsg(start_time, end_time, spent_time, numSymRequested, numSymCompleted, "")
         self.emailer.sendMsg()
         logging.info("Top level: Summary email has been sent to {}".format(self.emailer.email_to))
+        print("Top level: Summary email has been sent to {}".format(self.emailer.email_to))
 
 
     def _SendErrorEmail(self, sym, expir, strike, err):
@@ -146,6 +148,7 @@ class HanlonDownloader:
         self.rowcnt = 0
         # end function process one
     
+
     def ProcessAll(self):
         """
         process all symbols in symbol list file
@@ -153,13 +156,21 @@ class HanlonDownloader:
         logging.info("Start to process all symbols: {} in total.".format(len(self.symbols)))
         print("Start to process all symbols: {} in total.".format(len(self.symbols)))
         
+        # some statistics for the summary email
         start_time = datetime.datetime.now() 
+        numSymRequested = 0
+        numSymCompleted = 0
+
+        # start request
         for sym in self.symbols:
             tmpOptionObj = Options(sym, 'yahoo')
             tmpExpirList = tmpOptionObj.expiry_dates
 
             for expir in tmpExpirList:
+                
+                numSymRequested += 1
                 self._ProcessOne(sym, expir)
+                numSymCompleted += 1
 
         end_time = datetime.datetime.now()
 
@@ -168,4 +179,7 @@ class HanlonDownloader:
         diff_time = end_time - start_time
         diff_time_sec = diff_time.total_seconds()
         diff_time_sec = round(diff_time_sec, 2)
-        self._SendSummaryEmail(start_time_str, end_time_str, diff_time_sec)
+
+        self._SendSummaryEmail(start_time_str, end_time_str, diff_time_sec, \
+                               numSymRequested, numSymCompleted)
+        # TODO: get num of err generated, and put into summary email

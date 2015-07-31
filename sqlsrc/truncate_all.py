@@ -3,7 +3,7 @@
 from pandas import read_csv
 import pymysql
 # TODO: config file
-conn = pymysql.connect(host = "127.0.0.1", user = "root", passwd = "FErules2014!", db = "testoption")
+conn = pymysql.connect(host = "127.0.0.1", user = "root", passwd = "root", db = "testoption")
 cur = conn.cursor()
 symbols = read_csv('../symbols/DJIA.csv') 
 symlist = list(symbols.Symbol)
