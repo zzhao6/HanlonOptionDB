@@ -10,4 +10,6 @@ Steps of configureation:
     * beautifulsoap4     required by pandas
     * cron
 
-
+2. TODO:
+    * cron
+    * full symbol list
