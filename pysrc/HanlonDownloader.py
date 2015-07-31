@@ -8,144 +8,102 @@ import pickle       # save expiry dicitonary to file
 
 import sys          # display percentage counter
 import numpy        # for data type checking
+import datetime
 from HanlonEmail import *
 
 
 class HanlonDownloader:
-    """downloader class"""
-    def __init__(self, symfiledir, **kwargs):
-        # TODO: config file
-        self.isconnected = False
-        # count how many rows affected 
+    """
+
+
+    """
+    def __init__(self, confdir):
+        """
+        initialized most fields by config file
+        """
+        self.config = {}
+        exec(open(confdir).read(), self.config)
+
+        # config logger
+        logging.basicConfig(filename = self.config["LOG_FILE"], level=logging.INFO, format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S')
+
+        # config emailer
+        self.emailer = HanlonEmail(self.config)
+
+        # err message list, will put in summary
+        self.errlist = []
+
+        # in every expiry and every symbol, how many rows have been changed in the database
         self.rowcnt = 0
-        self.symExpiryDict = {}
-        # set up the logger
-        logging.basicConfig(filename='../log/mylog.log', level=logging.INFO, format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S')
-        self._readSymbols(symfiledir)
-        # decide whether update the expiry dates or not
-        # for all equity symbols
-        self._expDateFileDir = '../pysrc/expDates.txt'
-        self._expir_cnt = 0.0
-        self.updateExp = kwargs.get('updateExp')
-        self._readExpiry(self.updateExp)
 
-    
-    def HanlonConn(self, hanlon_host, hanlon_user, hanlon_passwd, hanlon_dbname):
-        try:
-            self.conn = pymysql.connect(host = hanlon_host, user = hanlon_user, passwd = hanlon_passwd, db = hanlon_dbname) 
-            self.host = hanlon_host
-            self.user = hanlon_user
-            self.passwd = hanlon_passwd
-            self.dbname = hanlon_dbname
-        except pymysql.err.OperationalError as err:
-            print(err)
-            input("Press any key to raise the exception.")
-            raise
-        except pymysql.err.InternalError as err:
-            print(err)
-            input("Press any key to raise the exception.")
-            raise
-        except Exception as e:
-            self._printException(err) 
+        # read symbol list from symbol file
+        self.sym_file = self.config["SYMBOL_FILE"]
+        tmpfile = pd.read_csv(self.sym_file)
+        self.symbols = tmpfile.Symbol 
 
+
+    def OpenConn(self):
+        # read from config obj
+        self.host_name = self.config["HOST_NAME"]
+        self.user_name = self.config["USER_NAME"]
+        self.password = self.config["PASSWORD"]
+        self.dbname = self.config["DBNAME"]
+
+        # connect to database
+        self.conn = pymysql.connect(host = self.host_name , user = self.user_name, passwd = self.password, db = self.dbname) 
         self.cur = self.conn.cursor()
-        self.isconnected = True
-        print("Connected to database:{}".format(self.dbname))
-        logging.info("Top level: Connected to database: {}".format(self.dbname))
-        
-    def closeConn(self):
-        """some thing todo before finish all day work"""
+        logging.info("Top level: Connected to db: {}".format(self.dbname))
+
+
+    def CloseConn(self):
         self.cur.close()
         self.conn.close()
-        print("Connection closed")
-        logging.info("Top level: Connection closed, here is the summary...")
+        logging.info("Top level: Connection closed!")
 
-    def _readSymbols(self, filedir):
-        '''
-        load all symbols and create a dictionary
-        {sym, expiry_dates}
-        '''
-        try:
-            tmpfile = pd.read_csv(filedir)
-        except OSError as err:
-            logging.error("Top level Error: {}".format(err))
-            print("Unknown Error occured.")
-            input("Press any key to raise the exception.")
-            raise
-
-        self.symbols = tmpfile.Symbol
-        print("{} symbols loaded".format(len(self.symbols)))
-        logging.info("Top level: {} symbols loaded, ready to request data.".format(len(self.symbols))) 
+    
+    def _SendSummaryEmail(self, start_time, end_time, spent_time):
+        self.emailer.setRegMsg(start_time, end_time, spent_time, "", "", "")
+        self.emailer.sendMsg()
+        logging.info("Top level: Summary email has been sent to {}".format(self.emailer.email_to))
 
 
-    def _readExpiry(self, updateExpiryFlag):
-        # load expiry dates from a file
-        # the file will be overwrote when update the expiries
-
-        if updateExpiryFlag:
-            print("Updating expiry dates for all equities.")
-            
-            for sym in self.symbols:
-                symOption = Options(sym, 'yahoo')
-                try:
-                    symExpiry = symOption.expiry_dates
-                    print("{} Updated \t number of dates: {}".format(sym, len(symExpiry)))
-                except Exception as err:
-                    self._printException(err)
-
-                #self.symOptionDict[sym] = symOption
-                self.symExpiryDict[sym] = symExpiry
-            # update the file of expiry dates
-            expDateFile = open(self._expDateFileDir, 'ab+')
-            pickle.dump(self.symExpiryDict, expDateFile)
-        else:
-            print("User chooses not to update the expiry dates.")
-            logging.info("Top level: User chooses not to update the expiry dates.")
-
-       
-        # load the dict file again
-        try:
-            tmpfile = open(self._expDateFileDir, 'rb')
-            self.symExpiryDict = pickle.load(tmpfile)
-        except Exception as err:
-            self._printException(err)
-        logging.info("Top level: Loaded all expiry dates")
-        print("Loaded all expiry dates")
-
-        for key, value in self.symExpiryDict.items():
-            print("{} \t length {}".format(key, len(value)))
-            self._expir_cnt += len(value)       # for display percentage count
+    def _SendErrorEmail(self, sym, expir, strike, err):
+        print("{} - {}: ERROR: sending error email.".format(sym, expir))
+        self.emailer.setErrMsg(sym, expir, strike, err)
+        self.emailer.sendMsg()
 
 
-    def _printException(self, err, sym = "", expir = ""):
-        '''
+    def _PrintException(self, err, sym = "", expir = ""):
+        """ 
         print and logging some messages about unhandled exception
-        '''
-        print("{} - {}: Unhandled exception. {}".format(sym, expir, err))
-        logging.exception("{} - {}: Unhandled exception. {}".format(sym, expir, err))
-        self.closeConn()
-        input("Press any key to raise the exception.")
-        raise
+        """ 
+        errStr = "{} - {}: Unhandled exception. {}".format(sym, expir, err) 
+        self.errlist.append(errStr)
 
-    def _processOne(self, sym, expir):
-        '''
-        process one result of API: one symbol, one expiry
-        decomposite the dataframe and push to database
-        '''
-        print("{} - {}: Requesting".format(sym, expir))
-        logging.info("{} - {}: Requesting".format(sym, expir))
+        logging.exception("{} - {}: Unhandled exception. {}".format(sym, expir, err))
+
+
+    def _ProcessOne(self, sym, expir):
+        """
+        process one symbol, one expiry date, one strike
+        """
         tmpOption = Options(sym, 'yahoo')
+
         try:
             # TODO: handle RemoteDataError exception. Sometime the yahoo server doesn't response
+            logging.info("{} - {}: Requesting".format(sym, expir))
             mydata = tmpOption.get_options_data(expiry = expir)
         except Exception as err:
-            self._printException(err)
-        # start processing
-        # first reset the multiindex in pandas dataframe
-        print("{} - {}: Finished request, insert to table...".format(sym, expir))
+            self._PrintException(err, sym, expir)
+            self.CloseConn()
+            self._SendErrorEmail(sym, expir, "none", err)
+            input("Press any key to raise the exception.")
+            raise
+            
         logging.info("{} - {}: Finished request, insert to table...".format(sym, expir))
         mydata = mydata.reset_index()
 
+        # within dataset "mydata", go through each row and insert to DB 
         for i in range(len(mydata.index)):
             onerow = mydata.iloc[[i]]
             
@@ -183,22 +141,31 @@ class HanlonDownloader:
             self.conn.commit()
             # end of for loop
 
-        print("{} - {}: Inserted to table, {} rows affected.".format(sym, expir, self.rowcnt))
         logging.info("{} - {}: Inserted to table, {} rows affected.".format(sym, expir, self.rowcnt))
+        print("{} - {}: Inserted to table, {} rows affected.".format(sym, expir, self.rowcnt))
         self.rowcnt = 0
-
-    def processAll(self):
-        '''
-        download all symbols and push to database
-        '''
-        print('---------------------')
-        # TODO: put logging here
+        # end function process one
+    
+    def ProcessAll(self):
+        """
+        process all symbols in symbol list file
+        """
+        logging.info("Start to process all symbols: {} in total.".format(len(self.symbols)))
+        print("Start to process all symbols: {} in total.".format(len(self.symbols)))
         
-        tmpPercentCount = 0.0
-        for sym in self.symExpiryDict.keys():
-            for expir in self.symExpiryDict[sym]:
-                self._processOne(sym, expir)
-                tmpPercentCount += 1
-                tmpPercent = tmpPercentCount / self._expir_cnt * 100
-                sys.stdout.write("\r%f%%\n" % tmpPercent)
-                sys.stdout.flush()
+        start_time = datetime.datetime.now() 
+        for sym in self.symbols:
+            tmpOptionObj = Options(sym, 'yahoo')
+            tmpExpirList = tmpOptionObj.expiry_dates
+
+            for expir in tmpExpirList:
+                self._ProcessOne(sym, expir)
+
+        end_time = datetime.datetime.now()
+
+        start_time_str = "{:%b-%d-%Y %H:%M:%S}".format(start_time)  
+        end_time_str = "{:%b-%d-%Y %H:%M:%S}".format(end_time)
+        diff_time = end_time - start_time
+        diff_time_sec = diff_time.total_seconds()
+        diff_time_sec = round(diff_time_sec, 2)
+        self._SendSummaryEmail(start_time_str, end_time_str, diff_time_sec)
