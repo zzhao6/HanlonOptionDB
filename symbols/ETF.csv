@@ -10,9 +10,14 @@ IWF,iShares Russell 1000 Growth ETF
 VEA,Europe Pacific
 IWM,iShares Russell 2000 ETF
 IJH,Core S&P Mid-Cap ETF
+BND,Total Bond Market ETF
 IWD,iShares Russell 1000 Value ETF
+AGG,Core Total U.S. Bond Market ETF
+VNQ,REIT ETF
 EEM,iShares MSCI Emerging Markets ETF
+GLD,SPDR Gold Trust
 HEDJ,Europe Hedged Equity Fund
+LQD,iShares iBoxx $ Investment Grade Corporate Bond ETF
 XLF,Financial Select Sector SPDR
 VIG,Dividend Appreciation ETF
 EWJ,iShares MSCI Japan ETF
@@ -22,10 +27,75 @@ DXJ,Japan Hedged Equity Fund
 IJR,Core S&P Small-Cap ETF
 MDY,SPDR MidCap Trust Series I
 XLV,Health Care Select Sector SPDR
+BSV,Short-Term Bond ETF
 VGK,FTSE Europe ETF
 VEU,FTSE All World Ex US ETF
+HYG,iShares iBoxx $ High Yield Corporate Bond ETF
+TIP,TIPS Bond ETF
 DVY,iShares Select Dividend ETF
 IVW,iShares S&P 500 Growth ETF
 DBEF,MSCI EAFE Hedged Equity Fund
+PFF,iShares U.S. Preferred Stock ETF
 XLK,Technology Select Sector SPDR
 SDY,SPDR S&P Dividend ETF
+IWR,iShares Russell Mid-Cap ETF
+IWB,iShares Russell 1000 ETF
+VO,Mid-Cap ETF
+XLE,Energy Select Sector SPDR
+VB,Small-Cap ETF
+DIA,Dow Jones Industrial Average ETF
+XLY,Consumer Discretionary Select Sector SPDR
+VYM,High Dividend Yield ETF
+SHY,1-3 Year Treasury Bond ETF
+RSP,S&P Equal Weight ETF
+CSJ,iShares 1-3 Year Credit Bond ETF
+EZU,iShares MSCI EMU ETF
+VCSH,Short-Term Corporate Bond Index Fund
+JNK,SPDR Barclays Capital High Yield Bond ETF
+IBB,Nasdaq Biotechnology
+IVE,iShares S&P 500 Value ETF
+AMLP,Alerian MLP ETF
+XLP,Consumer Staples Select Sector SPDR
+VGT,Information Tech ETF
+IWO,iShares Russell 2000 Growth ETF
+EWG,iShares MSCI Germany ETF
+MBB,iShares MBS ETF
+IEMG,Core MSCI Emerging Markets ETF
+XLI,Industrial Select Sector SPDR
+IWS,iShares Russell Mid-Cap Value ETF
+IEF,iShares 7-10 Year Treasury Bond ETF
+FXI,iShares China Large-Cap ETF
+ACWI,MSCI All Country World Index Fund
+VHT,Health Care ETF
+IWP,iShares Russell Mid-Cap Growth ETF
+IWV,iShares Russell 3000 ETF
+IEFA,Core MSCI EAFE ETF
+CIU,iShares Intermediate Credit Bond ETF
+BIV,Intermediate-Term Bond ETF
+XLU,Utilities Select Sector SPDR
+VV,Large-Cap ETF
+IWN,iShares Russell 2000 Value ETF
+IJK,iShares S&P Mid-Cap 400 Growth ETF
+VBR,Small-Cap Value ETF
+IAU,COMEX Gold Trust
+IEI,iShares 3-7 Year Treasury Bond ETF
+VCIT,Intermediate-Term Corporate Bond Index Fund
+BKLN,Senior Loan Portfolio
+USMV,MSCI USA Minimum Volatility ETF
+EMB,iShares J.P. Morgan USD Emerging Markets Bond ETF
+SCZ,MSCI EAFE Small-Cap ETF
+RWX,SPDR DJ Wilshire Intl Real Estate
+MUB,iShares National AMT-Free Muni Bond ETF
+SCHB,U.S. Broad Market ETF
+TLT,20+ Year Treasury Bond ETF
+SPLV,S&P 500 Low Volatility Portfolio
+VXUS,Total International Stock ETF
+SLV,Silver Trust
+AMJ,Alerian MLP Index ETN
+FEZ,SPDR Euro STOXX 50 ETF
+VBK,Small-Cap Growth ETF
+VT,Total World Stock Index ETF
+SCHX,U.S. Large-Cap ETF
+PRF,FTSE RAFI US 1000 Portfolio
+HDV,iShares High Dividend ETF
+IYR,iShares U.S. Real Estate ETF

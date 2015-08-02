@@ -3,6 +3,8 @@ import pymysql
 from pandas_datareader import data, wb
 from pandas_datareader.data import Options
 
+import pandas_datareader.data   # RemoteDataError
+
 import logging
 import pickle       # save expiry dicitonary to file
 
@@ -49,8 +51,10 @@ class HanlonDownloader:
         tmpsym_etf = pd.read_csv(self.sym_file_etf)
         tmpsym_vix = pd.read_csv(self.sym_file_vix)
         
+        #self.symbols = tmpsym_djia.Symbol
+        self.symbols = tmpsym_etf.Symbol
+        #self.symbols = tmpsym_vix.Symbol
         #self.symbols = pd.concat([tmpsym_djia.Symbol, tmpsym_etf.Symbol, tmpsym_vix.Symbol])
-        self.symbols = tmpsym_vix
 
     def OpenConn(self):
         # read from config obj
@@ -140,8 +144,8 @@ class HanlonDownloader:
             try:
                 self.rowcnt += self.cur.execute(insert_str) 
             except Exception as err:
-                print(type(onerow.Bid[i]))
-                self._printException(err)
+                print("--".format(type(onerow.Bid[i])))
+                self._PrintException(err)
 
             self.conn.commit()
             # end of for loop
@@ -168,7 +172,15 @@ class HanlonDownloader:
         # start request
         for sym in self.symbols:
             tmpOptionObj = Options(sym, 'yahoo')
-            tmpExpirList = tmpOptionObj.expiry_dates
+            
+            try:
+                tmpExpirList = tmpOptionObj.expiry_dates
+            except pandas_datareader.data.RemoteDataError:
+                logging.info("Top level: RemoteDataError, please try again later.")
+                print("Top level: RemoteDataError, please try again later.")
+                print(sym)
+                return
+
 
             numSymRequested += 1
 
