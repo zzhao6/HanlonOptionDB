@@ -37,10 +37,20 @@ class HanlonDownloader:
         self.rowcnt = 0
 
         # read symbol list from symbol file
-        self.sym_file = self.config["SYMBOL_FILE"]
-        tmpfile = pd.read_csv(self.sym_file)
-        self.symbols = tmpfile.Symbol 
+        # 1. DJIA consituents
+        # 2. Major ETFs
+        # 3. VIX derivatives
 
+        self.sym_file_djia = self.config["SYMBOL_FILE_DJIA"]
+        self.sym_file_etf = self.config["SYMBOL_FILE_ETF"]
+        self.sym_file_vix = self.config["SYMBOL_FILE_VIX"]
+        
+        tmpsym_djia = pd.read_csv(self.sym_file_djia)
+        tmpsym_etf = pd.read_csv(self.sym_file_etf)
+        tmpsym_vix = pd.read_csv(self.sym_file_vix)
+        
+        #self.symbols = pd.concat([tmpsym_djia.Symbol, tmpsym_etf.Symbol, tmpsym_vix.Symbol])
+        self.symbols = tmpsym_vix
 
     def OpenConn(self):
         # read from config obj
@@ -62,8 +72,9 @@ class HanlonDownloader:
         print("Top level: Connection closed!")
 
     
-    def _SendSummaryEmail(self, start_time, end_time, spent_time, numSymRequested, numSymCompleted):
-        self.emailer.setRegMsg(start_time, end_time, spent_time, numSymRequested, numSymCompleted, "")
+    def _SendSummaryEmail(self, start_time, end_time, spent_time, numSymRequested, numSymCompleted, numErrGenerated):
+        print("Top level: Sending summary email.")
+        self.emailer.setRegMsg(start_time, end_time, spent_time, numSymRequested, numSymCompleted, numErrGenerated)
         self.emailer.sendMsg()
         logging.info("Top level: Summary email has been sent to {}".format(self.emailer.email_to))
         print("Top level: Summary email has been sent to {}".format(self.emailer.email_to))
@@ -91,16 +102,8 @@ class HanlonDownloader:
         """
         tmpOption = Options(sym, 'yahoo')
 
-        try:
-            # TODO: handle RemoteDataError exception. Sometime the yahoo server doesn't response
-            logging.info("{} - {}: Requesting".format(sym, expir))
-            mydata = tmpOption.get_options_data(expiry = expir)
-        except Exception as err:
-            self._PrintException(err, sym, expir)
-            self.CloseConn()
-            self._SendErrorEmail(sym, expir, "none", err)
-            input("Press any key to raise the exception.")
-            raise
+        logging.info("{} - {}: Requesting".format(sym, expir))
+        mydata = tmpOption.get_options_data(expiry = expir)
             
         logging.info("{} - {}: Finished request, insert to table...".format(sym, expir))
         mydata = mydata.reset_index()
@@ -160,17 +163,29 @@ class HanlonDownloader:
         start_time = datetime.datetime.now() 
         numSymRequested = 0
         numSymCompleted = 0
+        numErrGenerated = 0
 
         # start request
         for sym in self.symbols:
             tmpOptionObj = Options(sym, 'yahoo')
             tmpExpirList = tmpOptionObj.expiry_dates
 
+            numSymRequested += 1
+
             for expir in tmpExpirList:
-                
-                numSymRequested += 1
-                self._ProcessOne(sym, expir)
-                numSymCompleted += 1
+                try:
+                    # TODO: handle RemoteDataError exception. Sometime the yahoo server doesn't response
+                    self._ProcessOne(sym, expir)
+                except Exception as err:
+                    numErrGenerated += 1
+                    self.errlist.append(err)
+                    self._PrintException(err, sym, expir)
+                    self.CloseConn()
+                    self._SendErrorEmail(sym, expir, "none", err)
+                    input("Press any key to raise the exception.")
+                    raise
+
+            numSymCompleted += 1
 
         end_time = datetime.datetime.now()
 
@@ -181,5 +196,5 @@ class HanlonDownloader:
         diff_time_sec = round(diff_time_sec, 2)
 
         self._SendSummaryEmail(start_time_str, end_time_str, diff_time_sec, \
-                               numSymRequested, numSymCompleted)
+                               numSymRequested, numSymCompleted, numErrGenerated)
         # TODO: get num of err generated, and put into summary email
