@@ -16,6 +16,7 @@ Steps of configureation:
 
 3. Symbol list:
     * Dow constituents
+    * S&P500 constituents (as of 06/30/2015), from [CBOE](http://www.cboe.com/products/snp500.aspx)
     * S&P 500 constituents
     * Major 100 ETF list by assets under management (AUM), as of 08/02/2015, from [etfdb.com](http://etfdb.com/compare/market-cap/)
     * VIX and VIX derivatives' options
