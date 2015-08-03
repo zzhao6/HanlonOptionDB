@@ -36,39 +36,17 @@ cur = conn.cursor()
 from pandas_datareader.data import Options
 import pandas_datareader.data
 
-
-symbols = ["VIX"]
+remoteDataErrLst = []
 for sym in symbols:
     tmpOpt = Options(sym, 'yahoo')
     
-    #try:
-    #    tmpOpt.expiry_dates
-    #    #print(sym)
-    #except pandas_datareader.data.RemoteDataError:
-    #    print("{} - RemoteDataError!!".format(sym))
-    #except:
-    #    raise
+    try:
+        tmpOpt.expiry_dates
+        #print(sym)
+    except pandas_datareader.data.RemoteDataError:
+        print("{} - RemoteDataError!!".format(sym))
+        remoteDataErrLst.append(sym)
+    except:
+        raise
 
-    # create table for all symbols here
-    tmpstr = """
-        CREATE TABLE `{}` (
-          `underlying_symbol` varchar(10) NOT NULL,
-          `option_symbol` varchar(50) NOT NULL,
-          `strike` float NOT NULL,
-          `expiry` date NOT NULL,
-          `option_type` varchar(4) NOT NULL,
-          `quote_date` date NOT NULL,
-          `last` float NOT NULL,
-          `bid` float NOT NULL,
-          `ask` float NOT NULL,
-          `vol` int(11) NOT NULL,
-          `open_int` int(11) NOT NULL,
-          `IV` float NOT NULL,
-          `underlying_price` float NOT NULL
-        );""".format(sym)
-    cur.execute(tmpstr)
-    conn.commit()
-
-cur.close()
-conn.close()
-
+print(remoteDataErrLst)

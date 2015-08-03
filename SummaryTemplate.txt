@@ -9,6 +9,7 @@ Spent Time: {}
 
 {} symbols requested
 {} symbols completed
+{} RemoteDataError generated
 {} error generated
 
 Error Message List:

@@ -30,10 +30,10 @@ class HanlonEmail():
 
 
 
-    def setRegMsg(self, startTime, endTime, spentTime, totalSym, compSym, errSym):
+    def setRegMsg(self, startTime, endTime, spentTime, totalSym, compSym, remoteErrSym, errSym):
         summaryTemplate = open(self.email_temp_dir, 'r').read()
         self.summary = summaryTemplate.format(self.today_date, startTime, endTime, spentTime, 
-                                              totalSym, compSym, errSym)
+                                              totalSym, compSym, remoteErrSym, errSym)
         self.msg = MIMEText(self.summary)
         self.msg['Subject'] = "Option Data Download Summary - {}".format(self.today_date)
         # end set message
