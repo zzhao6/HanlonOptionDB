@@ -37,10 +37,9 @@ from pandas_datareader.data import Options
 import pandas_datareader.data
 
 
-symbols = ["VIX"]
 for sym in symbols:
-    tmpOpt = Options(sym, 'yahoo')
-    
+    #tmpOpt = Options(sym, 'yahoo')
+        
     #try:
     #    tmpOpt.expiry_dates
     #    #print(sym)
@@ -50,6 +49,9 @@ for sym in symbols:
     #    raise
 
     # create table for all symbols here
+    if sym[0] == "^":
+        sym = sym[1:]
+    
     tmpstr = """
         CREATE TABLE `{}` (
           `underlying_symbol` varchar(10) NOT NULL,

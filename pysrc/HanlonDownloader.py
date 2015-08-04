@@ -66,8 +66,10 @@ class HanlonDownloader:
         # read from config obj
         self.host_name = self.config["HOST_NAME"]
         self.user_name = self.config["USER_NAME"]
-        self.password = self.config["PASSWORD"]
         self.dbname = self.config["DBNAME"]
+
+        #self.password = self.config["PASSWORD"]
+        self.password = input("Please enter password for DB {}".format(self.dbname))
 
         # connect to database
         self.conn = pymysql.connect(host = self.host_name , user = self.user_name, passwd = self.password, db = self.dbname) 
@@ -186,20 +188,9 @@ class HanlonDownloader:
                 logging.error("{} - {}: RemoteDataError again".format(sym, "None"))
                 print("{} - {}: RemoteDataError again".format(sym, "None"))
                 continue
-            
-            # send request again
-            for expir in tmpExpirList:
-                try:
-                    self._ProcessOne(sym, expir)
-                except Exception as err:
-                    numErrGenerated += 1
-                    self.errlist.append(err)
-                    self._PrintException(err, sym, expir)
-                    self.CloseConn()
-                    self._SendErrorEmail(sym, expir, "none", err)
-                    input("Press any key to raise the exception.")
-                    raise
 
+        return tmpRDElist
+    
 
 
     def ProcessAll(self):
@@ -243,6 +234,18 @@ class HanlonDownloader:
                     raise
 
             numSymCompleted += 1
+
+        if len(self.remoteDataErrLst) != 0:
+            logging.info("Top level: Processing RemoteDataError list: {}".format(self.remoteDataErrLst))
+            print("Top level: Processing RemoteDataError list: {}".format(self.remoteDataErrLst))
+            self.remoteDataErrLst = self._ProcessRDEList()
+            
+            if (len(self.remoteDataErrLst) == 0):
+                logging.info("Top level: all remote data error has been processed")
+            else:
+                logging.error("Top level: still have remote data error: {}".format(self.remoteDataErrLst))
+                self._SendErrorEmail(self.remoteDataErrLst, "none", "none", "RemoteDataError")
+
 
         end_time = datetime.datetime.now()
 
