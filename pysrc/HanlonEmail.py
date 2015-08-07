@@ -30,7 +30,7 @@ class HanlonEmail():
 
 
 
-    def setRegMsg(self, startTime, endTime, spentTime, totalSym, compSym, remoteErrSym, errSym):
+    def setSummaryMsg(self, startTime, endTime, spentTime, totalSym, compSym, remoteErrSym, errSym):
         summaryTemplate = open(self.email_temp_dir, 'r').read()
         self.summary = summaryTemplate.format(self.today_date, startTime, endTime, spentTime, 
                                               totalSym, compSym, remoteErrSym, errSym)
@@ -39,6 +39,11 @@ class HanlonEmail():
         # end set message
         # next step is send out the email
     
+
+    def setIdvMsg(self, title, msg_str):
+        self.msg = MIMEText(msg_str)
+        self.msg['Subject'] = "{} - {}".format(title, self.today_date)
+
 
     def setErrMsg(self, sym, expir, strike, err):
         errTemplate = open(self.email_err_temp_dir, 'r').read()

@@ -29,7 +29,6 @@ tmpsym_vix = pd.read_csv(sym_file_vix)
 #symbols = tmpsym_vix.Symbol
 symbols = pd.concat([tmpsym_sp.Symbol, tmpsym_etf.Symbol, tmpsym_vix.Symbol])
 
-
 conn = pymysql.connect(host = host_name, user = user_name, passwd = password, db = dbname)
 cur = conn.cursor()
 
@@ -52,8 +51,11 @@ for sym in symbols:
     if sym[0] == "^":
         sym = sym[1:]
     
+    if "." in sym:
+        sym = sym.replace('.', '_')
+
     tmpstr = """
-        CREATE TABLE `{}` (
+        CREATE TABLE `OPT_{}` (
           `underlying_symbol` varchar(10) NOT NULL,
           `option_symbol` varchar(50) NOT NULL,
           `strike` float NOT NULL,
@@ -71,6 +73,9 @@ for sym in symbols:
     cur.execute(tmpstr)
     conn.commit()
 
+    tmpstr2 = "ALTER TABLE `OPT_{}` ADD PRIMARY KEY (`quote_date`, `option_symbol`)".format(sym)
+    cur.execute(tmpstr2)
+    conn.commit()
 cur.close()
 conn.close()
 

@@ -7,13 +7,14 @@ import pandas_datareader.data   # RemoteDataError
 
 import logging
 import pickle       # save expiry dicitonary to file
-
+import getpass
 import sys          # display percentage counter
 import numpy        # for data type checking
 import datetime
 from HanlonEmail import *
 
-
+#TODO: holidays and weekends
+#TODO: log backup
 class HanlonDownloader:
     """
 
@@ -59,8 +60,8 @@ class HanlonDownloader:
         
         #self.symbols = tmpsym_sp.Symbol
         #self.symbols = tmpsym_etf.Symbol
-        self.symbols = tmpsym_vix.Symbol
-        #self.symbols = pd.concat([tmpsym_sp.Symbol, tmpsym_etf.Symbol, tmpsym_vix.Symbol])
+        #self.symbols = tmpsym_vix.Symbol
+        self.symbols = pd.concat([tmpsym_sp.Symbol, tmpsym_etf.Symbol, tmpsym_vix.Symbol])
 
     def OpenConn(self):
         # read from config obj
@@ -68,8 +69,8 @@ class HanlonDownloader:
         self.user_name = self.config["USER_NAME"]
         self.dbname = self.config["DBNAME"]
 
-        #self.password = self.config["PASSWORD"]
-        self.password = input("Please enter password for DB {}".format(self.dbname))
+        self.password = self.config["PASSWORD"]
+        #self.password = getpass.getpass("Enter password for DB {}: ".format(self.dbname))
 
         # connect to database
         self.conn = pymysql.connect(host = self.host_name , user = self.user_name, passwd = self.password, db = self.dbname) 
@@ -86,7 +87,7 @@ class HanlonDownloader:
     
     def _SendSummaryEmail(self, start_time, end_time, spent_time, numSymRequested, numSymCompleted, numRemoteErr, numErrGenerated):
         print("Top level: Sending summary email.")
-        self.emailer.setRegMsg(start_time, end_time, spent_time, numSymRequested, numSymCompleted, numRemoteErr, numErrGenerated)
+        self.emailer.setSummaryMsg(start_time, end_time, spent_time, numSymRequested, numSymCompleted, numRemoteErr, numErrGenerated)
         self.emailer.sendMsg()
         logging.info("Top level: Summary email has been sent to {}".format(self.emailer.email_to))
         print("Top level: Summary email has been sent to {}".format(self.emailer.email_to))
@@ -102,10 +103,10 @@ class HanlonDownloader:
         """ 
         print and logging some messages about unhandled exception
         """ 
-        errStr = "{} - {}: Unhandled exception. {}".format(sym, expir, err) 
+        errStr = "{} - {}: Error:Unhandled exception. {}".format(sym, expir, err) 
         self.errlist.append(errStr)
 
-        logging.exception("{} - {}: Unhandled exception. {}".format(sym, expir, err))
+        logging.error("{} - {}: Error:Unhandled exception. {}".format(sym, expir, err))
 
 
     def _ProcessOne(self, sym, expir):
@@ -132,6 +133,10 @@ class HanlonDownloader:
             if type(onerow.Ask[i]) is not numpy.float64:
                 tmpAsk = 0.0
             
+            # clean data, sometime open_interest is not a number
+            tmpOpenInt = onerow.Open_Int[i]
+            if onerow.Open_Int[i] == '-':
+                tmpOpenInt = 0                
             # replace missing value '-' with '0'
             # insert_str = insert_str.replace('NaT', '0')
             # insert_str = insert_str.replace(' -,', ' 0,')
@@ -143,14 +148,14 @@ class HanlonDownloader:
                 tmpsym = tmpsym[1:]
 
             # gen sql insert statement
-            insert_str = """INSERT INTO {} (underlying_symbol, option_symbol,
+            insert_str = """INSERT INTO OPT_{} (underlying_symbol, option_symbol,
             strike, expiry, option_type, quote_date, last, bid, ask, vol,
             open_int, IV, underlying_price) VALUES 
             ('{}', '{}', {}, '{}', '{}', '{}', {}, {}, {}, {}, {}, {}, {});""".format(tmpsym,\
                     onerow.Root[i], onerow.Symbol[i], onerow.Strike[i], \
                     str(onerow.Expiry[i].date()), onerow.Type[i], str(onerow.Quote_Time[i].date()),\
                     onerow.Last[i], tmpBid, tmpAsk,\
-                    onerow.Vol[i], onerow.Open_Int[i], float(onerow.IV[i].strip('%'))/100,\
+                    onerow.Vol[i], tmpOpenInt, float(onerow.IV[i].strip('%'))/100,\
                     onerow.Underlying_Price[i])
             # push into db
              
@@ -159,6 +164,7 @@ class HanlonDownloader:
             except Exception as err:
                 #print("--{}".format(onerow.Bid[i]))
                 print(insert_str)
+                print(mydata.iloc[[i]])
                 self._PrintException(err)
                 raise
 
@@ -199,7 +205,9 @@ class HanlonDownloader:
         """
         logging.info("Start to process all symbols: {} in total.".format(len(self.symbols)))
         print("Start to process all symbols: {} in total.".format(len(self.symbols)))
-        
+        self.emailer.setIdvMsg("Downloading started", "--")
+        self.emailer.sendMsg()
+
         # some statistics for the summary email
         start_time = datetime.datetime.now() 
         numSymRequested = 0
@@ -222,8 +230,18 @@ class HanlonDownloader:
 
             for expir in tmpExpirList:
                 try:
-                    # TODO: handle RemoteDataError exception. Sometime the yahoo server doesn't response
                     self._ProcessOne(sym, expir)
+                except pandas_datareader.data.RemoteDataError:
+                    self.remoteDataErrLst.append(sym)
+                    logging.error("{} - {}: RemoteDataError, pushed to the list, will try again later".format(sym, "None"))
+                    print("{} - {}: RemoteDataError, pushed to the list, will try again later".format(sym, "None"))
+                    continue
+                except pymysql.err.IntegrityError as err:
+                    logging.error("{} - {}: DuplicateKeyError, push to self err list".format(sym, expir))
+                    print("{} - {}: DuplicateKeyError, push to self err list".format(sym, expir))
+                    self.errlist.append(err)
+                    # TODO: complete this exception handling: data duplicate error
+                    continue
                 except Exception as err:
                     numErrGenerated += 1
                     self.errlist.append(err)
@@ -235,6 +253,7 @@ class HanlonDownloader:
 
             numSymCompleted += 1
 
+        # send request again for symbols with remote data error
         if len(self.remoteDataErrLst) != 0:
             logging.info("Top level: Processing RemoteDataError list: {}".format(self.remoteDataErrLst))
             print("Top level: Processing RemoteDataError list: {}".format(self.remoteDataErrLst))
@@ -243,7 +262,7 @@ class HanlonDownloader:
             if (len(self.remoteDataErrLst) == 0):
                 logging.info("Top level: all remote data error has been processed")
             else:
-                logging.error("Top level: still have remote data error: {}".format(self.remoteDataErrLst))
+                logging.error("Top level: Error: still have remote data error: {}".format(self.remoteDataErrLst))
                 self._SendErrorEmail(self.remoteDataErrLst, "none", "none", "RemoteDataError")
 
 
