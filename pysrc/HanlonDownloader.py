@@ -12,7 +12,7 @@ import sys          # display percentage counter
 import numpy        # for data type checking
 import datetime
 from HanlonEmail import *
-
+from timeout import *       # self-created timeout handeller
 #TODO: holidays and weekends
 #TODO: log backup
 class HanlonDownloader:
@@ -39,8 +39,14 @@ class HanlonDownloader:
         # remote data err list, as this err is common
         self.remoteDataErrLst = []
 
+        # request timeout list
+        self.timeoutLst = []
+
         # in every expiry and every symbol, how many rows have been changed in the database
         self.rowcnt = 0
+
+        # request timeout
+        self.req_timeout = self.config["TIME_OUT"]
 
         # read symbol list from symbol file
         # 1. DJIA consituents
@@ -59,9 +65,9 @@ class HanlonDownloader:
         tmpsym_vix = pd.read_csv(self.sym_file_vix)
         
         #self.symbols = tmpsym_sp.Symbol
-        #self.symbols = tmpsym_etf.Symbol
+        self.symbols = tmpsym_etf.Symbol
         #self.symbols = tmpsym_vix.Symbol
-        self.symbols = pd.concat([tmpsym_sp.Symbol, tmpsym_etf.Symbol, tmpsym_vix.Symbol])
+        #self.symbols = pd.concat([tmpsym_sp.Symbol, tmpsym_etf.Symbol, tmpsym_vix.Symbol])
 
     def OpenConn(self):
         # read from config obj
@@ -103,10 +109,10 @@ class HanlonDownloader:
         """ 
         print and logging some messages about unhandled exception
         """ 
-        errStr = "{} - {}: Error:Unhandled exception. {}".format(sym, expir, err) 
+        errStr = "{} - {}: Error:Unhandled exception. {}".format(sym, expir, repr(err)) 
         self.errlist.append(errStr)
 
-        logging.error("{} - {}: Error:Unhandled exception. {}".format(sym, expir, err))
+        logging.error("{} - {}: Error:Unhandled exception. {}".format(sym, expir, repr(err)))
 
 
     def _ProcessOne(self, sym, expir):
@@ -116,7 +122,9 @@ class HanlonDownloader:
         tmpOption = Options(sym, 'yahoo')
 
         logging.info("{} - {}: Requesting".format(sym, expir))
-        mydata = tmpOption.get_options_data(expiry = expir)
+        # set timeout for single request
+        with timeout(seconds=self.req_timeout):
+            mydata = tmpOption.get_options_data(expiry = expir)
             
         logging.info("{} - {}: Finished request, insert to table...".format(sym, expir))
         mydata = mydata.reset_index()
@@ -222,8 +230,8 @@ class HanlonDownloader:
                 tmpExpirList = tmpOptionObj.expiry_dates
             except pandas_datareader.data.RemoteDataError:
                 self.remoteDataErrLst.append(sym)
-                logging.error("{} - {}: RemoteDataError, pushed to the list, will try again later".format(sym, "None"))
-                print("{} - {}: RemoteDataError, pushed to the list, will try again later".format(sym, "None"))
+                print("{} - {}: RemoteDataError while getting all expiries.".format(sym, "AllExpir"))
+                logging.error("{} - {}: RemoteDataError while getting all expiries.".format(sym, "AllExpir"))
                 continue
 
             numSymRequested += 1
@@ -231,10 +239,15 @@ class HanlonDownloader:
             for expir in tmpExpirList:
                 try:
                     self._ProcessOne(sym, expir)
+                except TimeoutError as err:
+                    print("{} - {}: {}".format(sym, expir, err))
+                    logging.error("{} - {}: {}".format(sym, expir, err))
+                    self.timeoutLst.append((sym, expir))
+                    continue
                 except pandas_datareader.data.RemoteDataError:
-                    self.remoteDataErrLst.append(sym)
-                    logging.error("{} - {}: RemoteDataError, pushed to the list, will try again later".format(sym, "None"))
-                    print("{} - {}: RemoteDataError, pushed to the list, will try again later".format(sym, "None"))
+                    self.remoteDataErrLst.append((sym, expir))
+                    logging.error("{} - {}: RemoteDataError".format(sym, expir))
+                    print("{} - {}: RemoteDataError".format(sym, expir))
                     continue
                 except pymysql.err.IntegrityError as err:
                     logging.error("{} - {}: DuplicateKeyError, push to self err list".format(sym, expir))
@@ -254,16 +267,16 @@ class HanlonDownloader:
             numSymCompleted += 1
 
         # send request again for symbols with remote data error
-        if len(self.remoteDataErrLst) != 0:
-            logging.info("Top level: Processing RemoteDataError list: {}".format(self.remoteDataErrLst))
-            print("Top level: Processing RemoteDataError list: {}".format(self.remoteDataErrLst))
-            self.remoteDataErrLst = self._ProcessRDEList()
-            
-            if (len(self.remoteDataErrLst) == 0):
-                logging.info("Top level: all remote data error has been processed")
-            else:
-                logging.error("Top level: Error: still have remote data error: {}".format(self.remoteDataErrLst))
-                self._SendErrorEmail(self.remoteDataErrLst, "none", "none", "RemoteDataError")
+        #if len(self.remoteDataErrLst) != 0:
+        #    logging.info("Top level: Processing RemoteDataError list: {}".format(self.remoteDataErrLst))
+        #    print("Top level: Processing RemoteDataError list: {}".format(self.remoteDataErrLst))
+        #    self.remoteDataErrLst = self._ProcessRDEList()
+        #    
+        #    if (len(self.remoteDataErrLst) == 0):
+        #        logging.info("Top level: all remote data error has been processed")
+        #    else:
+        #        logging.error("Top level: Error: still have remote data error: {}".format(self.remoteDataErrLst))
+        #        self._SendErrorEmail(self.remoteDataErrLst, "none", "none", "RemoteDataError")
 
 
         end_time = datetime.datetime.now()

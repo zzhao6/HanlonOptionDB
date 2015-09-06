@@ -1,9 +1,10 @@
-from HanlonDownloader import *
+from timeout import *
+from time import *
 
 if __name__ == "__main__":
-    ctsh = Options('CTSH', 'yahoo')
-
-    ins = HanlonDownloader("../configure.conf")
-    ins.OpenConn()
-    ins._ProcessOne('CTSH', ctsh.expiry_dates[8])
-    ins.CloseConn()
+    with timeout(seconds=1):
+        try:
+            sleep(2)
+        except TimeoutError as err:
+            print("handelled")
+            print(err)
