@@ -1,61 +1,88 @@
-09/05/2015 10:48:56 Top level: Connected to db: HanlonOptionDB
-09/05/2015 10:48:56 Start to process all symbols: 100 in total.
-09/05/2015 10:48:58 SPY - 2015-09-11: Requesting
-09/05/2015 10:49:20 Top level: Connected to db: HanlonOptionDB
-09/05/2015 10:49:20 Start to process all symbols: 100 in total.
-09/05/2015 10:49:22 SPY - 2015-09-11: Requesting
-09/05/2015 10:49:55 Top level: Connected to db: HanlonOptionDB
-09/05/2015 10:49:55 Start to process all symbols: 100 in total.
-09/05/2015 10:49:56 SPY - 2015-09-11: Requesting
-09/05/2015 10:50:01 SPY - 2015-09-11: Finished request, insert to table...
-09/05/2015 10:50:01 SPY - 2015-09-11: Inserted to table, 284 rows affected.
-09/05/2015 10:50:01 SPY - 2015-09-18: Requesting
-09/05/2015 10:50:02 SPY - 2015-09-18: RemoteDataError
-09/05/2015 10:50:02 SPY - 2015-09-25: Requesting
-09/05/2015 10:50:04 SPY - 2015-09-25: Error:Unhandled exception. <urlopen error Timeout>
-09/05/2015 10:50:04 Top level: Connection closed.
-09/05/2015 10:51:14 Top level: Connected to db: HanlonOptionDB
-09/05/2015 10:51:14 Start to process all symbols: 100 in total.
-09/05/2015 10:51:16 SPY - 2015-09-11: Requesting
-09/05/2015 10:51:17 SPY - 2015-09-11: Timeout
-09/05/2015 10:51:17 SPY - 2015-09-18: Requesting
-09/05/2015 10:51:20 SPY - 2015-09-18: Finished request, insert to table...
-09/05/2015 10:51:21 SPY - 2015-09-18: Inserted to table, 308 rows affected.
-09/05/2015 10:51:21 SPY - 2015-09-25: Requesting
-09/05/2015 10:51:24 SPY - 2015-09-25: Finished request, insert to table...
-09/05/2015 10:51:25 SPY - 2015-09-25: Inserted to table, 219 rows affected.
-09/05/2015 10:51:25 SPY - 2015-09-30: Requesting
-09/05/2015 10:51:28 SPY - 2015-09-30: Finished request, insert to table...
-09/05/2015 10:51:28 SPY - 2015-09-30: Inserted to table, 198 rows affected.
-09/05/2015 10:51:28 SPY - 2015-10-02: Requesting
-09/05/2015 10:51:32 SPY - 2015-10-02: Finished request, insert to table...
-09/05/2015 10:51:32 SPY - 2015-10-02: Inserted to table, 176 rows affected.
-09/05/2015 10:51:32 SPY - 2015-10-09: Requesting
-09/05/2015 10:51:58 Top level: Connected to db: HanlonOptionDB
-09/05/2015 10:51:58 Start to process all symbols: 100 in total.
-09/05/2015 10:51:59 SPY - 2015-09-11: Requesting
-09/05/2015 10:52:09 SPY - 2015-09-11: Finished request, insert to table...
-09/05/2015 10:52:16 Top level: Connected to db: HanlonOptionDB
-09/05/2015 10:52:16 Start to process all symbols: 100 in total.
-09/05/2015 10:52:18 SPY - 2015-09-11: Requesting
-09/05/2015 10:52:22 SPY - 2015-09-11: Finished request, insert to table...
-09/05/2015 10:52:22  - : Error:Unhandled exception. IntegrityError(1062, "Duplicate entry '2015-09-05-SPY150911P00100000' for key 'PRIMARY'")
-09/05/2015 10:52:22 SPY - 2015-09-11: DuplicateKeyError, push to self err list
-09/05/2015 10:52:22 SPY - 2015-09-18: Requesting
-09/05/2015 10:52:26 SPY - 2015-09-18: Finished request, insert to table...
-09/05/2015 10:52:27 SPY - 2015-09-18: Inserted to table, 308 rows affected.
-09/05/2015 10:52:27 SPY - 2015-09-25: Requesting
-09/05/2015 10:52:30 SPY - 2015-09-25: Finished request, insert to table...
-09/05/2015 10:52:31 SPY - 2015-09-25: Inserted to table, 219 rows affected.
-09/05/2015 10:52:31 SPY - 2015-09-30: Requesting
-09/05/2015 10:52:34 SPY - 2015-09-30: Finished request, insert to table...
-09/05/2015 10:52:34 SPY - 2015-09-30: Inserted to table, 198 rows affected.
-09/05/2015 10:52:34 SPY - 2015-10-02: Requesting
-09/05/2015 10:52:38 SPY - 2015-10-02: Finished request, insert to table...
-09/05/2015 10:52:38 SPY - 2015-10-02: Inserted to table, 176 rows affected.
-09/05/2015 10:52:38 SPY - 2015-10-09: Requesting
-09/05/2015 10:52:41 SPY - 2015-10-09: Finished request, insert to table...
-09/05/2015 10:52:42 SPY - 2015-10-09: Inserted to table, 112 rows affected.
-09/05/2015 10:52:42 SPY - 2015-10-16: Requesting
-09/05/2015 10:52:43 SPY - 2015-10-16: Error:Unhandled exception. URLError(TimeoutError('Timeout',),)
-09/05/2015 10:52:43 Top level: Connection closed.
+09/06/2015 12:23:49 Top level: Connected to db: HanlonOptionDB
+09/06/2015 12:23:49 First Round Request Start: 3 in total.
+09/06/2015 12:23:51 AAPL - 2015-09-11: Requesting
+09/06/2015 12:23:53 AAPL - 2015-09-11: RemoteDataError
+09/06/2015 12:23:53 AAPL - 2015-09-18: Requesting
+09/06/2015 12:23:56 AAPL - 2015-09-18: Timeout
+09/06/2015 12:23:56 AAPL - 2015-09-25: Requesting
+09/06/2015 12:23:58 AAPL - 2015-09-25: RemoteDataError
+09/06/2015 12:23:58 AAPL - 2015-10-02: Requesting
+09/06/2015 12:24:00 AAPL - 2015-10-02: RemoteDataError
+09/06/2015 12:24:00 AAPL - 2015-10-09: Requesting
+09/06/2015 12:24:02 AAPL - 2015-10-09: RemoteDataError
+09/06/2015 12:24:02 AAPL - 2015-10-16: Requesting
+09/06/2015 12:24:04 AAPL - 2015-10-16: RemoteDataError
+09/06/2015 12:24:04 AAPL - 2015-10-23: Requesting
+09/06/2015 12:24:06 AAPL - 2015-10-23: Finished request, insert to table...
+09/06/2015 12:24:06 AAPL - 2015-10-23: Inserted to table, 36 rows affected.
+09/06/2015 12:24:06 AAPL - 2015-11-20: Requesting
+09/06/2015 12:24:08 AAPL - 2015-11-20: Finished request, insert to table...
+09/06/2015 12:24:08 AAPL - 2015-11-20: Inserted to table, 48 rows affected.
+09/06/2015 12:24:08 AAPL - 2015-12-18: Requesting
+09/06/2015 12:24:10 AAPL - 2015-12-18: RemoteDataError
+09/06/2015 12:24:10 AAPL - 2016-04-15: Requesting
+09/06/2015 12:24:12 AAPL - 2016-04-15: RemoteDataError
+09/06/2015 12:24:12 AAPL - 2016-06-17: Requesting
+09/06/2015 12:24:14 AAPL - 2016-06-17: Finished request, insert to table...
+09/06/2015 12:24:14 AAPL - 2016-06-17: Inserted to table, 56 rows affected.
+09/06/2015 12:24:14 AAPL - 2017-01-20: Requesting
+09/06/2015 12:24:16 AAPL - 2017-01-20: Finished request, insert to table...
+09/06/2015 12:24:16 AAPL - 2017-01-20: Inserted to table, 66 rows affected.
+09/06/2015 12:24:16 AXP - 2015-09-11: Requesting
+09/06/2015 12:24:18 AXP - 2015-09-11: RemoteDataError
+09/06/2015 12:24:18 AXP - 2015-09-18: Requesting
+09/06/2015 12:24:20 AXP - 2015-09-18: Timeout
+09/06/2015 12:24:20 AXP - 2015-09-25: Requesting
+09/06/2015 12:24:22 AXP - 2015-09-25: Finished request, insert to table...
+09/06/2015 12:24:22 AXP - 2015-09-25: Inserted to table, 58 rows affected.
+09/06/2015 12:24:22 AXP - 2015-10-02: Requesting
+09/06/2015 12:24:24 AXP - 2015-10-02: RemoteDataError
+09/06/2015 12:24:24 AXP - 2015-10-09: Requesting
+09/06/2015 12:24:26 AXP - 2015-10-09: Finished request, insert to table...
+09/06/2015 12:24:26 AXP - 2015-10-09: Inserted to table, 15 rows affected.
+09/06/2015 12:24:26 AXP - 2015-10-16: Requesting
+09/06/2015 12:24:28 AXP - 2015-10-16: Finished request, insert to table...
+09/06/2015 12:24:28 AXP - 2015-10-16: Inserted to table, 36 rows affected.
+09/06/2015 12:24:28 AXP - 2015-10-23: Requesting
+09/06/2015 12:24:29 AXP - 2015-10-23: Finished request, insert to table...
+09/06/2015 12:24:29 AXP - 2015-10-23: Inserted to table, 14 rows affected.
+09/06/2015 12:24:29 AXP - 2016-01-15: Requesting
+09/06/2015 12:24:31 AXP - 2016-01-15: Finished request, insert to table...
+09/06/2015 12:24:31 AXP - 2016-01-15: Inserted to table, 58 rows affected.
+09/06/2015 12:24:31 AXP - 2016-04-15: Requesting
+09/06/2015 12:24:33 AXP - 2016-04-15: Finished request, insert to table...
+09/06/2015 12:24:33 AXP - 2016-04-15: Inserted to table, 19 rows affected.
+09/06/2015 12:24:33 AXP - 2017-01-20: Requesting
+09/06/2015 12:24:35 AXP - 2017-01-20: Timeout
+09/06/2015 12:24:36 BA - 2015-09-11: Requesting
+09/06/2015 12:24:38 BA - 2015-09-11: Finished request, insert to table...
+09/06/2015 12:24:38 BA - 2015-09-11: Inserted to table, 78 rows affected.
+09/06/2015 12:24:38 BA - 2015-09-18: Requesting
+09/06/2015 12:24:40 BA - 2015-09-18: Finished request, insert to table...
+09/06/2015 12:24:40 BA - 2015-09-18: Inserted to table, 92 rows affected.
+09/06/2015 12:24:40 BA - 2015-09-25: Requesting
+09/06/2015 12:24:42 BA - 2015-09-25: RemoteDataError
+09/06/2015 12:24:42 BA - 2015-10-02: Requesting
+09/06/2015 12:24:44 BA - 2015-10-02: RemoteDataError
+09/06/2015 12:24:44 BA - 2015-10-09: Requesting
+09/06/2015 12:24:46 BA - 2015-10-09: Finished request, insert to table...
+09/06/2015 12:24:46 BA - 2015-10-09: Inserted to table, 37 rows affected.
+09/06/2015 12:24:46 BA - 2015-10-16: Requesting
+09/06/2015 12:24:48 BA - 2015-10-16: Finished request, insert to table...
+09/06/2015 12:24:48 BA - 2015-10-16: Inserted to table, 40 rows affected.
+09/06/2015 12:24:48 BA - 2015-10-23: Requesting
+09/06/2015 12:24:50 BA - 2015-10-23: Finished request, insert to table...
+09/06/2015 12:24:50 BA - 2015-10-23: Inserted to table, 12 rows affected.
+09/06/2015 12:24:50 BA - 2015-11-20: Requesting
+09/06/2015 12:24:51 BA - 2015-11-20: Finished request, insert to table...
+09/06/2015 12:24:51 BA - 2015-11-20: Inserted to table, 46 rows affected.
+09/06/2015 12:24:51 BA - 2016-01-15: Requesting
+09/06/2015 12:24:53 BA - 2016-01-15: Finished request, insert to table...
+09/06/2015 12:24:53 BA - 2016-01-15: Inserted to table, 60 rows affected.
+09/06/2015 12:24:53 BA - 2016-02-19: Requesting
+09/06/2015 12:24:58 BA - 2016-02-19: RemoteDataError
+09/06/2015 12:24:58 BA - 2017-01-20: Requesting
+09/06/2015 12:25:00 BA - 2017-01-20: RemoteDataError
+09/06/2015 12:25:00 Second round: timeout symbols, 3 in total
+09/06/2015 12:25:01 Top level: Summary email has been sent to hanlonoptiondb@gmail.com
+09/06/2015 12:25:01 Top level: Connection closed.

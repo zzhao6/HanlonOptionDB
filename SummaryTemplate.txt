@@ -11,7 +11,7 @@ Spent Time: {}
 {} symbols completed
 {} RemoteDataError generated
 {} error generated
-
+1 \t 2
 Error Message List:
 ...
 ...

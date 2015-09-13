@@ -10,4 +10,4 @@ Expiry: {}
 Strike: {}
 
 Error Message:
-{}:
+{}: {}

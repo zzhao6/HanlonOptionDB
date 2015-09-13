@@ -45,9 +45,9 @@ class HanlonEmail():
         self.msg['Subject'] = "{} - {}".format(title, self.today_date)
 
 
-    def setErrMsg(self, sym, expir, strike, err):
+    def setErrMsg(self, sym, expir, strike, err_type, err):
         errTemplate = open(self.email_err_temp_dir, 'r').read()
-        self.errEmail = errTemplate.format(self.today_date, "time", sym, expir, strike, err)
+        self.errEmail = errTemplate.format(self.today_date, "time", sym, expir, strike, err_type, err)
         
         self.msg = MIMEText(self.errEmail)
         self.msg['Subject'] = "Error Occured - Option Data Download"

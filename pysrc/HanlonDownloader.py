@@ -8,9 +8,10 @@ import pandas_datareader.data   # RemoteDataError
 import logging
 import pickle       # save expiry dicitonary to file
 import getpass
-import sys          # display percentage counter
+import sys          # display percentage counter, also the error type
 import numpy        # for data type checking
 import datetime
+import urllib       # for handeling exception urllib.error.URLError
 from HanlonEmail import *
 from timeout import *       # self-created timeout handeller
 #TODO: holidays and weekends
@@ -33,20 +34,18 @@ class HanlonDownloader:
         # config emailer
         self.emailer = HanlonEmail(self.config)
 
-        # err message list, will put in summary
-        self.errlist = []
-
-        # remote data err list, as this err is common
-        self.remoteDataErrLst = []
-
-        # request timeout list
-        self.timeoutLst = []
+        # symbols/expir with incomplete requests
+        self.RDEAllExpirLst = []    # remote data error while getting expiries
+        self.remoteDataErrLst = []  # remote data error
+        self.timeoutLst = []        # timeout error
+        self.errLst = []            # all other errors
 
         # in every expiry and every symbol, how many rows have been changed in the database
         self.rowcnt = 0
 
         # request timeout
-        self.req_timeout = self.config["TIME_OUT"]
+        self.req_timeout_1 = self.config["TIMEOUT_1ST_RND"]
+        self.req_timeout_2 = self.config["TIMEOUT_2ND_RND"]
 
         # read symbol list from symbol file
         # 1. DJIA consituents
@@ -64,8 +63,9 @@ class HanlonDownloader:
         tmpsym_etf = pd.read_csv(self.sym_file_etf)
         tmpsym_vix = pd.read_csv(self.sym_file_vix)
         
+        self.symbols = tmpsym_djia.Symbol
         #self.symbols = tmpsym_sp.Symbol
-        self.symbols = tmpsym_etf.Symbol
+        #self.symbols = tmpsym_etf.Symbol
         #self.symbols = tmpsym_vix.Symbol
         #self.symbols = pd.concat([tmpsym_sp.Symbol, tmpsym_etf.Symbol, tmpsym_vix.Symbol])
 
@@ -99,31 +99,25 @@ class HanlonDownloader:
         print("Top level: Summary email has been sent to {}".format(self.emailer.email_to))
 
 
-    def _SendErrorEmail(self, sym, expir, strike, err):
+    def _SendErrorEmail(self, sym, expir, strike, err_type, err):
         print("{} - {}: ERROR: sending error email.".format(sym, expir))
-        self.emailer.setErrMsg(sym, expir, strike, err)
+        self.emailer.setErrMsg(sym, expir, strike, err_type, err)
         self.emailer.sendMsg()
 
 
-    def _PrintException(self, err, sym = "", expir = ""):
-        """ 
-        print and logging some messages about unhandled exception
-        """ 
-        errStr = "{} - {}: Error:Unhandled exception. {}".format(sym, expir, repr(err)) 
-        self.errlist.append(errStr)
-
-        logging.error("{} - {}: Error:Unhandled exception. {}".format(sym, expir, repr(err)))
-
-
-    def _ProcessOne(self, sym, expir):
+    def _ProcessOne(self, sym, expir, time_out=None):
         """
         process one symbol, one expiry date, one strike
+        time_out: maximum seconds waiting for the request
         """
+        if time_out == None:
+            time_out = self.req_timeout_1   # the default timeout length
+
         tmpOption = Options(sym, 'yahoo')
 
         logging.info("{} - {}: Requesting".format(sym, expir))
         # set timeout for single request
-        with timeout(seconds=self.req_timeout):
+        with timeout(seconds = time_out):
             mydata = tmpOption.get_options_data(expiry = expir)
             
         logging.info("{} - {}: Finished request, insert to table...".format(sym, expir))
@@ -170,12 +164,14 @@ class HanlonDownloader:
             try:
                 self.rowcnt += self.cur.execute(insert_str) 
             except Exception as err:
-                #print("--{}".format(onerow.Bid[i]))
+                # exception while inserting to database
+                print("Exception occured while inserting to database")
                 print(insert_str)
                 print(mydata.iloc[[i]])
-                self._PrintException(err)
+                logging.error("Exception occured while inserting to database")
+                logging.error(insert_str)
+                logging.error(mydata.iloc[[i]])
                 raise
-
 
             self.conn.commit()
             # end of for loop
@@ -184,44 +180,62 @@ class HanlonDownloader:
         print("{} - {}: Inserted to table, {} rows affected.".format(sym, expir, self.rowcnt))
         self.rowcnt = 0
         # end function process one
-    
 
     # TODO: finish this function, and put this in the ProcessAll function
+    def _ProcessOtherErrLst(self):
+        """
+        if len(self.remoteDataErrLst) != 0:
+            logging.info("Top level: Processing RemoteDataError list: {}".format(self.remoteDataErrLst))
+            print("Top level: Processing RemoteDataError list: {}".format(self.remoteDataErrLst))
+            self.remoteDataErrLst = self._ProcessRDEList()
+            
+            if (len(self.remoteDataErrLst) == 0):
+                logging.info("Top level: all remote data error has been processed")
+            else:
+                logging.error("Top level: Error: still have remote data error: {}".format(self.remoteDataErrLst))
+                self._SendErrorEmail(self.remoteDataErrLst, "none", "none", "RemoteDataError")
+        send request of symbols with other errors
+        """
+        pass
+
     def _ProcessRDEList(self):
         """
         send request of the symbols which were generating RemoteDataError
         """
-        tmpRDElist = [] 
-        for sym in self.remoteDataErrLst:
-            tmpOptionObj = Options(sym, 'yahoo')
+        pass 
 
-            try:
-                tmpExpirList = tmpOptionObj.expiry_dates
-            except pandas_datareader.data.RemoteDataError:
-                tmpRDElist.append(sym)
-                logging.error("{} - {}: RemoteDataError again".format(sym, "None"))
-                print("{} - {}: RemoteDataError again".format(sym, "None"))
-                continue
-
-        return tmpRDElist
-    
+    def _ProcessTimeoutLst(self):
+        """
+        send request of symbols with timeout error
+        """
+        #print(len(self.timeoutLst))
+        #print(self.timeoutLst)
+        logging.info("Second round: timeout symbols, {} in total".format(len(self.timeoutLst)))   
+        for sym, expir in self.timeoutLst:
+            print(sym)
+            print(expir)
 
 
+    #TODO: first round and second round summary
     def ProcessAll(self):
         """
         process all symbols in symbol list file
         """
-        logging.info("Start to process all symbols: {} in total.".format(len(self.symbols)))
-        print("Start to process all symbols: {} in total.".format(len(self.symbols)))
+        logging.info("First Round Request Start: {} in total.".format(len(self.symbols)))
+        print("First Round Request Start: {} in total.".format(len(self.symbols)))
         self.emailer.setIdvMsg("Downloading started", "--")
         self.emailer.sendMsg()
 
         # some statistics for the summary email
-        start_time = datetime.datetime.now() 
         numSymRequested = 0
         numSymCompleted = 0
         numErrGenerated = 0
+        
+        numRDESymExpir = 0
+        numTimeoutSymExpir = 0
 
+        start_time = datetime.datetime.now() 
+        ### first round request ###
         # start request
         for sym in self.symbols:
             tmpOptionObj = Options(sym, 'yahoo')
@@ -229,55 +243,51 @@ class HanlonDownloader:
             try:
                 tmpExpirList = tmpOptionObj.expiry_dates
             except pandas_datareader.data.RemoteDataError:
-                self.remoteDataErrLst.append(sym)
-                print("{} - {}: RemoteDataError while getting all expiries.".format(sym, "AllExpir"))
-                logging.error("{} - {}: RemoteDataError while getting all expiries.".format(sym, "AllExpir"))
-                continue
-
-            numSymRequested += 1
+                self.RDEAllExpirLst.append(sym)                                     # error list 1
+                print("{} - {}: RemoteDataError for all expiries".format(sym, "AllExpir"))
+                logging.error("{} - {}: RemoteDataError for all expiries".format(sym, "AllExpir"))
+                numErrGenerated += 1
+                # skip requesting for this symbol under such error  
+                continue        
 
             for expir in tmpExpirList:
                 try:
                     self._ProcessOne(sym, expir)
-                except TimeoutError as err:
-                    print("{} - {}: {}".format(sym, expir, err))
-                    logging.error("{} - {}: {}".format(sym, expir, err))
-                    self.timeoutLst.append((sym, expir))
-                    continue
                 except pandas_datareader.data.RemoteDataError:
-                    self.remoteDataErrLst.append((sym, expir))
+                    self.remoteDataErrLst.append((sym, expir))                      # error list 2
                     logging.error("{} - {}: RemoteDataError".format(sym, expir))
                     print("{} - {}: RemoteDataError".format(sym, expir))
                     continue
-                except pymysql.err.IntegrityError as err:
-                    logging.error("{} - {}: DuplicateKeyError, push to self err list".format(sym, expir))
-                    print("{} - {}: DuplicateKeyError, push to self err list".format(sym, expir))
-                    self.errlist.append(err)
-                    # TODO: complete this exception handling: data duplicate error
+                except (urllib.error.URLError, TimeoutError) as err:
+                    self.timeoutLst.append((sym, expir))                            # error list 3
+                    print("{} - {}: {}".format(sym, expir, err))
+                    logging.error("{} - {}: {}".format(sym, expir, err))
                     continue
+                except pymysql.err.IntegrityError as err:
+                    # TODO: complete this exception handling: data duplicate error
+                    #logging.error("{} - {}: DuplicateKeyError, push to self err list".format(sym, expir))
+                    #print("{} - {}: DuplicateKeyError, push to self err list".format(sym, expir))
+                    #self.errLst.append(err)
+                    #continue
+                    pass
                 except Exception as err:
+                    self.errLst.append((sym, errStr))                               # error list 4
                     numErrGenerated += 1
-                    self.errlist.append(err)
-                    self._PrintException(err, sym, expir)
+
+                    exc_type, exc_obj, exc_tb = sys.exc_info()  # get err type
+                    errStr = "{} - {}: Error:Unhandled exception. {}: {}".format(sym, expir, exc_type, err) 
+                    logging.error(errStr)
+                    print(errStr)
+
                     self.CloseConn()
-                    self._SendErrorEmail(sym, expir, "none", err)
+                    self._SendErrorEmail(sym, expir, "none", exc_type, err)
                     input("Press any key to raise the exception.")
                     raise
 
-            numSymCompleted += 1
-
-        # send request again for symbols with remote data error
-        #if len(self.remoteDataErrLst) != 0:
-        #    logging.info("Top level: Processing RemoteDataError list: {}".format(self.remoteDataErrLst))
-        #    print("Top level: Processing RemoteDataError list: {}".format(self.remoteDataErrLst))
-        #    self.remoteDataErrLst = self._ProcessRDEList()
-        #    
-        #    if (len(self.remoteDataErrLst) == 0):
-        #        logging.info("Top level: all remote data error has been processed")
-        #    else:
-        #        logging.error("Top level: Error: still have remote data error: {}".format(self.remoteDataErrLst))
-        #        self._SendErrorEmail(self.remoteDataErrLst, "none", "none", "RemoteDataError")
-
+        ### second round request ###
+        self._ProcessRDEList()
+        self._ProcessTimeoutLst()
+        self._ProcessOtherErrLst()
 
         end_time = datetime.datetime.now()
 
