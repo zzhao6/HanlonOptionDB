@@ -29,11 +29,22 @@ class HanlonEmail():
         self.today_date = time.strftime("%m/%d/%Y")
 
 
-
-    def setSummaryMsg(self, startTime, endTime, spentTime, totalSym, compSym, remoteErrSym, errSym):
+    def setSummaryMsg(self, summaryEmailObj):
         summaryTemplate = open(self.email_temp_dir, 'r').read()
-        self.summary = summaryTemplate.format(self.today_date, startTime, endTime, spentTime, 
-                                              totalSym, compSym, remoteErrSym, errSym)
+        self.summary = summaryTemplate.format(\
+                summaryEmailObj.date,\
+                summaryEmailObj.starttime,\
+                summaryEmailObj.endtime,\
+                summaryEmailObj.RDE1st,\
+                summaryEmailObj.RDE2nd,\
+                summaryEmailObj.Timeout1st,\
+                summaryEmailObj.Timeout2nd,\
+
+                summaryEmailObj.RDELst,\
+                summaryEmailObj.TimeoutLst,\
+                summaryEmailObj.numReq,\
+                summaryEmailObj.numComp)
+                
         self.msg = MIMEText(self.summary)
         self.msg['Subject'] = "Option Data Download Summary - {}".format(self.today_date)
         # end set message
@@ -53,10 +64,10 @@ class HanlonEmail():
         self.msg['Subject'] = "Error Occured - Option Data Download"
         # end set message
         # next step is send out the email
-         
 
 
     def setWrnMsg(self):
+        # TODO
         pass
 
 
@@ -77,3 +88,23 @@ class HanlonEmail():
         self.s.quit()
 
 
+class SummaryEmailStruct():
+    def __init__(self, _date, _starttime, _endtime, \
+                 _RDE1st, _RDE2nd, \
+                 _Timeout1st, _Timeout2nd, \
+                 _RDELst, _TimeoutLst, \
+                 _numReq, _numComp):
+        self.date = _date
+        self.starttime = _starttime
+        self.endtime = _endtime
+
+        self.RDE1st = _RDE1st
+        self.RDE2nd = _RDE2nd
+        self.Timeout1st = _Timeout1st
+        self.Timeout2nd = _Timeout2nd
+        
+        self.RDELst = _RDELst
+        self.TimeoutLst = _TimeoutLst
+
+        self.numReq = _numReq
+        self.numComp = _numComp

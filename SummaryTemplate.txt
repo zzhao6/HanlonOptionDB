@@ -7,12 +7,24 @@ Start Time: {}
 End Time: {}
 Spent Time: {}
 
+==========================================
+
+Remote Data Error:
+First Round: {}
+Second Round: {}
+
+==========================================
+
+Timeout Error:
+First Round: {}
+Second Round: {}
+
+==========================================
+
+RDE List: {}
+Timeout List: {}
+
+==========================================
+
 {} symbols requested
 {} symbols completed
-{} RemoteDataError generated
-{} error generated
-1 \t 2
-Error Message List:
-...
-...
-...

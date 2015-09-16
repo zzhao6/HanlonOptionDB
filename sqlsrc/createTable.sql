@@ -1,6 +1,4 @@
--- CREATE DATABASE testoption;
-
-USE testoption;
+USE HanlonOptionDB;
 
 
 CREATE TABLE `AAPL` (

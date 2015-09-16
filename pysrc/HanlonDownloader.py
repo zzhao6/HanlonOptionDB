@@ -38,7 +38,13 @@ class HanlonDownloader:
         self.RDEAllExpirLst = []    # remote data error while getting expiries
         self.remoteDataErrLst = []  # remote data error
         self.timeoutLst = []        # timeout error
-        self.errLst = []            # all other errors
+
+        # err lists after second round requests
+        self.remoteDataErrLst2 = []
+        self.timeoutLst2 = []
+        
+        # all other errors
+        self.errLst = []            
 
         # in every expiry and every symbol, how many rows have been changed in the database
         self.rowcnt = 0
@@ -198,22 +204,51 @@ class HanlonDownloader:
         """
         pass
 
+
     def _ProcessRDEList(self):
         """
         send request of the symbols which were generating RemoteDataError
         """
-        pass 
+        logging.info("Top level: Second round: RDE symbols, {} in total".format(len(self.remoteDataErrLst)))   
+        print("Top level: Second round: RDE symbols, {} in total".format(len(self.remoteDataErrLst)))   
+        for sym, expir in self.remoteDataErrLst:
+            try:
+                self._ProcessOne(sym, expir)
+            # if have error again, add to 2nd round lists
+            except pandas_datareader.data.RemoteDataError:
+                logging.error("{} - {}: RemoteDataError".format(sym, expir))
+                print("{} - {}: RemoteDataError".format(sym, expir))
+                self.remoteDataErrLst2.append((sym, expir))
+            except (urllib.error.URLError, TimeoutError) as err:
+                print("{} - {}: {}".format(sym, expir, err))
+                logging.error("{} - {}: {}".format(sym, expir, err))
+                self.timeoutLst2.append((sym, expir))
+            except Exception as err:
+                self.errLst.append((sym, errStr))
+                raise
+
 
     def _ProcessTimeoutLst(self):
         """
         send request of symbols with timeout error
         """
-        #print(len(self.timeoutLst))
-        #print(self.timeoutLst)
-        logging.info("Second round: timeout symbols, {} in total".format(len(self.timeoutLst)))   
+        logging.info("Top level: Second round: timeout symbols, {} in total".format(len(self.timeoutLst)))   
+        print("Top level: Second round: timeout symbols, {} in total".format(len(self.timeoutLst)))   
         for sym, expir in self.timeoutLst:
-            print(sym)
-            print(expir)
+            try:
+                self._ProcessOne(sym, expir)
+            # if have error again, add to 2nd round lists
+            except pandas_datareader.data.RemoteDataError:
+                logging.error("{} - {}: RemoteDataError".format(sym, expir))
+                print("{} - {}: RemoteDataError".format(sym, expir))
+                self.remoteDataErrLst.append((sym, expir))
+            except (urllib.error.URLError, TimeoutError) as err:
+                print("{} - {}: {}".format(sym, expir, err))
+                logging.error("{} - {}: {}".format(sym, expir, err))
+                self.timeoutLst2.append((sym, expir))
+            except Exception as err:
+                self.errLst.append((sym, errStr))
+                raise
 
 
     #TODO: first round and second round summary
@@ -221,19 +256,15 @@ class HanlonDownloader:
         """
         process all symbols in symbol list file
         """
-        logging.info("First Round Request Start: {} in total.".format(len(self.symbols)))
-        print("First Round Request Start: {} in total.".format(len(self.symbols)))
+        logging.info("Top level: First round Request Start: {} in total.".format(len(self.symbols)))
+        print("Top level: First round Request Start: {} in total.".format(len(self.symbols)))
         self.emailer.setIdvMsg("Downloading started", "--")
         self.emailer.sendMsg()
 
         # some statistics for the summary email
         numSymRequested = 0
         numSymCompleted = 0
-        numErrGenerated = 0
         
-        numRDESymExpir = 0
-        numTimeoutSymExpir = 0
-
         start_time = datetime.datetime.now() 
         ### first round request ###
         # start request
