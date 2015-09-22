@@ -1,0 +1,346 @@
+09/22/2015 05:44:27 Top level: Connected to db: HanlonOptionDB
+09/22/2015 05:44:27 Top level: First round Request Start: 3 in total.
+09/22/2015 05:44:31 AAPL - 2015-09-25: Requesting
+09/22/2015 05:44:33 AAPL - 2015-09-25: Timeout
+09/22/2015 05:44:33 AAPL - 2015-10-02: Requesting
+09/22/2015 05:44:35 AAPL - 2015-10-02: RemoteDataError
+09/22/2015 05:44:35 AAPL - 2015-10-09: Requesting
+09/22/2015 05:44:37 AAPL - 2015-10-09: Finished request, insert to table...
+09/22/2015 05:44:37 AAPL - 2015-10-09: Inserted to table, 78 rows affected.
+09/22/2015 05:44:37 AAPL - 2015-10-16: Requesting
+09/22/2015 05:44:39 AAPL - 2015-10-16: Finished request, insert to table...
+09/22/2015 05:44:39 AAPL - 2015-10-16: Inserted to table, 54 rows affected.
+09/22/2015 05:44:39 AAPL - 2015-10-23: Requesting
+09/22/2015 05:44:41 AAPL - 2015-10-23: Finished request, insert to table...
+09/22/2015 05:44:41 AAPL - 2015-10-23: Inserted to table, 77 rows affected.
+09/22/2015 05:44:41 AAPL - 2015-10-30: Requesting
+09/22/2015 05:44:43 AAPL - 2015-10-30: Finished request, insert to table...
+09/22/2015 05:44:43 AAPL - 2015-10-30: Inserted to table, 70 rows affected.
+09/22/2015 05:44:43 AAPL - 2015-11-20: Requesting
+09/22/2015 05:44:45 AAPL - 2015-11-20: Finished request, insert to table...
+09/22/2015 05:44:45 AAPL - 2015-11-20: Inserted to table, 48 rows affected.
+09/22/2015 05:44:45 AAPL - 2015-12-18: Requesting
+09/22/2015 05:44:46 AAPL - 2015-12-18: Finished request, insert to table...
+09/22/2015 05:44:46 AAPL - 2015-12-18: Inserted to table, 54 rows affected.
+09/22/2015 05:44:46 AAPL - 2016-01-15: Requesting
+09/22/2015 05:44:48 AAPL - 2016-01-15: Timeout
+09/22/2015 05:44:48 AAPL - 2016-04-15: Requesting
+09/22/2015 05:44:51 AAPL - 2016-04-15: RemoteDataError
+09/22/2015 05:44:51 AAPL - 2016-06-17: Requesting
+09/22/2015 05:44:54 AAPL - 2016-06-17: RemoteDataError
+09/22/2015 05:44:54 AAPL - 2017-01-20: Requesting
+09/22/2015 05:44:56 AAPL - 2017-01-20: Finished request, insert to table...
+09/22/2015 05:44:56 AAPL - 2017-01-20: Inserted to table, 66 rows affected.
+09/22/2015 05:44:56 AAPL - 2018-01-19: Requesting
+09/22/2015 05:44:57 AAPL - 2018-01-19: Finished request, insert to table...
+09/22/2015 05:44:58 AAPL - 2018-01-19: Inserted to table, 44 rows affected.
+09/22/2015 05:44:58 AXP - 2015-09-25: Requesting
+09/22/2015 05:45:00 AXP - 2015-09-25: Finished request, insert to table...
+09/22/2015 05:45:00 AXP - 2015-09-25: Inserted to table, 63 rows affected.
+09/22/2015 05:45:00 AXP - 2015-10-02: Requesting
+09/22/2015 05:45:02 AXP - 2015-10-02: Timeout
+09/22/2015 05:45:02 AXP - 2015-10-09: Requesting
+09/22/2015 05:45:03 AXP - 2015-10-09: Finished request, insert to table...
+09/22/2015 05:45:03 AXP - 2015-10-09: Inserted to table, 38 rows affected.
+09/22/2015 05:45:03 AXP - 2015-10-16: Requesting
+09/22/2015 05:45:05 AXP - 2015-10-16: Finished request, insert to table...
+09/22/2015 05:45:05 AXP - 2015-10-16: Inserted to table, 37 rows affected.
+09/22/2015 05:45:05 AXP - 2015-10-23: Requesting
+09/22/2015 05:45:06 AXP - 2015-10-23: Finished request, insert to table...
+09/22/2015 05:45:06 AXP - 2015-10-23: Inserted to table, 38 rows affected.
+09/22/2015 05:45:06 AXP - 2015-10-30: Requesting
+09/22/2015 05:45:08 AXP - 2015-10-30: Finished request, insert to table...
+09/22/2015 05:45:08 AXP - 2015-10-30: Inserted to table, 27 rows affected.
+09/22/2015 05:45:08 AXP - 2016-01-15: Requesting
+09/22/2015 05:45:10 AXP - 2016-01-15: Finished request, insert to table...
+09/22/2015 05:45:10 AXP - 2016-01-15: Inserted to table, 58 rows affected.
+09/22/2015 05:45:10 AXP - 2016-04-15: Requesting
+09/22/2015 05:45:11 AXP - 2016-04-15: Finished request, insert to table...
+09/22/2015 05:45:11 AXP - 2016-04-15: Inserted to table, 25 rows affected.
+09/22/2015 05:45:11 AXP - 2017-01-20: Requesting
+09/22/2015 05:45:13 AXP - 2017-01-20: Finished request, insert to table...
+09/22/2015 05:45:13 AXP - 2017-01-20: Inserted to table, 58 rows affected.
+09/22/2015 05:45:13 AXP - 2018-01-19: Requesting
+09/22/2015 05:45:14 AXP - 2018-01-19: Finished request, insert to table...
+09/22/2015 05:45:14 AXP - 2018-01-19: Inserted to table, 8 rows affected.
+09/22/2015 05:45:15 BA - 2015-09-25: Requesting
+09/22/2015 05:45:16 BA - 2015-09-25: Finished request, insert to table...
+09/22/2015 05:45:17 BA - 2015-09-25: Inserted to table, 76 rows affected.
+09/22/2015 05:45:17 BA - 2015-10-02: Requesting
+09/22/2015 05:45:18 BA - 2015-10-02: Finished request, insert to table...
+09/22/2015 05:45:19 BA - 2015-10-02: Inserted to table, 75 rows affected.
+09/22/2015 05:45:19 BA - 2015-10-09: Requesting
+09/22/2015 05:45:21 BA - 2015-10-09: RemoteDataError
+09/22/2015 05:45:21 BA - 2015-10-16: Requesting
+09/22/2015 05:45:23 BA - 2015-10-16: RemoteDataError
+09/22/2015 05:45:23 BA - 2015-10-23: Requesting
+09/22/2015 05:45:25 BA - 2015-10-23: Timeout
+09/22/2015 05:45:25 BA - 2015-10-30: Requesting
+09/22/2015 05:45:27 BA - 2015-10-30: Timeout
+09/22/2015 05:45:27 BA - 2015-11-20: Requesting
+09/22/2015 05:45:29 BA - 2015-11-20: Finished request, insert to table...
+09/22/2015 05:45:29 BA - 2015-11-20: Inserted to table, 46 rows affected.
+09/22/2015 05:45:29 BA - 2016-01-15: Requesting
+09/22/2015 05:45:33 BA - 2016-01-15: Finished request, insert to table...
+09/22/2015 05:45:33 BA - 2016-01-15: Inserted to table, 60 rows affected.
+09/22/2015 05:45:33 BA - 2016-02-19: Requesting
+09/22/2015 05:45:35 BA - 2016-02-19: Finished request, insert to table...
+09/22/2015 05:45:35 BA - 2016-02-19: Inserted to table, 37 rows affected.
+09/22/2015 05:45:35 BA - 2017-01-20: Requesting
+09/22/2015 05:45:36 BA - 2017-01-20: Finished request, insert to table...
+09/22/2015 05:45:36 BA - 2017-01-20: Inserted to table, 63 rows affected.
+09/22/2015 05:45:36 Top level: Second round: RDE symbols, 5 in total
+09/22/2015 05:45:36 AAPL - 2015-10-02: Requesting
+09/22/2015 05:45:38 AAPL - 2015-10-02: Finished request, insert to table...
+09/22/2015 05:45:39 AAPL - 2015-10-02: Inserted to table, 84 rows affected.
+09/22/2015 05:45:39 AAPL - 2016-04-15: Requesting
+09/22/2015 05:45:40 AAPL - 2016-04-15: Finished request, insert to table...
+09/22/2015 05:45:40 AAPL - 2016-04-15: Inserted to table, 57 rows affected.
+09/22/2015 05:45:40 AAPL - 2016-06-17: Requesting
+09/22/2015 05:45:42 AAPL - 2016-06-17: Finished request, insert to table...
+09/22/2015 05:45:42 AAPL - 2016-06-17: Inserted to table, 56 rows affected.
+09/22/2015 05:45:42 BA - 2015-10-09: Requesting
+09/22/2015 05:45:44 BA - 2015-10-09: Finished request, insert to table...
+09/22/2015 05:45:44 BA - 2015-10-09: Inserted to table, 54 rows affected.
+09/22/2015 05:45:44 BA - 2015-10-16: Requesting
+09/22/2015 05:45:46 BA - 2015-10-16: Finished request, insert to table...
+09/22/2015 05:45:46 BA - 2015-10-16: Inserted to table, 40 rows affected.
+09/22/2015 05:45:46 Top level: Second round: timeout symbols, 5 in total
+09/22/2015 05:45:46 AAPL - 2015-09-25: Requesting
+09/22/2015 05:48:52 Top level: Connected to db: HanlonOptionDB
+09/22/2015 05:48:52 Top level: First round Request Start: 3 in total.
+09/22/2015 05:48:53 AAPL - 2015-09-25: Requesting
+09/22/2015 05:48:55 AAPL - 2015-09-25: RemoteDataError
+09/22/2015 05:48:55 AAPL - 2015-10-02: Requesting
+09/22/2015 05:48:57 AAPL - 2015-10-02: RemoteDataError
+09/22/2015 05:48:57 AAPL - 2015-10-09: Requesting
+09/22/2015 05:48:59 AAPL - 2015-10-09: RemoteDataError
+09/22/2015 05:48:59 AAPL - 2015-10-16: Requesting
+09/22/2015 05:49:02 AAPL - 2015-10-16: RemoteDataError
+09/22/2015 05:49:02 AAPL - 2015-10-23: Requesting
+09/22/2015 05:49:04 AAPL - 2015-10-23: Timeout
+09/22/2015 05:49:04 AAPL - 2015-10-30: Requesting
+09/22/2015 05:49:05 AAPL - 2015-10-30: Finished request, insert to table...
+09/22/2015 05:49:05 AAPL - 2015-10-30: Inserted to table, 70 rows affected.
+09/22/2015 05:49:05 AAPL - 2015-11-20: Requesting
+09/22/2015 05:49:07 AAPL - 2015-11-20: Finished request, insert to table...
+09/22/2015 05:49:07 AAPL - 2015-11-20: Inserted to table, 48 rows affected.
+09/22/2015 05:49:07 AAPL - 2015-12-18: Requesting
+09/22/2015 05:49:09 AAPL - 2015-12-18: Finished request, insert to table...
+09/22/2015 05:49:09 AAPL - 2015-12-18: Inserted to table, 54 rows affected.
+09/22/2015 05:49:09 AAPL - 2016-01-15: Requesting
+09/22/2015 05:49:11 AAPL - 2016-01-15: Timeout
+09/22/2015 05:49:11 AAPL - 2016-04-15: Requesting
+09/22/2015 05:49:13 AAPL - 2016-04-15: Finished request, insert to table...
+09/22/2015 05:49:13 AAPL - 2016-04-15: Inserted to table, 57 rows affected.
+09/22/2015 05:49:13 AAPL - 2016-06-17: Requesting
+09/22/2015 05:49:15 AAPL - 2016-06-17: Finished request, insert to table...
+09/22/2015 05:49:15 AAPL - 2016-06-17: Inserted to table, 56 rows affected.
+09/22/2015 05:49:15 AAPL - 2017-01-20: Requesting
+09/22/2015 05:49:16 AAPL - 2017-01-20: Finished request, insert to table...
+09/22/2015 05:49:17 AAPL - 2017-01-20: Inserted to table, 66 rows affected.
+09/22/2015 05:49:17 AAPL - 2018-01-19: Requesting
+09/22/2015 05:49:19 AAPL - 2018-01-19: Timeout
+09/22/2015 05:49:19 AXP - 2015-09-25: Requesting
+09/22/2015 05:49:21 AXP - 2015-09-25: Finished request, insert to table...
+09/22/2015 05:49:21 AXP - 2015-09-25: Inserted to table, 63 rows affected.
+09/22/2015 05:49:21 AXP - 2015-10-02: Requesting
+09/22/2015 05:49:23 AXP - 2015-10-02: Finished request, insert to table...
+09/22/2015 05:49:23 AXP - 2015-10-02: Inserted to table, 65 rows affected.
+09/22/2015 05:49:23 AXP - 2015-10-09: Requesting
+09/22/2015 05:49:24 AXP - 2015-10-09: Finished request, insert to table...
+09/22/2015 05:49:24 AXP - 2015-10-09: Inserted to table, 38 rows affected.
+09/22/2015 05:49:24 AXP - 2015-10-16: Requesting
+09/22/2015 05:49:26 AXP - 2015-10-16: Finished request, insert to table...
+09/22/2015 05:49:27 AXP - 2015-10-16: Inserted to table, 37 rows affected.
+09/22/2015 05:49:27 AXP - 2015-10-23: Requesting
+09/22/2015 05:49:28 AXP - 2015-10-23: Finished request, insert to table...
+09/22/2015 05:49:28 AXP - 2015-10-23: Inserted to table, 38 rows affected.
+09/22/2015 05:49:28 AXP - 2015-10-30: Requesting
+09/22/2015 05:49:29 AXP - 2015-10-30: Finished request, insert to table...
+09/22/2015 05:49:29 AXP - 2015-10-30: Inserted to table, 27 rows affected.
+09/22/2015 05:49:29 AXP - 2016-01-15: Requesting
+09/22/2015 05:49:31 AXP - 2016-01-15: Finished request, insert to table...
+09/22/2015 05:49:31 AXP - 2016-01-15: Inserted to table, 58 rows affected.
+09/22/2015 05:49:31 AXP - 2016-04-15: Requesting
+09/22/2015 05:49:33 AXP - 2016-04-15: Finished request, insert to table...
+09/22/2015 05:49:33 AXP - 2016-04-15: Inserted to table, 25 rows affected.
+09/22/2015 05:49:33 AXP - 2017-01-20: Requesting
+09/22/2015 05:49:35 AXP - 2017-01-20: Finished request, insert to table...
+09/22/2015 05:49:57 Top level: Connected to db: HanlonOptionDB
+09/22/2015 05:49:57 Top level: First round Request Start: 3 in total.
+09/22/2015 05:49:58 AAPL - 2015-09-25: Requesting
+09/22/2015 05:50:00 AAPL - 2015-09-25: Timeout
+09/22/2015 05:50:00 AAPL - 2015-10-02: Requesting
+09/22/2015 05:50:02 AAPL - 2015-10-02: RemoteDataError
+09/22/2015 05:50:02 AAPL - 2015-10-09: Requesting
+09/22/2015 05:50:04 AAPL - 2015-10-09: Timeout
+09/22/2015 05:50:04 AAPL - 2015-10-16: Requesting
+09/22/2015 05:50:11 AAPL - 2015-10-16: RemoteDataError
+09/22/2015 05:50:11 AAPL - 2015-10-23: Requesting
+09/22/2015 05:50:13 AAPL - 2015-10-23: Finished request, insert to table...
+09/22/2015 05:50:13 AAPL - 2015-10-23: Inserted to table, 77 rows affected.
+09/22/2015 05:50:13 AAPL - 2015-10-30: Requesting
+09/22/2015 05:50:15 AAPL - 2015-10-30: Finished request, insert to table...
+09/22/2015 05:50:16 AAPL - 2015-10-30: Inserted to table, 70 rows affected.
+09/22/2015 05:50:16 AAPL - 2015-11-20: Requesting
+09/22/2015 05:50:17 AAPL - 2015-11-20: Finished request, insert to table...
+09/22/2015 05:50:17 AAPL - 2015-11-20: Inserted to table, 48 rows affected.
+09/22/2015 05:50:17 AAPL - 2015-12-18: Requesting
+09/22/2015 05:50:19 AAPL - 2015-12-18: Finished request, insert to table...
+09/22/2015 05:50:19 AAPL - 2015-12-18: Inserted to table, 54 rows affected.
+09/22/2015 05:50:19 AAPL - 2016-01-15: Requesting
+09/22/2015 05:50:21 AAPL - 2016-01-15: Timeout
+09/22/2015 05:50:21 AAPL - 2016-04-15: Requesting
+09/22/2015 05:50:22 AAPL - 2016-04-15: Finished request, insert to table...
+09/22/2015 05:50:23 AAPL - 2016-04-15: Inserted to table, 57 rows affected.
+09/22/2015 05:50:23 AAPL - 2016-06-17: Requesting
+09/22/2015 05:50:24 AAPL - 2016-06-17: Finished request, insert to table...
+09/22/2015 05:50:24 AAPL - 2016-06-17: Inserted to table, 56 rows affected.
+09/22/2015 05:50:24 AAPL - 2017-01-20: Requesting
+09/22/2015 05:50:26 AAPL - 2017-01-20: Finished request, insert to table...
+09/22/2015 05:50:26 AAPL - 2017-01-20: Inserted to table, 66 rows affected.
+09/22/2015 05:50:26 AAPL - 2018-01-19: Requesting
+09/22/2015 05:50:28 AAPL - 2018-01-19: Finished request, insert to table...
+09/22/2015 05:50:28 AAPL - 2018-01-19: Inserted to table, 44 rows affected.
+09/22/2015 05:50:28 AXP - 2015-09-25: Requesting
+09/22/2015 05:50:30 AXP - 2015-09-25: Finished request, insert to table...
+09/22/2015 05:50:30 AXP - 2015-09-25: Inserted to table, 63 rows affected.
+09/22/2015 05:50:30 AXP - 2015-10-02: Requesting
+09/22/2015 05:50:32 AXP - 2015-10-02: Timeout
+09/22/2015 05:50:32 AXP - 2015-10-09: Requesting
+09/22/2015 05:50:34 AXP - 2015-10-09: Finished request, insert to table...
+09/22/2015 05:50:34 AXP - 2015-10-09: Inserted to table, 38 rows affected.
+09/22/2015 05:50:34 AXP - 2015-10-16: Requesting
+09/22/2015 05:50:36 AXP - 2015-10-16: Finished request, insert to table...
+09/22/2015 05:50:36 AXP - 2015-10-16: Inserted to table, 37 rows affected.
+09/22/2015 05:50:36 AXP - 2015-10-23: Requesting
+09/22/2015 05:50:37 AXP - 2015-10-23: Finished request, insert to table...
+09/22/2015 05:50:37 AXP - 2015-10-23: Inserted to table, 38 rows affected.
+09/22/2015 05:50:37 AXP - 2015-10-30: Requesting
+09/22/2015 05:50:39 AXP - 2015-10-30: Timeout
+09/22/2015 05:50:39 AXP - 2016-01-15: Requesting
+09/22/2015 05:50:41 AXP - 2016-01-15: Finished request, insert to table...
+09/22/2015 05:50:41 AXP - 2016-01-15: Inserted to table, 58 rows affected.
+09/22/2015 05:50:41 AXP - 2016-04-15: Requesting
+09/22/2015 05:50:42 AXP - 2016-04-15: Finished request, insert to table...
+09/22/2015 05:50:42 AXP - 2016-04-15: Inserted to table, 25 rows affected.
+09/22/2015 05:50:42 AXP - 2017-01-20: Requesting
+09/22/2015 05:50:44 AXP - 2017-01-20: Finished request, insert to table...
+09/22/2015 05:55:14 Top level: Connected to db: HanlonOptionDB
+09/22/2015 05:55:14 Top level: First round Request Start: 3 in total.
+09/22/2015 05:55:15 AAPL - 2015-09-25: Requesting
+09/22/2015 05:55:17 AAPL - 2015-09-25: Timeout
+09/22/2015 05:55:17 AAPL - 2015-10-02: Requesting
+09/22/2015 05:55:19 AAPL - 2015-10-02: Finished request, insert to table...
+09/22/2015 05:55:19 AAPL - 2015-10-02: Inserted to table, 84 rows affected.
+09/22/2015 05:55:19 AAPL - 2015-10-09: Requesting
+09/22/2015 05:55:21 AAPL - 2015-10-09: Finished request, insert to table...
+09/22/2015 05:55:21 AAPL - 2015-10-09: Inserted to table, 78 rows affected.
+09/22/2015 05:55:21 AAPL - 2015-10-16: Requesting
+09/22/2015 05:55:23 AAPL - 2015-10-16: Finished request, insert to table...
+09/22/2015 05:55:23 AAPL - 2015-10-16: Inserted to table, 54 rows affected.
+09/22/2015 05:55:23 AAPL - 2015-10-23: Requesting
+09/22/2015 05:55:25 AAPL - 2015-10-23: Finished request, insert to table...
+09/22/2015 05:55:25 AAPL - 2015-10-23: Inserted to table, 77 rows affected.
+09/22/2015 05:55:25 AAPL - 2015-10-30: Requesting
+09/22/2015 05:55:27 AAPL - 2015-10-30: Finished request, insert to table...
+09/22/2015 05:55:27 AAPL - 2015-10-30: Inserted to table, 70 rows affected.
+09/22/2015 05:55:27 AAPL - 2015-11-20: Requesting
+09/22/2015 05:55:29 AAPL - 2015-11-20: Finished request, insert to table...
+09/22/2015 05:55:29 AAPL - 2015-11-20: Inserted to table, 48 rows affected.
+09/22/2015 05:55:29 AAPL - 2015-12-18: Requesting
+09/22/2015 05:55:31 AAPL - 2015-12-18: Finished request, insert to table...
+09/22/2015 05:55:31 AAPL - 2015-12-18: Inserted to table, 54 rows affected.
+09/22/2015 05:55:31 AAPL - 2016-01-15: Requesting
+09/22/2015 05:55:33 AAPL - 2016-01-15: Timeout
+09/22/2015 05:55:33 AAPL - 2016-04-15: Requesting
+09/22/2015 05:55:35 AAPL - 2016-04-15: Finished request, insert to table...
+09/22/2015 05:55:35 AAPL - 2016-04-15: Inserted to table, 57 rows affected.
+09/22/2015 05:55:35 AAPL - 2016-06-17: Requesting
+09/22/2015 05:55:37 AAPL - 2016-06-17: Finished request, insert to table...
+09/22/2015 05:55:37 AAPL - 2016-06-17: Inserted to table, 56 rows affected.
+09/22/2015 05:55:37 AAPL - 2017-01-20: Requesting
+09/22/2015 05:55:39 AAPL - 2017-01-20: Finished request, insert to table...
+09/22/2015 05:55:39 AAPL - 2017-01-20: Inserted to table, 66 rows affected.
+09/22/2015 05:55:39 AAPL - 2018-01-19: Requesting
+09/22/2015 05:55:40 AAPL - 2018-01-19: Finished request, insert to table...
+09/22/2015 05:55:40 AAPL - 2018-01-19: Inserted to table, 44 rows affected.
+09/22/2015 05:55:42 AXP - 2015-09-25: Requesting
+09/22/2015 05:55:43 AXP - 2015-09-25: Finished request, insert to table...
+09/22/2015 05:55:43 AXP - 2015-09-25: Error:Unhandled exception. <class 'AttributeError'>: 'numpy.float64' object has no attribute 'date'
+09/22/2015 05:55:43 Top level: Connection closed.
+09/22/2015 06:00:38 Top level: Connected to db: HanlonOptionDB
+09/22/2015 06:00:38 Top level: First round Request Start: 3 in total.
+09/22/2015 06:00:39 AAPL - 2015-09-25: Requesting
+09/22/2015 06:00:41 AAPL - 2015-09-25: RemoteDataError
+09/22/2015 06:00:41 AAPL - 2015-10-02: Requesting
+09/22/2015 06:00:43 AAPL - 2015-10-02: Timeout
+09/22/2015 06:00:43 AAPL - 2015-10-09: Requesting
+09/22/2015 06:00:45 AAPL - 2015-10-09: Timeout
+09/22/2015 06:00:45 AAPL - 2015-10-16: Requesting
+09/22/2015 06:00:47 AAPL - 2015-10-16: Timeout
+09/22/2015 06:00:47 AAPL - 2015-10-23: Requesting
+09/22/2015 06:00:49 AAPL - 2015-10-23: Timeout
+09/22/2015 06:00:49 AAPL - 2015-10-30: Requesting
+09/22/2015 06:00:55 AAPL - 2015-10-30: Finished request, insert to table...
+09/22/2015 06:00:55 AAPL - 2015-10-30: Error:Unhandled exception. <class 'RuntimeError'>: No active exception to reraise
+09/22/2015 06:00:55 Top level: Connection closed.
+09/22/2015 06:04:07 Top level: Connected to db: HanlonOptionDB
+09/22/2015 06:04:07 Top level: First round Request Start: 3 in total.
+09/22/2015 06:04:09 AAPL - 2015-09-25: Requesting
+09/22/2015 06:04:11 AAPL - 2015-09-25: Timeout
+09/22/2015 06:04:11 AAPL - 2015-10-02: Requesting
+09/22/2015 06:04:13 AAPL - 2015-10-02: Timeout
+09/22/2015 06:04:13 AAPL - 2015-10-09: Requesting
+09/22/2015 06:04:15 AAPL - 2015-10-09: Timeout
+09/22/2015 06:04:15 AAPL - 2015-10-16: Requesting
+09/22/2015 06:04:17 AAPL - 2015-10-16: Timeout
+09/22/2015 06:04:17 AAPL - 2015-10-23: Requesting
+09/22/2015 06:04:19 AAPL - 2015-10-23: RemoteDataError
+09/22/2015 06:04:19 AAPL - 2015-10-30: Requesting
+09/22/2015 06:04:22 AAPL - 2015-10-30: RemoteDataError
+09/22/2015 06:04:22 AAPL - 2015-11-20: Requesting
+09/22/2015 06:04:24 AAPL - 2015-11-20: RemoteDataError
+09/22/2015 06:04:24 AAPL - 2015-12-18: Requesting
+09/22/2015 06:04:26 AAPL - 2015-12-18: Timeout
+09/22/2015 06:04:26 AAPL - 2016-01-15: Requesting
+09/22/2015 06:04:28 AAPL - 2016-01-15: Timeout
+09/22/2015 06:04:28 AAPL - 2016-04-15: Requesting
+09/22/2015 06:04:30 AAPL - 2016-04-15: RemoteDataError
+09/22/2015 06:04:30 AAPL - 2016-06-17: Requesting
+09/22/2015 06:04:32 AAPL - 2016-06-17: Finished request, insert to table...
+09/22/2015 06:04:32 AAPL - 2016-06-17: Error:Unhandled exception. <class 'KeyError'>: 0
+09/22/2015 06:04:32 Top level: Connection closed.
+09/22/2015 06:04:46 Top level: Connected to db: HanlonOptionDB
+09/22/2015 06:04:46 Top level: First round Request Start: 3 in total.
+09/22/2015 06:04:47 AAPL - 2015-09-25: Requesting
+09/22/2015 06:04:50 AAPL - 2015-09-25: RemoteDataError
+09/22/2015 06:04:50 AAPL - 2015-10-02: Requesting
+09/22/2015 06:04:52 AAPL - 2015-10-02: Timeout
+09/22/2015 06:04:52 AAPL - 2015-10-09: Requesting
+09/22/2015 06:04:57 AAPL - 2015-10-09: Finished request, insert to table...
+09/22/2015 06:04:57 AAPL - 2015-10-09: Error:Unhandled exception. <class 'KeyError'>: 0
+09/22/2015 06:04:57 Top level: Connection closed.
+09/22/2015 06:05:57 Top level: Connected to db: HanlonOptionDB
+09/22/2015 06:05:57 Top level: First round Request Start: 3 in total.
+09/22/2015 06:05:58 AAPL - 2015-09-25: Requesting
+09/22/2015 06:06:00 AAPL - 2015-09-25: Timeout
+09/22/2015 06:06:00 AAPL - 2015-10-02: Requesting
+09/22/2015 06:06:02 AAPL - 2015-10-02: Timeout
+09/22/2015 06:06:02 AAPL - 2015-10-09: Requesting
+09/22/2015 06:06:04 AAPL - 2015-10-09: Timeout
+09/22/2015 06:06:04 AAPL - 2015-10-16: Requesting
+09/22/2015 06:06:11 AAPL - 2015-10-16: Finished request, insert to table...
+09/22/2015 06:06:11 AAPL - 2015-10-16: Error:Unhandled exception. <class 'RuntimeError'>: No active exception to reraise
+09/22/2015 06:06:11 Top level: Connection closed.
+09/22/2015 06:11:10 Top level: Connected to db: HanlonOptionDB
+09/22/2015 06:11:10 Top level: First round Request Start: 3 in total.
+09/22/2015 06:11:13 AAPL - 2015-09-25: Requesting
+09/22/2015 06:11:16 AAPL - 2015-09-25: RemoteDataError
+09/22/2015 06:11:16 AAPL - 2015-10-02: Requesting
+09/22/2015 06:11:19 AAPL - 2015-10-02: RemoteDataError
+09/22/2015 06:11:19 AAPL - 2015-10-09: Requesting
+09/22/2015 06:11:25 AAPL - 2015-10-09: Finished request, insert to table...
+09/22/2015 06:11:25 AAPL - 2015-10-09: Error:Unhandled exception. <class 'NameError'>: name 'onerow' is not defined
+09/22/2015 06:11:25 Top level: Connection closed.

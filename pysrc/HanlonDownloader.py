@@ -97,18 +97,29 @@ class HanlonDownloader:
         print("Top level: Connection closed.")
 
     
-    def _SendSummaryEmail(self, start_time, end_time, spent_time, numSymRequested, numSymCompleted, numRemoteErr, numErrGenerated):
-        print("Top level: Sending summary email.")
-        self.emailer.setSummaryMsg(start_time, end_time, spent_time, numSymRequested, numSymCompleted, numRemoteErr, numErrGenerated)
-        self.emailer.sendMsg()
-        logging.info("Top level: Summary email has been sent to {}".format(self.emailer.email_to))
-        print("Top level: Summary email has been sent to {}".format(self.emailer.email_to))
-
+    def _SendSummaryEmail():
+        # print("Top level: Sending summary email.")
+        # self.emailer.setSummaryMsg(start_time, end_time, spent_time, numSymRequested, numSymCompleted, numRemoteErr, numErrGenerated)
+        # self.emailer.sendMsg()
+        # logging.info("Top level: Summary email has been sent to {}".format(self.emailer.email_to))
+        # print("Top level: Summary email has been sent to {}".format(self.emailer.email_to))
+        '''
+        need to rewrite this function
+        '''
+        pass
 
     def _SendErrorEmail(self, sym, expir, strike, err_type, err):
         print("{} - {}: ERROR: sending error email.".format(sym, expir))
         self.emailer.setErrMsg(sym, expir, strike, err_type, err)
         self.emailer.sendMsg()
+
+    def _HandelingRaw(self, i, onerow):
+        try:
+            onerow.Quote_Time[i].date()
+        except:
+            logging.info("{} - {}: Error generated when reading date from column Quote_Time.".format(sym, expir, self.rowcnt))
+            print("{} - {}: Error generated when reading date from column Quote_Time.".format(sym, expir, self.rowcnt))
+            raise
 
 
     def _ProcessOne(self, sym, expir, time_out=None):
@@ -131,8 +142,6 @@ class HanlonDownloader:
 
         # within dataset "mydata", go through each row and insert to DB 
         for i in range(len(mydata.index)):
-            onerow = mydata.iloc[[i]]
-            
             # clean data, sometime bid and ask contains strange values
             tmpBid = onerow.Bid[i]
             tmpAsk = onerow.Ask[i]
@@ -154,6 +163,9 @@ class HanlonDownloader:
             tmpsym = sym
             if tmpsym[0] == "^":
                 tmpsym = tmpsym[1:]
+
+            # Raw exception handeling function
+            self,_HandelingRaw(i, onerow)
 
             # gen sql insert statement
             insert_str = """INSERT INTO OPT_{} (underlying_symbol, option_symbol,
@@ -227,7 +239,6 @@ class HanlonDownloader:
                 self.errLst.append((sym, errStr))
                 raise
 
-
     def _ProcessTimeoutLst(self):
         """
         send request of symbols with timeout error
@@ -247,9 +258,8 @@ class HanlonDownloader:
                 logging.error("{} - {}: {}".format(sym, expir, err))
                 self.timeoutLst2.append((sym, expir))
             except Exception as err:
-                self.errLst.append((sym, errStr))
+                self.errLst.append((sym, err))
                 raise
-
 
     #TODO: first round and second round summary
     def ProcessAll(self):
@@ -277,7 +287,6 @@ class HanlonDownloader:
                 self.RDEAllExpirLst.append(sym)                                     # error list 1
                 print("{} - {}: RemoteDataError for all expiries".format(sym, "AllExpir"))
                 logging.error("{} - {}: RemoteDataError for all expiries".format(sym, "AllExpir"))
-                numErrGenerated += 1
                 # skip requesting for this symbol under such error  
                 continue        
 
@@ -302,8 +311,7 @@ class HanlonDownloader:
                     #continue
                     pass
                 except Exception as err:
-                    self.errLst.append((sym, errStr))                               # error list 4
-                    numErrGenerated += 1
+                    self.errLst.append((sym, err))                               # error list 4
 
                     exc_type, exc_obj, exc_tb = sys.exc_info()  # get err type
                     errStr = "{} - {}: Error:Unhandled exception. {}: {}".format(sym, expir, exc_type, err) 
@@ -328,6 +336,6 @@ class HanlonDownloader:
         diff_time_sec = diff_time.total_seconds()
         diff_time_sec = round(diff_time_sec, 2)
 
-        self._SendSummaryEmail(start_time_str, end_time_str, diff_time_sec, \
-                               numSymRequested, numSymCompleted, len(self.remoteDataErrLst), numErrGenerated)
+        # TODO: rewrite this part
+        self._SendSummaryEmail()
         # TODO: get num of err generated, and put into summary email
