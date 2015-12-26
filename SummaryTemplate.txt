@@ -9,22 +9,21 @@ Spent Time: {}
 
 ==========================================
 
-Remote Data Error:
-First Round: {}
-Second Round: {}
+Remote Data Error List:
+{}
 
 ==========================================
 
 Timeout Error:
-First Round: {}
-Second Round: {}
-
-==========================================
-
-RDE List: {}
-Timeout List: {}
+{}
 
 ==========================================
 
 {} symbols requested
 {} symbols completed
+{} errors generated
+
+==========================================
+
+Error message list:
+{}

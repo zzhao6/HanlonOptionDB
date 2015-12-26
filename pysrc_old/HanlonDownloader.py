@@ -142,6 +142,7 @@ class HanlonDownloader:
 
         # within dataset "mydata", go through each row and insert to DB 
         for i in range(len(mydata.index)):
+            onerow = mydate.iloc[[i]]
             # clean data, sometime bid and ask contains strange values
             tmpBid = onerow.Bid[i]
             tmpAsk = onerow.Ask[i]

@@ -344,3 +344,32 @@
 09/22/2015 06:11:25 AAPL - 2015-10-09: Finished request, insert to table...
 09/22/2015 06:11:25 AAPL - 2015-10-09: Error:Unhandled exception. <class 'NameError'>: name 'onerow' is not defined
 09/22/2015 06:11:25 Top level: Connection closed.
+09/22/2015 09:38:11 Top level: Connected to db: HanlonOptionDB
+09/22/2015 09:38:11 Top level: First round Request Start: 3 in total.
+09/22/2015 09:38:14 AAPL - 2015-09-25: Requesting
+09/22/2015 09:38:16 AAPL - 2015-09-25: Timeout
+09/22/2015 09:38:16 AAPL - 2015-10-02: Requesting
+09/22/2015 09:38:19 AAPL - 2015-10-02: RemoteDataError
+09/22/2015 09:38:19 AAPL - 2015-10-09: Requesting
+09/22/2015 09:38:21 AAPL - 2015-10-09: Timeout
+09/22/2015 09:38:21 AAPL - 2015-10-16: Requesting
+09/22/2015 09:38:23 AAPL - 2015-10-16: RemoteDataError
+09/22/2015 09:38:23 AAPL - 2015-10-23: Requesting
+09/22/2015 09:40:21 Top level: Connected to db: HanlonOptionDB
+09/22/2015 09:40:21 Top level: First round Request Start: 3 in total.
+09/22/2015 09:40:24 AAPL - 2015-09-25: Requesting
+09/22/2015 09:40:32 AAPL - 2015-09-25: Finished request, insert to table...
+09/22/2015 09:40:32 AAPL - 2015-09-25: Error:Unhandled exception. <class 'NameError'>: name 'onerow' is not defined
+09/22/2015 09:40:32 Top level: Connection closed.
+09/22/2015 09:43:28 Top level: Connected to db: HanlonOptionDB
+09/22/2015 09:43:28 Top level: First round Request Start: 3 in total.
+09/22/2015 09:43:30 AAPL - 2015-09-25: Requesting
+09/22/2015 09:43:32 AAPL - 2015-09-25: Timeout
+09/22/2015 09:43:32 AAPL - 2015-10-02: Requesting
+09/22/2015 09:43:34 AAPL - 2015-10-02: RemoteDataError
+09/22/2015 09:43:34 AAPL - 2015-10-09: Requesting
+09/22/2015 09:43:37 AAPL - 2015-10-09: RemoteDataError
+09/22/2015 09:43:37 AAPL - 2015-10-16: Requesting
+09/22/2015 09:43:42 AAPL - 2015-10-16: Finished request, insert to table...
+09/22/2015 09:43:42 AAPL - 2015-10-16: Error:Unhandled exception. <class 'NameError'>: name 'mydate' is not defined
+09/22/2015 09:43:42 Top level: Connection closed.
