@@ -12,8 +12,6 @@ user_name = config["USER_NAME"]
 password = config["PASSWORD"]
 dbname = config["DBNAME"]
 
-
-
 sym_file_djia = config["SYMBOL_FILE_DJIA"]
 sym_file_sp = config["SYMBOL_FILE_SP"]
 sym_file_etf = config["SYMBOL_FILE_ETF"]
