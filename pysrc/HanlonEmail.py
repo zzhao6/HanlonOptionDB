@@ -1,9 +1,9 @@
 import time         # get today's date
 import smtplib      # email required
 from email.mime.text import MIMEText
-from sumEmail.py import *
+#from sumEmail.py import *
 
-class MyEmail():
+class HanlonEmail():
     """
     send email through Gmail server
 
@@ -34,25 +34,25 @@ class MyEmail():
         self.today_date = time.strftime("%m/%d/%Y")
         
 
-    def setSummaryMsg(self, summaryEmailObj):
-        summaryTemplate = open(self.email_temp_dir, 'r').read())
-        self.summary = summaryTemplate.format(\
-                        summaryEmailObj.date,\
-                        summaryEmailObj.starttime,\
-                        summaryEmailObj.endtime,\
-                        summaryEmailObj.spenttime,\
-                        summaryEmailObj.RDERoundLst,\
-                        summaryEmailObj.TimeoutLst,\
-                        summaryEmailObj.numReq,\
-                        summaryEmailObj.numComp,\
-                        summaryEmailObj.numErr,\
-                        summaryEmailObj.errLst)
-        self.msg = MIMEText(self.summary)
-        self.msg['Subject'] = "Option Data Download Summary - {}".format(self.today_date)
+    # def setSummaryMsg(self, summaryEmailObj):
+        # summaryTemplate = open(self.email_temp_dir, 'r').read()
+        # self.summary = summaryTemplate.format(\
+                        # summaryEmailObj.date,\
+                        # summaryEmailObj.starttime,\
+                        # summaryEmailObj.endtime,\
+                        # summaryEmailObj.spenttime,\
+                        # summaryEmailObj.RDERoundLst,\
+                        # summaryEmailObj.TimeoutLst,\
+                        # summaryEmailObj.numReq,\
+                        # summaryEmailObj.numComp,\
+                        # summaryEmailObj.numErr,\
+                        # summaryEmailObj.errLst)
+        # self.msg = MIMEText(self.summary)
+        # self.msg['Subject'] = "Option Data Download Summary - {}".format(self.today_date)
 
 
-    def setIdvMsg(self, title, msg_str):
-        self.msg = MIMEText(msg_str)
-        self.msg['Subject'] = "{} - {}".format(title, self.today_date)
+    # def setIdvMsg(self, title, msg_str):
+        # self.msg = MIMEText(msg_str)
+        # self.msg['Subject'] = "{} - {}".format(title, self.today_date)
 
  
