@@ -1,36 +1,19 @@
 # for testing only, should be disabled once finish the beta version
 # truncate all tables
-import pandas as pd
-import pymysql
-
-config = {}
-exec(open("../configure.conf").read(), config)
-
-
-host_name = config["HOST_NAME"]
-user_name = config["USER_NAME"]
-password = config["PASSWORD"]
-dbname = config["DBNAME"]
-
-sym_file_djia = config["SYMBOL_FILE_DJIA"]
-# sym_file_sp = config["SYMBOL_FILE_SP"]   # no sp stocks in this db anymore -- 01/2016
-sym_file_etf = config["SYMBOL_FILE_ETF"]
-sym_file_vix = config["SYMBOL_FILE_VIX"]
-        
-tmpsym_djia = pd.read_csv(sym_file_djia)
-# tmpsym_sp = pd.read_csv(sym_file_sp)
-tmpsym_etf = pd.read_csv(sym_file_etf)
-tmpsym_vix = pd.read_csv(sym_file_vix)
-
-symbols = pd.concat([tmpsym_djia.Symbol, tmpsym_etf.Symbol, tmpsym_vix.Symbol])
-
-conn = pymysql.connect(host = host_name, user = user_name, passwd = password, db = dbname)
-cur = conn.cursor()
-
+from hanlondb_conn import *
 from pandas_datareader.data import Options
 import pandas_datareader.data
+import pandas as pd
+import pymysql
+import getpass
+import sys
+config = {}
+exec(open("./configure.conf").read(), config)
 
-for sym in symbols:
+dbconn = hanlondb_conn(config)
+dbconn.connect()
+
+for sym in dbconn.symbols:
     #tmpOpt = Options(sym, 'yahoo')
         
     #try:
@@ -64,12 +47,14 @@ for sym in symbols:
           `IV` float NOT NULL,
           `underlying_price` float NOT NULL
         );""".format(sym)
-    cur.execute(tmpstr)
-    conn.commit()
+    try:
+        dbconn.cur.execute(tmpstr)
+        dbconn.conn.commit()
+        tmpstr2 = "ALTER TABLE `OPT_{}` ADD PRIMARY KEY (`quote_date`, `option_symbol`)".format(sym)
+        dbconn.cur.execute(tmpstr2)
+        dbconn.conn.commit()
+    except pymysql.err.InternalError as err:
+        exc_type, exc_value, exc_traceback = sys.exc_info()
+        print(exc_value)
 
-    tmpstr2 = "ALTER TABLE `OPT_{}` ADD PRIMARY KEY (`quote_date`, `option_symbol`)".format(sym)
-    cur.execute(tmpstr2)
-    conn.commit()
-cur.close()
-conn.close()
-
+dbconn.disconnect()

@@ -1,4 +1,4 @@
-Downloading Summary
+Download Summary
 
 ==========================================
 
@@ -12,9 +12,15 @@ Spent Time: {}
 Remote Data Error List:
 {}
 
+Remote Data Error List 2nd Round:
+{}
+
 ==========================================
 
 Timeout Error:
+{}
+
+Timeout Error 2nd Round:
 {}
 
 ==========================================
@@ -22,8 +28,3 @@ Timeout Error:
 {} symbols requested
 {} symbols completed
 {} errors generated
-
-==========================================
-
-Error message list:
-{}

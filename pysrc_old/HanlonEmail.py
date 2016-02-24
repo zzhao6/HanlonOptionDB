@@ -62,9 +62,6 @@ class HanlonEmail():
         
         self.msg = MIMEText(self.errEmail)
         self.msg['Subject'] = "Error Occured - Option Data Download"
-        # end set message
-        # next step is send out the email
-
 
     def setWrnMsg(self):
         # TODO
@@ -89,22 +86,20 @@ class HanlonEmail():
 
 
 class SummaryEmailStruct():
-    def __init__(self, _date, _starttime, _endtime, \
-                 _RDE1st, _RDE2nd, \
-                 _Timeout1st, _Timeout2nd, \
-                 _RDELst, _TimeoutLst, \
-                 _numReq, _numComp):
-        self.date = _date
-        self.starttime = _starttime
-        self.endtime = _endtime
+    def __init__(self)
+        self.date = None
+        self.starttime = None
+        self.endtime = None
 
-        self.RDE1st = _RDE1st
-        self.RDE2nd = _RDE2nd
-        self.Timeout1st = _Timeout1st
-        self.Timeout2nd = _Timeout2nd
-        
-        self.RDELst = _RDELst
-        self.TimeoutLst = _TimeoutLst
+        self.numReq = None
+        self.numComp = None
+        self.numError = None
 
-        self.numReq = _numReq
-        self.numComp = _numComp
+        self.RDE1st = None      # number of RDE symbols
+        self.RDE2nd = None 
+        self.Timeout1st = None  # number of Timeout symbols
+        self.Timeout2nd = None
+
+        self.RDELst = []        # RDE symbol list
+        self.TimeoutLst = []    # Timeout symbol list
+
