@@ -15,6 +15,7 @@ import numpy        # for data type checking
 import datetime
 import urllib       # for handeling exception urllib.error.URLError
 import time
+import timeit
 
 class option_downloader:
     """
@@ -83,7 +84,7 @@ class option_downloader:
         print("{} - {}: Inserted to table, {} rows affected.".format(sym, expir, rowcnt))
         rowcnt = 0
 
-    def process_all(self):
+    def _process_all(self):
         for sym in self.symbols:
             print(sym)
             tmpOptionObj = Options(sym, 'yahoo')
@@ -108,7 +109,7 @@ class option_downloader:
                         # self.RDELst1.append((sym, expir))
                     except TimeoutError as err:
                         self.TimeoutLst1.append((sym, expir))
-                    except requests.exceptions.ConnectionError:
+                    except ConnectionError:
                         print("test error type")
                     except:
                         print("Unknown Error!")
@@ -116,3 +117,32 @@ class option_downloader:
                         self.email_sender.set_error(sym, expir, "unknown strike", str(exc_type), str(exc_value))
                         self.email_sender.send_email()
                         raise
+
+    def download_opt_data(self):
+        """The main interface used for download"""
+        self.email_sender.set_regular("Download Started", "Download Started")
+        self.email_sender.send_email()
+        start_time = timeit.default_timer()
+
+        # process requests
+        self._process_all()
+
+        stop_time = timeit.default_timer()
+        diff_time = stop_time - start_time
+        
+        # send summary email
+        summary_obj = SummaryEmailStruct()
+        summary_obj.starttime = start_time
+        summary_obj.endtime = stop_time
+        summary_obj.spenttime = round(diff_time, 0)
+        
+        summary_obj.RDE1st = len(self.RDELst1)
+        summary_obj.RDE2nd = len(self.RDELst2)
+        summary_obj.Timeout1st = len(self.TimeoutLst1)
+        summary_obj.Timeout2nd = len(self.TimeoutLst2)
+
+        summary_obj.RDELst = self.RDELst2
+        summary_obj.TimeoutLst = self.TimeoutLst2
+
+        self.email_sender.set_summary(summary_obj)
+        self.email_sender.send_email()
