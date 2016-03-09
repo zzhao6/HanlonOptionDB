@@ -6,6 +6,7 @@ import pymysql
 from pandas_datareader import data, wb
 from pandas_datareader.data import Options
 import pandas_datareader.data   # RemoteDataError
+import pandas_datareader._utils # RemoteDataError
 
 import logging
 import pickle       # save expiry dicitonary to file
@@ -90,11 +91,11 @@ class option_downloader:
             tmpOptionObj = Options(sym, 'yahoo')
             try:
                 tmpExpirList = tmpOptionObj.expiry_dates
-            except pandas_datareader.data.RemoteDataError:
-                self.RDEAllExpirLst.append(sym)   # cannot retrive expiry of this symbol
-                print("{} - {}: RemoteDataError for all expiries".format(sym, "AllExpir"))
-                logging.error("{} - {}: RemoteDataError for all expiries".format(sym, "AllExpir"))
-                # skip requesting for this symbol under such error  
+            except pandas_datareader._utils.RemoteDataError:
+                # self.RDEAllExpirLst.append(sym)   # cannot retrive expiry of this symbol
+                # print("{} - {}: RemoteDataError for all expiries".format(sym, "AllExpir"))
+                # logging.error("{} - {}: RemoteDataError for all expiries".format(sym, "AllExpir"))
+                # # skip requesting for this symbol under such error  
                 continue        
             except:
                 exc_type, exc_value, exc_traceback = sys.exc_info()
@@ -102,6 +103,12 @@ class option_downloader:
                 pass
 
             for expir in tmpExpirList:
+                # before running request, check if its already exist in the db
+                rowcnt_sym_expir = self.db_conn.get_count(sym, expir, self.email_sender.today_date)
+                if rowcnt_sym_expir != 0:
+                    logging.info("{} - {}: Already exists in db, try next one".format(sym, expir))
+                    print("{} - {}: Already exists in db, try next one".format(sym, expir))
+                    continue
                 with timeout(seconds = self.req_timeout_1):
                     try:
                         self._process_one(sym, expir) 

@@ -302,3 +302,1816 @@
 02/29/2016 08:23:56 Starting new HTTP connection (1): finance.yahoo.com
 02/29/2016 08:23:58 VIIX - 2016-09-16: Finished request, insert to table...
 02/29/2016 08:23:58 VIIX - 2016-09-16: Inserted to table, 4 rows affected.
+03/01/2016 04:52:17 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:18 ^VIX - 2016-03-02: Requesting
+03/01/2016 04:52:18 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:19 ^VIX - 2016-03-02: Finished request, insert to table...
+03/01/2016 04:52:20 ^VIX - 2016-03-02: Inserted to table, 51 rows affected.
+03/01/2016 04:52:20 ^VIX - 2016-03-09: Requesting
+03/01/2016 04:52:20 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:22 ^VIX - 2016-03-09: Finished request, insert to table...
+03/01/2016 04:52:22 ^VIX - 2016-03-09: Inserted to table, 39 rows affected.
+03/01/2016 04:52:22 ^VIX - 2016-03-16: Requesting
+03/01/2016 04:52:22 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:24 ^VIX - 2016-03-16: Finished request, insert to table...
+03/01/2016 04:52:24 ^VIX - 2016-03-16: Inserted to table, 68 rows affected.
+03/01/2016 04:52:24 ^VIX - 2016-03-23: Requesting
+03/01/2016 04:52:24 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:26 ^VIX - 2016-03-23: Finished request, insert to table...
+03/01/2016 04:52:26 ^VIX - 2016-03-23: Inserted to table, 37 rows affected.
+03/01/2016 04:52:26 ^VIX - 2016-03-30: Requesting
+03/01/2016 04:52:26 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:28 ^VIX - 2016-03-30: Finished request, insert to table...
+03/01/2016 04:52:28 ^VIX - 2016-03-30: Inserted to table, 22 rows affected.
+03/01/2016 04:52:28 ^VIX - 2016-04-20: Requesting
+03/01/2016 04:52:28 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:30 ^VIX - 2016-04-20: Finished request, insert to table...
+03/01/2016 04:52:30 ^VIX - 2016-04-20: Inserted to table, 64 rows affected.
+03/01/2016 04:52:30 ^VIX - 2016-05-18: Requesting
+03/01/2016 04:52:30 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:32 ^VIX - 2016-05-18: Finished request, insert to table...
+03/01/2016 04:52:33 ^VIX - 2016-05-18: Inserted to table, 58 rows affected.
+03/01/2016 04:52:33 ^VIX - 2016-06-15: Requesting
+03/01/2016 04:52:33 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:35 ^VIX - 2016-06-15: Finished request, insert to table...
+03/01/2016 04:52:35 ^VIX - 2016-06-15: Inserted to table, 59 rows affected.
+03/01/2016 04:52:35 ^VIX - 2016-07-20: Requesting
+03/01/2016 04:52:35 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:37 ^VIX - 2016-07-20: Finished request, insert to table...
+03/01/2016 04:52:37 ^VIX - 2016-07-20: Inserted to table, 53 rows affected.
+03/01/2016 04:52:37 ^VIX - 2016-08-17: Requesting
+03/01/2016 04:52:37 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:39 ^VIX - 2016-08-17: Finished request, insert to table...
+03/01/2016 04:52:39 ^VIX - 2016-08-17: Inserted to table, 44 rows affected.
+03/01/2016 04:52:39 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:40 VXX - 2016-03-04: Requesting
+03/01/2016 04:52:40 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:42 VXX - 2016-03-04: Finished request, insert to table...
+03/01/2016 04:52:42 VXX - 2016-03-04: Inserted to table, 103 rows affected.
+03/01/2016 04:52:42 VXX - 2016-03-11: Requesting
+03/01/2016 04:52:42 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:44 VXX - 2016-03-11: Finished request, insert to table...
+03/01/2016 04:52:45 VXX - 2016-03-11: Inserted to table, 90 rows affected.
+03/01/2016 04:52:45 VXX - 2016-03-18: Requesting
+03/01/2016 04:52:45 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:47 VXX - 2016-03-18: Finished request, insert to table...
+03/01/2016 04:52:48 VXX - 2016-03-18: Inserted to table, 145 rows affected.
+03/01/2016 04:52:48 VXX - 2016-03-24: Requesting
+03/01/2016 04:52:48 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:50 VXX - 2016-03-24: Finished request, insert to table...
+03/01/2016 04:52:51 VXX - 2016-03-24: Inserted to table, 89 rows affected.
+03/01/2016 04:52:51 VXX - 2016-04-01: Requesting
+03/01/2016 04:52:51 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:53 VXX - 2016-04-01: Finished request, insert to table...
+03/01/2016 04:52:53 VXX - 2016-04-01: Inserted to table, 73 rows affected.
+03/01/2016 04:52:53 VXX - 2016-04-08: Requesting
+03/01/2016 04:52:53 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:55 VXX - 2016-04-08: Finished request, insert to table...
+03/01/2016 04:52:55 VXX - 2016-04-08: Inserted to table, 33 rows affected.
+03/01/2016 04:52:55 VXX - 2016-04-15: Requesting
+03/01/2016 04:52:55 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:52:57 VXX - 2016-04-15: Finished request, insert to table...
+03/01/2016 04:52:58 VXX - 2016-04-15: Inserted to table, 95 rows affected.
+03/01/2016 04:52:58 VXX - 2016-05-20: Requesting
+03/01/2016 04:52:58 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:01 VXX - 2016-05-20: Finished request, insert to table...
+03/01/2016 04:53:01 VXX - 2016-05-20: Inserted to table, 48 rows affected.
+03/01/2016 04:53:01 VXX - 2016-06-17: Requesting
+03/01/2016 04:53:01 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:03 VXX - 2016-06-17: Finished request, insert to table...
+03/01/2016 04:53:04 VXX - 2016-06-17: Inserted to table, 77 rows affected.
+03/01/2016 04:53:04 VXX - 2016-09-16: Requesting
+03/01/2016 04:53:04 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:05 VXX - 2016-09-16: Finished request, insert to table...
+03/01/2016 04:53:06 VXX - 2016-09-16: Inserted to table, 90 rows affected.
+03/01/2016 04:53:06 VXX - 2017-01-20: Requesting
+03/01/2016 04:53:06 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:09 VXX - 2017-01-20: Finished request, insert to table...
+03/01/2016 04:53:10 VXX - 2017-01-20: Inserted to table, 134 rows affected.
+03/01/2016 04:53:10 VXX - 2018-01-19: Requesting
+03/01/2016 04:53:10 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:13 VXX - 2018-01-19: Finished request, insert to table...
+03/01/2016 04:53:13 VXX - 2018-01-19: Inserted to table, 83 rows affected.
+03/01/2016 04:53:13 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:14 VIXY - 2016-03-18: Requesting
+03/01/2016 04:53:14 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:15 VIXY - 2016-03-18: Finished request, insert to table...
+03/01/2016 04:53:16 VIXY - 2016-03-18: Inserted to table, 44 rows affected.
+03/01/2016 04:53:16 VIXY - 2016-04-15: Requesting
+03/01/2016 04:53:16 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:17 VIXY - 2016-04-15: Finished request, insert to table...
+03/01/2016 04:53:18 VIXY - 2016-04-15: Inserted to table, 7 rows affected.
+03/01/2016 04:53:18 VIXY - 2016-06-17: Requesting
+03/01/2016 04:53:18 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:19 VIXY - 2016-06-17: Finished request, insert to table...
+03/01/2016 04:53:20 VIXY - 2016-06-17: Inserted to table, 35 rows affected.
+03/01/2016 04:53:20 VIXY - 2016-09-16: Requesting
+03/01/2016 04:53:20 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:21 VIXY - 2016-09-16: Finished request, insert to table...
+03/01/2016 04:53:21 VIXY - 2016-09-16: Inserted to table, 12 rows affected.
+03/01/2016 04:53:21 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:22 VXZ - 2016-03-18: Requesting
+03/01/2016 04:53:22 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:26 VXZ - 2016-03-18: Finished request, insert to table...
+03/01/2016 04:53:27 VXZ - 2016-03-18: Inserted to table, 22 rows affected.
+03/01/2016 04:53:27 VXZ - 2016-04-15: Requesting
+03/01/2016 04:53:27 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:28 VXZ - 2016-04-15: Finished request, insert to table...
+03/01/2016 04:53:29 VXZ - 2016-04-15: Inserted to table, 5 rows affected.
+03/01/2016 04:53:29 VXZ - 2016-06-17: Requesting
+03/01/2016 04:53:29 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:30 VXZ - 2016-06-17: Finished request, insert to table...
+03/01/2016 04:53:30 VXZ - 2016-06-17: Inserted to table, 15 rows affected.
+03/01/2016 04:53:30 VXZ - 2016-09-16: Requesting
+03/01/2016 04:53:30 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:32 VXZ - 2016-09-16: Finished request, insert to table...
+03/01/2016 04:53:32 VXZ - 2016-09-16: Inserted to table, 4 rows affected.
+03/01/2016 04:53:32 VXZ - 2016-11-18: Requesting
+03/01/2016 04:53:32 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:33 VXZ - 2016-11-18: Finished request, insert to table...
+03/01/2016 04:53:33 VXZ - 2016-11-18: Inserted to table, 15 rows affected.
+03/01/2016 04:53:33 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:33 VIXM - 2016-03-18: Requesting
+03/01/2016 04:53:33 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:35 VIXM - 2016-03-18: Finished request, insert to table...
+03/01/2016 04:53:35 VIXM - 2016-03-18: Inserted to table, 41 rows affected.
+03/01/2016 04:53:35 VIXM - 2016-04-15: Requesting
+03/01/2016 04:53:35 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:37 VIXM - 2016-04-15: Finished request, insert to table...
+03/01/2016 04:53:37 VIXM - 2016-04-15: Inserted to table, 2 rows affected.
+03/01/2016 04:53:37 VIXM - 2016-06-17: Requesting
+03/01/2016 04:53:37 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:39 VIXM - 2016-06-17: Finished request, insert to table...
+03/01/2016 04:53:39 VIXM - 2016-06-17: Inserted to table, 11 rows affected.
+03/01/2016 04:53:39 VIXM - 2016-09-16: Requesting
+03/01/2016 04:53:39 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:41 VIXM - 2016-09-16: Finished request, insert to table...
+03/01/2016 04:53:41 VIXM - 2016-09-16: Inserted to table, 6 rows affected.
+03/01/2016 04:53:41 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:41 VIIX - 2016-03-18: Requesting
+03/01/2016 04:53:41 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:43 VIIX - 2016-03-18: Finished request, insert to table...
+03/01/2016 04:53:43 VIIX - 2016-03-18: Inserted to table, 34 rows affected.
+03/01/2016 04:53:43 VIIX - 2016-04-15: Requesting
+03/01/2016 04:53:43 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:45 VIIX - 2016-04-15: Finished request, insert to table...
+03/01/2016 04:53:45 VIIX - 2016-04-15: Inserted to table, 3 rows affected.
+03/01/2016 04:53:45 VIIX - 2016-06-17: Requesting
+03/01/2016 04:53:45 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:46 VIIX - 2016-06-17: Finished request, insert to table...
+03/01/2016 04:53:46 VIIX - 2016-06-17: Inserted to table, 12 rows affected.
+03/01/2016 04:53:46 VIIX - 2016-09-16: Requesting
+03/01/2016 04:53:46 Starting new HTTP connection (1): finance.yahoo.com
+03/01/2016 04:53:48 VIIX - 2016-09-16: Finished request, insert to table...
+03/01/2016 04:53:48 VIIX - 2016-09-16: Inserted to table, 4 rows affected.
+03/02/2016 07:07:43 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:07:44 ^VIX - 2016-03-09: Requesting
+03/02/2016 07:07:44 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:07:46 ^VIX - 2016-03-09: Finished request, insert to table...
+03/02/2016 07:07:46 ^VIX - 2016-03-09: Inserted to table, 41 rows affected.
+03/02/2016 07:07:46 ^VIX - 2016-03-16: Requesting
+03/02/2016 07:07:46 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:07:48 ^VIX - 2016-03-16: Finished request, insert to table...
+03/02/2016 07:07:49 ^VIX - 2016-03-16: Inserted to table, 68 rows affected.
+03/02/2016 07:07:49 ^VIX - 2016-03-23: Requesting
+03/02/2016 07:07:49 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:07:51 ^VIX - 2016-03-23: Finished request, insert to table...
+03/02/2016 07:07:51 ^VIX - 2016-03-23: Inserted to table, 42 rows affected.
+03/02/2016 07:07:51 ^VIX - 2016-03-30: Requesting
+03/02/2016 07:07:51 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:07:53 ^VIX - 2016-03-30: Finished request, insert to table...
+03/02/2016 07:07:53 ^VIX - 2016-03-30: Inserted to table, 29 rows affected.
+03/02/2016 07:07:53 ^VIX - 2016-04-20: Requesting
+03/02/2016 07:07:53 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:07:55 ^VIX - 2016-04-20: Finished request, insert to table...
+03/02/2016 07:07:55 ^VIX - 2016-04-20: Inserted to table, 65 rows affected.
+03/02/2016 07:07:55 ^VIX - 2016-05-18: Requesting
+03/02/2016 07:07:55 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:07:57 ^VIX - 2016-05-18: Finished request, insert to table...
+03/02/2016 07:07:58 ^VIX - 2016-05-18: Inserted to table, 58 rows affected.
+03/02/2016 07:07:58 ^VIX - 2016-06-15: Requesting
+03/02/2016 07:07:58 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:07:59 ^VIX - 2016-06-15: Finished request, insert to table...
+03/02/2016 07:08:00 ^VIX - 2016-06-15: Inserted to table, 59 rows affected.
+03/02/2016 07:08:00 ^VIX - 2016-07-20: Requesting
+03/02/2016 07:08:00 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:02 ^VIX - 2016-07-20: Finished request, insert to table...
+03/02/2016 07:08:02 ^VIX - 2016-07-20: Inserted to table, 53 rows affected.
+03/02/2016 07:08:02 ^VIX - 2016-08-17: Requesting
+03/02/2016 07:08:02 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:04 ^VIX - 2016-08-17: Finished request, insert to table...
+03/02/2016 07:08:04 ^VIX - 2016-08-17: Inserted to table, 45 rows affected.
+03/02/2016 07:08:04 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:05 VXX - 2016-03-04: Requesting
+03/02/2016 07:08:05 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:08 VXX - 2016-03-04: Finished request, insert to table...
+03/02/2016 07:08:08 VXX - 2016-03-04: Inserted to table, 103 rows affected.
+03/02/2016 07:08:08 VXX - 2016-03-11: Requesting
+03/02/2016 07:08:08 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:10 VXX - 2016-03-11: Finished request, insert to table...
+03/02/2016 07:08:11 VXX - 2016-03-11: Inserted to table, 95 rows affected.
+03/02/2016 07:08:11 VXX - 2016-03-18: Requesting
+03/02/2016 07:08:11 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:14 VXX - 2016-03-18: Finished request, insert to table...
+03/02/2016 07:08:14 VXX - 2016-03-18: Inserted to table, 145 rows affected.
+03/02/2016 07:08:14 VXX - 2016-03-24: Requesting
+03/02/2016 07:08:14 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:17 VXX - 2016-03-24: Finished request, insert to table...
+03/02/2016 07:08:18 VXX - 2016-03-24: Inserted to table, 90 rows affected.
+03/02/2016 07:08:18 VXX - 2016-04-01: Requesting
+03/02/2016 07:08:18 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:20 VXX - 2016-04-01: Finished request, insert to table...
+03/02/2016 07:08:20 VXX - 2016-04-01: Inserted to table, 76 rows affected.
+03/02/2016 07:08:20 VXX - 2016-04-08: Requesting
+03/02/2016 07:08:20 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:22 VXX - 2016-04-08: Finished request, insert to table...
+03/02/2016 07:08:22 VXX - 2016-04-08: Inserted to table, 50 rows affected.
+03/02/2016 07:08:22 VXX - 2016-04-15: Requesting
+03/02/2016 07:08:22 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:24 VXX - 2016-04-15: Finished request, insert to table...
+03/02/2016 07:08:25 VXX - 2016-04-15: Inserted to table, 95 rows affected.
+03/02/2016 07:08:25 VXX - 2016-05-20: Requesting
+03/02/2016 07:08:25 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:27 VXX - 2016-05-20: Finished request, insert to table...
+03/02/2016 07:08:28 VXX - 2016-05-20: Inserted to table, 49 rows affected.
+03/02/2016 07:08:28 VXX - 2016-06-17: Requesting
+03/02/2016 07:08:28 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:29 VXX - 2016-06-17: Finished request, insert to table...
+03/02/2016 07:08:30 VXX - 2016-06-17: Inserted to table, 77 rows affected.
+03/02/2016 07:08:30 VXX - 2016-09-16: Requesting
+03/02/2016 07:08:30 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:32 VXX - 2016-09-16: Finished request, insert to table...
+03/02/2016 07:08:32 VXX - 2016-09-16: Inserted to table, 93 rows affected.
+03/02/2016 07:08:32 VXX - 2017-01-20: Requesting
+03/02/2016 07:08:32 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:34 VXX - 2017-01-20: Finished request, insert to table...
+03/02/2016 07:08:35 VXX - 2017-01-20: Inserted to table, 134 rows affected.
+03/02/2016 07:08:35 VXX - 2018-01-19: Requesting
+03/02/2016 07:08:35 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:37 VXX - 2018-01-19: Finished request, insert to table...
+03/02/2016 07:08:38 VXX - 2018-01-19: Inserted to table, 83 rows affected.
+03/02/2016 07:08:38 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:38 VIXY - 2016-03-18: Requesting
+03/02/2016 07:08:38 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:41 VIXY - 2016-03-18: Finished request, insert to table...
+03/02/2016 07:08:41 VIXY - 2016-03-18: Inserted to table, 44 rows affected.
+03/02/2016 07:08:41 VIXY - 2016-04-15: Requesting
+03/02/2016 07:08:41 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:43 VIXY - 2016-04-15: Finished request, insert to table...
+03/02/2016 07:08:43 VIXY - 2016-04-15: Inserted to table, 11 rows affected.
+03/02/2016 07:08:43 VIXY - 2016-06-17: Requesting
+03/02/2016 07:08:43 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:44 VIXY - 2016-06-17: Finished request, insert to table...
+03/02/2016 07:08:44 VIXY - 2016-06-17: Inserted to table, 35 rows affected.
+03/02/2016 07:08:44 VIXY - 2016-09-16: Requesting
+03/02/2016 07:08:44 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:47 VIXY - 2016-09-16: Finished request, insert to table...
+03/02/2016 07:08:47 VIXY - 2016-09-16: Inserted to table, 15 rows affected.
+03/02/2016 07:08:47 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:48 VXZ - 2016-03-18: Requesting
+03/02/2016 07:08:48 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:50 VXZ - 2016-03-18: Finished request, insert to table...
+03/02/2016 07:08:50 VXZ - 2016-03-18: Inserted to table, 22 rows affected.
+03/02/2016 07:08:50 VXZ - 2016-04-15: Requesting
+03/02/2016 07:08:50 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:52 VXZ - 2016-04-15: Finished request, insert to table...
+03/02/2016 07:08:52 VXZ - 2016-04-15: Inserted to table, 6 rows affected.
+03/02/2016 07:08:52 VXZ - 2016-06-17: Requesting
+03/02/2016 07:08:52 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:53 VXZ - 2016-06-17: Finished request, insert to table...
+03/02/2016 07:08:53 VXZ - 2016-06-17: Inserted to table, 15 rows affected.
+03/02/2016 07:08:53 VXZ - 2016-09-16: Requesting
+03/02/2016 07:08:53 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:55 VXZ - 2016-09-16: Finished request, insert to table...
+03/02/2016 07:08:55 VXZ - 2016-09-16: Inserted to table, 6 rows affected.
+03/02/2016 07:08:55 VXZ - 2016-11-18: Requesting
+03/02/2016 07:08:55 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:57 VXZ - 2016-11-18: Finished request, insert to table...
+03/02/2016 07:08:57 VXZ - 2016-11-18: Inserted to table, 15 rows affected.
+03/02/2016 07:08:57 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:08:58 VIXM - 2016-03-18: Requesting
+03/02/2016 07:08:58 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:09:00 VIXM - 2016-03-18: Finished request, insert to table...
+03/02/2016 07:09:00 VIXM - 2016-03-18: Inserted to table, 42 rows affected.
+03/02/2016 07:09:00 VIXM - 2016-04-15: Requesting
+03/02/2016 07:09:00 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:09:02 VIXM - 2016-04-15: Finished request, insert to table...
+03/02/2016 07:09:02 VIXM - 2016-04-15: Inserted to table, 2 rows affected.
+03/02/2016 07:09:02 VIXM - 2016-06-17: Requesting
+03/02/2016 07:09:02 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:09:03 VIXM - 2016-06-17: Finished request, insert to table...
+03/02/2016 07:09:03 VIXM - 2016-06-17: Inserted to table, 11 rows affected.
+03/02/2016 07:09:03 VIXM - 2016-09-16: Requesting
+03/02/2016 07:09:03 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:09:05 VIXM - 2016-09-16: Finished request, insert to table...
+03/02/2016 07:09:05 VIXM - 2016-09-16: Inserted to table, 6 rows affected.
+03/02/2016 07:09:05 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:09:06 VIIX - 2016-03-18: Requesting
+03/02/2016 07:09:06 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:09:08 VIIX - 2016-03-18: Finished request, insert to table...
+03/02/2016 07:09:08 VIIX - 2016-03-18: Inserted to table, 35 rows affected.
+03/02/2016 07:09:08 VIIX - 2016-04-15: Requesting
+03/02/2016 07:09:08 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:09:09 VIIX - 2016-04-15: Finished request, insert to table...
+03/02/2016 07:09:09 VIIX - 2016-04-15: Inserted to table, 4 rows affected.
+03/02/2016 07:09:09 VIIX - 2016-06-17: Requesting
+03/02/2016 07:09:09 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:09:11 VIIX - 2016-06-17: Finished request, insert to table...
+03/02/2016 07:09:11 VIIX - 2016-06-17: Inserted to table, 12 rows affected.
+03/02/2016 07:09:11 VIIX - 2016-09-16: Requesting
+03/02/2016 07:09:11 Starting new HTTP connection (1): finance.yahoo.com
+03/02/2016 07:09:13 VIIX - 2016-09-16: Finished request, insert to table...
+03/02/2016 07:09:13 VIIX - 2016-09-16: Inserted to table, 4 rows affected.
+03/03/2016 04:44:11 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:12 ^VIX - 2016-03-09: Requesting
+03/03/2016 04:44:12 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:13 ^VIX - 2016-03-09: Finished request, insert to table...
+03/03/2016 04:44:14 ^VIX - 2016-03-09: Inserted to table, 41 rows affected.
+03/03/2016 04:44:14 ^VIX - 2016-03-16: Requesting
+03/03/2016 04:44:14 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:16 ^VIX - 2016-03-16: Finished request, insert to table...
+03/03/2016 04:44:17 ^VIX - 2016-03-16: Inserted to table, 68 rows affected.
+03/03/2016 04:44:17 ^VIX - 2016-03-23: Requesting
+03/03/2016 04:44:17 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:19 ^VIX - 2016-03-23: Finished request, insert to table...
+03/03/2016 04:44:19 ^VIX - 2016-03-23: Inserted to table, 42 rows affected.
+03/03/2016 04:44:19 ^VIX - 2016-03-30: Requesting
+03/03/2016 04:44:19 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:21 ^VIX - 2016-03-30: Finished request, insert to table...
+03/03/2016 04:44:21 ^VIX - 2016-03-30: Inserted to table, 29 rows affected.
+03/03/2016 04:44:21 ^VIX - 2016-04-20: Requesting
+03/03/2016 04:44:21 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:23 ^VIX - 2016-04-20: Finished request, insert to table...
+03/03/2016 04:44:23 ^VIX - 2016-04-20: Inserted to table, 65 rows affected.
+03/03/2016 04:44:23 ^VIX - 2016-05-18: Requesting
+03/03/2016 04:44:23 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:25 ^VIX - 2016-05-18: Finished request, insert to table...
+03/03/2016 04:44:26 ^VIX - 2016-05-18: Inserted to table, 58 rows affected.
+03/03/2016 04:44:26 ^VIX - 2016-06-15: Requesting
+03/03/2016 04:44:26 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:27 ^VIX - 2016-06-15: Finished request, insert to table...
+03/03/2016 04:44:28 ^VIX - 2016-06-15: Inserted to table, 59 rows affected.
+03/03/2016 04:44:28 ^VIX - 2016-07-20: Requesting
+03/03/2016 04:44:28 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:30 ^VIX - 2016-07-20: Finished request, insert to table...
+03/03/2016 04:44:30 ^VIX - 2016-07-20: Inserted to table, 53 rows affected.
+03/03/2016 04:44:30 ^VIX - 2016-08-17: Requesting
+03/03/2016 04:44:30 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:32 ^VIX - 2016-08-17: Finished request, insert to table...
+03/03/2016 04:44:32 ^VIX - 2016-08-17: Inserted to table, 45 rows affected.
+03/03/2016 04:44:32 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:33 VXX - 2016-03-04: Requesting
+03/03/2016 04:44:33 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:35 VXX - 2016-03-04: Finished request, insert to table...
+03/03/2016 04:44:36 VXX - 2016-03-04: Inserted to table, 103 rows affected.
+03/03/2016 04:44:36 VXX - 2016-03-11: Requesting
+03/03/2016 04:44:36 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:39 VXX - 2016-03-11: Finished request, insert to table...
+03/03/2016 04:44:40 VXX - 2016-03-11: Inserted to table, 95 rows affected.
+03/03/2016 04:44:40 VXX - 2016-03-18: Requesting
+03/03/2016 04:44:40 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:42 VXX - 2016-03-18: Finished request, insert to table...
+03/03/2016 04:44:43 VXX - 2016-03-18: Inserted to table, 145 rows affected.
+03/03/2016 04:44:43 VXX - 2016-03-24: Requesting
+03/03/2016 04:44:43 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:46 VXX - 2016-03-24: Finished request, insert to table...
+03/03/2016 04:44:46 VXX - 2016-03-24: Inserted to table, 90 rows affected.
+03/03/2016 04:44:46 VXX - 2016-04-01: Requesting
+03/03/2016 04:44:46 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:48 VXX - 2016-04-01: Finished request, insert to table...
+03/03/2016 04:44:49 VXX - 2016-04-01: Inserted to table, 76 rows affected.
+03/03/2016 04:44:49 VXX - 2016-04-08: Requesting
+03/03/2016 04:44:49 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:51 VXX - 2016-04-08: Finished request, insert to table...
+03/03/2016 04:44:51 VXX - 2016-04-08: Inserted to table, 50 rows affected.
+03/03/2016 04:44:51 VXX - 2016-04-15: Requesting
+03/03/2016 04:44:51 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:53 VXX - 2016-04-15: Finished request, insert to table...
+03/03/2016 04:44:54 VXX - 2016-04-15: Inserted to table, 95 rows affected.
+03/03/2016 04:44:54 VXX - 2016-05-20: Requesting
+03/03/2016 04:44:54 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:56 VXX - 2016-05-20: Finished request, insert to table...
+03/03/2016 04:44:56 VXX - 2016-05-20: Inserted to table, 49 rows affected.
+03/03/2016 04:44:56 VXX - 2016-06-17: Requesting
+03/03/2016 04:44:56 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:44:58 VXX - 2016-06-17: Finished request, insert to table...
+03/03/2016 04:44:59 VXX - 2016-06-17: Inserted to table, 77 rows affected.
+03/03/2016 04:44:59 VXX - 2016-09-16: Requesting
+03/03/2016 04:44:59 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:02 VXX - 2016-09-16: Finished request, insert to table...
+03/03/2016 04:45:02 VXX - 2016-09-16: Inserted to table, 93 rows affected.
+03/03/2016 04:45:02 VXX - 2017-01-20: Requesting
+03/03/2016 04:45:02 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:04 VXX - 2017-01-20: Finished request, insert to table...
+03/03/2016 04:45:05 VXX - 2017-01-20: Inserted to table, 134 rows affected.
+03/03/2016 04:45:05 VXX - 2018-01-19: Requesting
+03/03/2016 04:45:05 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:07 VXX - 2018-01-19: Finished request, insert to table...
+03/03/2016 04:45:08 VXX - 2018-01-19: Inserted to table, 83 rows affected.
+03/03/2016 04:45:08 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:09 VIXY - 2016-03-18: Requesting
+03/03/2016 04:45:09 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:10 VIXY - 2016-03-18: Finished request, insert to table...
+03/03/2016 04:45:11 VIXY - 2016-03-18: Inserted to table, 44 rows affected.
+03/03/2016 04:45:11 VIXY - 2016-04-15: Requesting
+03/03/2016 04:45:11 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:12 VIXY - 2016-04-15: Finished request, insert to table...
+03/03/2016 04:45:12 VIXY - 2016-04-15: Inserted to table, 11 rows affected.
+03/03/2016 04:45:12 VIXY - 2016-06-17: Requesting
+03/03/2016 04:45:12 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:14 VIXY - 2016-06-17: Finished request, insert to table...
+03/03/2016 04:45:14 VIXY - 2016-06-17: Inserted to table, 35 rows affected.
+03/03/2016 04:45:14 VIXY - 2016-09-16: Requesting
+03/03/2016 04:45:14 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:17 VIXY - 2016-09-16: Finished request, insert to table...
+03/03/2016 04:45:17 VIXY - 2016-09-16: Inserted to table, 15 rows affected.
+03/03/2016 04:45:17 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:18 VXZ - 2016-03-18: Requesting
+03/03/2016 04:45:18 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:20 VXZ - 2016-03-18: Finished request, insert to table...
+03/03/2016 04:45:20 VXZ - 2016-03-18: Inserted to table, 22 rows affected.
+03/03/2016 04:45:20 VXZ - 2016-04-15: Requesting
+03/03/2016 04:45:20 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:21 VXZ - 2016-04-15: Finished request, insert to table...
+03/03/2016 04:45:21 VXZ - 2016-04-15: Inserted to table, 6 rows affected.
+03/03/2016 04:45:21 VXZ - 2016-06-17: Requesting
+03/03/2016 04:45:21 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:23 VXZ - 2016-06-17: Finished request, insert to table...
+03/03/2016 04:45:23 VXZ - 2016-06-17: Inserted to table, 15 rows affected.
+03/03/2016 04:45:23 VXZ - 2016-09-16: Requesting
+03/03/2016 04:45:23 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:24 VXZ - 2016-09-16: Finished request, insert to table...
+03/03/2016 04:45:25 VXZ - 2016-09-16: Inserted to table, 6 rows affected.
+03/03/2016 04:45:25 VXZ - 2016-11-18: Requesting
+03/03/2016 04:45:25 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:26 VXZ - 2016-11-18: Finished request, insert to table...
+03/03/2016 04:45:26 VXZ - 2016-11-18: Inserted to table, 15 rows affected.
+03/03/2016 04:45:26 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:27 VIXM - 2016-03-18: Requesting
+03/03/2016 04:45:27 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:29 VIXM - 2016-03-18: Finished request, insert to table...
+03/03/2016 04:45:29 VIXM - 2016-03-18: Inserted to table, 42 rows affected.
+03/03/2016 04:45:29 VIXM - 2016-04-15: Requesting
+03/03/2016 04:45:29 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:34 VIXM - 2016-04-15: Finished request, insert to table...
+03/03/2016 04:45:34 VIXM - 2016-04-15: Inserted to table, 2 rows affected.
+03/03/2016 04:45:34 VIXM - 2016-06-17: Requesting
+03/03/2016 04:45:34 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:35 VIXM - 2016-06-17: Finished request, insert to table...
+03/03/2016 04:45:35 VIXM - 2016-06-17: Inserted to table, 11 rows affected.
+03/03/2016 04:45:35 VIXM - 2016-09-16: Requesting
+03/03/2016 04:45:35 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:37 VIXM - 2016-09-16: Finished request, insert to table...
+03/03/2016 04:45:37 VIXM - 2016-09-16: Inserted to table, 6 rows affected.
+03/03/2016 04:45:37 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:38 VIIX - 2016-03-18: Requesting
+03/03/2016 04:45:38 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:40 VIIX - 2016-03-18: Finished request, insert to table...
+03/03/2016 04:45:40 VIIX - 2016-03-18: Inserted to table, 35 rows affected.
+03/03/2016 04:45:40 VIIX - 2016-04-15: Requesting
+03/03/2016 04:45:40 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:42 VIIX - 2016-04-15: Finished request, insert to table...
+03/03/2016 04:45:42 VIIX - 2016-04-15: Inserted to table, 4 rows affected.
+03/03/2016 04:45:42 VIIX - 2016-06-17: Requesting
+03/03/2016 04:45:42 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:44 VIIX - 2016-06-17: Finished request, insert to table...
+03/03/2016 04:45:44 VIIX - 2016-06-17: Inserted to table, 12 rows affected.
+03/03/2016 04:45:44 VIIX - 2016-09-16: Requesting
+03/03/2016 04:45:44 Starting new HTTP connection (1): finance.yahoo.com
+03/03/2016 04:45:46 VIIX - 2016-09-16: Finished request, insert to table...
+03/03/2016 04:45:46 VIIX - 2016-09-16: Inserted to table, 4 rows affected.
+03/04/2016 09:58:18 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 09:58:19 ^VIX - 2016-03-09: Requesting
+03/04/2016 09:58:19 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 09:58:21 ^VIX - 2016-03-09: Finished request, insert to table...
+03/04/2016 09:58:21 ^VIX - 2016-03-09: Inserted to table, 76 rows affected.
+03/04/2016 09:58:21 ^VIX - 2016-03-16: Requesting
+03/04/2016 09:58:21 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 09:58:23 ^VIX - 2016-03-16: Finished request, insert to table...
+03/04/2016 09:58:23 ^VIX - 2016-03-16: Inserted to table, 76 rows affected.
+03/04/2016 09:58:23 ^VIX - 2016-03-23: Requesting
+03/04/2016 09:58:23 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 09:58:25 ^VIX - 2016-03-23: Finished request, insert to table...
+03/04/2016 09:58:26 ^VIX - 2016-03-23: Inserted to table, 76 rows affected.
+03/04/2016 09:58:26 ^VIX - 2016-03-30: Requesting
+03/04/2016 09:58:26 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 09:58:27 ^VIX - 2016-03-30: Finished request, insert to table...
+03/04/2016 09:58:28 ^VIX - 2016-03-30: Inserted to table, 76 rows affected.
+03/04/2016 09:58:28 ^VIX - 2016-04-06: Requesting
+03/04/2016 09:58:28 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 09:58:30 ^VIX - 2016-04-06: Finished request, insert to table...
+03/04/2016 09:58:31 ^VIX - 2016-04-06: Inserted to table, 76 rows affected.
+03/04/2016 09:58:31 ^VIX - 2016-04-20: Requesting
+03/04/2016 09:58:31 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 09:58:32 ^VIX - 2016-04-20: Finished request, insert to table...
+03/04/2016 09:58:33 ^VIX - 2016-04-20: Inserted to table, 80 rows affected.
+03/04/2016 09:58:33 ^VIX - 2016-05-18: Requesting
+03/04/2016 09:58:33 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 09:58:35 ^VIX - 2016-05-18: Finished request, insert to table...
+03/04/2016 09:58:35 ^VIX - 2016-05-18: Inserted to table, 66 rows affected.
+03/04/2016 09:58:35 ^VIX - 2016-06-15: Requesting
+03/04/2016 09:58:35 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 09:58:39 ^VIX - 2016-06-15: Finished request, insert to table...
+03/04/2016 09:58:39 ^VIX - 2016-06-15: Inserted to table, 66 rows affected.
+03/04/2016 09:58:39 ^VIX - 2016-07-20: Requesting
+03/04/2016 09:58:39 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 09:58:41 ^VIX - 2016-07-20: Finished request, insert to table...
+03/04/2016 09:58:41 ^VIX - 2016-07-20: Inserted to table, 70 rows affected.
+03/04/2016 09:58:41 ^VIX - 2016-08-17: Requesting
+03/04/2016 09:58:41 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 09:58:43 ^VIX - 2016-08-17: Finished request, insert to table...
+03/04/2016 09:58:44 ^VIX - 2016-08-17: Inserted to table, 66 rows affected.
+03/04/2016 09:58:44 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 09:58:45 VXX - 2016-03-11: Requesting
+03/04/2016 09:58:45 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 09:58:46 VXX - 2016-03-11: Finished request, insert to table...
+03/04/2016 09:58:47 VXX - 2016-03-11: Inserted to table, 134 rows affected.
+03/04/2016 09:58:47 VXX - 2016-03-18: Requesting
+03/04/2016 09:58:47 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:00:55 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:00:56 ^VIX - 2016-03-09: Requesting
+03/04/2016 10:00:56 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:00:58 ^VIX - 2016-03-09: Finished request, insert to table...
+03/04/2016 10:00:58 ^VIX - 2016-03-09: Inserted to table, 76 rows affected.
+03/04/2016 10:00:58 ^VIX - 2016-03-16: Requesting
+03/04/2016 10:00:58 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:00 ^VIX - 2016-03-16: Finished request, insert to table...
+03/04/2016 10:01:00 ^VIX - 2016-03-16: Inserted to table, 76 rows affected.
+03/04/2016 10:01:00 ^VIX - 2016-03-23: Requesting
+03/04/2016 10:01:00 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:02 ^VIX - 2016-03-23: Finished request, insert to table...
+03/04/2016 10:01:02 ^VIX - 2016-03-23: Inserted to table, 76 rows affected.
+03/04/2016 10:01:02 ^VIX - 2016-03-30: Requesting
+03/04/2016 10:01:02 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:04 ^VIX - 2016-03-30: Finished request, insert to table...
+03/04/2016 10:01:05 ^VIX - 2016-03-30: Inserted to table, 76 rows affected.
+03/04/2016 10:01:05 ^VIX - 2016-04-06: Requesting
+03/04/2016 10:01:05 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:07 ^VIX - 2016-04-06: Finished request, insert to table...
+03/04/2016 10:01:07 ^VIX - 2016-04-06: Inserted to table, 76 rows affected.
+03/04/2016 10:01:07 ^VIX - 2016-04-20: Requesting
+03/04/2016 10:01:07 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:09 ^VIX - 2016-04-20: Finished request, insert to table...
+03/04/2016 10:01:09 ^VIX - 2016-04-20: Inserted to table, 80 rows affected.
+03/04/2016 10:01:09 ^VIX - 2016-05-18: Requesting
+03/04/2016 10:01:09 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:11 ^VIX - 2016-05-18: Finished request, insert to table...
+03/04/2016 10:01:11 ^VIX - 2016-05-18: Inserted to table, 66 rows affected.
+03/04/2016 10:01:11 ^VIX - 2016-06-15: Requesting
+03/04/2016 10:01:11 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:13 ^VIX - 2016-06-15: Finished request, insert to table...
+03/04/2016 10:01:14 ^VIX - 2016-06-15: Inserted to table, 66 rows affected.
+03/04/2016 10:01:14 ^VIX - 2016-07-20: Requesting
+03/04/2016 10:01:14 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:16 ^VIX - 2016-07-20: Finished request, insert to table...
+03/04/2016 10:01:16 ^VIX - 2016-07-20: Inserted to table, 70 rows affected.
+03/04/2016 10:01:16 ^VIX - 2016-08-17: Requesting
+03/04/2016 10:01:16 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:18 ^VIX - 2016-08-17: Finished request, insert to table...
+03/04/2016 10:01:19 ^VIX - 2016-08-17: Inserted to table, 66 rows affected.
+03/04/2016 10:01:19 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:19 VXX - 2016-03-11: Requesting
+03/04/2016 10:01:19 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:22 VXX - 2016-03-11: Finished request, insert to table...
+03/04/2016 10:01:23 VXX - 2016-03-11: Inserted to table, 134 rows affected.
+03/04/2016 10:01:23 VXX - 2016-03-18: Requesting
+03/04/2016 10:01:23 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:25 VXX - 2016-03-18: Finished request, insert to table...
+03/04/2016 10:01:26 VXX - 2016-03-18: Inserted to table, 171 rows affected.
+03/04/2016 10:01:26 VXX - 2016-03-24: Requesting
+03/04/2016 10:01:26 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:28 VXX - 2016-03-24: Finished request, insert to table...
+03/04/2016 10:01:29 VXX - 2016-03-24: Inserted to table, 108 rows affected.
+03/04/2016 10:01:29 VXX - 2016-04-01: Requesting
+03/04/2016 10:01:29 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:31 VXX - 2016-04-01: Finished request, insert to table...
+03/04/2016 10:01:32 VXX - 2016-04-01: Inserted to table, 100 rows affected.
+03/04/2016 10:01:32 VXX - 2016-04-08: Requesting
+03/04/2016 10:01:32 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:34 VXX - 2016-04-08: Finished request, insert to table...
+03/04/2016 10:01:34 VXX - 2016-04-08: Inserted to table, 74 rows affected.
+03/04/2016 10:01:34 VXX - 2016-04-15: Requesting
+03/04/2016 10:01:34 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:36 VXX - 2016-04-15: Finished request, insert to table...
+03/04/2016 10:01:37 VXX - 2016-04-15: Inserted to table, 112 rows affected.
+03/04/2016 10:01:37 VXX - 2016-04-22: Requesting
+03/04/2016 10:01:37 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:39 VXX - 2016-04-22: Finished request, insert to table...
+03/04/2016 10:01:40 VXX - 2016-04-22: Inserted to table, 75 rows affected.
+03/04/2016 10:01:40 VXX - 2016-05-20: Requesting
+03/04/2016 10:01:40 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:41 VXX - 2016-05-20: Finished request, insert to table...
+03/04/2016 10:01:42 VXX - 2016-05-20: Inserted to table, 52 rows affected.
+03/04/2016 10:01:42 VXX - 2016-06-17: Requesting
+03/04/2016 10:01:42 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:44 VXX - 2016-06-17: Finished request, insert to table...
+03/04/2016 10:01:44 VXX - 2016-06-17: Inserted to table, 88 rows affected.
+03/04/2016 10:01:44 VXX - 2016-09-16: Requesting
+03/04/2016 10:01:44 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:46 VXX - 2016-09-16: Finished request, insert to table...
+03/04/2016 10:01:47 VXX - 2016-09-16: Inserted to table, 108 rows affected.
+03/04/2016 10:01:47 VXX - 2017-01-20: Requesting
+03/04/2016 10:01:47 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:49 VXX - 2017-01-20: Finished request, insert to table...
+03/04/2016 10:01:50 VXX - 2017-01-20: Inserted to table, 138 rows affected.
+03/04/2016 10:01:50 VXX - 2018-01-19: Requesting
+03/04/2016 10:01:50 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:53 VXX - 2018-01-19: Finished request, insert to table...
+03/04/2016 10:01:53 VXX - 2018-01-19: Inserted to table, 96 rows affected.
+03/04/2016 10:01:53 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:54 VIXY - 2016-03-18: Requesting
+03/04/2016 10:01:54 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:56 VIXY - 2016-03-18: Finished request, insert to table...
+03/04/2016 10:01:56 VIXY - 2016-03-18: Inserted to table, 74 rows affected.
+03/04/2016 10:01:56 VIXY - 2016-04-15: Requesting
+03/04/2016 10:01:56 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:01:59 VIXY - 2016-04-15: Finished request, insert to table...
+03/04/2016 10:01:59 VIXY - 2016-04-15: Inserted to table, 70 rows affected.
+03/04/2016 10:01:59 VIXY - 2016-06-17: Requesting
+03/04/2016 10:01:59 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:04 VIXY - 2016-06-17: Finished request, insert to table...
+03/04/2016 10:02:04 VIXY - 2016-06-17: Inserted to table, 60 rows affected.
+03/04/2016 10:02:04 VIXY - 2016-09-16: Requesting
+03/04/2016 10:02:04 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:07 VIXY - 2016-09-16: Finished request, insert to table...
+03/04/2016 10:02:07 VIXY - 2016-09-16: Inserted to table, 70 rows affected.
+03/04/2016 10:02:07 VIXY - 2017-01-20: Requesting
+03/04/2016 10:02:07 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:09 VIXY - 2017-01-20: Finished request, insert to table...
+03/04/2016 10:02:09 VIXY - 2017-01-20: Inserted to table, 50 rows affected.
+03/04/2016 10:02:09 VIXY - 2018-01-19: Requesting
+03/04/2016 10:02:09 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:11 VIXY - 2018-01-19: Finished request, insert to table...
+03/04/2016 10:02:12 VIXY - 2018-01-19: Inserted to table, 50 rows affected.
+03/04/2016 10:02:12 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:12 VXZ - 2016-03-18: Requesting
+03/04/2016 10:02:12 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:14 VXZ - 2016-03-18: Finished request, insert to table...
+03/04/2016 10:02:14 VXZ - 2016-03-18: Inserted to table, 50 rows affected.
+03/04/2016 10:02:14 VXZ - 2016-04-15: Requesting
+03/04/2016 10:02:14 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:18 VXZ - 2016-04-15: Finished request, insert to table...
+03/04/2016 10:02:18 VXZ - 2016-04-15: Inserted to table, 46 rows affected.
+03/04/2016 10:02:18 VXZ - 2016-06-17: Requesting
+03/04/2016 10:02:18 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:20 VXZ - 2016-06-17: Finished request, insert to table...
+03/04/2016 10:02:20 VXZ - 2016-06-17: Inserted to table, 46 rows affected.
+03/04/2016 10:02:20 VXZ - 2016-09-16: Requesting
+03/04/2016 10:02:20 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:22 VXZ - 2016-09-16: Finished request, insert to table...
+03/04/2016 10:02:22 VXZ - 2016-09-16: Inserted to table, 48 rows affected.
+03/04/2016 10:02:22 VXZ - 2016-11-18: Requesting
+03/04/2016 10:02:22 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:24 VXZ - 2016-11-18: Finished request, insert to table...
+03/04/2016 10:02:24 VXZ - 2016-11-18: Inserted to table, 28 rows affected.
+03/04/2016 10:02:24 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:25 VIXM - 2016-03-18: Requesting
+03/04/2016 10:02:25 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:27 VIXM - 2016-03-18: Finished request, insert to table...
+03/04/2016 10:02:27 VIXM - 2016-03-18: Inserted to table, 74 rows affected.
+03/04/2016 10:02:27 VIXM - 2016-04-15: Requesting
+03/04/2016 10:02:27 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:30 VIXM - 2016-04-15: Finished request, insert to table...
+03/04/2016 10:02:30 VIXM - 2016-04-15: Inserted to table, 64 rows affected.
+03/04/2016 10:02:30 VIXM - 2016-06-17: Requesting
+03/04/2016 10:02:30 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:32 VIXM - 2016-06-17: Finished request, insert to table...
+03/04/2016 10:02:32 VIXM - 2016-06-17: Inserted to table, 78 rows affected.
+03/04/2016 10:02:32 VIXM - 2016-09-16: Requesting
+03/04/2016 10:02:32 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:35 VIXM - 2016-09-16: Finished request, insert to table...
+03/04/2016 10:02:35 VIXM - 2016-09-16: Inserted to table, 100 rows affected.
+03/04/2016 10:02:35 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:36 VIIX - 2016-03-18: Requesting
+03/04/2016 10:02:36 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:38 VIIX - 2016-03-18: Finished request, insert to table...
+03/04/2016 10:02:38 VIIX - 2016-03-18: Inserted to table, 66 rows affected.
+03/04/2016 10:02:38 VIIX - 2016-04-15: Requesting
+03/04/2016 10:02:38 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:40 VIIX - 2016-04-15: Finished request, insert to table...
+03/04/2016 10:02:41 VIIX - 2016-04-15: Inserted to table, 54 rows affected.
+03/04/2016 10:02:41 VIIX - 2016-06-17: Requesting
+03/04/2016 10:02:41 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:42 VIIX - 2016-06-17: Finished request, insert to table...
+03/04/2016 10:02:43 VIIX - 2016-06-17: Inserted to table, 66 rows affected.
+03/04/2016 10:02:43 VIIX - 2016-09-16: Requesting
+03/04/2016 10:02:43 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:02:46 VIIX - 2016-09-16: Finished request, insert to table...
+03/04/2016 10:02:46 VIIX - 2016-09-16: Inserted to table, 52 rows affected.
+03/04/2016 10:06:26 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:06:28 ^VIX - 2016-03-09: Requesting
+03/04/2016 10:06:28 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:06:33 ^VIX - 2016-03-09: Finished request, insert to table...
+03/04/2016 10:06:33 ^VIX - 2016-03-09: Inserted to table, 76 rows affected.
+03/04/2016 10:06:33 ^VIX - 2016-03-16: Requesting
+03/04/2016 10:06:33 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:06:38 ^VIX - 2016-03-16: Finished request, insert to table...
+03/04/2016 10:06:39 ^VIX - 2016-03-16: Inserted to table, 76 rows affected.
+03/04/2016 10:06:39 ^VIX - 2016-03-23: Requesting
+03/04/2016 10:06:39 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:06:45 ^VIX - 2016-03-23: Finished request, insert to table...
+03/04/2016 10:06:45 ^VIX - 2016-03-23: Inserted to table, 76 rows affected.
+03/04/2016 10:06:45 ^VIX - 2016-03-30: Requesting
+03/04/2016 10:06:45 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:06:49 ^VIX - 2016-03-30: Finished request, insert to table...
+03/04/2016 10:06:49 ^VIX - 2016-03-30: Inserted to table, 76 rows affected.
+03/04/2016 10:06:49 ^VIX - 2016-04-06: Requesting
+03/04/2016 10:06:49 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:06:54 ^VIX - 2016-04-06: Finished request, insert to table...
+03/04/2016 10:06:55 ^VIX - 2016-04-06: Inserted to table, 76 rows affected.
+03/04/2016 10:06:55 ^VIX - 2016-04-20: Requesting
+03/04/2016 10:06:55 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:06:59 ^VIX - 2016-04-20: Finished request, insert to table...
+03/04/2016 10:07:00 ^VIX - 2016-04-20: Inserted to table, 80 rows affected.
+03/04/2016 10:07:00 ^VIX - 2016-05-18: Requesting
+03/04/2016 10:07:00 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:04 ^VIX - 2016-05-18: Finished request, insert to table...
+03/04/2016 10:07:04 ^VIX - 2016-05-18: Inserted to table, 66 rows affected.
+03/04/2016 10:07:04 ^VIX - 2016-06-15: Requesting
+03/04/2016 10:07:04 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:09 ^VIX - 2016-06-15: Finished request, insert to table...
+03/04/2016 10:07:09 ^VIX - 2016-06-15: Inserted to table, 66 rows affected.
+03/04/2016 10:07:09 ^VIX - 2016-07-20: Requesting
+03/04/2016 10:07:09 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:12 ^VIX - 2016-07-20: Finished request, insert to table...
+03/04/2016 10:07:12 ^VIX - 2016-07-20: Inserted to table, 70 rows affected.
+03/04/2016 10:07:12 ^VIX - 2016-08-17: Requesting
+03/04/2016 10:07:12 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:16 ^VIX - 2016-08-17: Finished request, insert to table...
+03/04/2016 10:07:16 ^VIX - 2016-08-17: Inserted to table, 66 rows affected.
+03/04/2016 10:07:16 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:17 VXX - 2016-03-11: Requesting
+03/04/2016 10:07:17 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:20 VXX - 2016-03-11: Finished request, insert to table...
+03/04/2016 10:07:21 VXX - 2016-03-11: Inserted to table, 134 rows affected.
+03/04/2016 10:07:21 VXX - 2016-03-18: Requesting
+03/04/2016 10:07:21 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:25 VXX - 2016-03-18: Finished request, insert to table...
+03/04/2016 10:07:26 VXX - 2016-03-18: Inserted to table, 171 rows affected.
+03/04/2016 10:07:26 VXX - 2016-03-24: Requesting
+03/04/2016 10:07:26 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:29 VXX - 2016-03-24: Finished request, insert to table...
+03/04/2016 10:07:30 VXX - 2016-03-24: Inserted to table, 108 rows affected.
+03/04/2016 10:07:30 VXX - 2016-04-01: Requesting
+03/04/2016 10:07:30 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:33 VXX - 2016-04-01: Finished request, insert to table...
+03/04/2016 10:07:33 VXX - 2016-04-01: Inserted to table, 100 rows affected.
+03/04/2016 10:07:33 VXX - 2016-04-08: Requesting
+03/04/2016 10:07:33 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:36 VXX - 2016-04-08: Finished request, insert to table...
+03/04/2016 10:07:37 VXX - 2016-04-08: Inserted to table, 74 rows affected.
+03/04/2016 10:07:37 VXX - 2016-04-15: Requesting
+03/04/2016 10:07:37 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:40 VXX - 2016-04-15: Finished request, insert to table...
+03/04/2016 10:07:40 VXX - 2016-04-15: Inserted to table, 112 rows affected.
+03/04/2016 10:07:40 VXX - 2016-04-22: Requesting
+03/04/2016 10:07:40 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:43 VXX - 2016-04-22: Finished request, insert to table...
+03/04/2016 10:07:43 VXX - 2016-04-22: Inserted to table, 75 rows affected.
+03/04/2016 10:07:43 VXX - 2016-05-20: Requesting
+03/04/2016 10:07:43 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:45 VXX - 2016-05-20: Finished request, insert to table...
+03/04/2016 10:07:46 VXX - 2016-05-20: Inserted to table, 52 rows affected.
+03/04/2016 10:07:46 VXX - 2016-06-17: Requesting
+03/04/2016 10:07:46 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:48 VXX - 2016-06-17: Finished request, insert to table...
+03/04/2016 10:07:48 VXX - 2016-06-17: Inserted to table, 88 rows affected.
+03/04/2016 10:07:48 VXX - 2016-09-16: Requesting
+03/04/2016 10:07:48 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:50 VXX - 2016-09-16: Finished request, insert to table...
+03/04/2016 10:07:51 VXX - 2016-09-16: Inserted to table, 108 rows affected.
+03/04/2016 10:07:51 VXX - 2017-01-20: Requesting
+03/04/2016 10:07:51 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:53 VXX - 2017-01-20: Finished request, insert to table...
+03/04/2016 10:07:54 VXX - 2017-01-20: Inserted to table, 138 rows affected.
+03/04/2016 10:07:54 VXX - 2018-01-19: Requesting
+03/04/2016 10:07:54 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:56 VXX - 2018-01-19: Finished request, insert to table...
+03/04/2016 10:07:57 VXX - 2018-01-19: Inserted to table, 96 rows affected.
+03/04/2016 10:07:57 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:07:58 VIXY - 2016-03-18: Requesting
+03/04/2016 10:07:58 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:08:00 VIXY - 2016-03-18: Finished request, insert to table...
+03/04/2016 10:08:00 VIXY - 2016-03-18: Inserted to table, 74 rows affected.
+03/04/2016 10:08:00 VIXY - 2016-04-15: Requesting
+03/04/2016 10:08:00 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:08:02 VIXY - 2016-04-15: Finished request, insert to table...
+03/04/2016 10:08:03 VIXY - 2016-04-15: Inserted to table, 70 rows affected.
+03/04/2016 10:08:03 VIXY - 2016-06-17: Requesting
+03/04/2016 10:08:03 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:08:05 VIXY - 2016-06-17: Finished request, insert to table...
+03/04/2016 10:08:05 VIXY - 2016-06-17: Inserted to table, 60 rows affected.
+03/04/2016 10:08:05 VIXY - 2016-09-16: Requesting
+03/04/2016 10:08:05 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:08:08 VIXY - 2016-09-16: Finished request, insert to table...
+03/04/2016 10:08:08 VIXY - 2016-09-16: Inserted to table, 70 rows affected.
+03/04/2016 10:08:08 VIXY - 2017-01-20: Requesting
+03/04/2016 10:08:08 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:08:10 VIXY - 2017-01-20: Finished request, insert to table...
+03/04/2016 10:08:10 VIXY - 2017-01-20: Inserted to table, 50 rows affected.
+03/04/2016 10:08:10 VIXY - 2018-01-19: Requesting
+03/04/2016 10:08:10 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:08:14 VIXY - 2018-01-19: Finished request, insert to table...
+03/04/2016 10:08:15 VIXY - 2018-01-19: Inserted to table, 50 rows affected.
+03/04/2016 10:08:15 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:08:15 VXZ - 2016-03-18: Requesting
+03/04/2016 10:08:15 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:08:17 VXZ - 2016-03-18: Finished request, insert to table...
+03/04/2016 10:08:18 VXZ - 2016-03-18: Inserted to table, 50 rows affected.
+03/04/2016 10:08:18 VXZ - 2016-04-15: Requesting
+03/04/2016 10:08:18 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:08:19 VXZ - 2016-04-15: Finished request, insert to table...
+03/04/2016 10:08:20 VXZ - 2016-04-15: Inserted to table, 46 rows affected.
+03/04/2016 10:08:20 VXZ - 2016-06-17: Requesting
+03/04/2016 10:08:20 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:17:53 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:17:54 VXZ - 2016-03-18: Requesting
+03/04/2016 10:17:54 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 10:17:58 VXZ - 2016-03-18: Finished request, insert to table...
+03/04/2016 10:17:59 VXZ - 2016-03-18: Inserted to table, 50 rows affected.
+03/04/2016 10:17:59 VXZ - 2016-04-15: Requesting
+03/04/2016 10:17:59 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:22 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:23 VXZ - 2016-03-18: Requesting
+03/04/2016 11:26:23 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:25 VXZ - 2016-03-18: Finished request, insert to table...
+03/04/2016 11:26:25 VXZ - 2016-03-18: Inserted to table, 50 rows affected.
+03/04/2016 11:26:25 VXZ - 2016-04-15: Requesting
+03/04/2016 11:26:25 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:28 VXZ - 2016-04-15: Finished request, insert to table...
+03/04/2016 11:26:28 VXZ - 2016-04-15: Inserted to table, 46 rows affected.
+03/04/2016 11:26:28 VXZ - 2016-06-17: Requesting
+03/04/2016 11:26:28 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:30 VXZ - 2016-06-17: Finished request, insert to table...
+03/04/2016 11:26:30 VXZ - 2016-06-17: Inserted to table, 46 rows affected.
+03/04/2016 11:26:30 VXZ - 2016-09-16: Requesting
+03/04/2016 11:26:30 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:32 VXZ - 2016-09-16: Finished request, insert to table...
+03/04/2016 11:26:32 VXZ - 2016-09-16: Inserted to table, 48 rows affected.
+03/04/2016 11:26:32 VXZ - 2016-11-18: Requesting
+03/04/2016 11:26:32 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:34 VXZ - 2016-11-18: Finished request, insert to table...
+03/04/2016 11:26:35 VXZ - 2016-11-18: Inserted to table, 28 rows affected.
+03/04/2016 11:26:35 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:35 VIXM - 2016-03-18: Requesting
+03/04/2016 11:26:35 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:37 VIXM - 2016-03-18: Finished request, insert to table...
+03/04/2016 11:26:38 VIXM - 2016-03-18: Inserted to table, 74 rows affected.
+03/04/2016 11:26:38 VIXM - 2016-04-15: Requesting
+03/04/2016 11:26:38 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:40 VIXM - 2016-04-15: Finished request, insert to table...
+03/04/2016 11:26:41 VIXM - 2016-04-15: Inserted to table, 64 rows affected.
+03/04/2016 11:26:41 VIXM - 2016-06-17: Requesting
+03/04/2016 11:26:41 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:43 VIXM - 2016-06-17: Finished request, insert to table...
+03/04/2016 11:26:44 VIXM - 2016-06-17: Inserted to table, 78 rows affected.
+03/04/2016 11:26:44 VIXM - 2016-09-16: Requesting
+03/04/2016 11:26:44 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:46 VIXM - 2016-09-16: Finished request, insert to table...
+03/04/2016 11:26:47 VIXM - 2016-09-16: Inserted to table, 100 rows affected.
+03/04/2016 11:26:47 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:47 VIIX - 2016-03-18: Requesting
+03/04/2016 11:26:47 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:49 VIIX - 2016-03-18: Finished request, insert to table...
+03/04/2016 11:26:50 VIIX - 2016-03-18: Inserted to table, 66 rows affected.
+03/04/2016 11:26:50 VIIX - 2016-04-15: Requesting
+03/04/2016 11:26:50 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:56 VIIX - 2016-04-15: Finished request, insert to table...
+03/04/2016 11:26:57 VIIX - 2016-04-15: Inserted to table, 54 rows affected.
+03/04/2016 11:26:57 VIIX - 2016-06-17: Requesting
+03/04/2016 11:26:57 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:26:59 VIIX - 2016-06-17: Finished request, insert to table...
+03/04/2016 11:27:00 VIIX - 2016-06-17: Inserted to table, 66 rows affected.
+03/04/2016 11:27:00 VIIX - 2016-09-16: Requesting
+03/04/2016 11:27:00 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:27:02 VIIX - 2016-09-16: Finished request, insert to table...
+03/04/2016 11:27:02 VIIX - 2016-09-16: Inserted to table, 52 rows affected.
+03/04/2016 11:28:59 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:28:59 ^VIX - 2016-03-09: Requesting
+03/04/2016 11:28:59 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:29:02 ^VIX - 2016-03-09: Finished request, insert to table...
+03/04/2016 11:29:02 Exception occured while inserting to database
+03/04/2016 11:30:46 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:30:46 ^VIX - 2016-03-09: Requesting
+03/04/2016 11:30:46 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:30:48 ^VIX - 2016-03-09: Finished request, insert to table...
+03/04/2016 11:30:49 ^VIX - 2016-03-09: Inserted to table, 76 rows affected.
+03/04/2016 11:30:49 ^VIX - 2016-03-16: Requesting
+03/04/2016 11:30:49 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:30:50 ^VIX - 2016-03-16: Finished request, insert to table...
+03/04/2016 11:30:51 ^VIX - 2016-03-16: Inserted to table, 76 rows affected.
+03/04/2016 11:30:51 ^VIX - 2016-03-23: Requesting
+03/04/2016 11:30:51 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:30:53 ^VIX - 2016-03-23: Finished request, insert to table...
+03/04/2016 11:30:53 ^VIX - 2016-03-23: Inserted to table, 76 rows affected.
+03/04/2016 11:30:53 ^VIX - 2016-03-30: Requesting
+03/04/2016 11:30:53 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:30:55 ^VIX - 2016-03-30: Finished request, insert to table...
+03/04/2016 11:30:55 ^VIX - 2016-03-30: Inserted to table, 76 rows affected.
+03/04/2016 11:30:55 ^VIX - 2016-04-06: Requesting
+03/04/2016 11:30:55 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:30:57 ^VIX - 2016-04-06: Finished request, insert to table...
+03/04/2016 11:30:58 ^VIX - 2016-04-06: Inserted to table, 76 rows affected.
+03/04/2016 11:30:58 ^VIX - 2016-04-20: Requesting
+03/04/2016 11:30:58 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:30:59 ^VIX - 2016-04-20: Finished request, insert to table...
+03/04/2016 11:31:00 ^VIX - 2016-04-20: Inserted to table, 80 rows affected.
+03/04/2016 11:31:00 ^VIX - 2016-05-18: Requesting
+03/04/2016 11:31:00 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:02 ^VIX - 2016-05-18: Finished request, insert to table...
+03/04/2016 11:31:02 ^VIX - 2016-05-18: Inserted to table, 66 rows affected.
+03/04/2016 11:31:02 ^VIX - 2016-06-15: Requesting
+03/04/2016 11:31:02 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:04 ^VIX - 2016-06-15: Finished request, insert to table...
+03/04/2016 11:31:04 ^VIX - 2016-06-15: Inserted to table, 66 rows affected.
+03/04/2016 11:31:04 ^VIX - 2016-07-20: Requesting
+03/04/2016 11:31:04 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:07 ^VIX - 2016-07-20: Finished request, insert to table...
+03/04/2016 11:31:07 ^VIX - 2016-07-20: Inserted to table, 70 rows affected.
+03/04/2016 11:31:07 ^VIX - 2016-08-17: Requesting
+03/04/2016 11:31:07 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:09 ^VIX - 2016-08-17: Finished request, insert to table...
+03/04/2016 11:31:09 ^VIX - 2016-08-17: Inserted to table, 66 rows affected.
+03/04/2016 11:31:09 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:15 VXX - 2016-03-11: Requesting
+03/04/2016 11:31:15 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:17 VXX - 2016-03-11: Finished request, insert to table...
+03/04/2016 11:31:18 VXX - 2016-03-11: Inserted to table, 134 rows affected.
+03/04/2016 11:31:18 VXX - 2016-03-18: Requesting
+03/04/2016 11:31:18 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:21 VXX - 2016-03-18: Finished request, insert to table...
+03/04/2016 11:31:22 VXX - 2016-03-18: Inserted to table, 171 rows affected.
+03/04/2016 11:31:22 VXX - 2016-03-24: Requesting
+03/04/2016 11:31:22 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:24 VXX - 2016-03-24: Finished request, insert to table...
+03/04/2016 11:31:25 VXX - 2016-03-24: Inserted to table, 108 rows affected.
+03/04/2016 11:31:25 VXX - 2016-04-01: Requesting
+03/04/2016 11:31:25 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:27 VXX - 2016-04-01: Finished request, insert to table...
+03/04/2016 11:31:27 VXX - 2016-04-01: Inserted to table, 100 rows affected.
+03/04/2016 11:31:27 VXX - 2016-04-08: Requesting
+03/04/2016 11:31:27 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:32 VXX - 2016-04-08: Finished request, insert to table...
+03/04/2016 11:31:33 VXX - 2016-04-08: Inserted to table, 74 rows affected.
+03/04/2016 11:31:33 VXX - 2016-04-15: Requesting
+03/04/2016 11:31:33 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:35 VXX - 2016-04-15: Finished request, insert to table...
+03/04/2016 11:31:36 VXX - 2016-04-15: Inserted to table, 112 rows affected.
+03/04/2016 11:31:36 VXX - 2016-04-22: Requesting
+03/04/2016 11:31:36 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:37 VXX - 2016-04-22: Finished request, insert to table...
+03/04/2016 11:31:38 VXX - 2016-04-22: Inserted to table, 75 rows affected.
+03/04/2016 11:31:38 VXX - 2016-05-20: Requesting
+03/04/2016 11:31:38 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:40 VXX - 2016-05-20: Finished request, insert to table...
+03/04/2016 11:31:40 VXX - 2016-05-20: Inserted to table, 52 rows affected.
+03/04/2016 11:31:40 VXX - 2016-06-17: Requesting
+03/04/2016 11:31:40 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:42 VXX - 2016-06-17: Finished request, insert to table...
+03/04/2016 11:31:43 VXX - 2016-06-17: Inserted to table, 88 rows affected.
+03/04/2016 11:31:43 VXX - 2016-09-16: Requesting
+03/04/2016 11:31:43 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:46 VXX - 2016-09-16: Finished request, insert to table...
+03/04/2016 11:31:46 VXX - 2016-09-16: Inserted to table, 108 rows affected.
+03/04/2016 11:31:46 VXX - 2017-01-20: Requesting
+03/04/2016 11:31:46 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:50 VXX - 2017-01-20: Finished request, insert to table...
+03/04/2016 11:31:51 VXX - 2017-01-20: Inserted to table, 138 rows affected.
+03/04/2016 11:31:51 VXX - 2018-01-19: Requesting
+03/04/2016 11:31:51 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:54 VXX - 2018-01-19: Finished request, insert to table...
+03/04/2016 11:31:54 VXX - 2018-01-19: Inserted to table, 96 rows affected.
+03/04/2016 11:31:54 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:56 VIXY - 2016-03-18: Requesting
+03/04/2016 11:31:56 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:31:58 VIXY - 2016-03-18: Finished request, insert to table...
+03/04/2016 11:31:58 VIXY - 2016-03-18: Inserted to table, 74 rows affected.
+03/04/2016 11:31:58 VIXY - 2016-04-15: Requesting
+03/04/2016 11:31:58 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:00 VIXY - 2016-04-15: Finished request, insert to table...
+03/04/2016 11:32:00 VIXY - 2016-04-15: Inserted to table, 70 rows affected.
+03/04/2016 11:32:00 VIXY - 2016-06-17: Requesting
+03/04/2016 11:32:00 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:04 VIXY - 2016-06-17: Finished request, insert to table...
+03/04/2016 11:32:04 VIXY - 2016-06-17: Inserted to table, 60 rows affected.
+03/04/2016 11:32:04 VIXY - 2016-09-16: Requesting
+03/04/2016 11:32:04 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:06 VIXY - 2016-09-16: Finished request, insert to table...
+03/04/2016 11:32:06 VIXY - 2016-09-16: Inserted to table, 70 rows affected.
+03/04/2016 11:32:06 VIXY - 2017-01-20: Requesting
+03/04/2016 11:32:06 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:08 VIXY - 2017-01-20: Finished request, insert to table...
+03/04/2016 11:32:09 VIXY - 2017-01-20: Inserted to table, 50 rows affected.
+03/04/2016 11:32:09 VIXY - 2018-01-19: Requesting
+03/04/2016 11:32:09 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:11 VIXY - 2018-01-19: Finished request, insert to table...
+03/04/2016 11:32:11 VIXY - 2018-01-19: Inserted to table, 50 rows affected.
+03/04/2016 11:32:11 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:12 VXZ - 2016-03-18: Requesting
+03/04/2016 11:32:12 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:13 VXZ - 2016-03-18: Finished request, insert to table...
+03/04/2016 11:32:14 VXZ - 2016-03-18: Inserted to table, 50 rows affected.
+03/04/2016 11:32:14 VXZ - 2016-04-15: Requesting
+03/04/2016 11:32:14 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:16 VXZ - 2016-04-15: Finished request, insert to table...
+03/04/2016 11:32:16 VXZ - 2016-04-15: Inserted to table, 46 rows affected.
+03/04/2016 11:32:16 VXZ - 2016-06-17: Requesting
+03/04/2016 11:32:16 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:18 VXZ - 2016-06-17: Finished request, insert to table...
+03/04/2016 11:32:18 VXZ - 2016-06-17: Inserted to table, 46 rows affected.
+03/04/2016 11:32:18 VXZ - 2016-09-16: Requesting
+03/04/2016 11:32:18 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:20 VXZ - 2016-09-16: Finished request, insert to table...
+03/04/2016 11:32:20 VXZ - 2016-09-16: Inserted to table, 48 rows affected.
+03/04/2016 11:32:20 VXZ - 2016-11-18: Requesting
+03/04/2016 11:32:20 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:22 VXZ - 2016-11-18: Finished request, insert to table...
+03/04/2016 11:32:22 VXZ - 2016-11-18: Inserted to table, 28 rows affected.
+03/04/2016 11:32:22 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:23 VIXM - 2016-03-18: Requesting
+03/04/2016 11:32:23 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:25 VIXM - 2016-03-18: Finished request, insert to table...
+03/04/2016 11:32:25 VIXM - 2016-03-18: Inserted to table, 74 rows affected.
+03/04/2016 11:32:25 VIXM - 2016-04-15: Requesting
+03/04/2016 11:32:25 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:27 VIXM - 2016-04-15: Finished request, insert to table...
+03/04/2016 11:32:28 VIXM - 2016-04-15: Inserted to table, 64 rows affected.
+03/04/2016 11:32:28 VIXM - 2016-06-17: Requesting
+03/04/2016 11:32:28 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:30 VIXM - 2016-06-17: Finished request, insert to table...
+03/04/2016 11:32:30 VIXM - 2016-06-17: Inserted to table, 78 rows affected.
+03/04/2016 11:32:30 VIXM - 2016-09-16: Requesting
+03/04/2016 11:32:30 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:32 VIXM - 2016-09-16: Finished request, insert to table...
+03/04/2016 11:32:33 VIXM - 2016-09-16: Inserted to table, 100 rows affected.
+03/04/2016 11:32:33 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:33 VIIX - 2016-03-18: Requesting
+03/04/2016 11:32:33 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:36 VIIX - 2016-03-18: Finished request, insert to table...
+03/04/2016 11:32:36 VIIX - 2016-03-18: Inserted to table, 66 rows affected.
+03/04/2016 11:32:36 VIIX - 2016-04-15: Requesting
+03/04/2016 11:32:36 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:38 VIIX - 2016-04-15: Finished request, insert to table...
+03/04/2016 11:32:38 VIIX - 2016-04-15: Inserted to table, 54 rows affected.
+03/04/2016 11:32:38 VIIX - 2016-06-17: Requesting
+03/04/2016 11:32:38 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:40 VIIX - 2016-06-17: Finished request, insert to table...
+03/04/2016 11:32:41 VIIX - 2016-06-17: Inserted to table, 66 rows affected.
+03/04/2016 11:32:41 VIIX - 2016-09-16: Requesting
+03/04/2016 11:32:41 Starting new HTTP connection (1): finance.yahoo.com
+03/04/2016 11:32:43 VIIX - 2016-09-16: Finished request, insert to table...
+03/04/2016 11:32:43 VIIX - 2016-09-16: Inserted to table, 52 rows affected.
+03/07/2016 06:11:10 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:11 ^VIX - 2016-03-09: Requesting
+03/07/2016 06:11:11 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:12 ^VIX - 2016-03-09: Finished request, insert to table...
+03/07/2016 06:11:13 ^VIX - 2016-03-09: Inserted to table, 76 rows affected.
+03/07/2016 06:11:13 ^VIX - 2016-03-16: Requesting
+03/07/2016 06:11:13 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:15 ^VIX - 2016-03-16: Finished request, insert to table...
+03/07/2016 06:11:16 ^VIX - 2016-03-16: Inserted to table, 76 rows affected.
+03/07/2016 06:11:16 ^VIX - 2016-03-23: Requesting
+03/07/2016 06:11:16 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:18 ^VIX - 2016-03-23: Finished request, insert to table...
+03/07/2016 06:11:19 ^VIX - 2016-03-23: Inserted to table, 76 rows affected.
+03/07/2016 06:11:19 ^VIX - 2016-03-30: Requesting
+03/07/2016 06:11:19 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:21 ^VIX - 2016-03-30: Finished request, insert to table...
+03/07/2016 06:11:22 ^VIX - 2016-03-30: Inserted to table, 76 rows affected.
+03/07/2016 06:11:22 ^VIX - 2016-04-06: Requesting
+03/07/2016 06:11:22 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:24 ^VIX - 2016-04-06: Finished request, insert to table...
+03/07/2016 06:11:24 ^VIX - 2016-04-06: Inserted to table, 76 rows affected.
+03/07/2016 06:11:24 ^VIX - 2016-04-20: Requesting
+03/07/2016 06:11:24 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:27 ^VIX - 2016-04-20: Finished request, insert to table...
+03/07/2016 06:11:27 ^VIX - 2016-04-20: Inserted to table, 80 rows affected.
+03/07/2016 06:11:27 ^VIX - 2016-05-18: Requesting
+03/07/2016 06:11:27 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:29 ^VIX - 2016-05-18: Finished request, insert to table...
+03/07/2016 06:11:30 ^VIX - 2016-05-18: Inserted to table, 66 rows affected.
+03/07/2016 06:11:30 ^VIX - 2016-06-15: Requesting
+03/07/2016 06:11:30 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:32 ^VIX - 2016-06-15: Finished request, insert to table...
+03/07/2016 06:11:32 ^VIX - 2016-06-15: Inserted to table, 66 rows affected.
+03/07/2016 06:11:32 ^VIX - 2016-07-20: Requesting
+03/07/2016 06:11:32 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:34 ^VIX - 2016-07-20: Finished request, insert to table...
+03/07/2016 06:11:35 ^VIX - 2016-07-20: Inserted to table, 70 rows affected.
+03/07/2016 06:11:35 ^VIX - 2016-08-17: Requesting
+03/07/2016 06:11:35 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:37 ^VIX - 2016-08-17: Finished request, insert to table...
+03/07/2016 06:11:37 ^VIX - 2016-08-17: Inserted to table, 66 rows affected.
+03/07/2016 06:11:37 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:38 VXX - 2016-03-11: Requesting
+03/07/2016 06:11:38 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:40 VXX - 2016-03-11: Finished request, insert to table...
+03/07/2016 06:11:41 VXX - 2016-03-11: Inserted to table, 134 rows affected.
+03/07/2016 06:11:41 VXX - 2016-03-18: Requesting
+03/07/2016 06:11:41 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:44 VXX - 2016-03-18: Finished request, insert to table...
+03/07/2016 06:11:45 VXX - 2016-03-18: Inserted to table, 171 rows affected.
+03/07/2016 06:11:45 VXX - 2016-03-24: Requesting
+03/07/2016 06:11:45 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:47 VXX - 2016-03-24: Finished request, insert to table...
+03/07/2016 06:11:48 VXX - 2016-03-24: Inserted to table, 108 rows affected.
+03/07/2016 06:11:48 VXX - 2016-04-01: Requesting
+03/07/2016 06:11:48 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:50 VXX - 2016-04-01: Finished request, insert to table...
+03/07/2016 06:11:51 VXX - 2016-04-01: Inserted to table, 100 rows affected.
+03/07/2016 06:11:51 VXX - 2016-04-08: Requesting
+03/07/2016 06:11:51 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:53 VXX - 2016-04-08: Finished request, insert to table...
+03/07/2016 06:11:54 VXX - 2016-04-08: Inserted to table, 74 rows affected.
+03/07/2016 06:11:54 VXX - 2016-04-15: Requesting
+03/07/2016 06:11:54 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:55 VXX - 2016-04-15: Finished request, insert to table...
+03/07/2016 06:11:56 VXX - 2016-04-15: Inserted to table, 112 rows affected.
+03/07/2016 06:11:56 VXX - 2016-04-22: Requesting
+03/07/2016 06:11:56 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:11:58 VXX - 2016-04-22: Finished request, insert to table...
+03/07/2016 06:11:59 VXX - 2016-04-22: Inserted to table, 75 rows affected.
+03/07/2016 06:11:59 VXX - 2016-05-20: Requesting
+03/07/2016 06:11:59 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:01 VXX - 2016-05-20: Finished request, insert to table...
+03/07/2016 06:12:02 VXX - 2016-05-20: Inserted to table, 52 rows affected.
+03/07/2016 06:12:02 VXX - 2016-06-17: Requesting
+03/07/2016 06:12:02 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:04 VXX - 2016-06-17: Finished request, insert to table...
+03/07/2016 06:12:05 VXX - 2016-06-17: Inserted to table, 88 rows affected.
+03/07/2016 06:12:05 VXX - 2016-09-16: Requesting
+03/07/2016 06:12:05 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:07 VXX - 2016-09-16: Finished request, insert to table...
+03/07/2016 06:12:08 VXX - 2016-09-16: Inserted to table, 108 rows affected.
+03/07/2016 06:12:08 VXX - 2017-01-20: Requesting
+03/07/2016 06:12:08 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:10 VXX - 2017-01-20: Finished request, insert to table...
+03/07/2016 06:12:11 VXX - 2017-01-20: Inserted to table, 138 rows affected.
+03/07/2016 06:12:11 VXX - 2018-01-19: Requesting
+03/07/2016 06:12:11 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:12 VXX - 2018-01-19: Finished request, insert to table...
+03/07/2016 06:12:13 VXX - 2018-01-19: Inserted to table, 96 rows affected.
+03/07/2016 06:12:13 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:14 VIXY - 2016-03-18: Requesting
+03/07/2016 06:12:14 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:16 VIXY - 2016-03-18: Finished request, insert to table...
+03/07/2016 06:12:16 VIXY - 2016-03-18: Inserted to table, 74 rows affected.
+03/07/2016 06:12:16 VIXY - 2016-04-15: Requesting
+03/07/2016 06:12:16 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:18 VIXY - 2016-04-15: Finished request, insert to table...
+03/07/2016 06:12:19 VIXY - 2016-04-15: Inserted to table, 70 rows affected.
+03/07/2016 06:12:19 VIXY - 2016-06-17: Requesting
+03/07/2016 06:12:19 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:20 VIXY - 2016-06-17: Finished request, insert to table...
+03/07/2016 06:12:21 VIXY - 2016-06-17: Inserted to table, 60 rows affected.
+03/07/2016 06:12:21 VIXY - 2016-09-16: Requesting
+03/07/2016 06:12:21 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:23 VIXY - 2016-09-16: Finished request, insert to table...
+03/07/2016 06:12:23 VIXY - 2016-09-16: Inserted to table, 70 rows affected.
+03/07/2016 06:12:23 VIXY - 2017-01-20: Requesting
+03/07/2016 06:12:23 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:25 VIXY - 2017-01-20: Finished request, insert to table...
+03/07/2016 06:12:25 VIXY - 2017-01-20: Inserted to table, 50 rows affected.
+03/07/2016 06:12:25 VIXY - 2018-01-19: Requesting
+03/07/2016 06:12:25 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:27 VIXY - 2018-01-19: Finished request, insert to table...
+03/07/2016 06:12:28 VIXY - 2018-01-19: Inserted to table, 50 rows affected.
+03/07/2016 06:12:28 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:28 VXZ - 2016-03-18: Requesting
+03/07/2016 06:12:28 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:30 VXZ - 2016-03-18: Finished request, insert to table...
+03/07/2016 06:12:30 VXZ - 2016-03-18: Inserted to table, 50 rows affected.
+03/07/2016 06:12:30 VXZ - 2016-04-15: Requesting
+03/07/2016 06:12:30 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:32 VXZ - 2016-04-15: Finished request, insert to table...
+03/07/2016 06:12:32 VXZ - 2016-04-15: Inserted to table, 46 rows affected.
+03/07/2016 06:12:32 VXZ - 2016-06-17: Requesting
+03/07/2016 06:12:32 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:34 VXZ - 2016-06-17: Finished request, insert to table...
+03/07/2016 06:12:34 VXZ - 2016-06-17: Inserted to table, 46 rows affected.
+03/07/2016 06:12:34 VXZ - 2016-09-16: Requesting
+03/07/2016 06:12:34 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:36 VXZ - 2016-09-16: Finished request, insert to table...
+03/07/2016 06:12:36 VXZ - 2016-09-16: Inserted to table, 48 rows affected.
+03/07/2016 06:12:36 VXZ - 2016-11-18: Requesting
+03/07/2016 06:12:36 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:38 VXZ - 2016-11-18: Finished request, insert to table...
+03/07/2016 06:12:38 VXZ - 2016-11-18: Inserted to table, 28 rows affected.
+03/07/2016 06:12:38 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:40 VIXM - 2016-03-18: Requesting
+03/07/2016 06:12:40 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:47 VIXM - 2016-03-18: Finished request, insert to table...
+03/07/2016 06:12:47 VIXM - 2016-03-18: Inserted to table, 74 rows affected.
+03/07/2016 06:12:47 VIXM - 2016-04-15: Requesting
+03/07/2016 06:12:47 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:49 VIXM - 2016-04-15: Finished request, insert to table...
+03/07/2016 06:12:49 VIXM - 2016-04-15: Inserted to table, 64 rows affected.
+03/07/2016 06:12:49 VIXM - 2016-06-17: Requesting
+03/07/2016 06:12:49 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:51 VIXM - 2016-06-17: Finished request, insert to table...
+03/07/2016 06:12:52 VIXM - 2016-06-17: Inserted to table, 78 rows affected.
+03/07/2016 06:12:52 VIXM - 2016-09-16: Requesting
+03/07/2016 06:12:52 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:54 VIXM - 2016-09-16: Finished request, insert to table...
+03/07/2016 06:12:54 VIXM - 2016-09-16: Inserted to table, 100 rows affected.
+03/07/2016 06:12:54 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:55 VIIX - 2016-03-18: Requesting
+03/07/2016 06:12:55 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:57 VIIX - 2016-03-18: Finished request, insert to table...
+03/07/2016 06:12:57 VIIX - 2016-03-18: Inserted to table, 66 rows affected.
+03/07/2016 06:12:57 VIIX - 2016-04-15: Requesting
+03/07/2016 06:12:57 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:12:59 VIIX - 2016-04-15: Finished request, insert to table...
+03/07/2016 06:13:00 VIIX - 2016-04-15: Inserted to table, 54 rows affected.
+03/07/2016 06:13:00 VIIX - 2016-06-17: Requesting
+03/07/2016 06:13:00 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:13:01 VIIX - 2016-06-17: Finished request, insert to table...
+03/07/2016 06:13:02 VIIX - 2016-06-17: Inserted to table, 66 rows affected.
+03/07/2016 06:13:02 VIIX - 2016-09-16: Requesting
+03/07/2016 06:13:02 Starting new HTTP connection (1): finance.yahoo.com
+03/07/2016 06:13:04 VIIX - 2016-09-16: Finished request, insert to table...
+03/07/2016 06:13:04 VIIX - 2016-09-16: Inserted to table, 52 rows affected.
+03/08/2016 05:11:22 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 05:11:23 ^VIX - 2016-03-09: Requesting
+03/08/2016 05:11:23 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 05:11:27 ^VIX - 2016-03-09: Finished request, insert to table...
+03/08/2016 05:11:27 ^VIX - 2016-03-09: Inserted to table, 76 rows affected.
+03/08/2016 05:11:27 ^VIX - 2016-03-16: Requesting
+03/08/2016 05:11:27 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 05:11:31 ^VIX - 2016-03-16: Finished request, insert to table...
+03/08/2016 05:11:32 ^VIX - 2016-03-16: Inserted to table, 76 rows affected.
+03/08/2016 05:11:32 ^VIX - 2016-03-23: Requesting
+03/08/2016 05:11:32 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 05:11:35 ^VIX - 2016-03-23: Finished request, insert to table...
+03/08/2016 05:11:36 ^VIX - 2016-03-23: Inserted to table, 76 rows affected.
+03/08/2016 05:11:36 ^VIX - 2016-03-30: Requesting
+03/08/2016 05:11:36 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 05:11:39 ^VIX - 2016-03-30: Finished request, insert to table...
+03/08/2016 05:11:40 ^VIX - 2016-03-30: Inserted to table, 76 rows affected.
+03/08/2016 05:11:40 ^VIX - 2016-04-06: Requesting
+03/08/2016 05:11:40 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 05:11:43 ^VIX - 2016-04-06: Finished request, insert to table...
+03/08/2016 05:11:43 ^VIX - 2016-04-06: Inserted to table, 76 rows affected.
+03/08/2016 05:11:43 ^VIX - 2016-04-20: Requesting
+03/08/2016 05:11:43 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 05:11:47 ^VIX - 2016-04-20: Finished request, insert to table...
+03/08/2016 05:11:48 ^VIX - 2016-04-20: Inserted to table, 80 rows affected.
+03/08/2016 05:11:48 ^VIX - 2016-05-18: Requesting
+03/08/2016 05:11:48 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 05:11:50 ^VIX - 2016-05-18: Finished request, insert to table...
+03/08/2016 05:11:51 ^VIX - 2016-05-18: Inserted to table, 66 rows affected.
+03/08/2016 05:11:51 ^VIX - 2016-06-15: Requesting
+03/08/2016 05:11:51 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 05:11:54 ^VIX - 2016-06-15: Finished request, insert to table...
+03/08/2016 05:11:54 ^VIX - 2016-06-15: Inserted to table, 66 rows affected.
+03/08/2016 05:11:54 ^VIX - 2016-07-20: Requesting
+03/08/2016 05:11:54 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:10:43 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:10:45 ^VIX - 2016-03-09: Requesting
+03/08/2016 10:10:45 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:10:49 ^VIX - 2016-03-09: Finished request, insert to table...
+03/08/2016 10:10:49 ^VIX - 2016-03-09: Inserted to table, 76 rows affected.
+03/08/2016 10:10:49 ^VIX - 2016-03-16: Requesting
+03/08/2016 10:10:49 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:10:53 ^VIX - 2016-03-16: Finished request, insert to table...
+03/08/2016 10:10:53 ^VIX - 2016-03-16: Inserted to table, 76 rows affected.
+03/08/2016 10:10:53 ^VIX - 2016-03-23: Requesting
+03/08/2016 10:10:53 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:10:57 ^VIX - 2016-03-23: Finished request, insert to table...
+03/08/2016 10:10:57 ^VIX - 2016-03-23: Inserted to table, 76 rows affected.
+03/08/2016 10:10:57 ^VIX - 2016-03-30: Requesting
+03/08/2016 10:10:57 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:11:00 ^VIX - 2016-03-30: Finished request, insert to table...
+03/08/2016 10:11:01 ^VIX - 2016-03-30: Inserted to table, 76 rows affected.
+03/08/2016 10:11:01 ^VIX - 2016-04-06: Requesting
+03/08/2016 10:11:01 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:11:04 ^VIX - 2016-04-06: Finished request, insert to table...
+03/08/2016 10:11:04 ^VIX - 2016-04-06: Inserted to table, 76 rows affected.
+03/08/2016 10:11:04 ^VIX - 2016-04-20: Requesting
+03/08/2016 10:11:04 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:11:08 ^VIX - 2016-04-20: Finished request, insert to table...
+03/08/2016 10:11:09 ^VIX - 2016-04-20: Inserted to table, 80 rows affected.
+03/08/2016 10:11:09 ^VIX - 2016-05-18: Requesting
+03/08/2016 10:11:09 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:11:11 ^VIX - 2016-05-18: Finished request, insert to table...
+03/08/2016 10:11:11 ^VIX - 2016-05-18: Inserted to table, 66 rows affected.
+03/08/2016 10:11:11 ^VIX - 2016-06-15: Requesting
+03/08/2016 10:11:11 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:11:14 ^VIX - 2016-06-15: Finished request, insert to table...
+03/08/2016 10:11:15 ^VIX - 2016-06-15: Inserted to table, 66 rows affected.
+03/08/2016 10:11:15 ^VIX - 2016-07-20: Requesting
+03/08/2016 10:11:15 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:11:17 ^VIX - 2016-07-20: Finished request, insert to table...
+03/08/2016 10:11:17 ^VIX - 2016-07-20: Inserted to table, 70 rows affected.
+03/08/2016 10:11:17 ^VIX - 2016-08-17: Requesting
+03/08/2016 10:11:17 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:11:19 ^VIX - 2016-08-17: Finished request, insert to table...
+03/08/2016 10:11:19 ^VIX - 2016-08-17: Inserted to table, 66 rows affected.
+03/08/2016 10:11:19 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:11:20 VXX - 2016-03-11: Requesting
+03/08/2016 10:11:20 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:11:22 VXX - 2016-03-11: Finished request, insert to table...
+03/08/2016 10:11:23 VXX - 2016-03-11: Inserted to table, 134 rows affected.
+03/08/2016 10:11:23 VXX - 2016-03-18: Requesting
+03/08/2016 10:11:23 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:13:23 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:13:24 VXX - 2016-03-11: Requesting
+03/08/2016 10:13:24 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:13:26 VXX - 2016-03-11: Finished request, insert to table...
+03/08/2016 10:13:27 VXX - 2016-03-11: Inserted to table, 134 rows affected.
+03/08/2016 10:13:27 VXX - 2016-03-18: Requesting
+03/08/2016 10:13:27 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:13:29 VXX - 2016-03-18: Finished request, insert to table...
+03/08/2016 10:13:31 VXX - 2016-03-18: Inserted to table, 171 rows affected.
+03/08/2016 10:13:31 VXX - 2016-03-24: Requesting
+03/08/2016 10:13:31 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:13:33 VXX - 2016-03-24: Finished request, insert to table...
+03/08/2016 10:13:34 VXX - 2016-03-24: Inserted to table, 108 rows affected.
+03/08/2016 10:13:34 VXX - 2016-04-01: Requesting
+03/08/2016 10:13:34 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:13:36 VXX - 2016-04-01: Finished request, insert to table...
+03/08/2016 10:13:37 VXX - 2016-04-01: Inserted to table, 100 rows affected.
+03/08/2016 10:13:37 VXX - 2016-04-08: Requesting
+03/08/2016 10:13:37 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:13:39 VXX - 2016-04-08: Finished request, insert to table...
+03/08/2016 10:13:40 VXX - 2016-04-08: Inserted to table, 74 rows affected.
+03/08/2016 10:13:40 VXX - 2016-04-15: Requesting
+03/08/2016 10:13:40 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:13:42 VXX - 2016-04-15: Finished request, insert to table...
+03/08/2016 10:13:42 VXX - 2016-04-15: Inserted to table, 112 rows affected.
+03/08/2016 10:13:42 VXX - 2016-04-22: Requesting
+03/08/2016 10:13:43 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:15:01 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:15:02 VIXY - 2016-03-18: Requesting
+03/08/2016 10:15:02 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:15:04 VIXY - 2016-03-18: Finished request, insert to table...
+03/08/2016 10:15:05 VIXY - 2016-03-18: Inserted to table, 74 rows affected.
+03/08/2016 10:15:05 VIXY - 2016-04-15: Requesting
+03/08/2016 10:15:05 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:15:44 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:15:45 VIXY - 2016-03-18: Requesting
+03/08/2016 10:15:45 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:15:49 VIXY - 2016-03-18: Finished request, insert to table...
+03/08/2016 10:15:50 VIXY - 2016-03-18: Inserted to table, 74 rows affected.
+03/08/2016 10:15:50 VIXY - 2016-04-15: Requesting
+03/08/2016 10:15:50 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:16:18 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:16:19 VXZ - 2016-03-18: Requesting
+03/08/2016 10:16:19 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:16:21 VXZ - 2016-03-18: Finished request, insert to table...
+03/08/2016 10:16:21 VXZ - 2016-03-18: Inserted to table, 50 rows affected.
+03/08/2016 10:16:21 VXZ - 2016-04-15: Requesting
+03/08/2016 10:16:21 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:16:23 VXZ - 2016-04-15: Finished request, insert to table...
+03/08/2016 10:16:23 VXZ - 2016-04-15: Inserted to table, 46 rows affected.
+03/08/2016 10:16:23 VXZ - 2016-06-17: Requesting
+03/08/2016 10:16:23 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:16:24 VXZ - 2016-06-17: Finished request, insert to table...
+03/08/2016 10:16:25 VXZ - 2016-06-17: Inserted to table, 46 rows affected.
+03/08/2016 10:16:25 VXZ - 2016-09-16: Requesting
+03/08/2016 10:16:25 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:16:27 VXZ - 2016-09-16: Finished request, insert to table...
+03/08/2016 10:16:27 VXZ - 2016-09-16: Inserted to table, 48 rows affected.
+03/08/2016 10:16:27 VXZ - 2016-11-18: Requesting
+03/08/2016 10:16:27 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:16:29 VXZ - 2016-11-18: Finished request, insert to table...
+03/08/2016 10:16:29 VXZ - 2016-11-18: Inserted to table, 28 rows affected.
+03/08/2016 10:16:29 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:16:29 VIXM - 2016-03-18: Requesting
+03/08/2016 10:16:29 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:16:31 VIXM - 2016-03-18: Finished request, insert to table...
+03/08/2016 10:16:32 VIXM - 2016-03-18: Inserted to table, 74 rows affected.
+03/08/2016 10:16:32 VIXM - 2016-04-15: Requesting
+03/08/2016 10:16:32 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:16:34 VIXM - 2016-04-15: Finished request, insert to table...
+03/08/2016 10:16:34 VIXM - 2016-04-15: Inserted to table, 64 rows affected.
+03/08/2016 10:16:34 VIXM - 2016-06-17: Requesting
+03/08/2016 10:16:34 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:17:16 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:17:17 VIXM - 2016-03-18: Requesting
+03/08/2016 10:17:17 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:17:19 VIXM - 2016-03-18: Finished request, insert to table...
+03/08/2016 10:17:19 VIXM - 2016-03-18: Inserted to table, 74 rows affected.
+03/08/2016 10:17:19 VIXM - 2016-04-15: Requesting
+03/08/2016 10:17:19 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:17:21 VIXM - 2016-04-15: Finished request, insert to table...
+03/08/2016 10:17:22 VIXM - 2016-04-15: Inserted to table, 64 rows affected.
+03/08/2016 10:17:22 VIXM - 2016-06-17: Requesting
+03/08/2016 10:17:22 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:17:24 VIXM - 2016-06-17: Finished request, insert to table...
+03/08/2016 10:17:24 VIXM - 2016-06-17: Inserted to table, 78 rows affected.
+03/08/2016 10:17:24 VIXM - 2016-09-16: Requesting
+03/08/2016 10:17:24 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:17:27 VIXM - 2016-09-16: Finished request, insert to table...
+03/08/2016 10:17:27 VIXM - 2016-09-16: Inserted to table, 100 rows affected.
+03/08/2016 10:17:27 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:17:28 VIIX - 2016-03-18: Requesting
+03/08/2016 10:17:28 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:17:50 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:17:51 VIIX - 2016-03-18: Requesting
+03/08/2016 10:17:51 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:17:53 VIIX - 2016-03-18: Finished request, insert to table...
+03/08/2016 10:17:54 VIIX - 2016-03-18: Inserted to table, 66 rows affected.
+03/08/2016 10:17:54 VIIX - 2016-04-15: Requesting
+03/08/2016 10:17:54 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:17:56 VIIX - 2016-04-15: Finished request, insert to table...
+03/08/2016 10:17:56 VIIX - 2016-04-15: Inserted to table, 54 rows affected.
+03/08/2016 10:17:56 VIIX - 2016-06-17: Requesting
+03/08/2016 10:17:56 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:17:58 VIIX - 2016-06-17: Finished request, insert to table...
+03/08/2016 10:17:59 VIIX - 2016-06-17: Inserted to table, 66 rows affected.
+03/08/2016 10:17:59 VIIX - 2016-09-16: Requesting
+03/08/2016 10:17:59 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:18:01 VIIX - 2016-09-16: Finished request, insert to table...
+03/08/2016 10:18:01 VIIX - 2016-09-16: Inserted to table, 52 rows affected.
+03/08/2016 10:19:25 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:19:30 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:19:30 VXX - 2016-03-11: Requesting
+03/08/2016 10:19:30 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:19:45 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:19:46 VXX - 2016-03-11: Requesting
+03/08/2016 10:19:46 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:19:49 VXX - 2016-03-11: Finished request, insert to table...
+03/08/2016 10:19:50 VXX - 2016-03-11: Inserted to table, 134 rows affected.
+03/08/2016 10:19:50 VXX - 2016-03-18: Requesting
+03/08/2016 10:19:50 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:19:53 VXX - 2016-03-18: Finished request, insert to table...
+03/08/2016 10:19:54 VXX - 2016-03-18: Inserted to table, 171 rows affected.
+03/08/2016 10:19:54 VXX - 2016-03-24: Requesting
+03/08/2016 10:19:54 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:43:03 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:43:12 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:43:13 VXX - 2016-03-11: Requesting
+03/08/2016 10:43:13 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:43:28 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:43:29 VXX - 2016-03-11: Requesting
+03/08/2016 10:43:29 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:43:32 VXX - 2016-03-11: Finished request, insert to table...
+03/08/2016 10:43:32 Exception occured while inserting to database
+03/08/2016 10:45:02 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:45:02 VXX - 2016-03-11: Requesting
+03/08/2016 10:45:02 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:45:04 VXX - 2016-03-11: Finished request, insert to table...
+03/08/2016 10:45:05 VXX - 2016-03-11: Inserted to table, 134 rows affected.
+03/08/2016 10:45:05 VXX - 2016-03-18: Requesting
+03/08/2016 10:45:05 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:45:08 VXX - 2016-03-18: Finished request, insert to table...
+03/08/2016 10:45:09 VXX - 2016-03-18: Inserted to table, 171 rows affected.
+03/08/2016 10:45:09 VXX - 2016-03-24: Requesting
+03/08/2016 10:45:09 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:45:11 VXX - 2016-03-24: Finished request, insert to table...
+03/08/2016 10:45:11 VXX - 2016-03-24: Inserted to table, 108 rows affected.
+03/08/2016 10:45:11 VXX - 2016-04-01: Requesting
+03/08/2016 10:45:11 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:49:54 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:49:55 VXX - 2016-03-11: Requesting
+03/08/2016 10:49:55 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:50:13 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:50:14 VXX - 2016-03-11: Requesting
+03/08/2016 10:50:14 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:50:20 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:50:20 VXX - 2016-03-11: Requesting
+03/08/2016 10:50:20 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:50:30 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:50:31 VXX - 2016-03-11: Requesting
+03/08/2016 10:50:31 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:50:33 VXX - 2016-03-11: Finished request, insert to table...
+03/08/2016 10:53:27 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:53:27 VXX - 2016-03-11: Requesting
+03/08/2016 10:53:27 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:53:30 VXX - 2016-03-11: Finished request, insert to table...
+03/08/2016 10:55:23 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:55:23 VXX - 2016-03-11: Requesting
+03/08/2016 10:55:23 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:55:35 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:56:08 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:56:09 VXX - 2016-03-11: Requesting
+03/08/2016 10:56:09 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:56:12 VXX - 2016-03-11: Finished request, insert to table...
+03/08/2016 10:56:49 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:56:50 VXX - 2016-03-11: Requesting
+03/08/2016 10:56:50 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:56:52 VXX - 2016-03-11: Finished request, insert to table...
+03/08/2016 10:57:46 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:57:46 VXX - 2016-03-11: Requesting
+03/08/2016 10:57:46 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:57:48 VXX - 2016-03-11: Finished request, insert to table...
+03/08/2016 10:57:48 VXX - 2016-03-11: This symbol and expir pair already exist in the db, move to the next one
+03/08/2016 10:57:48 VXX - 2016-03-18: Requesting
+03/08/2016 10:57:48 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:57:58 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:57:59 VXX - 2016-03-11: Requesting
+03/08/2016 10:57:59 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:58:02 VXX - 2016-03-11: Finished request, insert to table...
+03/08/2016 10:58:02 VXX - 2016-03-11: This symbol and expir pair already exist in the db, move to the next one
+03/08/2016 10:58:02 VXX - 2016-03-18: Requesting
+03/08/2016 10:58:02 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 10:58:07 VXX - 2016-03-18: Finished request, insert to table...
+03/08/2016 10:58:07 VXX - 2016-03-18: This symbol and expir pair already exist in the db, move to the next one
+03/08/2016 10:58:07 VXX - 2016-03-24: Requesting
+03/08/2016 10:58:07 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:23:23 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:23:24 VXX - 2016-03-11: Already exists in db, try next one
+03/08/2016 11:23:24 VXX - 2016-03-11: Requesting
+03/08/2016 11:23:24 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:23:28 VXX - 2016-03-11: Finished request, insert to table...
+03/08/2016 11:23:28 Exception occured while inserting to database
+03/08/2016 11:24:02 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:24:03 VXX - 2016-03-11: Already exists in db, try next one
+03/08/2016 11:24:03 VXX - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:24:03 VXX - 2016-03-24: Already exists in db, try next one
+03/08/2016 11:24:03 VXX - 2016-04-01: Already exists in db, try next one
+03/08/2016 11:24:03 VXX - 2016-04-08: Already exists in db, try next one
+03/08/2016 11:24:03 VXX - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:24:03 VXX - 2016-04-22: Already exists in db, try next one
+03/08/2016 11:24:03 VXX - 2016-05-20: Already exists in db, try next one
+03/08/2016 11:24:03 VXX - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:24:04 VXX - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:24:04 VXX - 2017-01-20: Already exists in db, try next one
+03/08/2016 11:24:04 VXX - 2018-01-19: Already exists in db, try next one
+03/08/2016 11:24:04 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:24:05 VIXY - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:24:05 VIXY - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:24:05 VIXY - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:24:05 VIXY - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:24:05 VIXY - 2017-01-20: Already exists in db, try next one
+03/08/2016 11:24:05 VIXY - 2018-01-19: Already exists in db, try next one
+03/08/2016 11:33:57 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:33:58 VXX - 2016-03-11: Already exists in db, try next one
+03/08/2016 11:33:58 VXX - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:33:58 VXX - 2016-03-24: Already exists in db, try next one
+03/08/2016 11:33:58 VXX - 2016-04-01: Requesting
+03/08/2016 11:33:58 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:34:00 VXX - 2016-04-01: Finished request, insert to table...
+03/08/2016 11:34:01 VXX - 2016-04-01: Inserted to table, 100 rows affected.
+03/08/2016 11:34:01 VXX - 2016-04-08: Requesting
+03/08/2016 11:34:01 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:34:02 VXX - 2016-04-08: Finished request, insert to table...
+03/08/2016 11:34:03 VXX - 2016-04-08: Inserted to table, 74 rows affected.
+03/08/2016 11:34:03 VXX - 2016-04-15: Requesting
+03/08/2016 11:34:03 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:34:13 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:34:13 VXX - 2016-03-11: Already exists in db, try next one
+03/08/2016 11:34:13 VXX - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:34:13 VXX - 2016-03-24: Already exists in db, try next one
+03/08/2016 11:34:13 VXX - 2016-04-01: Already exists in db, try next one
+03/08/2016 11:34:13 VXX - 2016-04-08: Already exists in db, try next one
+03/08/2016 11:34:13 VXX - 2016-04-15: Requesting
+03/08/2016 11:34:13 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:34:15 VXX - 2016-04-15: Finished request, insert to table...
+03/08/2016 11:34:16 VXX - 2016-04-15: Inserted to table, 112 rows affected.
+03/08/2016 11:34:16 VXX - 2016-04-22: Requesting
+03/08/2016 11:34:16 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:34:21 VXX - 2016-04-22: Finished request, insert to table...
+03/08/2016 11:34:22 VXX - 2016-04-22: Inserted to table, 75 rows affected.
+03/08/2016 11:34:22 VXX - 2016-05-20: Requesting
+03/08/2016 11:34:22 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:34:30 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:34:31 VXX - 2016-03-11: Already exists in db, try next one
+03/08/2016 11:34:31 VXX - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:34:31 VXX - 2016-03-24: Already exists in db, try next one
+03/08/2016 11:34:31 VXX - 2016-04-01: Already exists in db, try next one
+03/08/2016 11:34:31 VXX - 2016-04-08: Already exists in db, try next one
+03/08/2016 11:34:31 VXX - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:34:31 VXX - 2016-04-22: Already exists in db, try next one
+03/08/2016 11:34:31 VXX - 2016-05-20: Requesting
+03/08/2016 11:34:31 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:34:33 VXX - 2016-05-20: Finished request, insert to table...
+03/08/2016 11:34:33 VXX - 2016-05-20: Inserted to table, 52 rows affected.
+03/08/2016 11:34:33 VXX - 2016-06-17: Requesting
+03/08/2016 11:34:33 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:34:35 VXX - 2016-06-17: Finished request, insert to table...
+03/08/2016 11:34:36 VXX - 2016-06-17: Inserted to table, 88 rows affected.
+03/08/2016 11:34:36 VXX - 2016-09-16: Requesting
+03/08/2016 11:34:36 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:34:37 VXX - 2016-09-16: Finished request, insert to table...
+03/08/2016 11:34:38 VXX - 2016-09-16: Inserted to table, 108 rows affected.
+03/08/2016 11:34:38 VXX - 2017-01-20: Requesting
+03/08/2016 11:34:38 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:34:40 VXX - 2017-01-20: Finished request, insert to table...
+03/08/2016 11:34:41 VXX - 2017-01-20: Inserted to table, 138 rows affected.
+03/08/2016 11:34:41 VXX - 2018-01-19: Requesting
+03/08/2016 11:34:41 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:34:51 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:34:52 VXX - 2016-03-11: Already exists in db, try next one
+03/08/2016 11:34:52 VXX - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:34:52 VXX - 2016-03-24: Already exists in db, try next one
+03/08/2016 11:34:52 VXX - 2016-04-01: Already exists in db, try next one
+03/08/2016 11:34:52 VXX - 2016-04-08: Already exists in db, try next one
+03/08/2016 11:34:52 VXX - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:34:52 VXX - 2016-04-22: Already exists in db, try next one
+03/08/2016 11:34:52 VXX - 2016-05-20: Already exists in db, try next one
+03/08/2016 11:34:52 VXX - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:34:52 VXX - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:34:52 VXX - 2017-01-20: Already exists in db, try next one
+03/08/2016 11:34:52 VXX - 2018-01-19: Requesting
+03/08/2016 11:34:52 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:01 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:02 VXX - 2016-03-11: Already exists in db, try next one
+03/08/2016 11:35:02 VXX - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:35:02 VXX - 2016-03-24: Already exists in db, try next one
+03/08/2016 11:35:02 VXX - 2016-04-01: Already exists in db, try next one
+03/08/2016 11:35:02 VXX - 2016-04-08: Already exists in db, try next one
+03/08/2016 11:35:02 VXX - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:35:02 VXX - 2016-04-22: Already exists in db, try next one
+03/08/2016 11:35:02 VXX - 2016-05-20: Already exists in db, try next one
+03/08/2016 11:35:02 VXX - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:35:02 VXX - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:35:02 VXX - 2017-01-20: Already exists in db, try next one
+03/08/2016 11:35:02 VXX - 2018-01-19: Requesting
+03/08/2016 11:35:02 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:04 VXX - 2018-01-19: Finished request, insert to table...
+03/08/2016 11:35:05 VXX - 2018-01-19: Inserted to table, 96 rows affected.
+03/08/2016 11:35:05 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:05 VIXY - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:35:05 VIXY - 2016-04-15: Requesting
+03/08/2016 11:35:05 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:11 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:12 VXX - 2016-03-11: Already exists in db, try next one
+03/08/2016 11:35:12 VXX - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:35:12 VXX - 2016-03-24: Already exists in db, try next one
+03/08/2016 11:35:12 VXX - 2016-04-01: Already exists in db, try next one
+03/08/2016 11:35:12 VXX - 2016-04-08: Already exists in db, try next one
+03/08/2016 11:35:12 VXX - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:35:12 VXX - 2016-04-22: Already exists in db, try next one
+03/08/2016 11:35:12 VXX - 2016-05-20: Already exists in db, try next one
+03/08/2016 11:35:12 VXX - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:35:12 VXX - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:35:12 VXX - 2017-01-20: Already exists in db, try next one
+03/08/2016 11:35:12 VXX - 2018-01-19: Already exists in db, try next one
+03/08/2016 11:35:12 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:13 VIXY - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:35:13 VIXY - 2016-04-15: Requesting
+03/08/2016 11:35:13 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:14 VIXY - 2016-04-15: Finished request, insert to table...
+03/08/2016 11:35:15 VIXY - 2016-04-15: Inserted to table, 70 rows affected.
+03/08/2016 11:35:15 VIXY - 2016-06-17: Requesting
+03/08/2016 11:35:15 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:16 VIXY - 2016-06-17: Finished request, insert to table...
+03/08/2016 11:35:17 VIXY - 2016-06-17: Inserted to table, 60 rows affected.
+03/08/2016 11:35:17 VIXY - 2016-09-16: Requesting
+03/08/2016 11:35:17 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:19 VIXY - 2016-09-16: Finished request, insert to table...
+03/08/2016 11:35:20 VIXY - 2016-09-16: Inserted to table, 70 rows affected.
+03/08/2016 11:35:20 VIXY - 2017-01-20: Requesting
+03/08/2016 11:35:20 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:24 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:25 VXX - 2016-03-11: Already exists in db, try next one
+03/08/2016 11:35:25 VXX - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:35:25 VXX - 2016-03-24: Already exists in db, try next one
+03/08/2016 11:35:25 VXX - 2016-04-01: Already exists in db, try next one
+03/08/2016 11:35:25 VXX - 2016-04-08: Already exists in db, try next one
+03/08/2016 11:35:25 VXX - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:35:25 VXX - 2016-04-22: Already exists in db, try next one
+03/08/2016 11:35:25 VXX - 2016-05-20: Already exists in db, try next one
+03/08/2016 11:35:25 VXX - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:35:25 VXX - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:35:25 VXX - 2017-01-20: Already exists in db, try next one
+03/08/2016 11:35:25 VXX - 2018-01-19: Already exists in db, try next one
+03/08/2016 11:35:25 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:30 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:31 VXX - 2016-03-11: Already exists in db, try next one
+03/08/2016 11:35:31 VXX - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:35:31 VXX - 2016-03-24: Already exists in db, try next one
+03/08/2016 11:35:31 VXX - 2016-04-01: Already exists in db, try next one
+03/08/2016 11:35:31 VXX - 2016-04-08: Already exists in db, try next one
+03/08/2016 11:35:31 VXX - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:35:31 VXX - 2016-04-22: Already exists in db, try next one
+03/08/2016 11:35:31 VXX - 2016-05-20: Already exists in db, try next one
+03/08/2016 11:35:31 VXX - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:35:31 VXX - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:35:31 VXX - 2017-01-20: Already exists in db, try next one
+03/08/2016 11:35:31 VXX - 2018-01-19: Already exists in db, try next one
+03/08/2016 11:35:31 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:31 VIXY - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:35:31 VIXY - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:35:31 VIXY - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:35:31 VIXY - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:35:31 VIXY - 2017-01-20: Requesting
+03/08/2016 11:35:31 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:33 VIXY - 2017-01-20: Finished request, insert to table...
+03/08/2016 11:35:33 VIXY - 2017-01-20: Inserted to table, 50 rows affected.
+03/08/2016 11:35:33 VIXY - 2018-01-19: Requesting
+03/08/2016 11:35:33 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:38 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:39 VXX - 2016-03-11: Already exists in db, try next one
+03/08/2016 11:35:39 VXX - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:35:39 VXX - 2016-03-24: Already exists in db, try next one
+03/08/2016 11:35:39 VXX - 2016-04-01: Already exists in db, try next one
+03/08/2016 11:35:39 VXX - 2016-04-08: Already exists in db, try next one
+03/08/2016 11:35:39 VXX - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:35:39 VXX - 2016-04-22: Already exists in db, try next one
+03/08/2016 11:35:39 VXX - 2016-05-20: Already exists in db, try next one
+03/08/2016 11:35:39 VXX - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:35:39 VXX - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:35:39 VXX - 2017-01-20: Already exists in db, try next one
+03/08/2016 11:35:39 VXX - 2018-01-19: Already exists in db, try next one
+03/08/2016 11:35:39 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:39 VIXY - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:35:39 VIXY - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:35:39 VIXY - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:35:39 VIXY - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:35:40 VIXY - 2017-01-20: Already exists in db, try next one
+03/08/2016 11:35:40 VIXY - 2018-01-19: Requesting
+03/08/2016 11:35:40 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:35:41 VIXY - 2018-01-19: Finished request, insert to table...
+03/08/2016 11:35:41 VIXY - 2018-01-19: Inserted to table, 50 rows affected.
+03/08/2016 11:36:04 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:36:05 ^VIX - 2016-03-09: Already exists in db, try next one
+03/08/2016 11:36:05 ^VIX - 2016-03-16: Already exists in db, try next one
+03/08/2016 11:36:05 ^VIX - 2016-03-23: Already exists in db, try next one
+03/08/2016 11:36:05 ^VIX - 2016-03-30: Already exists in db, try next one
+03/08/2016 11:36:05 ^VIX - 2016-04-06: Already exists in db, try next one
+03/08/2016 11:36:05 ^VIX - 2016-04-20: Already exists in db, try next one
+03/08/2016 11:36:05 ^VIX - 2016-05-18: Already exists in db, try next one
+03/08/2016 11:36:05 ^VIX - 2016-06-15: Already exists in db, try next one
+03/08/2016 11:36:05 ^VIX - 2016-07-20: Already exists in db, try next one
+03/08/2016 11:36:05 ^VIX - 2016-08-17: Already exists in db, try next one
+03/08/2016 11:36:05 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:36:06 VXX - 2016-03-11: Already exists in db, try next one
+03/08/2016 11:36:06 VXX - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:36:06 VXX - 2016-03-24: Already exists in db, try next one
+03/08/2016 11:36:06 VXX - 2016-04-01: Already exists in db, try next one
+03/08/2016 11:36:06 VXX - 2016-04-08: Already exists in db, try next one
+03/08/2016 11:36:06 VXX - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:36:06 VXX - 2016-04-22: Already exists in db, try next one
+03/08/2016 11:36:06 VXX - 2016-05-20: Already exists in db, try next one
+03/08/2016 11:36:06 VXX - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:36:06 VXX - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:36:06 VXX - 2017-01-20: Already exists in db, try next one
+03/08/2016 11:36:06 VXX - 2018-01-19: Already exists in db, try next one
+03/08/2016 11:36:06 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:37:25 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:37:25 ^VIX - 2016-03-09: Already exists in db, try next one
+03/08/2016 11:37:25 ^VIX - 2016-03-16: Already exists in db, try next one
+03/08/2016 11:37:25 ^VIX - 2016-03-23: Already exists in db, try next one
+03/08/2016 11:37:25 ^VIX - 2016-03-30: Already exists in db, try next one
+03/08/2016 11:37:25 ^VIX - 2016-04-06: Already exists in db, try next one
+03/08/2016 11:37:25 ^VIX - 2016-04-20: Already exists in db, try next one
+03/08/2016 11:37:25 ^VIX - 2016-05-18: Already exists in db, try next one
+03/08/2016 11:37:25 ^VIX - 2016-06-15: Already exists in db, try next one
+03/08/2016 11:37:25 ^VIX - 2016-07-20: Already exists in db, try next one
+03/08/2016 11:37:25 ^VIX - 2016-08-17: Already exists in db, try next one
+03/08/2016 11:37:25 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:37:26 VXX - 2016-03-11: Already exists in db, try next one
+03/08/2016 11:37:26 VXX - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:37:26 VXX - 2016-03-24: Already exists in db, try next one
+03/08/2016 11:37:26 VXX - 2016-04-01: Already exists in db, try next one
+03/08/2016 11:37:26 VXX - 2016-04-08: Already exists in db, try next one
+03/08/2016 11:37:26 VXX - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:37:26 VXX - 2016-04-22: Already exists in db, try next one
+03/08/2016 11:37:26 VXX - 2016-05-20: Already exists in db, try next one
+03/08/2016 11:37:26 VXX - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:37:26 VXX - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:37:26 VXX - 2017-01-20: Already exists in db, try next one
+03/08/2016 11:37:26 VXX - 2018-01-19: Already exists in db, try next one
+03/08/2016 11:37:26 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:38:14 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:38:14 ^VIX - 2016-03-09: Already exists in db, try next one
+03/08/2016 11:38:14 ^VIX - 2016-03-16: Already exists in db, try next one
+03/08/2016 11:38:14 ^VIX - 2016-03-23: Already exists in db, try next one
+03/08/2016 11:38:14 ^VIX - 2016-03-30: Already exists in db, try next one
+03/08/2016 11:38:14 ^VIX - 2016-04-06: Already exists in db, try next one
+03/08/2016 11:38:14 ^VIX - 2016-04-20: Already exists in db, try next one
+03/08/2016 11:38:14 ^VIX - 2016-05-18: Already exists in db, try next one
+03/08/2016 11:38:14 ^VIX - 2016-06-15: Already exists in db, try next one
+03/08/2016 11:38:14 ^VIX - 2016-07-20: Already exists in db, try next one
+03/08/2016 11:38:14 ^VIX - 2016-08-17: Already exists in db, try next one
+03/08/2016 11:38:14 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:38:15 VXX - 2016-03-11: Already exists in db, try next one
+03/08/2016 11:38:15 VXX - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:38:15 VXX - 2016-03-24: Already exists in db, try next one
+03/08/2016 11:38:15 VXX - 2016-04-01: Already exists in db, try next one
+03/08/2016 11:38:15 VXX - 2016-04-08: Already exists in db, try next one
+03/08/2016 11:38:15 VXX - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:38:15 VXX - 2016-04-22: Already exists in db, try next one
+03/08/2016 11:38:15 VXX - 2016-05-20: Already exists in db, try next one
+03/08/2016 11:38:15 VXX - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:38:15 VXX - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:38:15 VXX - 2017-01-20: Already exists in db, try next one
+03/08/2016 11:38:15 VXX - 2018-01-19: Already exists in db, try next one
+03/08/2016 11:38:15 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:38:16 VIXY - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:38:16 VIXY - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:38:16 VIXY - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:38:16 VIXY - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:38:16 VIXY - 2017-01-20: Already exists in db, try next one
+03/08/2016 11:38:16 VIXY - 2018-01-19: Already exists in db, try next one
+03/08/2016 11:38:16 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:38:16 VXZ - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:38:16 VXZ - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:38:16 VXZ - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:38:16 VXZ - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:38:16 VXZ - 2016-11-18: Already exists in db, try next one
+03/08/2016 11:38:16 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:38:16 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:38:17 VIIX - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:38:17 VIIX - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:38:17 VIIX - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:38:17 VIIX - 2016-09-16: Already exists in db, try next one
+03/08/2016 11:39:03 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:41:10 Starting new HTTP connection (1): finance.yahoo.com
+03/08/2016 11:41:10 VIXM - 2016-03-18: Already exists in db, try next one
+03/08/2016 11:41:10 VIXM - 2016-04-15: Already exists in db, try next one
+03/08/2016 11:41:10 VIXM - 2016-06-17: Already exists in db, try next one
+03/08/2016 11:41:10 VIXM - 2016-09-16: Already exists in db, try next one

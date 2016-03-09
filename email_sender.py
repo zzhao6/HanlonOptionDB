@@ -26,7 +26,8 @@ class email_sender:
         self.email_temp_dir = self.config["EMAIL_TEMPLATE_DIR"]
         self.email_err_temp_dir = self.config["EMAIL_ERR_TEMP_DIR"]
     
-        self.today_date = time.strftime("%m/%d/%Y")
+        self.today_date = time.strftime("%Y-%m-%d")
+        # self.today_date = time.strftime("%m/%d/%Y")
 
     def send_email(self):
         self.msg['From'] = self.email_from

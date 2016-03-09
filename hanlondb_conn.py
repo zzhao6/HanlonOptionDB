@@ -13,6 +13,9 @@ class hanlondb_conn:
         disconnect()
         save_to_db() TODO
         _read_symbol_list()
+        getCount(): get a count of rows specific sym and expir , 
+                    will be use in processall func, if row count not zero, 
+                    request for such sym and expir will not be processed
     """
     def __init__(self, conf_obj):
         self.config = conf_obj
@@ -103,6 +106,14 @@ class hanlondb_conn:
 
             self.conn.commit()
         return rowcnt
+
+    def get_count(self, sym, expir, todaydate):
+        if sym[0] == "^":
+            sym = sym[1:]
+        fetch_str = "select * from opt_{} where expiry = '{}' and quote_date = '{}'".format(sym, expir, todaydate)
+        rowcnt = self.cur.execute(fetch_str)
+        return rowcnt
+
 
     def _read_symbol_list(self):
         """Determine which list of symbols to download. The list is set up in the config file"""
